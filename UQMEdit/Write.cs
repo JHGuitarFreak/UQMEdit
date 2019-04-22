@@ -1,24 +1,20 @@
 ﻿using System.IO;
-using System.Windows.Forms;
 
 namespace UQMEdit
 {
-	class Read
+	class Write
 	{
 		public static FileStream Stream;
 		public static Main Window;
+		public static int Num;
 		public static byte[] FileBuffer;
 
-		public static void Open(string FileName, Main window) {
-			if (!File.Exists(FileName)) {
-				MessageBox.Show("Could not find path: " + FileName);
-				return;
-			}
+		public static void Save(string FileName, Main WindowRef) {
 
-			Stream = new FileStream(FileName, FileMode.Open);
+			Stream = new FileStream(FileName, FileMode.OpenOrCreate);
 			int FileSize = (int)Stream.Length;  // get file length
 			FileBuffer = new byte[FileSize];    // create buffer
-			Window = window;
+			Window = WindowRef;
 
 			//Summary();
 			//Coordinates();
