@@ -30,5 +30,49 @@ namespace UQMEdit
 			int Query = (Is16or32 == 16) ? BitConverter.ToUInt16(Read.FileBuffer, 0) : BitConverter.ToInt32(Read.FileBuffer, 0);
 			return Query;
 		}
+
+		public static int OffsPick(int HD, int MegaMod) {
+			switch (Read.SaveVersion) {
+				case 3:
+				case 2:
+					return MegaMod;
+				case 1:
+					return HD;
+				case 0:
+				default:
+					return (HD - 48);
+			}
+		}
+
+		public static int HSCoordChecker(int Old, int New) {
+			if (Read.SaveVersion == 0 || Read.SaveVersion == 3)
+				return Old;
+			else
+				return New;
+		}
+
+		public static int RoundingError(int div) {
+			return (div >> 1);
+		}
+
+		public static int LogXToUniverse(int LogX) {
+			int UniverseUnits = HSCoordChecker(Vars.UniverseUnitsOld, Vars.UniverseUnits);
+			int LogUnits = HSCoordChecker(Vars.LogUnitsXOld, Vars.LogUnits);
+			return ((LogX * UniverseUnits + RoundingError(LogUnits)) / LogUnits);
+		}
+		public static int LogYToUniverse(int LogY) {
+			int LogUnits = HSCoordChecker(Vars.LogUnitsYOld, Vars.LogUnits);
+			return (Vars.MaxUniverse - ((LogY * Vars.UniverseUnits + RoundingError(LogUnits)) / LogUnits));
+		}
+
+		public static int UniverseToLogX(int UniverseX) {
+			int UniverseUnits = HSCoordChecker(Vars.UniverseUnitsOld, Vars.UniverseUnits);
+			int LogUnits = HSCoordChecker(Vars.LogUnitsXOld, Vars.LogUnits);
+			return ((UniverseX * Vars.LogUnits + RoundingError(Vars.UniverseUnits)) / Vars.UniverseUnits);
+		}
+		public static int UniverseToLogY(int UniverseY) {
+			int LogUnits = HSCoordChecker(Vars.LogUnitsYOld, Vars.LogUnits);
+			return (((Vars.MaxUniverse - UniverseY) * LogUnits + RoundingError(Vars.UniverseUnits)) / Vars.UniverseUnits);
+		}
 	}
 }
