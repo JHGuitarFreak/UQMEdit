@@ -18,9 +18,7 @@ namespace UQMEdit
 			public const byte StarCoordY = 52;
 
 			public const byte ResUnits = 56;
-
 			public const byte Fuel = 60;
-
 			public const byte SiSCrew = 64;
 
 			public const byte TotalMinerals = 66;
@@ -28,9 +26,7 @@ namespace UQMEdit
 			public const byte BioData = 68;
 
 			public const byte ModuleSlots = 70;
-
 			public static byte[] DriveSlots = { 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96 };
-
 			public static byte[] JetSlots = { 97, 98, 99, 100, 101, 102, 103, 104 };
 
 			public const byte Landers = 105;
@@ -77,8 +73,8 @@ namespace UQMEdit
 			public const byte BioData = 0x20;
 
 			public const byte ModuleSlots = 0x22;
-			public const byte DriveSlots = 0x32;
-			public const byte JetSlots = 0x3D;
+			public static byte[] DriveSlots = { 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3A, 0x3B, 0x3C };
+			public static byte[] JetSlots = { 0x3D, 0x3E, 0x3F, 0x40, 0x41, 0x42, 0x43, 0x44 };
 
 			public const byte Landers = 0x45;
 
