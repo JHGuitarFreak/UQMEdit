@@ -122,9 +122,9 @@ namespace UQMEdit
 			return new object[]
 			{
 				new Modules(22, "Empty Module"),
-				new Modules(0, "Lander"),
-				new Modules(1, "Antimat Thruster"),
-				new Modules(2, "Turning Jets"),
+				//new Modules(0, "Lander"),
+				//new Modules(1, "Antimat Thruster"),
+				//new Modules(2, "Turning Jets"),
 				new Modules(3, "Crew Pod"),
 				new Modules(4, "Storage Bay"),
 				new Modules(5, "Fuel Tank"),

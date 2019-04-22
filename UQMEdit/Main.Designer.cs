@@ -33,7 +33,7 @@
 			this.Tabs = new System.Windows.Forms.TabControl();
 			this.Summary = new System.Windows.Forms.TabPage();
 			this.ThrusterBox = new System.Windows.Forms.GroupBox();
-			this.MaxThrusters = new System.Windows.Forms.Button();
+			this.MaxJets = new System.Windows.Forms.Button();
 			this.Thruster10 = new System.Windows.Forms.CheckBox();
 			this.Thruster09 = new System.Windows.Forms.CheckBox();
 			this.Thruster08 = new System.Windows.Forms.CheckBox();
@@ -46,8 +46,8 @@
 			this.Thruster01 = new System.Windows.Forms.CheckBox();
 			this.Thruster00 = new System.Windows.Forms.CheckBox();
 			this.JetsBox = new System.Windows.Forms.GroupBox();
-			this.MaxJets = new System.Windows.Forms.Button();
 			this.Jets07 = new System.Windows.Forms.CheckBox();
+			this.MaxThrusters = new System.Windows.Forms.Button();
 			this.Jets06 = new System.Windows.Forms.CheckBox();
 			this.Jets05 = new System.Windows.Forms.CheckBox();
 			this.Jets04 = new System.Windows.Forms.CheckBox();
@@ -222,7 +222,7 @@
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip1.Name = "toolStrip1";
 			this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-			this.toolStrip1.Size = new System.Drawing.Size(888, 25);
+			this.toolStrip1.Size = new System.Drawing.Size(876, 25);
 			this.toolStrip1.TabIndex = 0;
 			this.toolStrip1.Text = "toolStrip1";
 			// 
@@ -263,7 +263,7 @@
 			this.Tabs.Location = new System.Drawing.Point(2, 28);
 			this.Tabs.Name = "Tabs";
 			this.Tabs.SelectedIndex = 0;
-			this.Tabs.Size = new System.Drawing.Size(886, 558);
+			this.Tabs.Size = new System.Drawing.Size(874, 496);
 			this.Tabs.TabIndex = 1;
 			// 
 			// Summary
@@ -280,14 +280,14 @@
 			this.Summary.Location = new System.Drawing.Point(4, 22);
 			this.Summary.Name = "Summary";
 			this.Summary.Padding = new System.Windows.Forms.Padding(3);
-			this.Summary.Size = new System.Drawing.Size(878, 532);
+			this.Summary.Size = new System.Drawing.Size(866, 470);
 			this.Summary.TabIndex = 0;
 			this.Summary.Text = "Summary";
 			this.Summary.UseVisualStyleBackColor = true;
 			// 
 			// ThrusterBox
 			// 
-			this.ThrusterBox.Controls.Add(this.MaxThrusters);
+			this.ThrusterBox.Controls.Add(this.MaxJets);
 			this.ThrusterBox.Controls.Add(this.Thruster10);
 			this.ThrusterBox.Controls.Add(this.Thruster09);
 			this.ThrusterBox.Controls.Add(this.Thruster08);
@@ -299,26 +299,25 @@
 			this.ThrusterBox.Controls.Add(this.Thruster02);
 			this.ThrusterBox.Controls.Add(this.Thruster01);
 			this.ThrusterBox.Controls.Add(this.Thruster00);
-			this.ThrusterBox.Location = new System.Drawing.Point(356, 427);
+			this.ThrusterBox.Location = new System.Drawing.Point(729, 6);
 			this.ThrusterBox.Name = "ThrusterBox";
-			this.ThrusterBox.Size = new System.Drawing.Size(239, 67);
+			this.ThrusterBox.Size = new System.Drawing.Size(65, 267);
 			this.ThrusterBox.TabIndex = 77;
 			this.ThrusterBox.TabStop = false;
 			this.ThrusterBox.Text = "AntiMat Thrusters";
 			// 
-			// MaxThrusters
+			// MaxJets
 			// 
-			this.MaxThrusters.Location = new System.Drawing.Point(72, 39);
-			this.MaxThrusters.Name = "MaxThrusters";
-			this.MaxThrusters.Size = new System.Drawing.Size(99, 23);
-			this.MaxThrusters.TabIndex = 1;
-			this.MaxThrusters.Text = "Max Thrusters";
-			this.MaxThrusters.UseVisualStyleBackColor = true;
+			this.MaxJets.Location = new System.Drawing.Point(5, 247);
+			this.MaxJets.Name = "MaxJets";
+			this.MaxJets.Size = new System.Drawing.Size(15, 14);
+			this.MaxJets.TabIndex = 1;
+			this.MaxJets.UseVisualStyleBackColor = true;
 			// 
 			// Thruster10
 			// 
 			this.Thruster10.AutoSize = true;
-			this.Thruster10.Location = new System.Drawing.Point(219, 19);
+			this.Thruster10.Location = new System.Drawing.Point(6, 227);
 			this.Thruster10.Name = "Thruster10";
 			this.Thruster10.Size = new System.Drawing.Size(15, 14);
 			this.Thruster10.TabIndex = 0;
@@ -327,7 +326,7 @@
 			// Thruster09
 			// 
 			this.Thruster09.AutoSize = true;
-			this.Thruster09.Location = new System.Drawing.Point(198, 19);
+			this.Thruster09.Location = new System.Drawing.Point(6, 207);
 			this.Thruster09.Name = "Thruster09";
 			this.Thruster09.Size = new System.Drawing.Size(15, 14);
 			this.Thruster09.TabIndex = 0;
@@ -336,7 +335,7 @@
 			// Thruster08
 			// 
 			this.Thruster08.AutoSize = true;
-			this.Thruster08.Location = new System.Drawing.Point(177, 19);
+			this.Thruster08.Location = new System.Drawing.Point(6, 187);
 			this.Thruster08.Name = "Thruster08";
 			this.Thruster08.Size = new System.Drawing.Size(15, 14);
 			this.Thruster08.TabIndex = 0;
@@ -345,7 +344,7 @@
 			// Thruster07
 			// 
 			this.Thruster07.AutoSize = true;
-			this.Thruster07.Location = new System.Drawing.Point(156, 19);
+			this.Thruster07.Location = new System.Drawing.Point(6, 167);
 			this.Thruster07.Name = "Thruster07";
 			this.Thruster07.Size = new System.Drawing.Size(15, 14);
 			this.Thruster07.TabIndex = 0;
@@ -354,7 +353,7 @@
 			// Thruster06
 			// 
 			this.Thruster06.AutoSize = true;
-			this.Thruster06.Location = new System.Drawing.Point(135, 19);
+			this.Thruster06.Location = new System.Drawing.Point(6, 147);
 			this.Thruster06.Name = "Thruster06";
 			this.Thruster06.Size = new System.Drawing.Size(15, 14);
 			this.Thruster06.TabIndex = 0;
@@ -363,7 +362,7 @@
 			// Thruster05
 			// 
 			this.Thruster05.AutoSize = true;
-			this.Thruster05.Location = new System.Drawing.Point(114, 19);
+			this.Thruster05.Location = new System.Drawing.Point(6, 127);
 			this.Thruster05.Name = "Thruster05";
 			this.Thruster05.Size = new System.Drawing.Size(15, 14);
 			this.Thruster05.TabIndex = 0;
@@ -372,7 +371,7 @@
 			// Thruster04
 			// 
 			this.Thruster04.AutoSize = true;
-			this.Thruster04.Location = new System.Drawing.Point(93, 19);
+			this.Thruster04.Location = new System.Drawing.Point(6, 107);
 			this.Thruster04.Name = "Thruster04";
 			this.Thruster04.Size = new System.Drawing.Size(15, 14);
 			this.Thruster04.TabIndex = 0;
@@ -381,7 +380,7 @@
 			// Thruster03
 			// 
 			this.Thruster03.AutoSize = true;
-			this.Thruster03.Location = new System.Drawing.Point(72, 19);
+			this.Thruster03.Location = new System.Drawing.Point(6, 87);
 			this.Thruster03.Name = "Thruster03";
 			this.Thruster03.Size = new System.Drawing.Size(15, 14);
 			this.Thruster03.TabIndex = 0;
@@ -390,7 +389,7 @@
 			// Thruster02
 			// 
 			this.Thruster02.AutoSize = true;
-			this.Thruster02.Location = new System.Drawing.Point(51, 19);
+			this.Thruster02.Location = new System.Drawing.Point(6, 71);
 			this.Thruster02.Name = "Thruster02";
 			this.Thruster02.Size = new System.Drawing.Size(15, 14);
 			this.Thruster02.TabIndex = 0;
@@ -399,7 +398,7 @@
 			// Thruster01
 			// 
 			this.Thruster01.AutoSize = true;
-			this.Thruster01.Location = new System.Drawing.Point(30, 19);
+			this.Thruster01.Location = new System.Drawing.Point(6, 51);
 			this.Thruster01.Name = "Thruster01";
 			this.Thruster01.Size = new System.Drawing.Size(15, 14);
 			this.Thruster01.TabIndex = 0;
@@ -408,7 +407,7 @@
 			// Thruster00
 			// 
 			this.Thruster00.AutoSize = true;
-			this.Thruster00.Location = new System.Drawing.Point(9, 19);
+			this.Thruster00.Location = new System.Drawing.Point(6, 31);
 			this.Thruster00.Name = "Thruster00";
 			this.Thruster00.Size = new System.Drawing.Size(15, 14);
 			this.Thruster00.TabIndex = 0;
@@ -416,8 +415,8 @@
 			// 
 			// JetsBox
 			// 
-			this.JetsBox.Controls.Add(this.MaxJets);
 			this.JetsBox.Controls.Add(this.Jets07);
+			this.JetsBox.Controls.Add(this.MaxThrusters);
 			this.JetsBox.Controls.Add(this.Jets06);
 			this.JetsBox.Controls.Add(this.Jets05);
 			this.JetsBox.Controls.Add(this.Jets04);
@@ -425,35 +424,34 @@
 			this.JetsBox.Controls.Add(this.Jets02);
 			this.JetsBox.Controls.Add(this.Jets01);
 			this.JetsBox.Controls.Add(this.Jets00);
-			this.JetsBox.Location = new System.Drawing.Point(356, 354);
+			this.JetsBox.Location = new System.Drawing.Point(800, 6);
 			this.JetsBox.Name = "JetsBox";
-			this.JetsBox.Size = new System.Drawing.Size(179, 67);
+			this.JetsBox.Size = new System.Drawing.Size(57, 211);
 			this.JetsBox.TabIndex = 77;
 			this.JetsBox.TabStop = false;
 			this.JetsBox.Text = "Turning Jets";
 			// 
-			// MaxJets
-			// 
-			this.MaxJets.Location = new System.Drawing.Point(40, 39);
-			this.MaxJets.Name = "MaxJets";
-			this.MaxJets.Size = new System.Drawing.Size(99, 23);
-			this.MaxJets.TabIndex = 1;
-			this.MaxJets.Text = "Max Turning Jets";
-			this.MaxJets.UseVisualStyleBackColor = true;
-			// 
 			// Jets07
 			// 
 			this.Jets07.AutoSize = true;
-			this.Jets07.Location = new System.Drawing.Point(156, 19);
+			this.Jets07.Location = new System.Drawing.Point(6, 171);
 			this.Jets07.Name = "Jets07";
 			this.Jets07.Size = new System.Drawing.Size(15, 14);
 			this.Jets07.TabIndex = 0;
 			this.Jets07.UseVisualStyleBackColor = true;
 			// 
+			// MaxThrusters
+			// 
+			this.MaxThrusters.Location = new System.Drawing.Point(5, 191);
+			this.MaxThrusters.Name = "MaxThrusters";
+			this.MaxThrusters.Size = new System.Drawing.Size(15, 14);
+			this.MaxThrusters.TabIndex = 1;
+			this.MaxThrusters.UseVisualStyleBackColor = true;
+			// 
 			// Jets06
 			// 
 			this.Jets06.AutoSize = true;
-			this.Jets06.Location = new System.Drawing.Point(135, 19);
+			this.Jets06.Location = new System.Drawing.Point(6, 151);
 			this.Jets06.Name = "Jets06";
 			this.Jets06.Size = new System.Drawing.Size(15, 14);
 			this.Jets06.TabIndex = 0;
@@ -462,7 +460,7 @@
 			// Jets05
 			// 
 			this.Jets05.AutoSize = true;
-			this.Jets05.Location = new System.Drawing.Point(114, 19);
+			this.Jets05.Location = new System.Drawing.Point(6, 131);
 			this.Jets05.Name = "Jets05";
 			this.Jets05.Size = new System.Drawing.Size(15, 14);
 			this.Jets05.TabIndex = 0;
@@ -471,7 +469,7 @@
 			// Jets04
 			// 
 			this.Jets04.AutoSize = true;
-			this.Jets04.Location = new System.Drawing.Point(93, 19);
+			this.Jets04.Location = new System.Drawing.Point(6, 111);
 			this.Jets04.Name = "Jets04";
 			this.Jets04.Size = new System.Drawing.Size(15, 14);
 			this.Jets04.TabIndex = 0;
@@ -480,7 +478,7 @@
 			// Jets03
 			// 
 			this.Jets03.AutoSize = true;
-			this.Jets03.Location = new System.Drawing.Point(72, 19);
+			this.Jets03.Location = new System.Drawing.Point(6, 91);
 			this.Jets03.Name = "Jets03";
 			this.Jets03.Size = new System.Drawing.Size(15, 14);
 			this.Jets03.TabIndex = 0;
@@ -489,7 +487,7 @@
 			// Jets02
 			// 
 			this.Jets02.AutoSize = true;
-			this.Jets02.Location = new System.Drawing.Point(51, 19);
+			this.Jets02.Location = new System.Drawing.Point(6, 71);
 			this.Jets02.Name = "Jets02";
 			this.Jets02.Size = new System.Drawing.Size(15, 14);
 			this.Jets02.TabIndex = 0;
@@ -498,7 +496,7 @@
 			// Jets01
 			// 
 			this.Jets01.AutoSize = true;
-			this.Jets01.Location = new System.Drawing.Point(30, 19);
+			this.Jets01.Location = new System.Drawing.Point(6, 51);
 			this.Jets01.Name = "Jets01";
 			this.Jets01.Size = new System.Drawing.Size(15, 14);
 			this.Jets01.TabIndex = 0;
@@ -507,7 +505,7 @@
 			// Jets00
 			// 
 			this.Jets00.AutoSize = true;
-			this.Jets00.Location = new System.Drawing.Point(9, 19);
+			this.Jets00.Location = new System.Drawing.Point(6, 31);
 			this.Jets00.Name = "Jets00";
 			this.Jets00.Size = new System.Drawing.Size(15, 14);
 			this.Jets00.TabIndex = 0;
@@ -596,9 +594,9 @@
 			this.ShipsBox.Controls.Add(this.label68);
 			this.ShipsBox.Controls.Add(this.label69);
 			this.ShipsBox.Controls.Add(this.label70);
-			this.ShipsBox.Location = new System.Drawing.Point(356, 6);
+			this.ShipsBox.Location = new System.Drawing.Point(564, 6);
 			this.ShipsBox.Name = "ShipsBox";
-			this.ShipsBox.Size = new System.Drawing.Size(159, 342);
+			this.ShipsBox.Size = new System.Drawing.Size(159, 343);
 			this.ShipsBox.TabIndex = 73;
 			this.ShipsBox.TabStop = false;
 			this.ShipsBox.Text = "Ships";
@@ -738,7 +736,7 @@
 			// label74
 			// 
 			this.label74.AutoSize = true;
-			this.label74.Location = new System.Drawing.Point(6, 22);
+			this.label74.Location = new System.Drawing.Point(3, 22);
 			this.label74.Name = "label74";
 			this.label74.Size = new System.Drawing.Size(19, 13);
 			this.label74.TabIndex = 8;
@@ -747,7 +745,7 @@
 			// label63
 			// 
 			this.label63.AutoSize = true;
-			this.label63.Location = new System.Drawing.Point(6, 318);
+			this.label63.Location = new System.Drawing.Point(2, 318);
 			this.label63.Name = "label63";
 			this.label63.Size = new System.Drawing.Size(19, 13);
 			this.label63.TabIndex = 23;
@@ -756,7 +754,7 @@
 			// label73
 			// 
 			this.label73.AutoSize = true;
-			this.label73.Location = new System.Drawing.Point(6, 49);
+			this.label73.Location = new System.Drawing.Point(3, 49);
 			this.label73.Name = "label73";
 			this.label73.Size = new System.Drawing.Size(19, 13);
 			this.label73.TabIndex = 9;
@@ -765,7 +763,7 @@
 			// label64
 			// 
 			this.label64.AutoSize = true;
-			this.label64.Location = new System.Drawing.Point(6, 291);
+			this.label64.Location = new System.Drawing.Point(2, 291);
 			this.label64.Name = "label64";
 			this.label64.Size = new System.Drawing.Size(19, 13);
 			this.label64.TabIndex = 21;
@@ -774,7 +772,7 @@
 			// label65
 			// 
 			this.label65.AutoSize = true;
-			this.label65.Location = new System.Drawing.Point(6, 264);
+			this.label65.Location = new System.Drawing.Point(2, 264);
 			this.label65.Name = "label65";
 			this.label65.Size = new System.Drawing.Size(19, 13);
 			this.label65.TabIndex = 19;
@@ -783,7 +781,7 @@
 			// label72
 			// 
 			this.label72.AutoSize = true;
-			this.label72.Location = new System.Drawing.Point(6, 76);
+			this.label72.Location = new System.Drawing.Point(3, 76);
 			this.label72.Name = "label72";
 			this.label72.Size = new System.Drawing.Size(19, 13);
 			this.label72.TabIndex = 10;
@@ -792,7 +790,7 @@
 			// label66
 			// 
 			this.label66.AutoSize = true;
-			this.label66.Location = new System.Drawing.Point(6, 237);
+			this.label66.Location = new System.Drawing.Point(3, 237);
 			this.label66.Name = "label66";
 			this.label66.Size = new System.Drawing.Size(19, 13);
 			this.label66.TabIndex = 17;
@@ -801,7 +799,7 @@
 			// label67
 			// 
 			this.label67.AutoSize = true;
-			this.label67.Location = new System.Drawing.Point(6, 210);
+			this.label67.Location = new System.Drawing.Point(3, 210);
 			this.label67.Name = "label67";
 			this.label67.Size = new System.Drawing.Size(19, 13);
 			this.label67.TabIndex = 15;
@@ -810,7 +808,7 @@
 			// label71
 			// 
 			this.label71.AutoSize = true;
-			this.label71.Location = new System.Drawing.Point(6, 103);
+			this.label71.Location = new System.Drawing.Point(3, 103);
 			this.label71.Name = "label71";
 			this.label71.Size = new System.Drawing.Size(19, 13);
 			this.label71.TabIndex = 11;
@@ -819,7 +817,7 @@
 			// label68
 			// 
 			this.label68.AutoSize = true;
-			this.label68.Location = new System.Drawing.Point(6, 183);
+			this.label68.Location = new System.Drawing.Point(3, 183);
 			this.label68.Name = "label68";
 			this.label68.Size = new System.Drawing.Size(19, 13);
 			this.label68.TabIndex = 14;
@@ -828,7 +826,7 @@
 			// label69
 			// 
 			this.label69.AutoSize = true;
-			this.label69.Location = new System.Drawing.Point(6, 157);
+			this.label69.Location = new System.Drawing.Point(3, 157);
 			this.label69.Name = "label69";
 			this.label69.Size = new System.Drawing.Size(19, 13);
 			this.label69.TabIndex = 13;
@@ -837,7 +835,7 @@
 			// label70
 			// 
 			this.label70.AutoSize = true;
-			this.label70.Location = new System.Drawing.Point(6, 130);
+			this.label70.Location = new System.Drawing.Point(3, 130);
 			this.label70.Name = "label70";
 			this.label70.Size = new System.Drawing.Size(19, 13);
 			this.label70.TabIndex = 12;
@@ -878,9 +876,9 @@
 			this.ModulesBox.Controls.Add(this.label28);
 			this.ModulesBox.Controls.Add(this.label32);
 			this.ModulesBox.Controls.Add(this.label27);
-			this.ModulesBox.Location = new System.Drawing.Point(601, 6);
+			this.ModulesBox.Location = new System.Drawing.Point(356, 6);
 			this.ModulesBox.Name = "ModulesBox";
-			this.ModulesBox.Size = new System.Drawing.Size(161, 455);
+			this.ModulesBox.Size = new System.Drawing.Size(202, 456);
 			this.ModulesBox.TabIndex = 72;
 			this.ModulesBox.TabStop = false;
 			this.ModulesBox.Text = "Modules";
@@ -899,7 +897,7 @@
 			this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox11.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox11.FormattingEnabled = true;
-			this.comboBox11.Location = new System.Drawing.Point(31, 428);
+			this.comboBox11.Location = new System.Drawing.Point(74, 428);
 			this.comboBox11.Name = "comboBox11";
 			this.comboBox11.Size = new System.Drawing.Size(122, 21);
 			this.comboBox11.TabIndex = 15;
@@ -911,7 +909,7 @@
 			this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox12.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox12.FormattingEnabled = true;
-			this.comboBox12.Location = new System.Drawing.Point(31, 401);
+			this.comboBox12.Location = new System.Drawing.Point(74, 401);
 			this.comboBox12.Name = "comboBox12";
 			this.comboBox12.Size = new System.Drawing.Size(122, 21);
 			this.comboBox12.TabIndex = 14;
@@ -923,7 +921,7 @@
 			this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox13.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox13.FormattingEnabled = true;
-			this.comboBox13.Location = new System.Drawing.Point(31, 374);
+			this.comboBox13.Location = new System.Drawing.Point(74, 374);
 			this.comboBox13.Name = "comboBox13";
 			this.comboBox13.Size = new System.Drawing.Size(122, 21);
 			this.comboBox13.TabIndex = 13;
@@ -935,7 +933,7 @@
 			this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox14.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox14.FormattingEnabled = true;
-			this.comboBox14.Location = new System.Drawing.Point(31, 347);
+			this.comboBox14.Location = new System.Drawing.Point(74, 347);
 			this.comboBox14.Name = "comboBox14";
 			this.comboBox14.Size = new System.Drawing.Size(122, 21);
 			this.comboBox14.TabIndex = 12;
@@ -947,7 +945,7 @@
 			this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox15.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox15.FormattingEnabled = true;
-			this.comboBox15.Location = new System.Drawing.Point(31, 320);
+			this.comboBox15.Location = new System.Drawing.Point(74, 320);
 			this.comboBox15.Name = "comboBox15";
 			this.comboBox15.Size = new System.Drawing.Size(122, 21);
 			this.comboBox15.TabIndex = 11;
@@ -959,7 +957,7 @@
 			this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox16.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox16.FormattingEnabled = true;
-			this.comboBox16.Location = new System.Drawing.Point(31, 293);
+			this.comboBox16.Location = new System.Drawing.Point(74, 293);
 			this.comboBox16.Name = "comboBox16";
 			this.comboBox16.Size = new System.Drawing.Size(122, 21);
 			this.comboBox16.TabIndex = 10;
@@ -971,7 +969,7 @@
 			this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox17.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox17.FormattingEnabled = true;
-			this.comboBox17.Location = new System.Drawing.Point(31, 266);
+			this.comboBox17.Location = new System.Drawing.Point(74, 266);
 			this.comboBox17.Name = "comboBox17";
 			this.comboBox17.Size = new System.Drawing.Size(122, 21);
 			this.comboBox17.TabIndex = 9;
@@ -983,7 +981,7 @@
 			this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox9.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox9.FormattingEnabled = true;
-			this.comboBox9.Location = new System.Drawing.Point(31, 239);
+			this.comboBox9.Location = new System.Drawing.Point(74, 239);
 			this.comboBox9.Name = "comboBox9";
 			this.comboBox9.Size = new System.Drawing.Size(122, 21);
 			this.comboBox9.TabIndex = 8;
@@ -995,7 +993,7 @@
 			this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox8.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox8.FormattingEnabled = true;
-			this.comboBox8.Location = new System.Drawing.Point(31, 212);
+			this.comboBox8.Location = new System.Drawing.Point(74, 212);
 			this.comboBox8.Name = "comboBox8";
 			this.comboBox8.Size = new System.Drawing.Size(122, 21);
 			this.comboBox8.TabIndex = 7;
@@ -1007,7 +1005,7 @@
 			this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox7.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox7.FormattingEnabled = true;
-			this.comboBox7.Location = new System.Drawing.Point(31, 185);
+			this.comboBox7.Location = new System.Drawing.Point(74, 185);
 			this.comboBox7.Name = "comboBox7";
 			this.comboBox7.Size = new System.Drawing.Size(122, 21);
 			this.comboBox7.TabIndex = 6;
@@ -1019,7 +1017,7 @@
 			this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox6.FormattingEnabled = true;
-			this.comboBox6.Location = new System.Drawing.Point(31, 158);
+			this.comboBox6.Location = new System.Drawing.Point(74, 158);
 			this.comboBox6.Name = "comboBox6";
 			this.comboBox6.Size = new System.Drawing.Size(122, 21);
 			this.comboBox6.TabIndex = 5;
@@ -1030,18 +1028,18 @@
 			this.label56.AutoSize = true;
 			this.label56.Location = new System.Drawing.Point(3, 26);
 			this.label56.Name = "label56";
-			this.label56.Size = new System.Drawing.Size(19, 13);
+			this.label56.Size = new System.Drawing.Size(53, 13);
 			this.label56.TabIndex = 8;
-			this.label56.Text = "01";
+			this.label56.Text = "01 [Nose]";
 			// 
 			// label53
 			// 
 			this.label53.AutoSize = true;
 			this.label53.Location = new System.Drawing.Point(3, 53);
 			this.label53.Name = "label53";
-			this.label53.Size = new System.Drawing.Size(19, 13);
+			this.label53.Size = new System.Drawing.Size(62, 13);
 			this.label53.TabIndex = 9;
-			this.label53.Text = "02";
+			this.label53.Text = "02 [Spread]";
 			// 
 			// comboBox5
 			// 
@@ -1049,7 +1047,7 @@
 			this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox5.FormattingEnabled = true;
-			this.comboBox5.Location = new System.Drawing.Point(31, 131);
+			this.comboBox5.Location = new System.Drawing.Point(74, 131);
 			this.comboBox5.Name = "comboBox5";
 			this.comboBox5.Size = new System.Drawing.Size(122, 21);
 			this.comboBox5.TabIndex = 4;
@@ -1060,9 +1058,9 @@
 			this.label40.AutoSize = true;
 			this.label40.Location = new System.Drawing.Point(3, 78);
 			this.label40.Name = "label40";
-			this.label40.Size = new System.Drawing.Size(19, 13);
+			this.label40.Size = new System.Drawing.Size(49, 13);
 			this.label40.TabIndex = 10;
-			this.label40.Text = "03";
+			this.label40.Text = "03 [Side]";
 			// 
 			// comboBox4
 			// 
@@ -1070,7 +1068,7 @@
 			this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox4.FormattingEnabled = true;
-			this.comboBox4.Location = new System.Drawing.Point(31, 104);
+			this.comboBox4.Location = new System.Drawing.Point(74, 104);
 			this.comboBox4.Name = "comboBox4";
 			this.comboBox4.Size = new System.Drawing.Size(122, 21);
 			this.comboBox4.TabIndex = 3;
@@ -1091,7 +1089,7 @@
 			this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox3.FormattingEnabled = true;
-			this.comboBox3.Location = new System.Drawing.Point(31, 77);
+			this.comboBox3.Location = new System.Drawing.Point(74, 77);
 			this.comboBox3.Name = "comboBox3";
 			this.comboBox3.Size = new System.Drawing.Size(122, 21);
 			this.comboBox3.TabIndex = 2;
@@ -1112,7 +1110,7 @@
 			this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(31, 50);
+			this.comboBox2.Location = new System.Drawing.Point(74, 50);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(122, 21);
 			this.comboBox2.TabIndex = 1;
@@ -1133,7 +1131,7 @@
 			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(31, 23);
+			this.comboBox1.Location = new System.Drawing.Point(74, 23);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(122, 21);
 			this.comboBox1.TabIndex = 0;
@@ -1151,11 +1149,11 @@
 			// label31
 			// 
 			this.label31.AutoSize = true;
-			this.label31.Location = new System.Drawing.Point(3, 431);
+			this.label31.Location = new System.Drawing.Point(2, 431);
 			this.label31.Name = "label31";
-			this.label31.Size = new System.Drawing.Size(19, 13);
+			this.label31.Size = new System.Drawing.Size(45, 13);
 			this.label31.TabIndex = 31;
-			this.label31.Text = "16";
+			this.label31.Text = "16 [Tail]";
 			// 
 			// label35
 			// 
@@ -1169,7 +1167,7 @@
 			// label30
 			// 
 			this.label30.AutoSize = true;
-			this.label30.Location = new System.Drawing.Point(3, 404);
+			this.label30.Location = new System.Drawing.Point(2, 404);
 			this.label30.Name = "label30";
 			this.label30.Size = new System.Drawing.Size(19, 13);
 			this.label30.TabIndex = 29;
@@ -1187,7 +1185,7 @@
 			// label29
 			// 
 			this.label29.AutoSize = true;
-			this.label29.Location = new System.Drawing.Point(3, 377);
+			this.label29.Location = new System.Drawing.Point(2, 377);
 			this.label29.Name = "label29";
 			this.label29.Size = new System.Drawing.Size(19, 13);
 			this.label29.TabIndex = 27;
@@ -1196,7 +1194,7 @@
 			// label33
 			// 
 			this.label33.AutoSize = true;
-			this.label33.Location = new System.Drawing.Point(3, 269);
+			this.label33.Location = new System.Drawing.Point(2, 269);
 			this.label33.Name = "label33";
 			this.label33.Size = new System.Drawing.Size(19, 13);
 			this.label33.TabIndex = 19;
@@ -1205,7 +1203,7 @@
 			// label28
 			// 
 			this.label28.AutoSize = true;
-			this.label28.Location = new System.Drawing.Point(3, 350);
+			this.label28.Location = new System.Drawing.Point(2, 350);
 			this.label28.Name = "label28";
 			this.label28.Size = new System.Drawing.Size(19, 13);
 			this.label28.TabIndex = 25;
@@ -1214,7 +1212,7 @@
 			// label32
 			// 
 			this.label32.AutoSize = true;
-			this.label32.Location = new System.Drawing.Point(3, 296);
+			this.label32.Location = new System.Drawing.Point(2, 296);
 			this.label32.Name = "label32";
 			this.label32.Size = new System.Drawing.Size(19, 13);
 			this.label32.TabIndex = 21;
@@ -1223,7 +1221,7 @@
 			// label27
 			// 
 			this.label27.AutoSize = true;
-			this.label27.Location = new System.Drawing.Point(3, 323);
+			this.label27.Location = new System.Drawing.Point(2, 323);
 			this.label27.Name = "label27";
 			this.label27.Size = new System.Drawing.Size(19, 13);
 			this.label27.TabIndex = 23;
@@ -1797,7 +1795,7 @@
 			this.Coordinates.Location = new System.Drawing.Point(4, 22);
 			this.Coordinates.Name = "Coordinates";
 			this.Coordinates.Padding = new System.Windows.Forms.Padding(3);
-			this.Coordinates.Size = new System.Drawing.Size(878, 532);
+			this.Coordinates.Size = new System.Drawing.Size(866, 470);
 			this.Coordinates.TabIndex = 1;
 			this.Coordinates.Text = "Coordinates";
 			this.Coordinates.UseVisualStyleBackColor = true;
@@ -1811,6 +1809,7 @@
 			this.Spoilers.TabIndex = 70;
 			this.Spoilers.Text = "Spoilers";
 			this.Spoilers.UseVisualStyleBackColor = true;
+			this.Spoilers.CheckedChanged += new System.EventHandler(this.Spoilers_CheckedChanged);
 			// 
 			// StatusBox
 			// 
@@ -1942,14 +1941,14 @@
 			this.StarList.FormattingEnabled = true;
 			this.StarList.Location = new System.Drawing.Point(173, 6);
 			this.StarList.Name = "StarList";
-			this.StarList.Size = new System.Drawing.Size(699, 522);
+			this.StarList.Size = new System.Drawing.Size(689, 457);
 			this.StarList.TabIndex = 0;
 			// 
 			// Main
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(888, 587);
+			this.ClientSize = new System.Drawing.Size(876, 525);
 			this.Controls.Add(this.Tabs);
 			this.Controls.Add(this.toolStrip1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

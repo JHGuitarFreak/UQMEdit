@@ -21,9 +21,14 @@ namespace UQMEdit
 			Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 			this.shipModules = Modules.CreateModules();
 
-			foreach (object current4 in this.ShipsBox.Controls) {
-				if (current4 is ComboBox) {
-					(current4 as ComboBox).Items.AddRange(Vars.escortNames);
+			foreach (object ships in this.ShipsBox.Controls) {
+				if (ships is ComboBox) {
+					(ships as ComboBox).Items.AddRange(Vars.escortNames);
+				}
+			}
+			foreach (object current in this.ModulesBox.Controls) {
+				if (current is ComboBox) {
+					(current as ComboBox).Items.AddRange(this.shipModules);
 				}
 			}
 			this.CurrentStatus.Items.AddRange(Vars.statusName);
@@ -106,6 +111,18 @@ namespace UQMEdit
 
 		private void Save_Click(object sender, EventArgs e) {
 			Write.Save(CurrentFile, this);
+		}
+
+		private void Spoilers_CheckedChanged(object sender, EventArgs e) {
+			int selectedIndex = this.StarList.SelectedIndex;
+			this.StarList.Items.Clear();
+			this.StarList.Items.AddRange(ParseStars.LoadStars(this.Spoilers.Checked));
+			if (this.StarList.Items.Count >= selectedIndex) {
+				if (this.StarList.Items.Count >= selectedIndex + 23) {
+					this.StarList.SelectedIndex = selectedIndex + 23;
+				}
+				this.StarList.SelectedIndex = selectedIndex;
+			}
 		}
 	}
 }
