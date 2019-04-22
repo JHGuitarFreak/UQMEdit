@@ -196,6 +196,7 @@
 			this.CaptainBox = new System.Windows.Forms.GroupBox();
 			this.ShipNameBox = new System.Windows.Forms.GroupBox();
 			this.SeedBox = new System.Windows.Forms.GroupBox();
+			this.Spoilers = new System.Windows.Forms.CheckBox();
 			this.toolStrip1.SuspendLayout();
 			this.Tabs.SuspendLayout();
 			this.Summary.SuspendLayout();
@@ -307,6 +308,7 @@
 			// 
 			// Coordinates
 			// 
+			this.Coordinates.Controls.Add(this.Spoilers);
 			this.Coordinates.Controls.Add(this.StatusBox);
 			this.Coordinates.Controls.Add(this.OrbitBox);
 			this.Coordinates.Controls.Add(this.NearestStarBox);
@@ -315,7 +317,7 @@
 			this.Coordinates.Location = new System.Drawing.Point(4, 22);
 			this.Coordinates.Name = "Coordinates";
 			this.Coordinates.Padding = new System.Windows.Forms.Padding(3);
-			this.Coordinates.Size = new System.Drawing.Size(829, 532);
+			this.Coordinates.Size = new System.Drawing.Size(878, 532);
 			this.Coordinates.TabIndex = 1;
 			this.Coordinates.Text = "Coordinates";
 			this.Coordinates.UseVisualStyleBackColor = true;
@@ -326,7 +328,7 @@
 			this.StarList.FormattingEnabled = true;
 			this.StarList.Location = new System.Drawing.Point(173, 6);
 			this.StarList.Name = "StarList";
-			this.StarList.Size = new System.Drawing.Size(648, 522);
+			this.StarList.Size = new System.Drawing.Size(699, 522);
 			this.StarList.TabIndex = 0;
 			// 
 			// Devices
@@ -2188,6 +2190,16 @@
 			this.SeedBox.Text = "Seed";
 			this.SeedBox.Visible = false;
 			// 
+			// Spoilers
+			// 
+			this.Spoilers.AutoSize = true;
+			this.Spoilers.Location = new System.Drawing.Point(50, 239);
+			this.Spoilers.Name = "Spoilers";
+			this.Spoilers.Size = new System.Drawing.Size(63, 17);
+			this.Spoilers.TabIndex = 70;
+			this.Spoilers.Text = "Spoilers";
+			this.Spoilers.UseVisualStyleBackColor = true;
+			// 
 			// Main
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2206,6 +2218,7 @@
 			this.Tabs.ResumeLayout(false);
 			this.Summary.ResumeLayout(false);
 			this.Coordinates.ResumeLayout(false);
+			this.Coordinates.PerformLayout();
 			this.CargoBox.ResumeLayout(false);
 			this.CargoBox.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.Exotic)).EndInit();
@@ -2426,6 +2439,7 @@
 		private System.Windows.Forms.GroupBox ShipNameBox;
 		private System.Windows.Forms.GroupBox CaptainBox;
 		private System.Windows.Forms.GroupBox SeedBox;
+		private System.Windows.Forms.CheckBox Spoilers;
 	}
 }
 

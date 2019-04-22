@@ -51,19 +51,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Functions.cs" />
+    <Compile Include="Load\Coordinates.cs" />
+    <Compile Include="Load\Summary.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Offs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Read.cs" />
+    <Compile Include="Save\Coordinates.cs" />
+    <Compile Include="Save\Summary.cs" />
+    <Compile Include="Stars.cs" />
+    <Compile Include="Vars.cs" />
+    <Compile Include="Write.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -82,15 +92,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Load\" />
-    <Folder Include="Save\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\mkii.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\stars.txt" />
+    <EmbeddedResource Include="Resources\stars.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Open.Image.png" />
