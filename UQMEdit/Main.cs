@@ -96,6 +96,14 @@ namespace UQMEdit
 			Read.Open(CurrentFile, this);
 		}
 
+		private void MineralsValueChanged(object sender, EventArgs e) {
+			this.TotalMinerals.Value = 0;
+			this.TotalMinerals.Value = this.Common.Value + this.Corrosive.Value +
+										this.BaseMetal.Value + this.NobleGas.Value +
+										this.RareEarth.Value + this.Precious.Value +
+										this.Radioactive.Value + this.Exotic.Value;
+		}
+
 		private void Save_Click(object sender, EventArgs e) {
 			Write.Save(CurrentFile, this);
 		}
