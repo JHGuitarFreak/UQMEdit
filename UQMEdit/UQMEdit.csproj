@@ -59,6 +59,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -88,6 +91,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\stars.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reload.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.Image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
