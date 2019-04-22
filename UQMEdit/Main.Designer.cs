@@ -128,14 +128,14 @@
 			this.label12 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
 			this.LanderUpgradesBox = new System.Windows.Forms.GroupBox();
-			this.checkBox6 = new System.Windows.Forms.CheckBox();
-			this.checkBox7 = new System.Windows.Forms.CheckBox();
-			this.checkBox8 = new System.Windows.Forms.CheckBox();
-			this.checkBox9 = new System.Windows.Forms.CheckBox();
-			this.checkBox5 = new System.Windows.Forms.CheckBox();
-			this.checkBox4 = new System.Windows.Forms.CheckBox();
-			this.checkBox3 = new System.Windows.Forms.CheckBox();
-			this.checkBox2 = new System.Windows.Forms.CheckBox();
+			this.IsBomb = new System.Windows.Forms.CheckBox();
+			this.Quake = new System.Windows.Forms.CheckBox();
+			this.Weapons = new System.Windows.Forms.CheckBox();
+			this.Resistant = new System.Windows.Forms.CheckBox();
+			this.Capacity = new System.Windows.Forms.CheckBox();
+			this.Speed = new System.Windows.Forms.CheckBox();
+			this.Lightning = new System.Windows.Forms.CheckBox();
+			this.HotSpot = new System.Windows.Forms.CheckBox();
 			this.label14 = new System.Windows.Forms.Label();
 			this.Landers = new System.Windows.Forms.NumericUpDown();
 			this.BioData = new System.Windows.Forms.NumericUpDown();
@@ -176,6 +176,9 @@
 			this.UniverseY = new System.Windows.Forms.NumericUpDown();
 			this.UniverseX = new System.Windows.Forms.NumericUpDown();
 			this.StarList = new System.Windows.Forms.ListBox();
+			this.MaxThrustLabel = new System.Windows.Forms.Label();
+			this.MaxJetsLabel = new System.Windows.Forms.Label();
+			this.MaxModulesLabel = new System.Windows.Forms.Label();
 			this.toolStrip1.SuspendLayout();
 			this.Tabs.SuspendLayout();
 			this.Summary.SuspendLayout();
@@ -287,6 +290,7 @@
 			// 
 			// ThrusterBox
 			// 
+			this.ThrusterBox.Controls.Add(this.MaxThrustLabel);
 			this.ThrusterBox.Controls.Add(this.MaxJets);
 			this.ThrusterBox.Controls.Add(this.Thruster10);
 			this.ThrusterBox.Controls.Add(this.Thruster09);
@@ -301,14 +305,14 @@
 			this.ThrusterBox.Controls.Add(this.Thruster00);
 			this.ThrusterBox.Location = new System.Drawing.Point(729, 6);
 			this.ThrusterBox.Name = "ThrusterBox";
-			this.ThrusterBox.Size = new System.Drawing.Size(65, 267);
+			this.ThrusterBox.Size = new System.Drawing.Size(65, 272);
 			this.ThrusterBox.TabIndex = 77;
 			this.ThrusterBox.TabStop = false;
 			this.ThrusterBox.Text = "AntiMat Thrusters";
 			// 
 			// MaxJets
 			// 
-			this.MaxJets.Location = new System.Drawing.Point(5, 247);
+			this.MaxJets.Location = new System.Drawing.Point(5, 251);
 			this.MaxJets.Name = "MaxJets";
 			this.MaxJets.Size = new System.Drawing.Size(15, 14);
 			this.MaxJets.TabIndex = 1;
@@ -317,7 +321,7 @@
 			// Thruster10
 			// 
 			this.Thruster10.AutoSize = true;
-			this.Thruster10.Location = new System.Drawing.Point(6, 227);
+			this.Thruster10.Location = new System.Drawing.Point(6, 231);
 			this.Thruster10.Name = "Thruster10";
 			this.Thruster10.Size = new System.Drawing.Size(15, 14);
 			this.Thruster10.TabIndex = 0;
@@ -326,7 +330,7 @@
 			// Thruster09
 			// 
 			this.Thruster09.AutoSize = true;
-			this.Thruster09.Location = new System.Drawing.Point(6, 207);
+			this.Thruster09.Location = new System.Drawing.Point(6, 211);
 			this.Thruster09.Name = "Thruster09";
 			this.Thruster09.Size = new System.Drawing.Size(15, 14);
 			this.Thruster09.TabIndex = 0;
@@ -335,7 +339,7 @@
 			// Thruster08
 			// 
 			this.Thruster08.AutoSize = true;
-			this.Thruster08.Location = new System.Drawing.Point(6, 187);
+			this.Thruster08.Location = new System.Drawing.Point(6, 191);
 			this.Thruster08.Name = "Thruster08";
 			this.Thruster08.Size = new System.Drawing.Size(15, 14);
 			this.Thruster08.TabIndex = 0;
@@ -344,7 +348,7 @@
 			// Thruster07
 			// 
 			this.Thruster07.AutoSize = true;
-			this.Thruster07.Location = new System.Drawing.Point(6, 167);
+			this.Thruster07.Location = new System.Drawing.Point(6, 171);
 			this.Thruster07.Name = "Thruster07";
 			this.Thruster07.Size = new System.Drawing.Size(15, 14);
 			this.Thruster07.TabIndex = 0;
@@ -353,7 +357,7 @@
 			// Thruster06
 			// 
 			this.Thruster06.AutoSize = true;
-			this.Thruster06.Location = new System.Drawing.Point(6, 147);
+			this.Thruster06.Location = new System.Drawing.Point(6, 151);
 			this.Thruster06.Name = "Thruster06";
 			this.Thruster06.Size = new System.Drawing.Size(15, 14);
 			this.Thruster06.TabIndex = 0;
@@ -362,7 +366,7 @@
 			// Thruster05
 			// 
 			this.Thruster05.AutoSize = true;
-			this.Thruster05.Location = new System.Drawing.Point(6, 127);
+			this.Thruster05.Location = new System.Drawing.Point(6, 131);
 			this.Thruster05.Name = "Thruster05";
 			this.Thruster05.Size = new System.Drawing.Size(15, 14);
 			this.Thruster05.TabIndex = 0;
@@ -371,7 +375,7 @@
 			// Thruster04
 			// 
 			this.Thruster04.AutoSize = true;
-			this.Thruster04.Location = new System.Drawing.Point(6, 107);
+			this.Thruster04.Location = new System.Drawing.Point(6, 111);
 			this.Thruster04.Name = "Thruster04";
 			this.Thruster04.Size = new System.Drawing.Size(15, 14);
 			this.Thruster04.TabIndex = 0;
@@ -380,7 +384,7 @@
 			// Thruster03
 			// 
 			this.Thruster03.AutoSize = true;
-			this.Thruster03.Location = new System.Drawing.Point(6, 87);
+			this.Thruster03.Location = new System.Drawing.Point(6, 91);
 			this.Thruster03.Name = "Thruster03";
 			this.Thruster03.Size = new System.Drawing.Size(15, 14);
 			this.Thruster03.TabIndex = 0;
@@ -415,6 +419,7 @@
 			// 
 			// JetsBox
 			// 
+			this.JetsBox.Controls.Add(this.MaxJetsLabel);
 			this.JetsBox.Controls.Add(this.Jets07);
 			this.JetsBox.Controls.Add(this.MaxThrusters);
 			this.JetsBox.Controls.Add(this.Jets06);
@@ -843,6 +848,7 @@
 			// 
 			// ModulesBox
 			// 
+			this.ModulesBox.Controls.Add(this.MaxModulesLabel);
 			this.ModulesBox.Controls.Add(this.UpgradeToMax);
 			this.ModulesBox.Controls.Add(this.comboBox11);
 			this.ModulesBox.Controls.Add(this.comboBox12);
@@ -885,7 +891,7 @@
 			// 
 			// UpgradeToMax
 			// 
-			this.UpgradeToMax.Location = new System.Drawing.Point(127, 8);
+			this.UpgradeToMax.Location = new System.Drawing.Point(182, 8);
 			this.UpgradeToMax.Name = "UpgradeToMax";
 			this.UpgradeToMax.Size = new System.Drawing.Size(15, 14);
 			this.UpgradeToMax.TabIndex = 0;
@@ -1306,14 +1312,14 @@
 			// 
 			// LanderUpgradesBox
 			// 
-			this.LanderUpgradesBox.Controls.Add(this.checkBox6);
-			this.LanderUpgradesBox.Controls.Add(this.checkBox7);
-			this.LanderUpgradesBox.Controls.Add(this.checkBox8);
-			this.LanderUpgradesBox.Controls.Add(this.checkBox9);
-			this.LanderUpgradesBox.Controls.Add(this.checkBox5);
-			this.LanderUpgradesBox.Controls.Add(this.checkBox4);
-			this.LanderUpgradesBox.Controls.Add(this.checkBox3);
-			this.LanderUpgradesBox.Controls.Add(this.checkBox2);
+			this.LanderUpgradesBox.Controls.Add(this.IsBomb);
+			this.LanderUpgradesBox.Controls.Add(this.Quake);
+			this.LanderUpgradesBox.Controls.Add(this.Weapons);
+			this.LanderUpgradesBox.Controls.Add(this.Resistant);
+			this.LanderUpgradesBox.Controls.Add(this.Capacity);
+			this.LanderUpgradesBox.Controls.Add(this.Speed);
+			this.LanderUpgradesBox.Controls.Add(this.Lightning);
+			this.LanderUpgradesBox.Controls.Add(this.HotSpot);
 			this.LanderUpgradesBox.Location = new System.Drawing.Point(6, 175);
 			this.LanderUpgradesBox.Name = "LanderUpgradesBox";
 			this.LanderUpgradesBox.Size = new System.Drawing.Size(152, 75);
@@ -1321,101 +1327,101 @@
 			this.LanderUpgradesBox.TabStop = false;
 			this.LanderUpgradesBox.Text = "Lander Upgrades";
 			// 
-			// checkBox6
+			// IsBomb
 			// 
-			this.checkBox6.AutoCheck = false;
-			this.checkBox6.AutoSize = true;
-			this.checkBox6.Enabled = false;
-			this.checkBox6.Location = new System.Drawing.Point(76, 55);
-			this.checkBox6.Name = "checkBox6";
-			this.checkBox6.Size = new System.Drawing.Size(64, 17);
-			this.checkBox6.TabIndex = 8;
-			this.checkBox6.Text = "Is Bomb";
-			this.checkBox6.UseVisualStyleBackColor = true;
+			this.IsBomb.AutoCheck = false;
+			this.IsBomb.AutoSize = true;
+			this.IsBomb.Enabled = false;
+			this.IsBomb.Location = new System.Drawing.Point(76, 55);
+			this.IsBomb.Name = "IsBomb";
+			this.IsBomb.Size = new System.Drawing.Size(64, 17);
+			this.IsBomb.TabIndex = 8;
+			this.IsBomb.Text = "Is Bomb";
+			this.IsBomb.UseVisualStyleBackColor = true;
 			// 
-			// checkBox7
+			// Quake
 			// 
-			this.checkBox7.AutoCheck = false;
-			this.checkBox7.AutoSize = true;
-			this.checkBox7.Enabled = false;
-			this.checkBox7.Location = new System.Drawing.Point(76, 41);
-			this.checkBox7.Name = "checkBox7";
-			this.checkBox7.Size = new System.Drawing.Size(58, 17);
-			this.checkBox7.TabIndex = 7;
-			this.checkBox7.Text = "Quake";
-			this.checkBox7.UseVisualStyleBackColor = true;
+			this.Quake.AutoCheck = false;
+			this.Quake.AutoSize = true;
+			this.Quake.Enabled = false;
+			this.Quake.Location = new System.Drawing.Point(76, 41);
+			this.Quake.Name = "Quake";
+			this.Quake.Size = new System.Drawing.Size(58, 17);
+			this.Quake.TabIndex = 7;
+			this.Quake.Text = "Quake";
+			this.Quake.UseVisualStyleBackColor = true;
 			// 
-			// checkBox8
+			// Weapons
 			// 
-			this.checkBox8.AutoCheck = false;
-			this.checkBox8.AutoSize = true;
-			this.checkBox8.Enabled = false;
-			this.checkBox8.Location = new System.Drawing.Point(76, 27);
-			this.checkBox8.Name = "checkBox8";
-			this.checkBox8.Size = new System.Drawing.Size(72, 17);
-			this.checkBox8.TabIndex = 6;
-			this.checkBox8.Text = "Weapons";
-			this.checkBox8.UseVisualStyleBackColor = true;
+			this.Weapons.AutoCheck = false;
+			this.Weapons.AutoSize = true;
+			this.Weapons.Enabled = false;
+			this.Weapons.Location = new System.Drawing.Point(76, 27);
+			this.Weapons.Name = "Weapons";
+			this.Weapons.Size = new System.Drawing.Size(72, 17);
+			this.Weapons.TabIndex = 6;
+			this.Weapons.Text = "Weapons";
+			this.Weapons.UseVisualStyleBackColor = true;
 			// 
-			// checkBox9
+			// Resistant
 			// 
-			this.checkBox9.AutoCheck = false;
-			this.checkBox9.AutoSize = true;
-			this.checkBox9.Enabled = false;
-			this.checkBox9.Location = new System.Drawing.Point(76, 13);
-			this.checkBox9.Name = "checkBox9";
-			this.checkBox9.Size = new System.Drawing.Size(70, 17);
-			this.checkBox9.TabIndex = 5;
-			this.checkBox9.Text = "Resistant";
-			this.checkBox9.UseVisualStyleBackColor = true;
+			this.Resistant.AutoCheck = false;
+			this.Resistant.AutoSize = true;
+			this.Resistant.Enabled = false;
+			this.Resistant.Location = new System.Drawing.Point(76, 13);
+			this.Resistant.Name = "Resistant";
+			this.Resistant.Size = new System.Drawing.Size(70, 17);
+			this.Resistant.TabIndex = 5;
+			this.Resistant.Text = "Resistant";
+			this.Resistant.UseVisualStyleBackColor = true;
 			// 
-			// checkBox5
+			// Capacity
 			// 
-			this.checkBox5.AutoCheck = false;
-			this.checkBox5.AutoSize = true;
-			this.checkBox5.Enabled = false;
-			this.checkBox5.Location = new System.Drawing.Point(9, 55);
-			this.checkBox5.Name = "checkBox5";
-			this.checkBox5.Size = new System.Drawing.Size(67, 17);
-			this.checkBox5.TabIndex = 4;
-			this.checkBox5.Text = "Capacity";
-			this.checkBox5.UseVisualStyleBackColor = true;
+			this.Capacity.AutoCheck = false;
+			this.Capacity.AutoSize = true;
+			this.Capacity.Enabled = false;
+			this.Capacity.Location = new System.Drawing.Point(9, 55);
+			this.Capacity.Name = "Capacity";
+			this.Capacity.Size = new System.Drawing.Size(67, 17);
+			this.Capacity.TabIndex = 4;
+			this.Capacity.Text = "Capacity";
+			this.Capacity.UseVisualStyleBackColor = true;
 			// 
-			// checkBox4
+			// Speed
 			// 
-			this.checkBox4.AutoCheck = false;
-			this.checkBox4.AutoSize = true;
-			this.checkBox4.Enabled = false;
-			this.checkBox4.Location = new System.Drawing.Point(9, 41);
-			this.checkBox4.Name = "checkBox4";
-			this.checkBox4.Size = new System.Drawing.Size(57, 17);
-			this.checkBox4.TabIndex = 3;
-			this.checkBox4.Text = "Speed";
-			this.checkBox4.UseVisualStyleBackColor = true;
+			this.Speed.AutoCheck = false;
+			this.Speed.AutoSize = true;
+			this.Speed.Enabled = false;
+			this.Speed.Location = new System.Drawing.Point(9, 41);
+			this.Speed.Name = "Speed";
+			this.Speed.Size = new System.Drawing.Size(57, 17);
+			this.Speed.TabIndex = 3;
+			this.Speed.Text = "Speed";
+			this.Speed.UseVisualStyleBackColor = true;
 			// 
-			// checkBox3
+			// Lightning
 			// 
-			this.checkBox3.AutoCheck = false;
-			this.checkBox3.AutoSize = true;
-			this.checkBox3.Enabled = false;
-			this.checkBox3.Location = new System.Drawing.Point(9, 27);
-			this.checkBox3.Name = "checkBox3";
-			this.checkBox3.Size = new System.Drawing.Size(69, 17);
-			this.checkBox3.TabIndex = 2;
-			this.checkBox3.Text = "Lightning";
-			this.checkBox3.UseVisualStyleBackColor = true;
+			this.Lightning.AutoCheck = false;
+			this.Lightning.AutoSize = true;
+			this.Lightning.Enabled = false;
+			this.Lightning.Location = new System.Drawing.Point(9, 27);
+			this.Lightning.Name = "Lightning";
+			this.Lightning.Size = new System.Drawing.Size(69, 17);
+			this.Lightning.TabIndex = 2;
+			this.Lightning.Text = "Lightning";
+			this.Lightning.UseVisualStyleBackColor = true;
 			// 
-			// checkBox2
+			// HotSpot
 			// 
-			this.checkBox2.AutoCheck = false;
-			this.checkBox2.AutoSize = true;
-			this.checkBox2.Enabled = false;
-			this.checkBox2.Location = new System.Drawing.Point(9, 13);
-			this.checkBox2.Name = "checkBox2";
-			this.checkBox2.Size = new System.Drawing.Size(68, 17);
-			this.checkBox2.TabIndex = 1;
-			this.checkBox2.Text = "Hot Spot";
-			this.checkBox2.UseVisualStyleBackColor = true;
+			this.HotSpot.AutoCheck = false;
+			this.HotSpot.AutoSize = true;
+			this.HotSpot.Enabled = false;
+			this.HotSpot.Location = new System.Drawing.Point(9, 13);
+			this.HotSpot.Name = "HotSpot";
+			this.HotSpot.Size = new System.Drawing.Size(68, 17);
+			this.HotSpot.TabIndex = 1;
+			this.HotSpot.Text = "Hot Spot";
+			this.HotSpot.UseVisualStyleBackColor = true;
 			// 
 			// label14
 			// 
@@ -1944,6 +1950,33 @@
 			this.StarList.Size = new System.Drawing.Size(689, 457);
 			this.StarList.TabIndex = 0;
 			// 
+			// MaxThrustLabel
+			// 
+			this.MaxThrustLabel.AutoSize = true;
+			this.MaxThrustLabel.Location = new System.Drawing.Point(26, 252);
+			this.MaxThrustLabel.Name = "MaxThrustLabel";
+			this.MaxThrustLabel.Size = new System.Drawing.Size(27, 13);
+			this.MaxThrustLabel.TabIndex = 2;
+			this.MaxThrustLabel.Text = "Max";
+			// 
+			// MaxJetsLabel
+			// 
+			this.MaxJetsLabel.AutoSize = true;
+			this.MaxJetsLabel.Location = new System.Drawing.Point(26, 192);
+			this.MaxJetsLabel.Name = "MaxJetsLabel";
+			this.MaxJetsLabel.Size = new System.Drawing.Size(27, 13);
+			this.MaxJetsLabel.TabIndex = 2;
+			this.MaxJetsLabel.Text = "Max";
+			// 
+			// MaxModulesLabel
+			// 
+			this.MaxModulesLabel.AutoSize = true;
+			this.MaxModulesLabel.Location = new System.Drawing.Point(149, 9);
+			this.MaxModulesLabel.Name = "MaxModulesLabel";
+			this.MaxModulesLabel.Size = new System.Drawing.Size(27, 13);
+			this.MaxModulesLabel.TabIndex = 32;
+			this.MaxModulesLabel.Text = "Max";
+			// 
 			// Main
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2057,14 +2090,14 @@
 		private System.Windows.Forms.Label label27;
 		public System.Windows.Forms.TextBox CustomSeed;
 		public System.Windows.Forms.GroupBox LanderUpgradesBox;
-		public System.Windows.Forms.CheckBox checkBox6;
-		public System.Windows.Forms.CheckBox checkBox7;
-		public System.Windows.Forms.CheckBox checkBox8;
-		public System.Windows.Forms.CheckBox checkBox9;
-		public System.Windows.Forms.CheckBox checkBox5;
-		public System.Windows.Forms.CheckBox checkBox4;
-		public System.Windows.Forms.CheckBox checkBox3;
-		public System.Windows.Forms.CheckBox checkBox2;
+		public System.Windows.Forms.CheckBox IsBomb;
+		public System.Windows.Forms.CheckBox Quake;
+		public System.Windows.Forms.CheckBox Weapons;
+		public System.Windows.Forms.CheckBox Resistant;
+		public System.Windows.Forms.CheckBox Capacity;
+		public System.Windows.Forms.CheckBox Speed;
+		public System.Windows.Forms.CheckBox Lightning;
+		public System.Windows.Forms.CheckBox HotSpot;
 		public System.Windows.Forms.GroupBox ShipStatusBox;
 		public System.Windows.Forms.TextBox Credits;
 		private System.Windows.Forms.Label label58;
@@ -2142,27 +2175,30 @@
 		private System.Windows.Forms.CheckBox Spoilers;
 		private System.Windows.Forms.GroupBox ThrusterBox;
 		private System.Windows.Forms.Button MaxThrusters;
-		private System.Windows.Forms.CheckBox Thruster10;
-		private System.Windows.Forms.CheckBox Thruster09;
-		private System.Windows.Forms.CheckBox Thruster08;
-		private System.Windows.Forms.CheckBox Thruster07;
-		private System.Windows.Forms.CheckBox Thruster06;
-		private System.Windows.Forms.CheckBox Thruster05;
-		private System.Windows.Forms.CheckBox Thruster04;
-		private System.Windows.Forms.CheckBox Thruster03;
-		private System.Windows.Forms.CheckBox Thruster02;
-		private System.Windows.Forms.CheckBox Thruster01;
-		private System.Windows.Forms.CheckBox Thruster00;
 		private System.Windows.Forms.GroupBox JetsBox;
 		private System.Windows.Forms.Button MaxJets;
-		private System.Windows.Forms.CheckBox Jets07;
-		private System.Windows.Forms.CheckBox Jets06;
-		private System.Windows.Forms.CheckBox Jets05;
-		private System.Windows.Forms.CheckBox Jets04;
-		private System.Windows.Forms.CheckBox Jets03;
-		private System.Windows.Forms.CheckBox Jets02;
-		private System.Windows.Forms.CheckBox Jets01;
-		private System.Windows.Forms.CheckBox Jets00;
+		public System.Windows.Forms.CheckBox Thruster10;
+		public System.Windows.Forms.CheckBox Thruster09;
+		public System.Windows.Forms.CheckBox Thruster08;
+		public System.Windows.Forms.CheckBox Thruster07;
+		public System.Windows.Forms.CheckBox Thruster06;
+		public System.Windows.Forms.CheckBox Thruster05;
+		public System.Windows.Forms.CheckBox Thruster04;
+		public System.Windows.Forms.CheckBox Thruster03;
+		public System.Windows.Forms.CheckBox Thruster02;
+		public System.Windows.Forms.CheckBox Thruster01;
+		public System.Windows.Forms.CheckBox Thruster00;
+		public System.Windows.Forms.CheckBox Jets07;
+		public System.Windows.Forms.CheckBox Jets06;
+		public System.Windows.Forms.CheckBox Jets05;
+		public System.Windows.Forms.CheckBox Jets04;
+		public System.Windows.Forms.CheckBox Jets03;
+		public System.Windows.Forms.CheckBox Jets02;
+		public System.Windows.Forms.CheckBox Jets01;
+		public System.Windows.Forms.CheckBox Jets00;
+		private System.Windows.Forms.Label MaxThrustLabel;
+		private System.Windows.Forms.Label MaxJetsLabel;
+		private System.Windows.Forms.Label MaxModulesLabel;
 	}
 }
 
