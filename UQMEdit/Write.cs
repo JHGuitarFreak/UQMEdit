@@ -2,7 +2,7 @@
 
 namespace UQMEdit
 {
-	class Write
+	partial class Write
 	{
 		public static FileStream Stream;
 		public static Main Window;
@@ -16,8 +16,8 @@ namespace UQMEdit
 			FileBuffer = new byte[FileSize];    // create buffer
 			Window = WindowRef;
 
-			//Summary();
-			//Coordinates();
+			Summary();
+			Coordinates();
 
 			Stream.Close();
 			Stream.Dispose();
