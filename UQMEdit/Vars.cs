@@ -7,9 +7,9 @@ namespace UQMEdit
 {
 	class Vars
 	{
-		public const string SaveCheckerStrHD = "superbutcherX !";
-		public const int SaveFileTag = 0x01534d55;     // "UMS\x01": UQM Save version 1
-		public const int MegaModTag = 0x4147454D;       // "MEGA"
+		public const int SaveTagHD = 0x65707573;	// "supe"
+		public const int SaveFileTag = 0x01534d55;	// "UMS\x01": UQM Save version 1
+		public const int MegaModTag = 0x4147454D;	// "MEGA"
 
 		// HS Coord Vars
 		public const int MaxUniverse = 9999;
@@ -21,46 +21,40 @@ namespace UQMEdit
 		public const int LogUnitsXOld = 99840;
 		public const int LogUnitsYOld = 12000;
 
-		public const byte SaveNameSize = 64;
+		//public const byte SaveNameSize = 64;
 
-		public static string[] deviceName = new string[]
+		public static string[] DeviceName = new string[]
 		{
-			"Portal Spawner #1",
+			"Quasi Portal",
 			"Talking Pet",
 			"Utwig Bomb",
 			"Sun Device",
 			"Rosy Sphere",
 			"Aqua Helix",
 			"Clear Spindle",
-			"Ultron (Broken)",
-			"Ultron (Semi-repaired)",
-			"Ultron (Mostly repaired)",
-			"Ultron (Complete)",
+			"Broken Ultron",
+			"Broken Ultron (Semi-repaired)",
+			"Broken Ultron (Mostly repaired)",
+			"Perfect Ultron",
 			"Shofixti Maidens",
-			"Umgah HyperCaster",
-			"Burvixese HyperCaster",
-			"Data Plate #1",
-			"Data Plate #2",
-			"Data Plate #3",
+			"Umgah Caster",
+			"Burvixese Caster",
+			"1 Data Plate",
+			"2 Data Plate",
+			"3 Data Plate",
 			"Taalo Shield",
-			"Egg Case Fragment #1",
-			"Egg Case Fragment #2",
-			"Egg Case Fragment #3",
+			"Egg Case",
+			"Egg Case",
+			"Egg Case",
 			"Syreen Shuttle",
 			"VUX Beast",
-			"Destruction Code",
-			"Ur-Quan Warp Pod",
-			"Artifact #2",
-			"Artifact #3",
-			"Moon Base",
-			"Talking Pet (Marked)",
-			"Sun Device (Marked)",
-			"Burvixese HyperCaster (Marked)",
-			"Taalo Shield (Marked)",
-			"Egg Case Fragment (Marked)",
-			"Empty (Marked)"
+			"Destruct Code",
+			"Warp Pod",
+			"Wimbli's Trident",
+			"Glowing Rod",
+			"Moon Base"
 		};
-		public static string[] escortNames = new string[]
+		public static string[] ShipNames = new string[]
 		{
 			"Arilou Skiff",
 			"Chmmr Avatar",
@@ -73,23 +67,23 @@ namespace UQMEdit
 			"Thraddash Torch",
 			"Utwig Jugger",
 			"VUX Intruder",
-			"Yehat Terminator Ro",
+			"Yehat Terminator",
 			"Melnorme Trader",
 			"Druuge Mauler",
 			"Ilwrath Avenger",
 			"Mycon Podship",
 			"Slylandro Probe",
 			"Umgah Drone",
-			"Kzer-Za Dreadnought",
-			"ZFP Stinger",
+			"Ur-Quan Dreadnought",
+			"Zoq-Fot-Pik Stinger",
 			"Syreen Penetrator",
 			"Kohr-Ah Marauder",
-			"Yehat Terminator Re",
+			"Yehat Terminator",
 			"Probe/Samatra",
 			"Empty"
 		};
 
-		public static string[] statusName = new string[]
+		public static string[] StatusName = new string[]
 		{
 			"Super Melee",
 			"Last Battle",
