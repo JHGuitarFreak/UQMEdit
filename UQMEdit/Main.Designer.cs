@@ -33,28 +33,30 @@
 			this.Tabs = new System.Windows.Forms.TabControl();
 			this.Summary = new System.Windows.Forms.TabPage();
 			this.ThrusterBox = new System.Windows.Forms.GroupBox();
+			this.MaxThrustLabel = new System.Windows.Forms.Label();
 			this.MaxJets = new System.Windows.Forms.Button();
 			this.Thruster10 = new System.Windows.Forms.CheckBox();
-			this.Thruster09 = new System.Windows.Forms.CheckBox();
-			this.Thruster08 = new System.Windows.Forms.CheckBox();
-			this.Thruster07 = new System.Windows.Forms.CheckBox();
-			this.Thruster06 = new System.Windows.Forms.CheckBox();
-			this.Thruster05 = new System.Windows.Forms.CheckBox();
-			this.Thruster04 = new System.Windows.Forms.CheckBox();
-			this.Thruster03 = new System.Windows.Forms.CheckBox();
-			this.Thruster02 = new System.Windows.Forms.CheckBox();
-			this.Thruster01 = new System.Windows.Forms.CheckBox();
-			this.Thruster00 = new System.Windows.Forms.CheckBox();
+			this.Thruster9 = new System.Windows.Forms.CheckBox();
+			this.Thruster8 = new System.Windows.Forms.CheckBox();
+			this.Thruster7 = new System.Windows.Forms.CheckBox();
+			this.Thruster6 = new System.Windows.Forms.CheckBox();
+			this.Thruster5 = new System.Windows.Forms.CheckBox();
+			this.Thruster4 = new System.Windows.Forms.CheckBox();
+			this.Thruster3 = new System.Windows.Forms.CheckBox();
+			this.Thruster2 = new System.Windows.Forms.CheckBox();
+			this.Thruster1 = new System.Windows.Forms.CheckBox();
+			this.Thruster0 = new System.Windows.Forms.CheckBox();
 			this.JetsBox = new System.Windows.Forms.GroupBox();
-			this.Jets07 = new System.Windows.Forms.CheckBox();
+			this.MaxJetsLabel = new System.Windows.Forms.Label();
+			this.Jets7 = new System.Windows.Forms.CheckBox();
 			this.MaxThrusters = new System.Windows.Forms.Button();
-			this.Jets06 = new System.Windows.Forms.CheckBox();
-			this.Jets05 = new System.Windows.Forms.CheckBox();
-			this.Jets04 = new System.Windows.Forms.CheckBox();
-			this.Jets03 = new System.Windows.Forms.CheckBox();
-			this.Jets02 = new System.Windows.Forms.CheckBox();
-			this.Jets01 = new System.Windows.Forms.CheckBox();
-			this.Jets00 = new System.Windows.Forms.CheckBox();
+			this.Jets6 = new System.Windows.Forms.CheckBox();
+			this.Jets5 = new System.Windows.Forms.CheckBox();
+			this.Jets4 = new System.Windows.Forms.CheckBox();
+			this.Jets3 = new System.Windows.Forms.CheckBox();
+			this.Jets2 = new System.Windows.Forms.CheckBox();
+			this.Jets1 = new System.Windows.Forms.CheckBox();
+			this.Jets0 = new System.Windows.Forms.CheckBox();
 			this.SeedBox = new System.Windows.Forms.GroupBox();
 			this.CustomSeed = new System.Windows.Forms.TextBox();
 			this.ShipNameBox = new System.Windows.Forms.GroupBox();
@@ -87,6 +89,7 @@
 			this.label69 = new System.Windows.Forms.Label();
 			this.label70 = new System.Windows.Forms.Label();
 			this.ModulesBox = new System.Windows.Forms.GroupBox();
+			this.MaxModulesLabel = new System.Windows.Forms.Label();
 			this.UpgradeToMax = new System.Windows.Forms.Button();
 			this.comboBox11 = new System.Windows.Forms.ComboBox();
 			this.comboBox12 = new System.Windows.Forms.ComboBox();
@@ -176,9 +179,6 @@
 			this.UniverseY = new System.Windows.Forms.NumericUpDown();
 			this.UniverseX = new System.Windows.Forms.NumericUpDown();
 			this.StarList = new System.Windows.Forms.ListBox();
-			this.MaxThrustLabel = new System.Windows.Forms.Label();
-			this.MaxJetsLabel = new System.Windows.Forms.Label();
-			this.MaxModulesLabel = new System.Windows.Forms.Label();
 			this.toolStrip1.SuspendLayout();
 			this.Tabs.SuspendLayout();
 			this.Summary.SuspendLayout();
@@ -225,7 +225,7 @@
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip1.Name = "toolStrip1";
 			this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-			this.toolStrip1.Size = new System.Drawing.Size(876, 25);
+			this.toolStrip1.Size = new System.Drawing.Size(873, 25);
 			this.toolStrip1.TabIndex = 0;
 			this.toolStrip1.Text = "toolStrip1";
 			// 
@@ -263,10 +263,11 @@
 			// 
 			this.Tabs.Controls.Add(this.Summary);
 			this.Tabs.Controls.Add(this.Coordinates);
+			this.Tabs.Enabled = false;
 			this.Tabs.Location = new System.Drawing.Point(2, 28);
 			this.Tabs.Name = "Tabs";
 			this.Tabs.SelectedIndex = 0;
-			this.Tabs.Size = new System.Drawing.Size(874, 496);
+			this.Tabs.Size = new System.Drawing.Size(871, 500);
 			this.Tabs.TabIndex = 1;
 			// 
 			// Summary
@@ -283,7 +284,7 @@
 			this.Summary.Location = new System.Drawing.Point(4, 22);
 			this.Summary.Name = "Summary";
 			this.Summary.Padding = new System.Windows.Forms.Padding(3);
-			this.Summary.Size = new System.Drawing.Size(866, 470);
+			this.Summary.Size = new System.Drawing.Size(863, 474);
 			this.Summary.TabIndex = 0;
 			this.Summary.Text = "Summary";
 			this.Summary.UseVisualStyleBackColor = true;
@@ -293,22 +294,31 @@
 			this.ThrusterBox.Controls.Add(this.MaxThrustLabel);
 			this.ThrusterBox.Controls.Add(this.MaxJets);
 			this.ThrusterBox.Controls.Add(this.Thruster10);
-			this.ThrusterBox.Controls.Add(this.Thruster09);
-			this.ThrusterBox.Controls.Add(this.Thruster08);
-			this.ThrusterBox.Controls.Add(this.Thruster07);
-			this.ThrusterBox.Controls.Add(this.Thruster06);
-			this.ThrusterBox.Controls.Add(this.Thruster05);
-			this.ThrusterBox.Controls.Add(this.Thruster04);
-			this.ThrusterBox.Controls.Add(this.Thruster03);
-			this.ThrusterBox.Controls.Add(this.Thruster02);
-			this.ThrusterBox.Controls.Add(this.Thruster01);
-			this.ThrusterBox.Controls.Add(this.Thruster00);
-			this.ThrusterBox.Location = new System.Drawing.Point(729, 6);
+			this.ThrusterBox.Controls.Add(this.Thruster9);
+			this.ThrusterBox.Controls.Add(this.Thruster8);
+			this.ThrusterBox.Controls.Add(this.Thruster7);
+			this.ThrusterBox.Controls.Add(this.Thruster6);
+			this.ThrusterBox.Controls.Add(this.Thruster5);
+			this.ThrusterBox.Controls.Add(this.Thruster4);
+			this.ThrusterBox.Controls.Add(this.Thruster3);
+			this.ThrusterBox.Controls.Add(this.Thruster2);
+			this.ThrusterBox.Controls.Add(this.Thruster1);
+			this.ThrusterBox.Controls.Add(this.Thruster0);
+			this.ThrusterBox.Location = new System.Drawing.Point(727, 6);
 			this.ThrusterBox.Name = "ThrusterBox";
 			this.ThrusterBox.Size = new System.Drawing.Size(65, 272);
 			this.ThrusterBox.TabIndex = 77;
 			this.ThrusterBox.TabStop = false;
 			this.ThrusterBox.Text = "AntiMat Thrusters";
+			// 
+			// MaxThrustLabel
+			// 
+			this.MaxThrustLabel.AutoSize = true;
+			this.MaxThrustLabel.Location = new System.Drawing.Point(26, 252);
+			this.MaxThrustLabel.Name = "MaxThrustLabel";
+			this.MaxThrustLabel.Size = new System.Drawing.Size(27, 13);
+			this.MaxThrustLabel.TabIndex = 2;
+			this.MaxThrustLabel.Text = "Max";
 			// 
 			// MaxJets
 			// 
@@ -327,123 +337,132 @@
 			this.Thruster10.TabIndex = 0;
 			this.Thruster10.UseVisualStyleBackColor = true;
 			// 
-			// Thruster09
+			// Thruster9
 			// 
-			this.Thruster09.AutoSize = true;
-			this.Thruster09.Location = new System.Drawing.Point(6, 211);
-			this.Thruster09.Name = "Thruster09";
-			this.Thruster09.Size = new System.Drawing.Size(15, 14);
-			this.Thruster09.TabIndex = 0;
-			this.Thruster09.UseVisualStyleBackColor = true;
+			this.Thruster9.AutoSize = true;
+			this.Thruster9.Location = new System.Drawing.Point(6, 211);
+			this.Thruster9.Name = "Thruster9";
+			this.Thruster9.Size = new System.Drawing.Size(15, 14);
+			this.Thruster9.TabIndex = 0;
+			this.Thruster9.UseVisualStyleBackColor = true;
 			// 
-			// Thruster08
+			// Thruster8
 			// 
-			this.Thruster08.AutoSize = true;
-			this.Thruster08.Location = new System.Drawing.Point(6, 191);
-			this.Thruster08.Name = "Thruster08";
-			this.Thruster08.Size = new System.Drawing.Size(15, 14);
-			this.Thruster08.TabIndex = 0;
-			this.Thruster08.UseVisualStyleBackColor = true;
+			this.Thruster8.AutoSize = true;
+			this.Thruster8.Location = new System.Drawing.Point(6, 191);
+			this.Thruster8.Name = "Thruster8";
+			this.Thruster8.Size = new System.Drawing.Size(15, 14);
+			this.Thruster8.TabIndex = 0;
+			this.Thruster8.UseVisualStyleBackColor = true;
 			// 
-			// Thruster07
+			// Thruster7
 			// 
-			this.Thruster07.AutoSize = true;
-			this.Thruster07.Location = new System.Drawing.Point(6, 171);
-			this.Thruster07.Name = "Thruster07";
-			this.Thruster07.Size = new System.Drawing.Size(15, 14);
-			this.Thruster07.TabIndex = 0;
-			this.Thruster07.UseVisualStyleBackColor = true;
+			this.Thruster7.AutoSize = true;
+			this.Thruster7.Location = new System.Drawing.Point(6, 171);
+			this.Thruster7.Name = "Thruster7";
+			this.Thruster7.Size = new System.Drawing.Size(15, 14);
+			this.Thruster7.TabIndex = 0;
+			this.Thruster7.UseVisualStyleBackColor = true;
 			// 
-			// Thruster06
+			// Thruster6
 			// 
-			this.Thruster06.AutoSize = true;
-			this.Thruster06.Location = new System.Drawing.Point(6, 151);
-			this.Thruster06.Name = "Thruster06";
-			this.Thruster06.Size = new System.Drawing.Size(15, 14);
-			this.Thruster06.TabIndex = 0;
-			this.Thruster06.UseVisualStyleBackColor = true;
+			this.Thruster6.AutoSize = true;
+			this.Thruster6.Location = new System.Drawing.Point(6, 151);
+			this.Thruster6.Name = "Thruster6";
+			this.Thruster6.Size = new System.Drawing.Size(15, 14);
+			this.Thruster6.TabIndex = 0;
+			this.Thruster6.UseVisualStyleBackColor = true;
 			// 
-			// Thruster05
+			// Thruster5
 			// 
-			this.Thruster05.AutoSize = true;
-			this.Thruster05.Location = new System.Drawing.Point(6, 131);
-			this.Thruster05.Name = "Thruster05";
-			this.Thruster05.Size = new System.Drawing.Size(15, 14);
-			this.Thruster05.TabIndex = 0;
-			this.Thruster05.UseVisualStyleBackColor = true;
+			this.Thruster5.AutoSize = true;
+			this.Thruster5.Location = new System.Drawing.Point(6, 131);
+			this.Thruster5.Name = "Thruster5";
+			this.Thruster5.Size = new System.Drawing.Size(15, 14);
+			this.Thruster5.TabIndex = 0;
+			this.Thruster5.UseVisualStyleBackColor = true;
 			// 
-			// Thruster04
+			// Thruster4
 			// 
-			this.Thruster04.AutoSize = true;
-			this.Thruster04.Location = new System.Drawing.Point(6, 111);
-			this.Thruster04.Name = "Thruster04";
-			this.Thruster04.Size = new System.Drawing.Size(15, 14);
-			this.Thruster04.TabIndex = 0;
-			this.Thruster04.UseVisualStyleBackColor = true;
+			this.Thruster4.AutoSize = true;
+			this.Thruster4.Location = new System.Drawing.Point(6, 111);
+			this.Thruster4.Name = "Thruster4";
+			this.Thruster4.Size = new System.Drawing.Size(15, 14);
+			this.Thruster4.TabIndex = 0;
+			this.Thruster4.UseVisualStyleBackColor = true;
 			// 
-			// Thruster03
+			// Thruster3
 			// 
-			this.Thruster03.AutoSize = true;
-			this.Thruster03.Location = new System.Drawing.Point(6, 91);
-			this.Thruster03.Name = "Thruster03";
-			this.Thruster03.Size = new System.Drawing.Size(15, 14);
-			this.Thruster03.TabIndex = 0;
-			this.Thruster03.UseVisualStyleBackColor = true;
+			this.Thruster3.AutoSize = true;
+			this.Thruster3.Location = new System.Drawing.Point(6, 91);
+			this.Thruster3.Name = "Thruster3";
+			this.Thruster3.Size = new System.Drawing.Size(15, 14);
+			this.Thruster3.TabIndex = 0;
+			this.Thruster3.UseVisualStyleBackColor = true;
 			// 
-			// Thruster02
+			// Thruster2
 			// 
-			this.Thruster02.AutoSize = true;
-			this.Thruster02.Location = new System.Drawing.Point(6, 71);
-			this.Thruster02.Name = "Thruster02";
-			this.Thruster02.Size = new System.Drawing.Size(15, 14);
-			this.Thruster02.TabIndex = 0;
-			this.Thruster02.UseVisualStyleBackColor = true;
+			this.Thruster2.AutoSize = true;
+			this.Thruster2.Location = new System.Drawing.Point(6, 71);
+			this.Thruster2.Name = "Thruster2";
+			this.Thruster2.Size = new System.Drawing.Size(15, 14);
+			this.Thruster2.TabIndex = 0;
+			this.Thruster2.UseVisualStyleBackColor = true;
 			// 
-			// Thruster01
+			// Thruster1
 			// 
-			this.Thruster01.AutoSize = true;
-			this.Thruster01.Location = new System.Drawing.Point(6, 51);
-			this.Thruster01.Name = "Thruster01";
-			this.Thruster01.Size = new System.Drawing.Size(15, 14);
-			this.Thruster01.TabIndex = 0;
-			this.Thruster01.UseVisualStyleBackColor = true;
+			this.Thruster1.AutoSize = true;
+			this.Thruster1.Location = new System.Drawing.Point(6, 51);
+			this.Thruster1.Name = "Thruster1";
+			this.Thruster1.Size = new System.Drawing.Size(15, 14);
+			this.Thruster1.TabIndex = 0;
+			this.Thruster1.UseVisualStyleBackColor = true;
 			// 
-			// Thruster00
+			// Thruster0
 			// 
-			this.Thruster00.AutoSize = true;
-			this.Thruster00.Location = new System.Drawing.Point(6, 31);
-			this.Thruster00.Name = "Thruster00";
-			this.Thruster00.Size = new System.Drawing.Size(15, 14);
-			this.Thruster00.TabIndex = 0;
-			this.Thruster00.UseVisualStyleBackColor = true;
+			this.Thruster0.AutoSize = true;
+			this.Thruster0.Location = new System.Drawing.Point(6, 31);
+			this.Thruster0.Name = "Thruster0";
+			this.Thruster0.Size = new System.Drawing.Size(15, 14);
+			this.Thruster0.TabIndex = 0;
+			this.Thruster0.UseVisualStyleBackColor = true;
 			// 
 			// JetsBox
 			// 
 			this.JetsBox.Controls.Add(this.MaxJetsLabel);
-			this.JetsBox.Controls.Add(this.Jets07);
+			this.JetsBox.Controls.Add(this.Jets7);
 			this.JetsBox.Controls.Add(this.MaxThrusters);
-			this.JetsBox.Controls.Add(this.Jets06);
-			this.JetsBox.Controls.Add(this.Jets05);
-			this.JetsBox.Controls.Add(this.Jets04);
-			this.JetsBox.Controls.Add(this.Jets03);
-			this.JetsBox.Controls.Add(this.Jets02);
-			this.JetsBox.Controls.Add(this.Jets01);
-			this.JetsBox.Controls.Add(this.Jets00);
-			this.JetsBox.Location = new System.Drawing.Point(800, 6);
+			this.JetsBox.Controls.Add(this.Jets6);
+			this.JetsBox.Controls.Add(this.Jets5);
+			this.JetsBox.Controls.Add(this.Jets4);
+			this.JetsBox.Controls.Add(this.Jets3);
+			this.JetsBox.Controls.Add(this.Jets2);
+			this.JetsBox.Controls.Add(this.Jets1);
+			this.JetsBox.Controls.Add(this.Jets0);
+			this.JetsBox.Location = new System.Drawing.Point(798, 6);
 			this.JetsBox.Name = "JetsBox";
 			this.JetsBox.Size = new System.Drawing.Size(57, 211);
 			this.JetsBox.TabIndex = 77;
 			this.JetsBox.TabStop = false;
 			this.JetsBox.Text = "Turning Jets";
 			// 
-			// Jets07
+			// MaxJetsLabel
 			// 
-			this.Jets07.AutoSize = true;
-			this.Jets07.Location = new System.Drawing.Point(6, 171);
-			this.Jets07.Name = "Jets07";
-			this.Jets07.Size = new System.Drawing.Size(15, 14);
-			this.Jets07.TabIndex = 0;
-			this.Jets07.UseVisualStyleBackColor = true;
+			this.MaxJetsLabel.AutoSize = true;
+			this.MaxJetsLabel.Location = new System.Drawing.Point(26, 192);
+			this.MaxJetsLabel.Name = "MaxJetsLabel";
+			this.MaxJetsLabel.Size = new System.Drawing.Size(27, 13);
+			this.MaxJetsLabel.TabIndex = 2;
+			this.MaxJetsLabel.Text = "Max";
+			// 
+			// Jets7
+			// 
+			this.Jets7.AutoSize = true;
+			this.Jets7.Location = new System.Drawing.Point(6, 171);
+			this.Jets7.Name = "Jets7";
+			this.Jets7.Size = new System.Drawing.Size(15, 14);
+			this.Jets7.TabIndex = 0;
+			this.Jets7.UseVisualStyleBackColor = true;
 			// 
 			// MaxThrusters
 			// 
@@ -453,73 +472,73 @@
 			this.MaxThrusters.TabIndex = 1;
 			this.MaxThrusters.UseVisualStyleBackColor = true;
 			// 
-			// Jets06
+			// Jets6
 			// 
-			this.Jets06.AutoSize = true;
-			this.Jets06.Location = new System.Drawing.Point(6, 151);
-			this.Jets06.Name = "Jets06";
-			this.Jets06.Size = new System.Drawing.Size(15, 14);
-			this.Jets06.TabIndex = 0;
-			this.Jets06.UseVisualStyleBackColor = true;
+			this.Jets6.AutoSize = true;
+			this.Jets6.Location = new System.Drawing.Point(6, 151);
+			this.Jets6.Name = "Jets6";
+			this.Jets6.Size = new System.Drawing.Size(15, 14);
+			this.Jets6.TabIndex = 0;
+			this.Jets6.UseVisualStyleBackColor = true;
 			// 
-			// Jets05
+			// Jets5
 			// 
-			this.Jets05.AutoSize = true;
-			this.Jets05.Location = new System.Drawing.Point(6, 131);
-			this.Jets05.Name = "Jets05";
-			this.Jets05.Size = new System.Drawing.Size(15, 14);
-			this.Jets05.TabIndex = 0;
-			this.Jets05.UseVisualStyleBackColor = true;
+			this.Jets5.AutoSize = true;
+			this.Jets5.Location = new System.Drawing.Point(6, 131);
+			this.Jets5.Name = "Jets5";
+			this.Jets5.Size = new System.Drawing.Size(15, 14);
+			this.Jets5.TabIndex = 0;
+			this.Jets5.UseVisualStyleBackColor = true;
 			// 
-			// Jets04
+			// Jets4
 			// 
-			this.Jets04.AutoSize = true;
-			this.Jets04.Location = new System.Drawing.Point(6, 111);
-			this.Jets04.Name = "Jets04";
-			this.Jets04.Size = new System.Drawing.Size(15, 14);
-			this.Jets04.TabIndex = 0;
-			this.Jets04.UseVisualStyleBackColor = true;
+			this.Jets4.AutoSize = true;
+			this.Jets4.Location = new System.Drawing.Point(6, 111);
+			this.Jets4.Name = "Jets4";
+			this.Jets4.Size = new System.Drawing.Size(15, 14);
+			this.Jets4.TabIndex = 0;
+			this.Jets4.UseVisualStyleBackColor = true;
 			// 
-			// Jets03
+			// Jets3
 			// 
-			this.Jets03.AutoSize = true;
-			this.Jets03.Location = new System.Drawing.Point(6, 91);
-			this.Jets03.Name = "Jets03";
-			this.Jets03.Size = new System.Drawing.Size(15, 14);
-			this.Jets03.TabIndex = 0;
-			this.Jets03.UseVisualStyleBackColor = true;
+			this.Jets3.AutoSize = true;
+			this.Jets3.Location = new System.Drawing.Point(6, 91);
+			this.Jets3.Name = "Jets3";
+			this.Jets3.Size = new System.Drawing.Size(15, 14);
+			this.Jets3.TabIndex = 0;
+			this.Jets3.UseVisualStyleBackColor = true;
 			// 
-			// Jets02
+			// Jets2
 			// 
-			this.Jets02.AutoSize = true;
-			this.Jets02.Location = new System.Drawing.Point(6, 71);
-			this.Jets02.Name = "Jets02";
-			this.Jets02.Size = new System.Drawing.Size(15, 14);
-			this.Jets02.TabIndex = 0;
-			this.Jets02.UseVisualStyleBackColor = true;
+			this.Jets2.AutoSize = true;
+			this.Jets2.Location = new System.Drawing.Point(6, 71);
+			this.Jets2.Name = "Jets2";
+			this.Jets2.Size = new System.Drawing.Size(15, 14);
+			this.Jets2.TabIndex = 0;
+			this.Jets2.UseVisualStyleBackColor = true;
 			// 
-			// Jets01
+			// Jets1
 			// 
-			this.Jets01.AutoSize = true;
-			this.Jets01.Location = new System.Drawing.Point(6, 51);
-			this.Jets01.Name = "Jets01";
-			this.Jets01.Size = new System.Drawing.Size(15, 14);
-			this.Jets01.TabIndex = 0;
-			this.Jets01.UseVisualStyleBackColor = true;
+			this.Jets1.AutoSize = true;
+			this.Jets1.Location = new System.Drawing.Point(6, 51);
+			this.Jets1.Name = "Jets1";
+			this.Jets1.Size = new System.Drawing.Size(15, 14);
+			this.Jets1.TabIndex = 0;
+			this.Jets1.UseVisualStyleBackColor = true;
 			// 
-			// Jets00
+			// Jets0
 			// 
-			this.Jets00.AutoSize = true;
-			this.Jets00.Location = new System.Drawing.Point(6, 31);
-			this.Jets00.Name = "Jets00";
-			this.Jets00.Size = new System.Drawing.Size(15, 14);
-			this.Jets00.TabIndex = 0;
-			this.Jets00.UseVisualStyleBackColor = true;
+			this.Jets0.AutoSize = true;
+			this.Jets0.Location = new System.Drawing.Point(6, 31);
+			this.Jets0.Name = "Jets0";
+			this.Jets0.Size = new System.Drawing.Size(15, 14);
+			this.Jets0.TabIndex = 0;
+			this.Jets0.UseVisualStyleBackColor = true;
 			// 
 			// SeedBox
 			// 
 			this.SeedBox.Controls.Add(this.CustomSeed);
-			this.SeedBox.Location = new System.Drawing.Point(8, 267);
+			this.SeedBox.Location = new System.Drawing.Point(6, 267);
 			this.SeedBox.Name = "SeedBox";
 			this.SeedBox.Size = new System.Drawing.Size(172, 47);
 			this.SeedBox.TabIndex = 76;
@@ -534,11 +553,12 @@
 			this.CustomSeed.ReadOnly = true;
 			this.CustomSeed.Size = new System.Drawing.Size(160, 20);
 			this.CustomSeed.TabIndex = 70;
+			this.CustomSeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// ShipNameBox
 			// 
 			this.ShipNameBox.Controls.Add(this.ShipName);
-			this.ShipNameBox.Location = new System.Drawing.Point(186, 60);
+			this.ShipNameBox.Location = new System.Drawing.Point(184, 60);
 			this.ShipNameBox.Name = "ShipNameBox";
 			this.ShipNameBox.Size = new System.Drawing.Size(164, 47);
 			this.ShipNameBox.TabIndex = 75;
@@ -557,7 +577,7 @@
 			// CaptainBox
 			// 
 			this.CaptainBox.Controls.Add(this.CommanderName);
-			this.CaptainBox.Location = new System.Drawing.Point(186, 6);
+			this.CaptainBox.Location = new System.Drawing.Point(184, 6);
 			this.CaptainBox.Name = "CaptainBox";
 			this.CaptainBox.Size = new System.Drawing.Size(164, 48);
 			this.CaptainBox.TabIndex = 74;
@@ -599,7 +619,7 @@
 			this.ShipsBox.Controls.Add(this.label68);
 			this.ShipsBox.Controls.Add(this.label69);
 			this.ShipsBox.Controls.Add(this.label70);
-			this.ShipsBox.Location = new System.Drawing.Point(564, 6);
+			this.ShipsBox.Location = new System.Drawing.Point(562, 6);
 			this.ShipsBox.Name = "ShipsBox";
 			this.ShipsBox.Size = new System.Drawing.Size(159, 343);
 			this.ShipsBox.TabIndex = 73;
@@ -611,9 +631,9 @@
 			this.comboBox52.DisplayMember = "Text";
 			this.comboBox52.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox52.FormattingEnabled = true;
-			this.comboBox52.Location = new System.Drawing.Point(31, 19);
+			this.comboBox52.Location = new System.Drawing.Point(28, 19);
 			this.comboBox52.Name = "comboBox52";
-			this.comboBox52.Size = new System.Drawing.Size(122, 21);
+			this.comboBox52.Size = new System.Drawing.Size(125, 21);
 			this.comboBox52.TabIndex = 0;
 			this.comboBox52.ValueMember = "HexCode";
 			// 
@@ -622,9 +642,9 @@
 			this.comboBox51.DisplayMember = "Text";
 			this.comboBox51.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox51.FormattingEnabled = true;
-			this.comboBox51.Location = new System.Drawing.Point(31, 46);
+			this.comboBox51.Location = new System.Drawing.Point(28, 46);
 			this.comboBox51.Name = "comboBox51";
-			this.comboBox51.Size = new System.Drawing.Size(122, 21);
+			this.comboBox51.Size = new System.Drawing.Size(125, 21);
 			this.comboBox51.TabIndex = 1;
 			this.comboBox51.ValueMember = "HexCode";
 			// 
@@ -633,9 +653,9 @@
 			this.comboBox50.DisplayMember = "Text";
 			this.comboBox50.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox50.FormattingEnabled = true;
-			this.comboBox50.Location = new System.Drawing.Point(31, 73);
+			this.comboBox50.Location = new System.Drawing.Point(28, 73);
 			this.comboBox50.Name = "comboBox50";
-			this.comboBox50.Size = new System.Drawing.Size(122, 21);
+			this.comboBox50.Size = new System.Drawing.Size(125, 21);
 			this.comboBox50.TabIndex = 2;
 			this.comboBox50.ValueMember = "HexCode";
 			// 
@@ -644,9 +664,9 @@
 			this.comboBox49.DisplayMember = "Text";
 			this.comboBox49.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox49.FormattingEnabled = true;
-			this.comboBox49.Location = new System.Drawing.Point(31, 100);
+			this.comboBox49.Location = new System.Drawing.Point(28, 100);
 			this.comboBox49.Name = "comboBox49";
-			this.comboBox49.Size = new System.Drawing.Size(122, 21);
+			this.comboBox49.Size = new System.Drawing.Size(125, 21);
 			this.comboBox49.TabIndex = 3;
 			this.comboBox49.ValueMember = "HexCode";
 			// 
@@ -655,9 +675,9 @@
 			this.comboBox48.DisplayMember = "Text";
 			this.comboBox48.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox48.FormattingEnabled = true;
-			this.comboBox48.Location = new System.Drawing.Point(31, 127);
+			this.comboBox48.Location = new System.Drawing.Point(28, 127);
 			this.comboBox48.Name = "comboBox48";
-			this.comboBox48.Size = new System.Drawing.Size(122, 21);
+			this.comboBox48.Size = new System.Drawing.Size(125, 21);
 			this.comboBox48.TabIndex = 4;
 			this.comboBox48.ValueMember = "HexCode";
 			// 
@@ -666,9 +686,9 @@
 			this.comboBox47.DisplayMember = "Text";
 			this.comboBox47.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox47.FormattingEnabled = true;
-			this.comboBox47.Location = new System.Drawing.Point(31, 154);
+			this.comboBox47.Location = new System.Drawing.Point(28, 154);
 			this.comboBox47.Name = "comboBox47";
-			this.comboBox47.Size = new System.Drawing.Size(122, 21);
+			this.comboBox47.Size = new System.Drawing.Size(125, 21);
 			this.comboBox47.TabIndex = 5;
 			this.comboBox47.ValueMember = "HexCode";
 			// 
@@ -677,9 +697,9 @@
 			this.comboBox46.DisplayMember = "Text";
 			this.comboBox46.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox46.FormattingEnabled = true;
-			this.comboBox46.Location = new System.Drawing.Point(31, 180);
+			this.comboBox46.Location = new System.Drawing.Point(28, 180);
 			this.comboBox46.Name = "comboBox46";
-			this.comboBox46.Size = new System.Drawing.Size(122, 21);
+			this.comboBox46.Size = new System.Drawing.Size(125, 21);
 			this.comboBox46.TabIndex = 6;
 			this.comboBox46.ValueMember = "HexCode";
 			// 
@@ -688,9 +708,9 @@
 			this.comboBox45.DisplayMember = "Text";
 			this.comboBox45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox45.FormattingEnabled = true;
-			this.comboBox45.Location = new System.Drawing.Point(31, 207);
+			this.comboBox45.Location = new System.Drawing.Point(28, 207);
 			this.comboBox45.Name = "comboBox45";
-			this.comboBox45.Size = new System.Drawing.Size(122, 21);
+			this.comboBox45.Size = new System.Drawing.Size(125, 21);
 			this.comboBox45.TabIndex = 7;
 			this.comboBox45.ValueMember = "HexCode";
 			// 
@@ -699,9 +719,9 @@
 			this.comboBox44.DisplayMember = "Text";
 			this.comboBox44.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox44.FormattingEnabled = true;
-			this.comboBox44.Location = new System.Drawing.Point(31, 234);
+			this.comboBox44.Location = new System.Drawing.Point(28, 234);
 			this.comboBox44.Name = "comboBox44";
-			this.comboBox44.Size = new System.Drawing.Size(122, 21);
+			this.comboBox44.Size = new System.Drawing.Size(125, 21);
 			this.comboBox44.TabIndex = 8;
 			this.comboBox44.ValueMember = "HexCode";
 			// 
@@ -710,9 +730,9 @@
 			this.comboBox43.DisplayMember = "Text";
 			this.comboBox43.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox43.FormattingEnabled = true;
-			this.comboBox43.Location = new System.Drawing.Point(31, 261);
+			this.comboBox43.Location = new System.Drawing.Point(28, 261);
 			this.comboBox43.Name = "comboBox43";
-			this.comboBox43.Size = new System.Drawing.Size(122, 21);
+			this.comboBox43.Size = new System.Drawing.Size(125, 21);
 			this.comboBox43.TabIndex = 9;
 			this.comboBox43.ValueMember = "HexCode";
 			// 
@@ -721,9 +741,9 @@
 			this.comboBox42.DisplayMember = "Text";
 			this.comboBox42.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox42.FormattingEnabled = true;
-			this.comboBox42.Location = new System.Drawing.Point(31, 288);
+			this.comboBox42.Location = new System.Drawing.Point(28, 288);
 			this.comboBox42.Name = "comboBox42";
-			this.comboBox42.Size = new System.Drawing.Size(122, 21);
+			this.comboBox42.Size = new System.Drawing.Size(125, 21);
 			this.comboBox42.TabIndex = 10;
 			this.comboBox42.ValueMember = "HexCode";
 			// 
@@ -732,9 +752,9 @@
 			this.comboBox41.DisplayMember = "Text";
 			this.comboBox41.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox41.FormattingEnabled = true;
-			this.comboBox41.Location = new System.Drawing.Point(31, 315);
+			this.comboBox41.Location = new System.Drawing.Point(28, 315);
 			this.comboBox41.Name = "comboBox41";
-			this.comboBox41.Size = new System.Drawing.Size(122, 21);
+			this.comboBox41.Size = new System.Drawing.Size(125, 21);
 			this.comboBox41.TabIndex = 11;
 			this.comboBox41.ValueMember = "HexCode";
 			// 
@@ -882,12 +902,21 @@
 			this.ModulesBox.Controls.Add(this.label28);
 			this.ModulesBox.Controls.Add(this.label32);
 			this.ModulesBox.Controls.Add(this.label27);
-			this.ModulesBox.Location = new System.Drawing.Point(356, 6);
+			this.ModulesBox.Location = new System.Drawing.Point(354, 6);
 			this.ModulesBox.Name = "ModulesBox";
 			this.ModulesBox.Size = new System.Drawing.Size(202, 456);
 			this.ModulesBox.TabIndex = 72;
 			this.ModulesBox.TabStop = false;
 			this.ModulesBox.Text = "Modules";
+			// 
+			// MaxModulesLabel
+			// 
+			this.MaxModulesLabel.AutoSize = true;
+			this.MaxModulesLabel.Location = new System.Drawing.Point(149, 9);
+			this.MaxModulesLabel.Name = "MaxModulesLabel";
+			this.MaxModulesLabel.Size = new System.Drawing.Size(27, 13);
+			this.MaxModulesLabel.TabIndex = 32;
+			this.MaxModulesLabel.Text = "Max";
 			// 
 			// UpgradeToMax
 			// 
@@ -1249,7 +1278,7 @@
 			this.ShipStatusBox.Controls.Add(this.ResUnits);
 			this.ShipStatusBox.Controls.Add(this.ShipFuel);
 			this.ShipStatusBox.Controls.Add(this.ShipCrew);
-			this.ShipStatusBox.Location = new System.Drawing.Point(186, 113);
+			this.ShipStatusBox.Location = new System.Drawing.Point(184, 113);
 			this.ShipStatusBox.Name = "ShipStatusBox";
 			this.ShipStatusBox.Size = new System.Drawing.Size(164, 355);
 			this.ShipStatusBox.TabIndex = 3;
@@ -1264,6 +1293,7 @@
 			this.Credits.ReadOnly = true;
 			this.Credits.Size = new System.Drawing.Size(98, 20);
 			this.Credits.TabIndex = 16;
+			this.Credits.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// label58
 			// 
@@ -1436,13 +1466,14 @@
 			// 
 			this.Landers.Location = new System.Drawing.Point(60, 123);
 			this.Landers.Maximum = new decimal(new int[] {
-            10,
+            999999999,
             0,
             0,
             0});
 			this.Landers.Name = "Landers";
 			this.Landers.Size = new System.Drawing.Size(98, 20);
 			this.Landers.TabIndex = 6;
+			this.Landers.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// BioData
 			// 
@@ -1460,6 +1491,7 @@
 			this.BioData.Name = "BioData";
 			this.BioData.Size = new System.Drawing.Size(98, 20);
 			this.BioData.TabIndex = 5;
+			this.BioData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// Devices
 			// 
@@ -1486,9 +1518,11 @@
 			this.ResUnits.Name = "ResUnits";
 			this.ResUnits.Size = new System.Drawing.Size(98, 20);
 			this.ResUnits.TabIndex = 4;
+			this.ResUnits.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// ShipFuel
 			// 
+			this.ShipFuel.DecimalPlaces = 2;
 			this.ShipFuel.Increment = new decimal(new int[] {
             20,
             0,
@@ -1503,6 +1537,7 @@
 			this.ShipFuel.Name = "ShipFuel";
 			this.ShipFuel.Size = new System.Drawing.Size(98, 20);
 			this.ShipFuel.TabIndex = 3;
+			this.ShipFuel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// ShipCrew
 			// 
@@ -1515,6 +1550,7 @@
 			this.ShipCrew.Name = "ShipCrew";
 			this.ShipCrew.Size = new System.Drawing.Size(98, 20);
 			this.ShipCrew.TabIndex = 2;
+			this.ShipCrew.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// CargoBox
 			// 
@@ -1536,7 +1572,7 @@
 			this.CargoBox.Controls.Add(this.BaseMetal);
 			this.CargoBox.Controls.Add(this.Corrosive);
 			this.CargoBox.Controls.Add(this.Common);
-			this.CargoBox.Location = new System.Drawing.Point(8, 6);
+			this.CargoBox.Location = new System.Drawing.Point(6, 6);
 			this.CargoBox.Name = "CargoBox";
 			this.CargoBox.Size = new System.Drawing.Size(172, 255);
 			this.CargoBox.TabIndex = 2;
@@ -1565,6 +1601,7 @@
 			this.TotalMinerals.ReadOnly = true;
 			this.TotalMinerals.Size = new System.Drawing.Size(76, 20);
 			this.TotalMinerals.TabIndex = 16;
+			this.TotalMinerals.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// ExoticsLabel
 			// 
@@ -1662,6 +1699,7 @@
 			this.Exotic.Name = "Exotic";
 			this.Exotic.Size = new System.Drawing.Size(76, 20);
 			this.Exotic.TabIndex = 7;
+			this.Exotic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.Exotic.ValueChanged += new System.EventHandler(this.MineralsValueChanged);
 			// 
 			// Radioactive
@@ -1680,6 +1718,7 @@
 			this.Radioactive.Name = "Radioactive";
 			this.Radioactive.Size = new System.Drawing.Size(76, 20);
 			this.Radioactive.TabIndex = 6;
+			this.Radioactive.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.Radioactive.ValueChanged += new System.EventHandler(this.MineralsValueChanged);
 			// 
 			// Precious
@@ -1698,6 +1737,7 @@
 			this.Precious.Name = "Precious";
 			this.Precious.Size = new System.Drawing.Size(76, 20);
 			this.Precious.TabIndex = 5;
+			this.Precious.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.Precious.ValueChanged += new System.EventHandler(this.MineralsValueChanged);
 			// 
 			// RareEarth
@@ -1716,6 +1756,7 @@
 			this.RareEarth.Name = "RareEarth";
 			this.RareEarth.Size = new System.Drawing.Size(76, 20);
 			this.RareEarth.TabIndex = 4;
+			this.RareEarth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.RareEarth.ValueChanged += new System.EventHandler(this.MineralsValueChanged);
 			// 
 			// NobleGas
@@ -1734,6 +1775,7 @@
 			this.NobleGas.Name = "NobleGas";
 			this.NobleGas.Size = new System.Drawing.Size(76, 20);
 			this.NobleGas.TabIndex = 3;
+			this.NobleGas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.NobleGas.ValueChanged += new System.EventHandler(this.MineralsValueChanged);
 			// 
 			// BaseMetal
@@ -1752,6 +1794,7 @@
 			this.BaseMetal.Name = "BaseMetal";
 			this.BaseMetal.Size = new System.Drawing.Size(76, 20);
 			this.BaseMetal.TabIndex = 2;
+			this.BaseMetal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.BaseMetal.ValueChanged += new System.EventHandler(this.MineralsValueChanged);
 			// 
 			// Corrosive
@@ -1770,6 +1813,7 @@
 			this.Corrosive.Name = "Corrosive";
 			this.Corrosive.Size = new System.Drawing.Size(76, 20);
 			this.Corrosive.TabIndex = 1;
+			this.Corrosive.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.Corrosive.ValueChanged += new System.EventHandler(this.MineralsValueChanged);
 			// 
 			// Common
@@ -1788,6 +1832,7 @@
 			this.Common.Name = "Common";
 			this.Common.Size = new System.Drawing.Size(76, 20);
 			this.Common.TabIndex = 0;
+			this.Common.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.Common.ValueChanged += new System.EventHandler(this.MineralsValueChanged);
 			// 
 			// Coordinates
@@ -1801,7 +1846,7 @@
 			this.Coordinates.Location = new System.Drawing.Point(4, 22);
 			this.Coordinates.Name = "Coordinates";
 			this.Coordinates.Padding = new System.Windows.Forms.Padding(3);
-			this.Coordinates.Size = new System.Drawing.Size(866, 470);
+			this.Coordinates.Size = new System.Drawing.Size(863, 474);
 			this.Coordinates.TabIndex = 1;
 			this.Coordinates.Text = "Coordinates";
 			this.Coordinates.UseVisualStyleBackColor = true;
@@ -1809,7 +1854,7 @@
 			// Spoilers
 			// 
 			this.Spoilers.AutoSize = true;
-			this.Spoilers.Location = new System.Drawing.Point(50, 239);
+			this.Spoilers.Location = new System.Drawing.Point(48, 239);
 			this.Spoilers.Name = "Spoilers";
 			this.Spoilers.Size = new System.Drawing.Size(63, 17);
 			this.Spoilers.TabIndex = 70;
@@ -1820,7 +1865,7 @@
 			// StatusBox
 			// 
 			this.StatusBox.Controls.Add(this.CurrentStatus);
-			this.StatusBox.Location = new System.Drawing.Point(8, 186);
+			this.StatusBox.Location = new System.Drawing.Point(6, 186);
 			this.StatusBox.Name = "StatusBox";
 			this.StatusBox.Size = new System.Drawing.Size(159, 47);
 			this.StatusBox.TabIndex = 69;
@@ -1841,7 +1886,7 @@
 			// OrbitBox
 			// 
 			this.OrbitBox.Controls.Add(this.NearestPlanet);
-			this.OrbitBox.Location = new System.Drawing.Point(8, 134);
+			this.OrbitBox.Location = new System.Drawing.Point(6, 134);
 			this.OrbitBox.Name = "OrbitBox";
 			this.OrbitBox.Size = new System.Drawing.Size(159, 46);
 			this.OrbitBox.TabIndex = 68;
@@ -1859,7 +1904,7 @@
 			// NearestStarBox
 			// 
 			this.NearestStarBox.Controls.Add(this.NearestStar);
-			this.NearestStarBox.Location = new System.Drawing.Point(8, 82);
+			this.NearestStarBox.Location = new System.Drawing.Point(6, 82);
 			this.NearestStarBox.Name = "NearestStarBox";
 			this.NearestStarBox.Size = new System.Drawing.Size(159, 46);
 			this.NearestStarBox.TabIndex = 67;
@@ -1880,7 +1925,7 @@
 			this.HSCoordsBox.Controls.Add(this.label55);
 			this.HSCoordsBox.Controls.Add(this.UniverseY);
 			this.HSCoordsBox.Controls.Add(this.UniverseX);
-			this.HSCoordsBox.Location = new System.Drawing.Point(8, 6);
+			this.HSCoordsBox.Location = new System.Drawing.Point(6, 6);
 			this.HSCoordsBox.Name = "HSCoordsBox";
 			this.HSCoordsBox.Size = new System.Drawing.Size(159, 70);
 			this.HSCoordsBox.TabIndex = 3;
@@ -1945,43 +1990,16 @@
 			// 
 			this.StarList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.StarList.FormattingEnabled = true;
-			this.StarList.Location = new System.Drawing.Point(173, 6);
+			this.StarList.Location = new System.Drawing.Point(171, 6);
 			this.StarList.Name = "StarList";
-			this.StarList.Size = new System.Drawing.Size(689, 457);
+			this.StarList.Size = new System.Drawing.Size(684, 457);
 			this.StarList.TabIndex = 0;
-			// 
-			// MaxThrustLabel
-			// 
-			this.MaxThrustLabel.AutoSize = true;
-			this.MaxThrustLabel.Location = new System.Drawing.Point(26, 252);
-			this.MaxThrustLabel.Name = "MaxThrustLabel";
-			this.MaxThrustLabel.Size = new System.Drawing.Size(27, 13);
-			this.MaxThrustLabel.TabIndex = 2;
-			this.MaxThrustLabel.Text = "Max";
-			// 
-			// MaxJetsLabel
-			// 
-			this.MaxJetsLabel.AutoSize = true;
-			this.MaxJetsLabel.Location = new System.Drawing.Point(26, 192);
-			this.MaxJetsLabel.Name = "MaxJetsLabel";
-			this.MaxJetsLabel.Size = new System.Drawing.Size(27, 13);
-			this.MaxJetsLabel.TabIndex = 2;
-			this.MaxJetsLabel.Text = "Max";
-			// 
-			// MaxModulesLabel
-			// 
-			this.MaxModulesLabel.AutoSize = true;
-			this.MaxModulesLabel.Location = new System.Drawing.Point(149, 9);
-			this.MaxModulesLabel.Name = "MaxModulesLabel";
-			this.MaxModulesLabel.Size = new System.Drawing.Size(27, 13);
-			this.MaxModulesLabel.TabIndex = 32;
-			this.MaxModulesLabel.Text = "Max";
 			// 
 			// Main
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(876, 525);
+			this.ClientSize = new System.Drawing.Size(873, 529);
 			this.Controls.Add(this.Tabs);
 			this.Controls.Add(this.toolStrip1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -2173,32 +2191,32 @@
 		private System.Windows.Forms.GroupBox CaptainBox;
 		private System.Windows.Forms.GroupBox SeedBox;
 		private System.Windows.Forms.CheckBox Spoilers;
-		private System.Windows.Forms.GroupBox ThrusterBox;
 		private System.Windows.Forms.Button MaxThrusters;
-		private System.Windows.Forms.GroupBox JetsBox;
 		private System.Windows.Forms.Button MaxJets;
 		public System.Windows.Forms.CheckBox Thruster10;
-		public System.Windows.Forms.CheckBox Thruster09;
-		public System.Windows.Forms.CheckBox Thruster08;
-		public System.Windows.Forms.CheckBox Thruster07;
-		public System.Windows.Forms.CheckBox Thruster06;
-		public System.Windows.Forms.CheckBox Thruster05;
-		public System.Windows.Forms.CheckBox Thruster04;
-		public System.Windows.Forms.CheckBox Thruster03;
-		public System.Windows.Forms.CheckBox Thruster02;
-		public System.Windows.Forms.CheckBox Thruster01;
-		public System.Windows.Forms.CheckBox Thruster00;
-		public System.Windows.Forms.CheckBox Jets07;
-		public System.Windows.Forms.CheckBox Jets06;
-		public System.Windows.Forms.CheckBox Jets05;
-		public System.Windows.Forms.CheckBox Jets04;
-		public System.Windows.Forms.CheckBox Jets03;
-		public System.Windows.Forms.CheckBox Jets02;
-		public System.Windows.Forms.CheckBox Jets01;
-		public System.Windows.Forms.CheckBox Jets00;
+		public System.Windows.Forms.CheckBox Thruster9;
+		public System.Windows.Forms.CheckBox Thruster8;
+		public System.Windows.Forms.CheckBox Thruster7;
+		public System.Windows.Forms.CheckBox Thruster6;
+		public System.Windows.Forms.CheckBox Thruster5;
+		public System.Windows.Forms.CheckBox Thruster4;
+		public System.Windows.Forms.CheckBox Thruster3;
+		public System.Windows.Forms.CheckBox Thruster2;
+		public System.Windows.Forms.CheckBox Thruster1;
+		public System.Windows.Forms.CheckBox Thruster0;
+		public System.Windows.Forms.CheckBox Jets7;
+		public System.Windows.Forms.CheckBox Jets6;
+		public System.Windows.Forms.CheckBox Jets5;
+		public System.Windows.Forms.CheckBox Jets4;
+		public System.Windows.Forms.CheckBox Jets3;
+		public System.Windows.Forms.CheckBox Jets2;
+		public System.Windows.Forms.CheckBox Jets1;
+		public System.Windows.Forms.CheckBox Jets0;
 		private System.Windows.Forms.Label MaxThrustLabel;
 		private System.Windows.Forms.Label MaxJetsLabel;
 		private System.Windows.Forms.Label MaxModulesLabel;
+		public System.Windows.Forms.GroupBox ThrusterBox;
+		public System.Windows.Forms.GroupBox JetsBox;
 	}
 }
 

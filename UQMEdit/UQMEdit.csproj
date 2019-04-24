@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Functions.cs" />
     <Compile Include="Load\Coordinates.cs" />
+    <Compile Include="Load\ShipStatus.cs" />
     <Compile Include="Load\Summary.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>

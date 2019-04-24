@@ -14,25 +14,25 @@ namespace UQMEdit
 		private string CurrentDir;
 		private string CurrentFile = "";
 		public static string FileName = "";
-		private object[] shipModules;
+		private object[] ShipModules;
 
 		public Main() {
 			InitializeComponent();
 			Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
-			this.shipModules = Modules.CreateModules();
+			ShipModules = Modules.CreateModules();
 
-			foreach (object ships in this.ShipsBox.Controls) {
+			foreach (object ships in ShipsBox.Controls) {
 				if (ships is ComboBox) {
-					(ships as ComboBox).Items.AddRange(Vars.escortNames);
+					(ships as ComboBox).Items.AddRange(Vars.ShipNames);
 				}
 			}
-			foreach (object current in this.ModulesBox.Controls) {
+			foreach (object current in ModulesBox.Controls) {
 				if (current is ComboBox) {
-					(current as ComboBox).Items.AddRange(this.shipModules);
+					(current as ComboBox).Items.AddRange(ShipModules);
 				}
 			}
-			this.CurrentStatus.Items.AddRange(Vars.statusName);
-			this.Spoilers.Checked = false;
+			CurrentStatus.Items.AddRange(Vars.StatusName);
+			Spoilers.Checked = false;
 
 			string PathVanilla, PathHD, PathMegaMod, PathRemix, PathDesired;
 			string PathAppData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
@@ -54,33 +54,33 @@ namespace UQMEdit
 			}
 
 			CurrentDir = PathDesired;
-			this.StarList.Items.AddRange(ParseStars.LoadStars(false));
+			StarList.Items.AddRange(ParseStars.LoadStars(false));
 		}
 
 		private void Open_Click(object sender, EventArgs e) {
-			System.Windows.Forms.OpenFileDialog openFileDialog = new System.Windows.Forms.OpenFileDialog();
-			openFileDialog.Title = "Open Save File";
-			openFileDialog.Filter = "Save File (*.*)|*.*";
+			OpenFileDialog openFileDialog = new OpenFileDialog();
+			openFileDialog.Title = "Open UQM Save File";
+			openFileDialog.Filter = "UQM Save Files | starcon2.*; uqmsave.*";
 			openFileDialog.InitialDirectory = CurrentDir;
 
 			if (openFileDialog.ShowDialog() == DialogResult.OK) {
 				CurrentFile = openFileDialog.FileName;
 				FileName = Path.GetFileName(CurrentFile);
-				this.Reload.Enabled = true;
-				this.Save.Enabled = true;
-				this.Tabs.Enabled = true;
+				Reload.Enabled = true;
+				Save.Enabled = true;
+				Tabs.Enabled = true;
 
 				Read.Open(CurrentFile, this);
 
 				string TitleText = "The UQM Save Editor";
-				this.SeedBox.Visible = false;
+				SeedBox.Visible = false;
 				switch (Read.SaveVersion) {
 					case 3:
 						TitleText += ": macOS - ";
 						break;
 					case 2:
 						TitleText += ": MegaMod - ";
-						this.SeedBox.Visible = true;
+						SeedBox.Visible = true;
 						break;
 					case 1:
 						TitleText += ": HD-mod - ";
@@ -91,7 +91,7 @@ namespace UQMEdit
 					default:
 						break;
 				}
-				this.Text = TitleText + (Read.SaveVersion > 0 ? (Read.TimeDate + " - " + Read.SaveName) : Read.TimeDate);
+				Text = TitleText + (Read.SaveVersion > 0 ? (Read.Date + ": " + Read.SaveName) : Read.Date);
 
 				CurrentDir = CurrentFile;
 			}
@@ -102,11 +102,11 @@ namespace UQMEdit
 		}
 
 		private void MineralsValueChanged(object sender, EventArgs e) {
-			this.TotalMinerals.Value = 0;
-			this.TotalMinerals.Value = this.Common.Value + this.Corrosive.Value +
-										this.BaseMetal.Value + this.NobleGas.Value +
-										this.RareEarth.Value + this.Precious.Value +
-										this.Radioactive.Value + this.Exotic.Value;
+			TotalMinerals.Value = 0;
+			TotalMinerals.Value = Common.Value + Corrosive.Value +
+										BaseMetal.Value + NobleGas.Value +
+										RareEarth.Value + Precious.Value +
+										Radioactive.Value + Exotic.Value;
 		}
 
 		private void Save_Click(object sender, EventArgs e) {
@@ -114,14 +114,14 @@ namespace UQMEdit
 		}
 
 		private void Spoilers_CheckedChanged(object sender, EventArgs e) {
-			int selectedIndex = this.StarList.SelectedIndex;
-			this.StarList.Items.Clear();
-			this.StarList.Items.AddRange(ParseStars.LoadStars(this.Spoilers.Checked));
-			if (this.StarList.Items.Count >= selectedIndex) {
-				if (this.StarList.Items.Count >= selectedIndex + 23) {
-					this.StarList.SelectedIndex = selectedIndex + 23;
+			int selectedIndex = StarList.SelectedIndex;
+			StarList.Items.Clear();
+			StarList.Items.AddRange(ParseStars.LoadStars(Spoilers.Checked));
+			if (StarList.Items.Count >= selectedIndex) {
+				if (StarList.Items.Count >= selectedIndex + 23) {
+					StarList.SelectedIndex = selectedIndex + 23;
 				}
-				this.StarList.SelectedIndex = selectedIndex;
+				StarList.SelectedIndex = selectedIndex;
 			}
 		}
 	}
