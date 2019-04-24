@@ -1,9 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Text;
-using System.Collections.Generic;
-
-namespace UQMEdit
+﻿namespace UQMEdit
 {
 	class Offs
 	{
@@ -14,8 +9,8 @@ namespace UQMEdit
 		{
 			public const byte SaveName = 16;
 
-			public const byte StarCoordX = 48;
-			public const byte StarCoordY = 52;
+			public const byte UniverseX = 48;
+			public const byte UniverseY = 52;
 
 			public const byte ResUnits = 56;
 			public const byte Fuel = 60;
@@ -41,14 +36,14 @@ namespace UQMEdit
 			public const byte Exotic = 120;
 
 			public const byte ShipName = 122;
-			public const byte CommanderName = 138;
+			public const byte CaptainName = 138;
 
 			public const byte NearestPlanet = 154;
 			public const byte Status = 172;
 
 			public const byte LanderMods = 173;
 
-			public const byte StarDate = 174;
+			public static byte[] Date = { 174, 175, 176 };
 
 			public const byte Credits = 178;
 
@@ -62,48 +57,48 @@ namespace UQMEdit
 		public class MM
 		{
 
-			public const byte StarCoordX = 0x0C;
-			public const byte StarCoordY = 0x10;
+			public const byte UniverseX = 12;
+			public const byte UniverseY = 16;
 
-			public const byte ResUnits = 0x14;
-			public const byte Fuel = 0x18;
-			public const byte SiSCrew = 0x1C;
+			public const byte ResUnits = 20;
+			public const byte Fuel = 24;
+			public const byte SiSCrew = 28;
 
-			public const byte TotalMinerals = 0x1E;
-			public const byte BioData = 0x20;
+			public const byte TotalMinerals = 30;
+			public const byte BioData = 32;
 
-			public const byte ModuleSlots = 0x22;
-			public static byte[] DriveSlots = { 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3A, 0x3B, 0x3C };
-			public static byte[] JetSlots = { 0x3D, 0x3E, 0x3F, 0x40, 0x41, 0x42, 0x43, 0x44 };
+			public const byte ModuleSlots = 34;
+			public static byte[] DriveSlots = { 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60 };
+			public static byte[] JetSlots = { 61, 62, 63, 64, 65, 66, 67, 68 };
 
-			public const byte Landers = 0x45;
+			public const byte Landers = 69;
 
-			public const byte Common = 0x46;
-			public const byte Corrosive = 0x48;
-			public const byte BaseMetal = 0x4A;
-			public const byte NobleGas = 0x4C;
-			public const byte RareEarth = 0x4E;
-			public const byte Precious = 0x50;
-			public const byte Radioactive = 0x52;
-			public const byte Exotic = 0x54;
+			public const byte Common = 70;
+			public const byte Corrosive = 72;
+			public const byte BaseMetal = 74;
+			public const byte NobleGas = 76;
+			public const byte RareEarth = 78;
+			public const byte Precious = 80;
+			public const byte Radioactive = 82;
+			public const byte Exotic = 84;
 
-			public const byte ShipName = 0x56;
-			public const byte CommanderName = 0x66;
-			public const byte NearestPlanet = 0x76;
-			public const byte Status = 0x86;
+			public const byte ShipName = 86;
+			public const byte CaptainName = 102;
+			public const byte NearestPlanet = 118;
+			public const byte Status = 134;
 
-			public const byte LanderMods = 0x87;
+			public const byte LanderMods = 135;
 
-			public const byte StarDate = 0x88;
+			public static byte[] Date = { 136, 137, 138 };
 
-			public const byte Credits = 0x8C;
+			public const byte Credits = 140;
 
-			public static byte[] Escorts = { 0x8E, 0x90 };
+			public static byte[] Escorts = { 142, 144 };
 
-			public static byte[] Devices = { 0x8F, 0x9C };
+			public static byte[] Devices = { 143, 156 };
 
-			public const byte ResFactor = 0xAC;
-			public const byte SaveName = 0xAD;
+			public const byte ResFactor = 172;
+			public static byte SaveName = 173;
 
 			public const sbyte CustomSeed = -4;
 		}
