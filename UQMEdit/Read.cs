@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -11,8 +12,6 @@ namespace UQMEdit
 		public static Main Window;
 		public static byte[] FileBuffer;
 		public static byte SaveVersion = 0;
-		public static string SaveName;
-		public static string TimeDate;
 
 		public static void Open(string FileName, Main window) {
 			if (!File.Exists(FileName)) {
@@ -25,32 +24,23 @@ namespace UQMEdit
 			FileBuffer = new byte[FileSize];    // create buffer
 			Window = window;
 
-			byte[] HDCheckerArray = new byte[16];
 			byte[] CheckerArray = new byte[4];
-			byte[] SaveMagicArray = new byte[4];
 			byte[] ResFactorArray = new byte[1];
 
-			// Save Checker
-			Stream.Seek(Offs.SaveChecker, SeekOrigin.Begin);
-			Stream.Read(HDCheckerArray, 0, 15);
-			if (Functions.ByteToString(HDCheckerArray, 15) == Vars.SaveCheckerStrHD)
+			// Save Checker			
+			int LoadChecker = BitConverter.ToInt32(Functions.ReadOffset(Offs.SaveChecker, 4), 0);
+			if (LoadChecker == Vars.SaveFileTag && Functions.ReadOffset(Offs.MM.ResFactor, 1)[0] > 2) {
+				SaveVersion = 3;
+			} else if (LoadChecker == Vars.SaveFileTag) {
+				SaveVersion = 2;
+			} else if (LoadChecker == Vars.SaveTagHD)
 				SaveVersion = 1;
-			else {
-				Array.Copy(HDCheckerArray, CheckerArray, CheckerArray.Length);
-				int LoadChecker = BitConverter.ToInt32(CheckerArray, 0);
+			else
+				SaveVersion = 0;
 
-				Stream.Seek(Offs.MM.ResFactor, SeekOrigin.Begin);
-				Stream.Read(ResFactorArray, 0, 1);
-
-				if (LoadChecker == Vars.SaveFileTag && ResFactorArray[0] > 2)
-					SaveVersion = 3;
-				else if (LoadChecker == Vars.SaveFileTag)
-					SaveVersion = 2;
-				else
-					SaveVersion = 0;
-			}
 
 			Summary();
+			ShipStatus();
 			Coordinates();
 
 			Stream.Close();
