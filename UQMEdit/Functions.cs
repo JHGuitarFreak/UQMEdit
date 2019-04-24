@@ -15,20 +15,48 @@ namespace UQMEdit
 			}
 			return array;
 		}
-		public static string ByteToString(byte[] byteArray, int length) {
-			char[] array = new char[byteArray.Length + 1];
-			for (int i = 0; i < byteArray.Length; i++) {
-				array[i] = (char)byteArray[i];
-			}
-			array[array.Length - 1] = '\0';
-			return new string(array).Substring(0, length);
-		}
 
-		public static int ReadOffset(int Offset, int ByteLength, int Is16or32 = 32) {
-			Read.Stream.Seek(Offset, SeekOrigin.Begin);
+		public static int ReadOffsetToInt(int Offset, int ByteLength, int Is16or32 = 32, bool Reverse = false) {
+			Read.Stream.Seek(Offset, !Reverse ? SeekOrigin.Begin : SeekOrigin.End);
 			Read.Stream.Read(Read.FileBuffer, 0, ByteLength);
 			int Query = (Is16or32 == 16) ? BitConverter.ToUInt16(Read.FileBuffer, 0) : BitConverter.ToInt32(Read.FileBuffer, 0);
 			return Query;
+		}
+		public static bool ReadOffsetBool(int Offset, bool IsTJets = false) {
+			bool ReadBool;
+			Read.Stream.Seek(Offset, SeekOrigin.Begin);
+			Read.Stream.Read(Read.FileBuffer, 0, 1);
+			if (IsTJets == true) {
+				ReadBool = (Read.FileBuffer[0] == 02) ? true : false;
+			} else {
+				ReadBool = (Read.FileBuffer[0] == 01) ? true : false;
+			}
+			return ReadBool;
+		}
+		public static byte[] ReadOffset(int Offset, int ByteLength, bool Reverse = false) {
+			Read.Stream.Seek(Offset, !Reverse ? SeekOrigin.Begin : SeekOrigin.End);
+			Read.Stream.Read(Read.FileBuffer, 0, ByteLength);
+			return Read.FileBuffer;
+		}
+
+		public static void WriteOffset(int Offset, decimal SpinnerValue, int ByteLength, int Limit) {
+			Write.Stream.Seek(Offset, SeekOrigin.Begin);
+			Write.Num = Decimal.ToInt32(SpinnerValue);
+			if (Write.Num >= Limit) {
+				Write.Num = Limit;
+			}
+			Write.FileBuffer = BitConverter.GetBytes(Write.Num);
+			Write.Stream.Write(Write.FileBuffer, 0, ByteLength);
+		}
+		public static void WriteOffsetBool(int Offset, bool Checked, bool IsResearch = false) {
+			Write.Stream.Seek(Offset, SeekOrigin.Begin);
+			if (IsResearch == true) {
+				Write.Num = (Checked == true) ? 36 : 4;
+			} else {
+				Write.Num = (Checked == true) ? 255 : 254;
+			}
+			Write.FileBuffer = BitConverter.GetBytes(Write.Num);
+			Write.Stream.Write(Write.FileBuffer, 0, 1);
 		}
 
 		public static int OffsPick(int HD, int MegaMod) {
