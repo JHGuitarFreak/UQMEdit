@@ -32,9 +32,11 @@
 			this.Save = new System.Windows.Forms.ToolStripButton();
 			this.Tabs = new System.Windows.Forms.TabControl();
 			this.Summary = new System.Windows.Forms.TabPage();
+			this.DevicesBox = new System.Windows.Forms.GroupBox();
+			this.Devices = new System.Windows.Forms.ListBox();
 			this.ThrusterBox = new System.Windows.Forms.GroupBox();
 			this.MaxThrustLabel = new System.Windows.Forms.Label();
-			this.MaxJets = new System.Windows.Forms.Button();
+			this.MaxThrusters = new System.Windows.Forms.Button();
 			this.Thruster10 = new System.Windows.Forms.CheckBox();
 			this.Thruster9 = new System.Windows.Forms.CheckBox();
 			this.Thruster8 = new System.Windows.Forms.CheckBox();
@@ -49,7 +51,7 @@
 			this.JetsBox = new System.Windows.Forms.GroupBox();
 			this.MaxJetsLabel = new System.Windows.Forms.Label();
 			this.Jets7 = new System.Windows.Forms.CheckBox();
-			this.MaxThrusters = new System.Windows.Forms.Button();
+			this.MaxJets = new System.Windows.Forms.Button();
 			this.Jets6 = new System.Windows.Forms.CheckBox();
 			this.Jets5 = new System.Windows.Forms.CheckBox();
 			this.Jets4 = new System.Windows.Forms.CheckBox();
@@ -64,85 +66,84 @@
 			this.CaptainBox = new System.Windows.Forms.GroupBox();
 			this.CommanderName = new System.Windows.Forms.TextBox();
 			this.ShipsBox = new System.Windows.Forms.GroupBox();
-			this.comboBox52 = new System.Windows.Forms.ComboBox();
-			this.comboBox51 = new System.Windows.Forms.ComboBox();
-			this.comboBox50 = new System.Windows.Forms.ComboBox();
-			this.comboBox49 = new System.Windows.Forms.ComboBox();
-			this.comboBox48 = new System.Windows.Forms.ComboBox();
-			this.comboBox47 = new System.Windows.Forms.ComboBox();
-			this.comboBox46 = new System.Windows.Forms.ComboBox();
-			this.comboBox45 = new System.Windows.Forms.ComboBox();
-			this.comboBox44 = new System.Windows.Forms.ComboBox();
-			this.comboBox43 = new System.Windows.Forms.ComboBox();
-			this.comboBox42 = new System.Windows.Forms.ComboBox();
-			this.comboBox41 = new System.Windows.Forms.ComboBox();
-			this.label74 = new System.Windows.Forms.Label();
-			this.label63 = new System.Windows.Forms.Label();
-			this.label73 = new System.Windows.Forms.Label();
-			this.label64 = new System.Windows.Forms.Label();
-			this.label65 = new System.Windows.Forms.Label();
-			this.label72 = new System.Windows.Forms.Label();
-			this.label66 = new System.Windows.Forms.Label();
-			this.label67 = new System.Windows.Forms.Label();
-			this.label71 = new System.Windows.Forms.Label();
-			this.label68 = new System.Windows.Forms.Label();
-			this.label69 = new System.Windows.Forms.Label();
-			this.label70 = new System.Windows.Forms.Label();
+			this.Ship01 = new System.Windows.Forms.ComboBox();
+			this.Ship02 = new System.Windows.Forms.ComboBox();
+			this.Ship03 = new System.Windows.Forms.ComboBox();
+			this.Ship04 = new System.Windows.Forms.ComboBox();
+			this.Ship05 = new System.Windows.Forms.ComboBox();
+			this.Ship06 = new System.Windows.Forms.ComboBox();
+			this.Ship07 = new System.Windows.Forms.ComboBox();
+			this.Ship08 = new System.Windows.Forms.ComboBox();
+			this.Ship09 = new System.Windows.Forms.ComboBox();
+			this.Ship10 = new System.Windows.Forms.ComboBox();
+			this.Ship11 = new System.Windows.Forms.ComboBox();
+			this.Ship12 = new System.Windows.Forms.ComboBox();
+			this.ShipLabel01 = new System.Windows.Forms.Label();
+			this.ShipLabel12 = new System.Windows.Forms.Label();
+			this.ShipLabel02 = new System.Windows.Forms.Label();
+			this.ShipLabel11 = new System.Windows.Forms.Label();
+			this.ShipLabel10 = new System.Windows.Forms.Label();
+			this.ShipLabel03 = new System.Windows.Forms.Label();
+			this.ShipLabel09 = new System.Windows.Forms.Label();
+			this.ShipLabel08 = new System.Windows.Forms.Label();
+			this.ShipLabel04 = new System.Windows.Forms.Label();
+			this.ShipLabel07 = new System.Windows.Forms.Label();
+			this.ShipLabel06 = new System.Windows.Forms.Label();
+			this.ShipLabel05 = new System.Windows.Forms.Label();
 			this.ModulesBox = new System.Windows.Forms.GroupBox();
 			this.MaxModulesLabel = new System.Windows.Forms.Label();
 			this.UpgradeToMax = new System.Windows.Forms.Button();
-			this.comboBox11 = new System.Windows.Forms.ComboBox();
-			this.comboBox12 = new System.Windows.Forms.ComboBox();
-			this.comboBox13 = new System.Windows.Forms.ComboBox();
-			this.comboBox14 = new System.Windows.Forms.ComboBox();
-			this.comboBox15 = new System.Windows.Forms.ComboBox();
-			this.comboBox16 = new System.Windows.Forms.ComboBox();
-			this.comboBox17 = new System.Windows.Forms.ComboBox();
-			this.comboBox9 = new System.Windows.Forms.ComboBox();
-			this.comboBox8 = new System.Windows.Forms.ComboBox();
-			this.comboBox7 = new System.Windows.Forms.ComboBox();
-			this.comboBox6 = new System.Windows.Forms.ComboBox();
-			this.label56 = new System.Windows.Forms.Label();
-			this.label53 = new System.Windows.Forms.Label();
-			this.comboBox5 = new System.Windows.Forms.ComboBox();
-			this.label40 = new System.Windows.Forms.Label();
-			this.comboBox4 = new System.Windows.Forms.ComboBox();
-			this.label39 = new System.Windows.Forms.Label();
-			this.comboBox3 = new System.Windows.Forms.ComboBox();
-			this.label38 = new System.Windows.Forms.Label();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.label37 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.label36 = new System.Windows.Forms.Label();
-			this.label31 = new System.Windows.Forms.Label();
-			this.label35 = new System.Windows.Forms.Label();
-			this.label30 = new System.Windows.Forms.Label();
-			this.label34 = new System.Windows.Forms.Label();
-			this.label29 = new System.Windows.Forms.Label();
-			this.label33 = new System.Windows.Forms.Label();
-			this.label28 = new System.Windows.Forms.Label();
-			this.label32 = new System.Windows.Forms.Label();
-			this.label27 = new System.Windows.Forms.Label();
+			this.Module16 = new System.Windows.Forms.ComboBox();
+			this.Module15 = new System.Windows.Forms.ComboBox();
+			this.Module14 = new System.Windows.Forms.ComboBox();
+			this.Module13 = new System.Windows.Forms.ComboBox();
+			this.Module12 = new System.Windows.Forms.ComboBox();
+			this.Module11 = new System.Windows.Forms.ComboBox();
+			this.Module10 = new System.Windows.Forms.ComboBox();
+			this.Module09 = new System.Windows.Forms.ComboBox();
+			this.Module08 = new System.Windows.Forms.ComboBox();
+			this.Module07 = new System.Windows.Forms.ComboBox();
+			this.Module06 = new System.Windows.Forms.ComboBox();
+			this.ModuleLabel01 = new System.Windows.Forms.Label();
+			this.ModuleLabel02 = new System.Windows.Forms.Label();
+			this.Module05 = new System.Windows.Forms.ComboBox();
+			this.ModuleLabel03 = new System.Windows.Forms.Label();
+			this.Module04 = new System.Windows.Forms.ComboBox();
+			this.ModuleLabel04 = new System.Windows.Forms.Label();
+			this.Module03 = new System.Windows.Forms.ComboBox();
+			this.ModuleLabel05 = new System.Windows.Forms.Label();
+			this.Module02 = new System.Windows.Forms.ComboBox();
+			this.ModuleLabel06 = new System.Windows.Forms.Label();
+			this.Module01 = new System.Windows.Forms.ComboBox();
+			this.ModuleLabel07 = new System.Windows.Forms.Label();
+			this.ModuleLabel16 = new System.Windows.Forms.Label();
+			this.ModuleLabel08 = new System.Windows.Forms.Label();
+			this.ModuleLabel15 = new System.Windows.Forms.Label();
+			this.ModuleLabel09 = new System.Windows.Forms.Label();
+			this.ModuleLabel14 = new System.Windows.Forms.Label();
+			this.ModuleLabel10 = new System.Windows.Forms.Label();
+			this.ModuleLabel13 = new System.Windows.Forms.Label();
+			this.ModuleLabel11 = new System.Windows.Forms.Label();
+			this.ModuleLabel12 = new System.Windows.Forms.Label();
 			this.ShipStatusBox = new System.Windows.Forms.GroupBox();
 			this.Credits = new System.Windows.Forms.TextBox();
 			this.label58 = new System.Windows.Forms.Label();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
+			this.LandersLabel = new System.Windows.Forms.Label();
+			this.BioDataLabel = new System.Windows.Forms.Label();
+			this.RULabel = new System.Windows.Forms.Label();
+			this.FuelLabel = new System.Windows.Forms.Label();
 			this.LanderUpgradesBox = new System.Windows.Forms.GroupBox();
 			this.IsBomb = new System.Windows.Forms.CheckBox();
-			this.Quake = new System.Windows.Forms.CheckBox();
-			this.Weapons = new System.Windows.Forms.CheckBox();
-			this.Resistant = new System.Windows.Forms.CheckBox();
-			this.Capacity = new System.Windows.Forms.CheckBox();
-			this.Speed = new System.Windows.Forms.CheckBox();
-			this.Lightning = new System.Windows.Forms.CheckBox();
-			this.HotSpot = new System.Windows.Forms.CheckBox();
-			this.label14 = new System.Windows.Forms.Label();
+			this.QuakeShield = new System.Windows.Forms.CheckBox();
+			this.RapidFire = new System.Windows.Forms.CheckBox();
+			this.BioShield = new System.Windows.Forms.CheckBox();
+			this.DblCargo = new System.Windows.Forms.CheckBox();
+			this.DblSpeed = new System.Windows.Forms.CheckBox();
+			this.LightningShield = new System.Windows.Forms.CheckBox();
+			this.HeatShield = new System.Windows.Forms.CheckBox();
+			this.CrewLabel = new System.Windows.Forms.Label();
 			this.Landers = new System.Windows.Forms.NumericUpDown();
 			this.BioData = new System.Windows.Forms.NumericUpDown();
-			this.Devices = new System.Windows.Forms.ListBox();
 			this.ResUnits = new System.Windows.Forms.NumericUpDown();
 			this.ShipFuel = new System.Windows.Forms.NumericUpDown();
 			this.ShipCrew = new System.Windows.Forms.NumericUpDown();
@@ -174,14 +175,15 @@
 			this.NearestStarBox = new System.Windows.Forms.GroupBox();
 			this.NearestStar = new System.Windows.Forms.TextBox();
 			this.HSCoordsBox = new System.Windows.Forms.GroupBox();
-			this.label54 = new System.Windows.Forms.Label();
-			this.label55 = new System.Windows.Forms.Label();
+			this.UniYLabel = new System.Windows.Forms.Label();
+			this.UniXLabel = new System.Windows.Forms.Label();
 			this.UniverseY = new System.Windows.Forms.NumericUpDown();
 			this.UniverseX = new System.Windows.Forms.NumericUpDown();
 			this.StarList = new System.Windows.Forms.ListBox();
 			this.toolStrip1.SuspendLayout();
 			this.Tabs.SuspendLayout();
 			this.Summary.SuspendLayout();
+			this.DevicesBox.SuspendLayout();
 			this.ThrusterBox.SuspendLayout();
 			this.JetsBox.SuspendLayout();
 			this.SeedBox.SuspendLayout();
@@ -272,6 +274,7 @@
 			// 
 			// Summary
 			// 
+			this.Summary.Controls.Add(this.DevicesBox);
 			this.Summary.Controls.Add(this.ThrusterBox);
 			this.Summary.Controls.Add(this.JetsBox);
 			this.Summary.Controls.Add(this.SeedBox);
@@ -289,10 +292,29 @@
 			this.Summary.Text = "Summary";
 			this.Summary.UseVisualStyleBackColor = true;
 			// 
+			// DevicesBox
+			// 
+			this.DevicesBox.Controls.Add(this.Devices);
+			this.DevicesBox.Location = new System.Drawing.Point(6, 320);
+			this.DevicesBox.Name = "DevicesBox";
+			this.DevicesBox.Size = new System.Drawing.Size(172, 148);
+			this.DevicesBox.TabIndex = 78;
+			this.DevicesBox.TabStop = false;
+			this.DevicesBox.Text = "Devices";
+			// 
+			// Devices
+			// 
+			this.Devices.FormattingEnabled = true;
+			this.Devices.Location = new System.Drawing.Point(6, 19);
+			this.Devices.Name = "Devices";
+			this.Devices.SelectionMode = System.Windows.Forms.SelectionMode.None;
+			this.Devices.Size = new System.Drawing.Size(160, 121);
+			this.Devices.TabIndex = 1;
+			// 
 			// ThrusterBox
 			// 
 			this.ThrusterBox.Controls.Add(this.MaxThrustLabel);
-			this.ThrusterBox.Controls.Add(this.MaxJets);
+			this.ThrusterBox.Controls.Add(this.MaxThrusters);
 			this.ThrusterBox.Controls.Add(this.Thruster10);
 			this.ThrusterBox.Controls.Add(this.Thruster9);
 			this.ThrusterBox.Controls.Add(this.Thruster8);
@@ -320,13 +342,14 @@
 			this.MaxThrustLabel.TabIndex = 2;
 			this.MaxThrustLabel.Text = "Max";
 			// 
-			// MaxJets
+			// MaxThrusters
 			// 
-			this.MaxJets.Location = new System.Drawing.Point(5, 251);
-			this.MaxJets.Name = "MaxJets";
-			this.MaxJets.Size = new System.Drawing.Size(15, 14);
-			this.MaxJets.TabIndex = 1;
-			this.MaxJets.UseVisualStyleBackColor = true;
+			this.MaxThrusters.Location = new System.Drawing.Point(5, 251);
+			this.MaxThrusters.Name = "MaxThrusters";
+			this.MaxThrusters.Size = new System.Drawing.Size(15, 14);
+			this.MaxThrusters.TabIndex = 1;
+			this.MaxThrusters.UseVisualStyleBackColor = true;
+			this.MaxThrusters.Click += new System.EventHandler(this.MaxThrusters_Click);
 			// 
 			// Thruster10
 			// 
@@ -431,7 +454,7 @@
 			// 
 			this.JetsBox.Controls.Add(this.MaxJetsLabel);
 			this.JetsBox.Controls.Add(this.Jets7);
-			this.JetsBox.Controls.Add(this.MaxThrusters);
+			this.JetsBox.Controls.Add(this.MaxJets);
 			this.JetsBox.Controls.Add(this.Jets6);
 			this.JetsBox.Controls.Add(this.Jets5);
 			this.JetsBox.Controls.Add(this.Jets4);
@@ -464,13 +487,13 @@
 			this.Jets7.TabIndex = 0;
 			this.Jets7.UseVisualStyleBackColor = true;
 			// 
-			// MaxThrusters
+			// MaxJets
 			// 
-			this.MaxThrusters.Location = new System.Drawing.Point(5, 191);
-			this.MaxThrusters.Name = "MaxThrusters";
-			this.MaxThrusters.Size = new System.Drawing.Size(15, 14);
-			this.MaxThrusters.TabIndex = 1;
-			this.MaxThrusters.UseVisualStyleBackColor = true;
+			this.MaxJets.Location = new System.Drawing.Point(5, 191);
+			this.MaxJets.Name = "MaxJets";
+			this.MaxJets.Size = new System.Drawing.Size(15, 14);
+			this.MaxJets.TabIndex = 1;
+			this.MaxJets.UseVisualStyleBackColor = true;
 			// 
 			// Jets6
 			// 
@@ -595,30 +618,30 @@
 			// 
 			// ShipsBox
 			// 
-			this.ShipsBox.Controls.Add(this.comboBox52);
-			this.ShipsBox.Controls.Add(this.comboBox51);
-			this.ShipsBox.Controls.Add(this.comboBox50);
-			this.ShipsBox.Controls.Add(this.comboBox49);
-			this.ShipsBox.Controls.Add(this.comboBox48);
-			this.ShipsBox.Controls.Add(this.comboBox47);
-			this.ShipsBox.Controls.Add(this.comboBox46);
-			this.ShipsBox.Controls.Add(this.comboBox45);
-			this.ShipsBox.Controls.Add(this.comboBox44);
-			this.ShipsBox.Controls.Add(this.comboBox43);
-			this.ShipsBox.Controls.Add(this.comboBox42);
-			this.ShipsBox.Controls.Add(this.comboBox41);
-			this.ShipsBox.Controls.Add(this.label74);
-			this.ShipsBox.Controls.Add(this.label63);
-			this.ShipsBox.Controls.Add(this.label73);
-			this.ShipsBox.Controls.Add(this.label64);
-			this.ShipsBox.Controls.Add(this.label65);
-			this.ShipsBox.Controls.Add(this.label72);
-			this.ShipsBox.Controls.Add(this.label66);
-			this.ShipsBox.Controls.Add(this.label67);
-			this.ShipsBox.Controls.Add(this.label71);
-			this.ShipsBox.Controls.Add(this.label68);
-			this.ShipsBox.Controls.Add(this.label69);
-			this.ShipsBox.Controls.Add(this.label70);
+			this.ShipsBox.Controls.Add(this.Ship01);
+			this.ShipsBox.Controls.Add(this.Ship02);
+			this.ShipsBox.Controls.Add(this.Ship03);
+			this.ShipsBox.Controls.Add(this.Ship04);
+			this.ShipsBox.Controls.Add(this.Ship05);
+			this.ShipsBox.Controls.Add(this.Ship06);
+			this.ShipsBox.Controls.Add(this.Ship07);
+			this.ShipsBox.Controls.Add(this.Ship08);
+			this.ShipsBox.Controls.Add(this.Ship09);
+			this.ShipsBox.Controls.Add(this.Ship10);
+			this.ShipsBox.Controls.Add(this.Ship11);
+			this.ShipsBox.Controls.Add(this.Ship12);
+			this.ShipsBox.Controls.Add(this.ShipLabel01);
+			this.ShipsBox.Controls.Add(this.ShipLabel12);
+			this.ShipsBox.Controls.Add(this.ShipLabel02);
+			this.ShipsBox.Controls.Add(this.ShipLabel11);
+			this.ShipsBox.Controls.Add(this.ShipLabel10);
+			this.ShipsBox.Controls.Add(this.ShipLabel03);
+			this.ShipsBox.Controls.Add(this.ShipLabel09);
+			this.ShipsBox.Controls.Add(this.ShipLabel08);
+			this.ShipsBox.Controls.Add(this.ShipLabel04);
+			this.ShipsBox.Controls.Add(this.ShipLabel07);
+			this.ShipsBox.Controls.Add(this.ShipLabel06);
+			this.ShipsBox.Controls.Add(this.ShipLabel05);
 			this.ShipsBox.Location = new System.Drawing.Point(562, 6);
 			this.ShipsBox.Name = "ShipsBox";
 			this.ShipsBox.Size = new System.Drawing.Size(159, 343);
@@ -626,282 +649,282 @@
 			this.ShipsBox.TabStop = false;
 			this.ShipsBox.Text = "Ships";
 			// 
-			// comboBox52
+			// Ship01
 			// 
-			this.comboBox52.DisplayMember = "Text";
-			this.comboBox52.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox52.FormattingEnabled = true;
-			this.comboBox52.Location = new System.Drawing.Point(28, 19);
-			this.comboBox52.Name = "comboBox52";
-			this.comboBox52.Size = new System.Drawing.Size(125, 21);
-			this.comboBox52.TabIndex = 0;
-			this.comboBox52.ValueMember = "HexCode";
+			this.Ship01.DisplayMember = "Text";
+			this.Ship01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship01.FormattingEnabled = true;
+			this.Ship01.Location = new System.Drawing.Point(28, 19);
+			this.Ship01.Name = "Ship01";
+			this.Ship01.Size = new System.Drawing.Size(125, 21);
+			this.Ship01.TabIndex = 0;
+			this.Ship01.ValueMember = "HexCode";
 			// 
-			// comboBox51
+			// Ship02
 			// 
-			this.comboBox51.DisplayMember = "Text";
-			this.comboBox51.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox51.FormattingEnabled = true;
-			this.comboBox51.Location = new System.Drawing.Point(28, 46);
-			this.comboBox51.Name = "comboBox51";
-			this.comboBox51.Size = new System.Drawing.Size(125, 21);
-			this.comboBox51.TabIndex = 1;
-			this.comboBox51.ValueMember = "HexCode";
+			this.Ship02.DisplayMember = "Text";
+			this.Ship02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship02.FormattingEnabled = true;
+			this.Ship02.Location = new System.Drawing.Point(28, 46);
+			this.Ship02.Name = "Ship02";
+			this.Ship02.Size = new System.Drawing.Size(125, 21);
+			this.Ship02.TabIndex = 1;
+			this.Ship02.ValueMember = "HexCode";
 			// 
-			// comboBox50
+			// Ship03
 			// 
-			this.comboBox50.DisplayMember = "Text";
-			this.comboBox50.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox50.FormattingEnabled = true;
-			this.comboBox50.Location = new System.Drawing.Point(28, 73);
-			this.comboBox50.Name = "comboBox50";
-			this.comboBox50.Size = new System.Drawing.Size(125, 21);
-			this.comboBox50.TabIndex = 2;
-			this.comboBox50.ValueMember = "HexCode";
+			this.Ship03.DisplayMember = "Text";
+			this.Ship03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship03.FormattingEnabled = true;
+			this.Ship03.Location = new System.Drawing.Point(28, 73);
+			this.Ship03.Name = "Ship03";
+			this.Ship03.Size = new System.Drawing.Size(125, 21);
+			this.Ship03.TabIndex = 2;
+			this.Ship03.ValueMember = "HexCode";
 			// 
-			// comboBox49
+			// Ship04
 			// 
-			this.comboBox49.DisplayMember = "Text";
-			this.comboBox49.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox49.FormattingEnabled = true;
-			this.comboBox49.Location = new System.Drawing.Point(28, 100);
-			this.comboBox49.Name = "comboBox49";
-			this.comboBox49.Size = new System.Drawing.Size(125, 21);
-			this.comboBox49.TabIndex = 3;
-			this.comboBox49.ValueMember = "HexCode";
+			this.Ship04.DisplayMember = "Text";
+			this.Ship04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship04.FormattingEnabled = true;
+			this.Ship04.Location = new System.Drawing.Point(28, 100);
+			this.Ship04.Name = "Ship04";
+			this.Ship04.Size = new System.Drawing.Size(125, 21);
+			this.Ship04.TabIndex = 3;
+			this.Ship04.ValueMember = "HexCode";
 			// 
-			// comboBox48
+			// Ship05
 			// 
-			this.comboBox48.DisplayMember = "Text";
-			this.comboBox48.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox48.FormattingEnabled = true;
-			this.comboBox48.Location = new System.Drawing.Point(28, 127);
-			this.comboBox48.Name = "comboBox48";
-			this.comboBox48.Size = new System.Drawing.Size(125, 21);
-			this.comboBox48.TabIndex = 4;
-			this.comboBox48.ValueMember = "HexCode";
+			this.Ship05.DisplayMember = "Text";
+			this.Ship05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship05.FormattingEnabled = true;
+			this.Ship05.Location = new System.Drawing.Point(28, 127);
+			this.Ship05.Name = "Ship05";
+			this.Ship05.Size = new System.Drawing.Size(125, 21);
+			this.Ship05.TabIndex = 4;
+			this.Ship05.ValueMember = "HexCode";
 			// 
-			// comboBox47
+			// Ship06
 			// 
-			this.comboBox47.DisplayMember = "Text";
-			this.comboBox47.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox47.FormattingEnabled = true;
-			this.comboBox47.Location = new System.Drawing.Point(28, 154);
-			this.comboBox47.Name = "comboBox47";
-			this.comboBox47.Size = new System.Drawing.Size(125, 21);
-			this.comboBox47.TabIndex = 5;
-			this.comboBox47.ValueMember = "HexCode";
+			this.Ship06.DisplayMember = "Text";
+			this.Ship06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship06.FormattingEnabled = true;
+			this.Ship06.Location = new System.Drawing.Point(28, 154);
+			this.Ship06.Name = "Ship06";
+			this.Ship06.Size = new System.Drawing.Size(125, 21);
+			this.Ship06.TabIndex = 5;
+			this.Ship06.ValueMember = "HexCode";
 			// 
-			// comboBox46
+			// Ship07
 			// 
-			this.comboBox46.DisplayMember = "Text";
-			this.comboBox46.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox46.FormattingEnabled = true;
-			this.comboBox46.Location = new System.Drawing.Point(28, 180);
-			this.comboBox46.Name = "comboBox46";
-			this.comboBox46.Size = new System.Drawing.Size(125, 21);
-			this.comboBox46.TabIndex = 6;
-			this.comboBox46.ValueMember = "HexCode";
+			this.Ship07.DisplayMember = "Text";
+			this.Ship07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship07.FormattingEnabled = true;
+			this.Ship07.Location = new System.Drawing.Point(28, 180);
+			this.Ship07.Name = "Ship07";
+			this.Ship07.Size = new System.Drawing.Size(125, 21);
+			this.Ship07.TabIndex = 6;
+			this.Ship07.ValueMember = "HexCode";
 			// 
-			// comboBox45
+			// Ship08
 			// 
-			this.comboBox45.DisplayMember = "Text";
-			this.comboBox45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox45.FormattingEnabled = true;
-			this.comboBox45.Location = new System.Drawing.Point(28, 207);
-			this.comboBox45.Name = "comboBox45";
-			this.comboBox45.Size = new System.Drawing.Size(125, 21);
-			this.comboBox45.TabIndex = 7;
-			this.comboBox45.ValueMember = "HexCode";
+			this.Ship08.DisplayMember = "Text";
+			this.Ship08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship08.FormattingEnabled = true;
+			this.Ship08.Location = new System.Drawing.Point(28, 207);
+			this.Ship08.Name = "Ship08";
+			this.Ship08.Size = new System.Drawing.Size(125, 21);
+			this.Ship08.TabIndex = 7;
+			this.Ship08.ValueMember = "HexCode";
 			// 
-			// comboBox44
+			// Ship09
 			// 
-			this.comboBox44.DisplayMember = "Text";
-			this.comboBox44.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox44.FormattingEnabled = true;
-			this.comboBox44.Location = new System.Drawing.Point(28, 234);
-			this.comboBox44.Name = "comboBox44";
-			this.comboBox44.Size = new System.Drawing.Size(125, 21);
-			this.comboBox44.TabIndex = 8;
-			this.comboBox44.ValueMember = "HexCode";
+			this.Ship09.DisplayMember = "Text";
+			this.Ship09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship09.FormattingEnabled = true;
+			this.Ship09.Location = new System.Drawing.Point(28, 234);
+			this.Ship09.Name = "Ship09";
+			this.Ship09.Size = new System.Drawing.Size(125, 21);
+			this.Ship09.TabIndex = 8;
+			this.Ship09.ValueMember = "HexCode";
 			// 
-			// comboBox43
+			// Ship10
 			// 
-			this.comboBox43.DisplayMember = "Text";
-			this.comboBox43.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox43.FormattingEnabled = true;
-			this.comboBox43.Location = new System.Drawing.Point(28, 261);
-			this.comboBox43.Name = "comboBox43";
-			this.comboBox43.Size = new System.Drawing.Size(125, 21);
-			this.comboBox43.TabIndex = 9;
-			this.comboBox43.ValueMember = "HexCode";
+			this.Ship10.DisplayMember = "Text";
+			this.Ship10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship10.FormattingEnabled = true;
+			this.Ship10.Location = new System.Drawing.Point(28, 261);
+			this.Ship10.Name = "Ship10";
+			this.Ship10.Size = new System.Drawing.Size(125, 21);
+			this.Ship10.TabIndex = 9;
+			this.Ship10.ValueMember = "HexCode";
 			// 
-			// comboBox42
+			// Ship11
 			// 
-			this.comboBox42.DisplayMember = "Text";
-			this.comboBox42.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox42.FormattingEnabled = true;
-			this.comboBox42.Location = new System.Drawing.Point(28, 288);
-			this.comboBox42.Name = "comboBox42";
-			this.comboBox42.Size = new System.Drawing.Size(125, 21);
-			this.comboBox42.TabIndex = 10;
-			this.comboBox42.ValueMember = "HexCode";
+			this.Ship11.DisplayMember = "Text";
+			this.Ship11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship11.FormattingEnabled = true;
+			this.Ship11.Location = new System.Drawing.Point(28, 288);
+			this.Ship11.Name = "Ship11";
+			this.Ship11.Size = new System.Drawing.Size(125, 21);
+			this.Ship11.TabIndex = 10;
+			this.Ship11.ValueMember = "HexCode";
 			// 
-			// comboBox41
+			// Ship12
 			// 
-			this.comboBox41.DisplayMember = "Text";
-			this.comboBox41.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox41.FormattingEnabled = true;
-			this.comboBox41.Location = new System.Drawing.Point(28, 315);
-			this.comboBox41.Name = "comboBox41";
-			this.comboBox41.Size = new System.Drawing.Size(125, 21);
-			this.comboBox41.TabIndex = 11;
-			this.comboBox41.ValueMember = "HexCode";
+			this.Ship12.DisplayMember = "Text";
+			this.Ship12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship12.FormattingEnabled = true;
+			this.Ship12.Location = new System.Drawing.Point(28, 315);
+			this.Ship12.Name = "Ship12";
+			this.Ship12.Size = new System.Drawing.Size(125, 21);
+			this.Ship12.TabIndex = 11;
+			this.Ship12.ValueMember = "HexCode";
 			// 
-			// label74
+			// ShipLabel01
 			// 
-			this.label74.AutoSize = true;
-			this.label74.Location = new System.Drawing.Point(3, 22);
-			this.label74.Name = "label74";
-			this.label74.Size = new System.Drawing.Size(19, 13);
-			this.label74.TabIndex = 8;
-			this.label74.Text = "01";
+			this.ShipLabel01.AutoSize = true;
+			this.ShipLabel01.Location = new System.Drawing.Point(3, 22);
+			this.ShipLabel01.Name = "ShipLabel01";
+			this.ShipLabel01.Size = new System.Drawing.Size(19, 13);
+			this.ShipLabel01.TabIndex = 8;
+			this.ShipLabel01.Text = "01";
 			// 
-			// label63
+			// ShipLabel12
 			// 
-			this.label63.AutoSize = true;
-			this.label63.Location = new System.Drawing.Point(2, 318);
-			this.label63.Name = "label63";
-			this.label63.Size = new System.Drawing.Size(19, 13);
-			this.label63.TabIndex = 23;
-			this.label63.Text = "12";
+			this.ShipLabel12.AutoSize = true;
+			this.ShipLabel12.Location = new System.Drawing.Point(2, 318);
+			this.ShipLabel12.Name = "ShipLabel12";
+			this.ShipLabel12.Size = new System.Drawing.Size(19, 13);
+			this.ShipLabel12.TabIndex = 23;
+			this.ShipLabel12.Text = "12";
 			// 
-			// label73
+			// ShipLabel02
 			// 
-			this.label73.AutoSize = true;
-			this.label73.Location = new System.Drawing.Point(3, 49);
-			this.label73.Name = "label73";
-			this.label73.Size = new System.Drawing.Size(19, 13);
-			this.label73.TabIndex = 9;
-			this.label73.Text = "02";
+			this.ShipLabel02.AutoSize = true;
+			this.ShipLabel02.Location = new System.Drawing.Point(3, 49);
+			this.ShipLabel02.Name = "ShipLabel02";
+			this.ShipLabel02.Size = new System.Drawing.Size(19, 13);
+			this.ShipLabel02.TabIndex = 9;
+			this.ShipLabel02.Text = "02";
 			// 
-			// label64
+			// ShipLabel11
 			// 
-			this.label64.AutoSize = true;
-			this.label64.Location = new System.Drawing.Point(2, 291);
-			this.label64.Name = "label64";
-			this.label64.Size = new System.Drawing.Size(19, 13);
-			this.label64.TabIndex = 21;
-			this.label64.Text = "11";
+			this.ShipLabel11.AutoSize = true;
+			this.ShipLabel11.Location = new System.Drawing.Point(2, 291);
+			this.ShipLabel11.Name = "ShipLabel11";
+			this.ShipLabel11.Size = new System.Drawing.Size(19, 13);
+			this.ShipLabel11.TabIndex = 21;
+			this.ShipLabel11.Text = "11";
 			// 
-			// label65
+			// ShipLabel10
 			// 
-			this.label65.AutoSize = true;
-			this.label65.Location = new System.Drawing.Point(2, 264);
-			this.label65.Name = "label65";
-			this.label65.Size = new System.Drawing.Size(19, 13);
-			this.label65.TabIndex = 19;
-			this.label65.Text = "10";
+			this.ShipLabel10.AutoSize = true;
+			this.ShipLabel10.Location = new System.Drawing.Point(2, 264);
+			this.ShipLabel10.Name = "ShipLabel10";
+			this.ShipLabel10.Size = new System.Drawing.Size(19, 13);
+			this.ShipLabel10.TabIndex = 19;
+			this.ShipLabel10.Text = "10";
 			// 
-			// label72
+			// ShipLabel03
 			// 
-			this.label72.AutoSize = true;
-			this.label72.Location = new System.Drawing.Point(3, 76);
-			this.label72.Name = "label72";
-			this.label72.Size = new System.Drawing.Size(19, 13);
-			this.label72.TabIndex = 10;
-			this.label72.Text = "03";
+			this.ShipLabel03.AutoSize = true;
+			this.ShipLabel03.Location = new System.Drawing.Point(3, 76);
+			this.ShipLabel03.Name = "ShipLabel03";
+			this.ShipLabel03.Size = new System.Drawing.Size(19, 13);
+			this.ShipLabel03.TabIndex = 10;
+			this.ShipLabel03.Text = "03";
 			// 
-			// label66
+			// ShipLabel09
 			// 
-			this.label66.AutoSize = true;
-			this.label66.Location = new System.Drawing.Point(3, 237);
-			this.label66.Name = "label66";
-			this.label66.Size = new System.Drawing.Size(19, 13);
-			this.label66.TabIndex = 17;
-			this.label66.Text = "09";
+			this.ShipLabel09.AutoSize = true;
+			this.ShipLabel09.Location = new System.Drawing.Point(3, 237);
+			this.ShipLabel09.Name = "ShipLabel09";
+			this.ShipLabel09.Size = new System.Drawing.Size(19, 13);
+			this.ShipLabel09.TabIndex = 17;
+			this.ShipLabel09.Text = "09";
 			// 
-			// label67
+			// ShipLabel08
 			// 
-			this.label67.AutoSize = true;
-			this.label67.Location = new System.Drawing.Point(3, 210);
-			this.label67.Name = "label67";
-			this.label67.Size = new System.Drawing.Size(19, 13);
-			this.label67.TabIndex = 15;
-			this.label67.Text = "08";
+			this.ShipLabel08.AutoSize = true;
+			this.ShipLabel08.Location = new System.Drawing.Point(3, 210);
+			this.ShipLabel08.Name = "ShipLabel08";
+			this.ShipLabel08.Size = new System.Drawing.Size(19, 13);
+			this.ShipLabel08.TabIndex = 15;
+			this.ShipLabel08.Text = "08";
 			// 
-			// label71
+			// ShipLabel04
 			// 
-			this.label71.AutoSize = true;
-			this.label71.Location = new System.Drawing.Point(3, 103);
-			this.label71.Name = "label71";
-			this.label71.Size = new System.Drawing.Size(19, 13);
-			this.label71.TabIndex = 11;
-			this.label71.Text = "04";
+			this.ShipLabel04.AutoSize = true;
+			this.ShipLabel04.Location = new System.Drawing.Point(3, 103);
+			this.ShipLabel04.Name = "ShipLabel04";
+			this.ShipLabel04.Size = new System.Drawing.Size(19, 13);
+			this.ShipLabel04.TabIndex = 11;
+			this.ShipLabel04.Text = "04";
 			// 
-			// label68
+			// ShipLabel07
 			// 
-			this.label68.AutoSize = true;
-			this.label68.Location = new System.Drawing.Point(3, 183);
-			this.label68.Name = "label68";
-			this.label68.Size = new System.Drawing.Size(19, 13);
-			this.label68.TabIndex = 14;
-			this.label68.Text = "07";
+			this.ShipLabel07.AutoSize = true;
+			this.ShipLabel07.Location = new System.Drawing.Point(3, 183);
+			this.ShipLabel07.Name = "ShipLabel07";
+			this.ShipLabel07.Size = new System.Drawing.Size(19, 13);
+			this.ShipLabel07.TabIndex = 14;
+			this.ShipLabel07.Text = "07";
 			// 
-			// label69
+			// ShipLabel06
 			// 
-			this.label69.AutoSize = true;
-			this.label69.Location = new System.Drawing.Point(3, 157);
-			this.label69.Name = "label69";
-			this.label69.Size = new System.Drawing.Size(19, 13);
-			this.label69.TabIndex = 13;
-			this.label69.Text = "06";
+			this.ShipLabel06.AutoSize = true;
+			this.ShipLabel06.Location = new System.Drawing.Point(3, 157);
+			this.ShipLabel06.Name = "ShipLabel06";
+			this.ShipLabel06.Size = new System.Drawing.Size(19, 13);
+			this.ShipLabel06.TabIndex = 13;
+			this.ShipLabel06.Text = "06";
 			// 
-			// label70
+			// ShipLabel05
 			// 
-			this.label70.AutoSize = true;
-			this.label70.Location = new System.Drawing.Point(3, 130);
-			this.label70.Name = "label70";
-			this.label70.Size = new System.Drawing.Size(19, 13);
-			this.label70.TabIndex = 12;
-			this.label70.Text = "05";
+			this.ShipLabel05.AutoSize = true;
+			this.ShipLabel05.Location = new System.Drawing.Point(3, 130);
+			this.ShipLabel05.Name = "ShipLabel05";
+			this.ShipLabel05.Size = new System.Drawing.Size(19, 13);
+			this.ShipLabel05.TabIndex = 12;
+			this.ShipLabel05.Text = "05";
 			// 
 			// ModulesBox
 			// 
 			this.ModulesBox.Controls.Add(this.MaxModulesLabel);
 			this.ModulesBox.Controls.Add(this.UpgradeToMax);
-			this.ModulesBox.Controls.Add(this.comboBox11);
-			this.ModulesBox.Controls.Add(this.comboBox12);
-			this.ModulesBox.Controls.Add(this.comboBox13);
-			this.ModulesBox.Controls.Add(this.comboBox14);
-			this.ModulesBox.Controls.Add(this.comboBox15);
-			this.ModulesBox.Controls.Add(this.comboBox16);
-			this.ModulesBox.Controls.Add(this.comboBox17);
-			this.ModulesBox.Controls.Add(this.comboBox9);
-			this.ModulesBox.Controls.Add(this.comboBox8);
-			this.ModulesBox.Controls.Add(this.comboBox7);
-			this.ModulesBox.Controls.Add(this.comboBox6);
-			this.ModulesBox.Controls.Add(this.label56);
-			this.ModulesBox.Controls.Add(this.label53);
-			this.ModulesBox.Controls.Add(this.comboBox5);
-			this.ModulesBox.Controls.Add(this.label40);
-			this.ModulesBox.Controls.Add(this.comboBox4);
-			this.ModulesBox.Controls.Add(this.label39);
-			this.ModulesBox.Controls.Add(this.comboBox3);
-			this.ModulesBox.Controls.Add(this.label38);
-			this.ModulesBox.Controls.Add(this.comboBox2);
-			this.ModulesBox.Controls.Add(this.label37);
-			this.ModulesBox.Controls.Add(this.comboBox1);
-			this.ModulesBox.Controls.Add(this.label36);
-			this.ModulesBox.Controls.Add(this.label31);
-			this.ModulesBox.Controls.Add(this.label35);
-			this.ModulesBox.Controls.Add(this.label30);
-			this.ModulesBox.Controls.Add(this.label34);
-			this.ModulesBox.Controls.Add(this.label29);
-			this.ModulesBox.Controls.Add(this.label33);
-			this.ModulesBox.Controls.Add(this.label28);
-			this.ModulesBox.Controls.Add(this.label32);
-			this.ModulesBox.Controls.Add(this.label27);
+			this.ModulesBox.Controls.Add(this.Module16);
+			this.ModulesBox.Controls.Add(this.Module15);
+			this.ModulesBox.Controls.Add(this.Module14);
+			this.ModulesBox.Controls.Add(this.Module13);
+			this.ModulesBox.Controls.Add(this.Module12);
+			this.ModulesBox.Controls.Add(this.Module11);
+			this.ModulesBox.Controls.Add(this.Module10);
+			this.ModulesBox.Controls.Add(this.Module09);
+			this.ModulesBox.Controls.Add(this.Module08);
+			this.ModulesBox.Controls.Add(this.Module07);
+			this.ModulesBox.Controls.Add(this.Module06);
+			this.ModulesBox.Controls.Add(this.ModuleLabel01);
+			this.ModulesBox.Controls.Add(this.ModuleLabel02);
+			this.ModulesBox.Controls.Add(this.Module05);
+			this.ModulesBox.Controls.Add(this.ModuleLabel03);
+			this.ModulesBox.Controls.Add(this.Module04);
+			this.ModulesBox.Controls.Add(this.ModuleLabel04);
+			this.ModulesBox.Controls.Add(this.Module03);
+			this.ModulesBox.Controls.Add(this.ModuleLabel05);
+			this.ModulesBox.Controls.Add(this.Module02);
+			this.ModulesBox.Controls.Add(this.ModuleLabel06);
+			this.ModulesBox.Controls.Add(this.Module01);
+			this.ModulesBox.Controls.Add(this.ModuleLabel07);
+			this.ModulesBox.Controls.Add(this.ModuleLabel16);
+			this.ModulesBox.Controls.Add(this.ModuleLabel08);
+			this.ModulesBox.Controls.Add(this.ModuleLabel15);
+			this.ModulesBox.Controls.Add(this.ModuleLabel09);
+			this.ModulesBox.Controls.Add(this.ModuleLabel14);
+			this.ModulesBox.Controls.Add(this.ModuleLabel10);
+			this.ModulesBox.Controls.Add(this.ModuleLabel13);
+			this.ModulesBox.Controls.Add(this.ModuleLabel11);
+			this.ModulesBox.Controls.Add(this.ModuleLabel12);
 			this.ModulesBox.Location = new System.Drawing.Point(354, 6);
 			this.ModulesBox.Name = "ModulesBox";
 			this.ModulesBox.Size = new System.Drawing.Size(202, 456);
@@ -925,356 +948,372 @@
 			this.UpgradeToMax.Size = new System.Drawing.Size(15, 14);
 			this.UpgradeToMax.TabIndex = 0;
 			this.UpgradeToMax.UseVisualStyleBackColor = true;
-			// 
-			// comboBox11
-			// 
-			this.comboBox11.DisplayMember = "Text";
-			this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox11.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox11.FormattingEnabled = true;
-			this.comboBox11.Location = new System.Drawing.Point(74, 428);
-			this.comboBox11.Name = "comboBox11";
-			this.comboBox11.Size = new System.Drawing.Size(122, 21);
-			this.comboBox11.TabIndex = 15;
-			this.comboBox11.ValueMember = "HexCode";
-			// 
-			// comboBox12
-			// 
-			this.comboBox12.DisplayMember = "Text";
-			this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox12.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox12.FormattingEnabled = true;
-			this.comboBox12.Location = new System.Drawing.Point(74, 401);
-			this.comboBox12.Name = "comboBox12";
-			this.comboBox12.Size = new System.Drawing.Size(122, 21);
-			this.comboBox12.TabIndex = 14;
-			this.comboBox12.ValueMember = "HexCode";
-			// 
-			// comboBox13
-			// 
-			this.comboBox13.DisplayMember = "Text";
-			this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox13.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox13.FormattingEnabled = true;
-			this.comboBox13.Location = new System.Drawing.Point(74, 374);
-			this.comboBox13.Name = "comboBox13";
-			this.comboBox13.Size = new System.Drawing.Size(122, 21);
-			this.comboBox13.TabIndex = 13;
-			this.comboBox13.ValueMember = "HexCode";
-			// 
-			// comboBox14
-			// 
-			this.comboBox14.DisplayMember = "Text";
-			this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox14.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox14.FormattingEnabled = true;
-			this.comboBox14.Location = new System.Drawing.Point(74, 347);
-			this.comboBox14.Name = "comboBox14";
-			this.comboBox14.Size = new System.Drawing.Size(122, 21);
-			this.comboBox14.TabIndex = 12;
-			this.comboBox14.ValueMember = "HexCode";
-			// 
-			// comboBox15
-			// 
-			this.comboBox15.DisplayMember = "Text";
-			this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox15.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox15.FormattingEnabled = true;
-			this.comboBox15.Location = new System.Drawing.Point(74, 320);
-			this.comboBox15.Name = "comboBox15";
-			this.comboBox15.Size = new System.Drawing.Size(122, 21);
-			this.comboBox15.TabIndex = 11;
-			this.comboBox15.ValueMember = "HexCode";
-			// 
-			// comboBox16
-			// 
-			this.comboBox16.DisplayMember = "Text";
-			this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox16.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox16.FormattingEnabled = true;
-			this.comboBox16.Location = new System.Drawing.Point(74, 293);
-			this.comboBox16.Name = "comboBox16";
-			this.comboBox16.Size = new System.Drawing.Size(122, 21);
-			this.comboBox16.TabIndex = 10;
-			this.comboBox16.ValueMember = "HexCode";
-			// 
-			// comboBox17
-			// 
-			this.comboBox17.DisplayMember = "Text";
-			this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox17.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox17.FormattingEnabled = true;
-			this.comboBox17.Location = new System.Drawing.Point(74, 266);
-			this.comboBox17.Name = "comboBox17";
-			this.comboBox17.Size = new System.Drawing.Size(122, 21);
-			this.comboBox17.TabIndex = 9;
-			this.comboBox17.ValueMember = "HexCode";
-			// 
-			// comboBox9
-			// 
-			this.comboBox9.DisplayMember = "Text";
-			this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox9.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox9.FormattingEnabled = true;
-			this.comboBox9.Location = new System.Drawing.Point(74, 239);
-			this.comboBox9.Name = "comboBox9";
-			this.comboBox9.Size = new System.Drawing.Size(122, 21);
-			this.comboBox9.TabIndex = 8;
-			this.comboBox9.ValueMember = "HexCode";
-			// 
-			// comboBox8
-			// 
-			this.comboBox8.DisplayMember = "Text";
-			this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox8.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox8.FormattingEnabled = true;
-			this.comboBox8.Location = new System.Drawing.Point(74, 212);
-			this.comboBox8.Name = "comboBox8";
-			this.comboBox8.Size = new System.Drawing.Size(122, 21);
-			this.comboBox8.TabIndex = 7;
-			this.comboBox8.ValueMember = "HexCode";
-			// 
-			// comboBox7
-			// 
-			this.comboBox7.DisplayMember = "Text";
-			this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox7.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox7.FormattingEnabled = true;
-			this.comboBox7.Location = new System.Drawing.Point(74, 185);
-			this.comboBox7.Name = "comboBox7";
-			this.comboBox7.Size = new System.Drawing.Size(122, 21);
-			this.comboBox7.TabIndex = 6;
-			this.comboBox7.ValueMember = "HexCode";
-			// 
-			// comboBox6
-			// 
-			this.comboBox6.DisplayMember = "Text";
-			this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox6.FormattingEnabled = true;
-			this.comboBox6.Location = new System.Drawing.Point(74, 158);
-			this.comboBox6.Name = "comboBox6";
-			this.comboBox6.Size = new System.Drawing.Size(122, 21);
-			this.comboBox6.TabIndex = 5;
-			this.comboBox6.ValueMember = "HexCode";
-			// 
-			// label56
-			// 
-			this.label56.AutoSize = true;
-			this.label56.Location = new System.Drawing.Point(3, 26);
-			this.label56.Name = "label56";
-			this.label56.Size = new System.Drawing.Size(53, 13);
-			this.label56.TabIndex = 8;
-			this.label56.Text = "01 [Nose]";
-			// 
-			// label53
-			// 
-			this.label53.AutoSize = true;
-			this.label53.Location = new System.Drawing.Point(3, 53);
-			this.label53.Name = "label53";
-			this.label53.Size = new System.Drawing.Size(62, 13);
-			this.label53.TabIndex = 9;
-			this.label53.Text = "02 [Spread]";
-			// 
-			// comboBox5
-			// 
-			this.comboBox5.DisplayMember = "Text";
-			this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox5.FormattingEnabled = true;
-			this.comboBox5.Location = new System.Drawing.Point(74, 131);
-			this.comboBox5.Name = "comboBox5";
-			this.comboBox5.Size = new System.Drawing.Size(122, 21);
-			this.comboBox5.TabIndex = 4;
-			this.comboBox5.ValueMember = "HexCode";
-			// 
-			// label40
-			// 
-			this.label40.AutoSize = true;
-			this.label40.Location = new System.Drawing.Point(3, 78);
-			this.label40.Name = "label40";
-			this.label40.Size = new System.Drawing.Size(49, 13);
-			this.label40.TabIndex = 10;
-			this.label40.Text = "03 [Side]";
-			// 
-			// comboBox4
-			// 
-			this.comboBox4.DisplayMember = "Text";
-			this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox4.FormattingEnabled = true;
-			this.comboBox4.Location = new System.Drawing.Point(74, 104);
-			this.comboBox4.Name = "comboBox4";
-			this.comboBox4.Size = new System.Drawing.Size(122, 21);
-			this.comboBox4.TabIndex = 3;
-			this.comboBox4.ValueMember = "HexCode";
-			// 
-			// label39
-			// 
-			this.label39.AutoSize = true;
-			this.label39.Location = new System.Drawing.Point(3, 107);
-			this.label39.Name = "label39";
-			this.label39.Size = new System.Drawing.Size(19, 13);
-			this.label39.TabIndex = 11;
-			this.label39.Text = "04";
-			// 
-			// comboBox3
-			// 
-			this.comboBox3.DisplayMember = "Text";
-			this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox3.FormattingEnabled = true;
-			this.comboBox3.Location = new System.Drawing.Point(74, 77);
-			this.comboBox3.Name = "comboBox3";
-			this.comboBox3.Size = new System.Drawing.Size(122, 21);
-			this.comboBox3.TabIndex = 2;
-			this.comboBox3.ValueMember = "HexCode";
-			// 
-			// label38
-			// 
-			this.label38.AutoSize = true;
-			this.label38.Location = new System.Drawing.Point(3, 134);
-			this.label38.Name = "label38";
-			this.label38.Size = new System.Drawing.Size(19, 13);
-			this.label38.TabIndex = 12;
-			this.label38.Text = "05";
-			// 
-			// comboBox2
-			// 
-			this.comboBox2.DisplayMember = "Text";
-			this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(74, 50);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(122, 21);
-			this.comboBox2.TabIndex = 1;
-			this.comboBox2.ValueMember = "HexCode";
-			// 
-			// label37
-			// 
-			this.label37.AutoSize = true;
-			this.label37.Location = new System.Drawing.Point(3, 161);
-			this.label37.Name = "label37";
-			this.label37.Size = new System.Drawing.Size(19, 13);
-			this.label37.TabIndex = 13;
-			this.label37.Text = "06";
-			// 
-			// comboBox1
-			// 
-			this.comboBox1.DisplayMember = "Text";
-			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(74, 23);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(122, 21);
-			this.comboBox1.TabIndex = 0;
-			this.comboBox1.ValueMember = "HexCode";
-			// 
-			// label36
-			// 
-			this.label36.AutoSize = true;
-			this.label36.Location = new System.Drawing.Point(3, 188);
-			this.label36.Name = "label36";
-			this.label36.Size = new System.Drawing.Size(19, 13);
-			this.label36.TabIndex = 14;
-			this.label36.Text = "07";
-			// 
-			// label31
-			// 
-			this.label31.AutoSize = true;
-			this.label31.Location = new System.Drawing.Point(2, 431);
-			this.label31.Name = "label31";
-			this.label31.Size = new System.Drawing.Size(45, 13);
-			this.label31.TabIndex = 31;
-			this.label31.Text = "16 [Tail]";
-			// 
-			// label35
-			// 
-			this.label35.AutoSize = true;
-			this.label35.Location = new System.Drawing.Point(3, 215);
-			this.label35.Name = "label35";
-			this.label35.Size = new System.Drawing.Size(19, 13);
-			this.label35.TabIndex = 15;
-			this.label35.Text = "08";
-			// 
-			// label30
-			// 
-			this.label30.AutoSize = true;
-			this.label30.Location = new System.Drawing.Point(2, 404);
-			this.label30.Name = "label30";
-			this.label30.Size = new System.Drawing.Size(19, 13);
-			this.label30.TabIndex = 29;
-			this.label30.Text = "15";
-			// 
-			// label34
-			// 
-			this.label34.AutoSize = true;
-			this.label34.Location = new System.Drawing.Point(3, 242);
-			this.label34.Name = "label34";
-			this.label34.Size = new System.Drawing.Size(19, 13);
-			this.label34.TabIndex = 17;
-			this.label34.Text = "09";
-			// 
-			// label29
-			// 
-			this.label29.AutoSize = true;
-			this.label29.Location = new System.Drawing.Point(2, 377);
-			this.label29.Name = "label29";
-			this.label29.Size = new System.Drawing.Size(19, 13);
-			this.label29.TabIndex = 27;
-			this.label29.Text = "14";
-			// 
-			// label33
-			// 
-			this.label33.AutoSize = true;
-			this.label33.Location = new System.Drawing.Point(2, 269);
-			this.label33.Name = "label33";
-			this.label33.Size = new System.Drawing.Size(19, 13);
-			this.label33.TabIndex = 19;
-			this.label33.Text = "10";
-			// 
-			// label28
-			// 
-			this.label28.AutoSize = true;
-			this.label28.Location = new System.Drawing.Point(2, 350);
-			this.label28.Name = "label28";
-			this.label28.Size = new System.Drawing.Size(19, 13);
-			this.label28.TabIndex = 25;
-			this.label28.Text = "13";
-			// 
-			// label32
-			// 
-			this.label32.AutoSize = true;
-			this.label32.Location = new System.Drawing.Point(2, 296);
-			this.label32.Name = "label32";
-			this.label32.Size = new System.Drawing.Size(19, 13);
-			this.label32.TabIndex = 21;
-			this.label32.Text = "11";
-			// 
-			// label27
-			// 
-			this.label27.AutoSize = true;
-			this.label27.Location = new System.Drawing.Point(2, 323);
-			this.label27.Name = "label27";
-			this.label27.Size = new System.Drawing.Size(19, 13);
-			this.label27.TabIndex = 23;
-			this.label27.Text = "12";
+			this.UpgradeToMax.Click += new System.EventHandler(this.UpgradeToMax_Click);
+			// 
+			// Module16
+			// 
+			this.Module16.DisplayMember = "Text";
+			this.Module16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module16.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module16.FormattingEnabled = true;
+			this.Module16.Location = new System.Drawing.Point(74, 428);
+			this.Module16.Name = "Module16";
+			this.Module16.Size = new System.Drawing.Size(122, 21);
+			this.Module16.TabIndex = 15;
+			this.Module16.ValueMember = "HexCode";
+			this.Module16.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// Module15
+			// 
+			this.Module15.DisplayMember = "Text";
+			this.Module15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module15.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module15.FormattingEnabled = true;
+			this.Module15.Location = new System.Drawing.Point(74, 401);
+			this.Module15.Name = "Module15";
+			this.Module15.Size = new System.Drawing.Size(122, 21);
+			this.Module15.TabIndex = 14;
+			this.Module15.ValueMember = "HexCode";
+			this.Module15.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// Module14
+			// 
+			this.Module14.DisplayMember = "Text";
+			this.Module14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module14.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module14.FormattingEnabled = true;
+			this.Module14.Location = new System.Drawing.Point(74, 374);
+			this.Module14.Name = "Module14";
+			this.Module14.Size = new System.Drawing.Size(122, 21);
+			this.Module14.TabIndex = 13;
+			this.Module14.ValueMember = "HexCode";
+			this.Module14.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// Module13
+			// 
+			this.Module13.DisplayMember = "Text";
+			this.Module13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module13.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module13.FormattingEnabled = true;
+			this.Module13.Location = new System.Drawing.Point(74, 347);
+			this.Module13.Name = "Module13";
+			this.Module13.Size = new System.Drawing.Size(122, 21);
+			this.Module13.TabIndex = 12;
+			this.Module13.ValueMember = "HexCode";
+			this.Module13.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// Module12
+			// 
+			this.Module12.DisplayMember = "Text";
+			this.Module12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module12.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module12.FormattingEnabled = true;
+			this.Module12.Location = new System.Drawing.Point(74, 320);
+			this.Module12.Name = "Module12";
+			this.Module12.Size = new System.Drawing.Size(122, 21);
+			this.Module12.TabIndex = 11;
+			this.Module12.ValueMember = "HexCode";
+			this.Module12.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// Module11
+			// 
+			this.Module11.DisplayMember = "Text";
+			this.Module11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module11.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module11.FormattingEnabled = true;
+			this.Module11.Location = new System.Drawing.Point(74, 293);
+			this.Module11.Name = "Module11";
+			this.Module11.Size = new System.Drawing.Size(122, 21);
+			this.Module11.TabIndex = 10;
+			this.Module11.ValueMember = "HexCode";
+			this.Module11.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// Module10
+			// 
+			this.Module10.DisplayMember = "Text";
+			this.Module10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module10.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module10.FormattingEnabled = true;
+			this.Module10.Location = new System.Drawing.Point(74, 266);
+			this.Module10.Name = "Module10";
+			this.Module10.Size = new System.Drawing.Size(122, 21);
+			this.Module10.TabIndex = 9;
+			this.Module10.ValueMember = "HexCode";
+			this.Module10.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// Module09
+			// 
+			this.Module09.DisplayMember = "Text";
+			this.Module09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module09.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module09.FormattingEnabled = true;
+			this.Module09.Location = new System.Drawing.Point(74, 239);
+			this.Module09.Name = "Module09";
+			this.Module09.Size = new System.Drawing.Size(122, 21);
+			this.Module09.TabIndex = 8;
+			this.Module09.ValueMember = "HexCode";
+			this.Module09.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// Module08
+			// 
+			this.Module08.DisplayMember = "Text";
+			this.Module08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module08.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module08.FormattingEnabled = true;
+			this.Module08.Location = new System.Drawing.Point(74, 212);
+			this.Module08.Name = "Module08";
+			this.Module08.Size = new System.Drawing.Size(122, 21);
+			this.Module08.TabIndex = 7;
+			this.Module08.ValueMember = "HexCode";
+			this.Module08.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// Module07
+			// 
+			this.Module07.DisplayMember = "Text";
+			this.Module07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module07.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module07.FormattingEnabled = true;
+			this.Module07.Location = new System.Drawing.Point(74, 185);
+			this.Module07.Name = "Module07";
+			this.Module07.Size = new System.Drawing.Size(122, 21);
+			this.Module07.TabIndex = 6;
+			this.Module07.ValueMember = "HexCode";
+			this.Module07.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// Module06
+			// 
+			this.Module06.DisplayMember = "Text";
+			this.Module06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module06.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module06.FormattingEnabled = true;
+			this.Module06.Location = new System.Drawing.Point(74, 158);
+			this.Module06.Name = "Module06";
+			this.Module06.Size = new System.Drawing.Size(122, 21);
+			this.Module06.TabIndex = 5;
+			this.Module06.ValueMember = "HexCode";
+			this.Module06.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// ModuleLabel01
+			// 
+			this.ModuleLabel01.AutoSize = true;
+			this.ModuleLabel01.Location = new System.Drawing.Point(3, 26);
+			this.ModuleLabel01.Name = "ModuleLabel01";
+			this.ModuleLabel01.Size = new System.Drawing.Size(53, 13);
+			this.ModuleLabel01.TabIndex = 8;
+			this.ModuleLabel01.Text = "01 [Nose]";
+			// 
+			// ModuleLabel02
+			// 
+			this.ModuleLabel02.AutoSize = true;
+			this.ModuleLabel02.Location = new System.Drawing.Point(3, 53);
+			this.ModuleLabel02.Name = "ModuleLabel02";
+			this.ModuleLabel02.Size = new System.Drawing.Size(62, 13);
+			this.ModuleLabel02.TabIndex = 9;
+			this.ModuleLabel02.Text = "02 [Spread]";
+			// 
+			// Module05
+			// 
+			this.Module05.DisplayMember = "Text";
+			this.Module05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module05.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module05.FormattingEnabled = true;
+			this.Module05.Location = new System.Drawing.Point(74, 131);
+			this.Module05.Name = "Module05";
+			this.Module05.Size = new System.Drawing.Size(122, 21);
+			this.Module05.TabIndex = 4;
+			this.Module05.ValueMember = "HexCode";
+			this.Module05.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// ModuleLabel03
+			// 
+			this.ModuleLabel03.AutoSize = true;
+			this.ModuleLabel03.Location = new System.Drawing.Point(3, 78);
+			this.ModuleLabel03.Name = "ModuleLabel03";
+			this.ModuleLabel03.Size = new System.Drawing.Size(49, 13);
+			this.ModuleLabel03.TabIndex = 10;
+			this.ModuleLabel03.Text = "03 [Side]";
+			// 
+			// Module04
+			// 
+			this.Module04.DisplayMember = "Text";
+			this.Module04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module04.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module04.FormattingEnabled = true;
+			this.Module04.Location = new System.Drawing.Point(74, 104);
+			this.Module04.Name = "Module04";
+			this.Module04.Size = new System.Drawing.Size(122, 21);
+			this.Module04.TabIndex = 3;
+			this.Module04.ValueMember = "HexCode";
+			this.Module04.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// ModuleLabel04
+			// 
+			this.ModuleLabel04.AutoSize = true;
+			this.ModuleLabel04.Location = new System.Drawing.Point(3, 107);
+			this.ModuleLabel04.Name = "ModuleLabel04";
+			this.ModuleLabel04.Size = new System.Drawing.Size(19, 13);
+			this.ModuleLabel04.TabIndex = 11;
+			this.ModuleLabel04.Text = "04";
+			// 
+			// Module03
+			// 
+			this.Module03.DisplayMember = "Text";
+			this.Module03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module03.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module03.FormattingEnabled = true;
+			this.Module03.Location = new System.Drawing.Point(74, 77);
+			this.Module03.Name = "Module03";
+			this.Module03.Size = new System.Drawing.Size(122, 21);
+			this.Module03.TabIndex = 2;
+			this.Module03.ValueMember = "HexCode";
+			this.Module03.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// ModuleLabel05
+			// 
+			this.ModuleLabel05.AutoSize = true;
+			this.ModuleLabel05.Location = new System.Drawing.Point(3, 134);
+			this.ModuleLabel05.Name = "ModuleLabel05";
+			this.ModuleLabel05.Size = new System.Drawing.Size(19, 13);
+			this.ModuleLabel05.TabIndex = 12;
+			this.ModuleLabel05.Text = "05";
+			// 
+			// Module02
+			// 
+			this.Module02.DisplayMember = "Text";
+			this.Module02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module02.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module02.FormattingEnabled = true;
+			this.Module02.Location = new System.Drawing.Point(74, 50);
+			this.Module02.Name = "Module02";
+			this.Module02.Size = new System.Drawing.Size(122, 21);
+			this.Module02.TabIndex = 1;
+			this.Module02.ValueMember = "HexCode";
+			this.Module02.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// ModuleLabel06
+			// 
+			this.ModuleLabel06.AutoSize = true;
+			this.ModuleLabel06.Location = new System.Drawing.Point(3, 161);
+			this.ModuleLabel06.Name = "ModuleLabel06";
+			this.ModuleLabel06.Size = new System.Drawing.Size(19, 13);
+			this.ModuleLabel06.TabIndex = 13;
+			this.ModuleLabel06.Text = "06";
+			// 
+			// Module01
+			// 
+			this.Module01.DisplayMember = "Text";
+			this.Module01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Module01.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.Module01.FormattingEnabled = true;
+			this.Module01.Location = new System.Drawing.Point(74, 23);
+			this.Module01.Name = "Module01";
+			this.Module01.Size = new System.Drawing.Size(122, 21);
+			this.Module01.TabIndex = 0;
+			this.Module01.ValueMember = "HexCode";
+			this.Module01.SelectedIndexChanged += new System.EventHandler(this.Module_SelectedIndexChanged);
+			// 
+			// ModuleLabel07
+			// 
+			this.ModuleLabel07.AutoSize = true;
+			this.ModuleLabel07.Location = new System.Drawing.Point(3, 188);
+			this.ModuleLabel07.Name = "ModuleLabel07";
+			this.ModuleLabel07.Size = new System.Drawing.Size(19, 13);
+			this.ModuleLabel07.TabIndex = 14;
+			this.ModuleLabel07.Text = "07";
+			// 
+			// ModuleLabel16
+			// 
+			this.ModuleLabel16.AutoSize = true;
+			this.ModuleLabel16.Location = new System.Drawing.Point(2, 431);
+			this.ModuleLabel16.Name = "ModuleLabel16";
+			this.ModuleLabel16.Size = new System.Drawing.Size(45, 13);
+			this.ModuleLabel16.TabIndex = 31;
+			this.ModuleLabel16.Text = "16 [Tail]";
+			// 
+			// ModuleLabel08
+			// 
+			this.ModuleLabel08.AutoSize = true;
+			this.ModuleLabel08.Location = new System.Drawing.Point(3, 215);
+			this.ModuleLabel08.Name = "ModuleLabel08";
+			this.ModuleLabel08.Size = new System.Drawing.Size(19, 13);
+			this.ModuleLabel08.TabIndex = 15;
+			this.ModuleLabel08.Text = "08";
+			// 
+			// ModuleLabel15
+			// 
+			this.ModuleLabel15.AutoSize = true;
+			this.ModuleLabel15.Location = new System.Drawing.Point(2, 404);
+			this.ModuleLabel15.Name = "ModuleLabel15";
+			this.ModuleLabel15.Size = new System.Drawing.Size(19, 13);
+			this.ModuleLabel15.TabIndex = 29;
+			this.ModuleLabel15.Text = "15";
+			// 
+			// ModuleLabel09
+			// 
+			this.ModuleLabel09.AutoSize = true;
+			this.ModuleLabel09.Location = new System.Drawing.Point(3, 242);
+			this.ModuleLabel09.Name = "ModuleLabel09";
+			this.ModuleLabel09.Size = new System.Drawing.Size(19, 13);
+			this.ModuleLabel09.TabIndex = 17;
+			this.ModuleLabel09.Text = "09";
+			// 
+			// ModuleLabel14
+			// 
+			this.ModuleLabel14.AutoSize = true;
+			this.ModuleLabel14.Location = new System.Drawing.Point(2, 377);
+			this.ModuleLabel14.Name = "ModuleLabel14";
+			this.ModuleLabel14.Size = new System.Drawing.Size(19, 13);
+			this.ModuleLabel14.TabIndex = 27;
+			this.ModuleLabel14.Text = "14";
+			// 
+			// ModuleLabel10
+			// 
+			this.ModuleLabel10.AutoSize = true;
+			this.ModuleLabel10.Location = new System.Drawing.Point(2, 269);
+			this.ModuleLabel10.Name = "ModuleLabel10";
+			this.ModuleLabel10.Size = new System.Drawing.Size(19, 13);
+			this.ModuleLabel10.TabIndex = 19;
+			this.ModuleLabel10.Text = "10";
+			// 
+			// ModuleLabel13
+			// 
+			this.ModuleLabel13.AutoSize = true;
+			this.ModuleLabel13.Location = new System.Drawing.Point(2, 350);
+			this.ModuleLabel13.Name = "ModuleLabel13";
+			this.ModuleLabel13.Size = new System.Drawing.Size(19, 13);
+			this.ModuleLabel13.TabIndex = 25;
+			this.ModuleLabel13.Text = "13";
+			// 
+			// ModuleLabel11
+			// 
+			this.ModuleLabel11.AutoSize = true;
+			this.ModuleLabel11.Location = new System.Drawing.Point(2, 296);
+			this.ModuleLabel11.Name = "ModuleLabel11";
+			this.ModuleLabel11.Size = new System.Drawing.Size(19, 13);
+			this.ModuleLabel11.TabIndex = 21;
+			this.ModuleLabel11.Text = "11";
+			// 
+			// ModuleLabel12
+			// 
+			this.ModuleLabel12.AutoSize = true;
+			this.ModuleLabel12.Location = new System.Drawing.Point(2, 323);
+			this.ModuleLabel12.Name = "ModuleLabel12";
+			this.ModuleLabel12.Size = new System.Drawing.Size(19, 13);
+			this.ModuleLabel12.TabIndex = 23;
+			this.ModuleLabel12.Text = "12";
 			// 
 			// ShipStatusBox
 			// 
 			this.ShipStatusBox.Controls.Add(this.Credits);
 			this.ShipStatusBox.Controls.Add(this.label58);
-			this.ShipStatusBox.Controls.Add(this.label10);
-			this.ShipStatusBox.Controls.Add(this.label11);
-			this.ShipStatusBox.Controls.Add(this.label12);
-			this.ShipStatusBox.Controls.Add(this.label13);
+			this.ShipStatusBox.Controls.Add(this.LandersLabel);
+			this.ShipStatusBox.Controls.Add(this.BioDataLabel);
+			this.ShipStatusBox.Controls.Add(this.RULabel);
+			this.ShipStatusBox.Controls.Add(this.FuelLabel);
 			this.ShipStatusBox.Controls.Add(this.LanderUpgradesBox);
-			this.ShipStatusBox.Controls.Add(this.label14);
+			this.ShipStatusBox.Controls.Add(this.CrewLabel);
 			this.ShipStatusBox.Controls.Add(this.Landers);
 			this.ShipStatusBox.Controls.Add(this.BioData);
-			this.ShipStatusBox.Controls.Add(this.Devices);
 			this.ShipStatusBox.Controls.Add(this.ResUnits);
 			this.ShipStatusBox.Controls.Add(this.ShipFuel);
 			this.ShipStatusBox.Controls.Add(this.ShipCrew);
@@ -1287,11 +1326,11 @@
 			// 
 			// Credits
 			// 
-			this.Credits.Location = new System.Drawing.Point(60, 149);
+			this.Credits.Location = new System.Drawing.Point(68, 149);
 			this.Credits.MaxLength = 16;
 			this.Credits.Name = "Credits";
 			this.Credits.ReadOnly = true;
-			this.Credits.Size = new System.Drawing.Size(98, 20);
+			this.Credits.Size = new System.Drawing.Size(90, 20);
 			this.Credits.TabIndex = 16;
 			this.Credits.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
@@ -1304,55 +1343,56 @@
 			this.label58.TabIndex = 15;
 			this.label58.Text = "Credits";
 			// 
-			// label10
+			// LandersLabel
 			// 
-			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(6, 125);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(45, 13);
-			this.label10.TabIndex = 14;
-			this.label10.Text = "Landers";
+			this.LandersLabel.AutoSize = true;
+			this.LandersLabel.Location = new System.Drawing.Point(6, 125);
+			this.LandersLabel.Name = "LandersLabel";
+			this.LandersLabel.Size = new System.Drawing.Size(45, 13);
+			this.LandersLabel.TabIndex = 14;
+			this.LandersLabel.Text = "Landers";
 			// 
-			// label11
+			// BioDataLabel
 			// 
-			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(6, 99);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(48, 13);
-			this.label11.TabIndex = 13;
-			this.label11.Text = "Bio Data";
+			this.BioDataLabel.AutoSize = true;
+			this.BioDataLabel.Location = new System.Drawing.Point(6, 99);
+			this.BioDataLabel.Name = "BioDataLabel";
+			this.BioDataLabel.Size = new System.Drawing.Size(48, 13);
+			this.BioDataLabel.TabIndex = 13;
+			this.BioDataLabel.Text = "Bio Data";
 			// 
-			// label12
+			// RULabel
 			// 
-			this.label12.AutoSize = true;
-			this.label12.Location = new System.Drawing.Point(6, 73);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(29, 13);
-			this.label12.TabIndex = 12;
-			this.label12.Text = "R.U.";
+			this.RULabel.AutoSize = true;
+			this.RULabel.Location = new System.Drawing.Point(6, 73);
+			this.RULabel.Name = "RULabel";
+			this.RULabel.Size = new System.Drawing.Size(29, 13);
+			this.RULabel.TabIndex = 12;
+			this.RULabel.Text = "R.U.";
 			// 
-			// label13
+			// FuelLabel
 			// 
-			this.label13.AutoSize = true;
-			this.label13.Location = new System.Drawing.Point(6, 47);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(27, 13);
-			this.label13.TabIndex = 11;
-			this.label13.Text = "Fuel";
+			this.FuelLabel.AutoSize = true;
+			this.FuelLabel.Location = new System.Drawing.Point(6, 47);
+			this.FuelLabel.Name = "FuelLabel";
+			this.FuelLabel.Size = new System.Drawing.Size(27, 13);
+			this.FuelLabel.TabIndex = 11;
+			this.FuelLabel.Text = "Fuel";
 			// 
 			// LanderUpgradesBox
 			// 
 			this.LanderUpgradesBox.Controls.Add(this.IsBomb);
-			this.LanderUpgradesBox.Controls.Add(this.Quake);
-			this.LanderUpgradesBox.Controls.Add(this.Weapons);
-			this.LanderUpgradesBox.Controls.Add(this.Resistant);
-			this.LanderUpgradesBox.Controls.Add(this.Capacity);
-			this.LanderUpgradesBox.Controls.Add(this.Speed);
-			this.LanderUpgradesBox.Controls.Add(this.Lightning);
-			this.LanderUpgradesBox.Controls.Add(this.HotSpot);
+			this.LanderUpgradesBox.Controls.Add(this.QuakeShield);
+			this.LanderUpgradesBox.Controls.Add(this.RapidFire);
+			this.LanderUpgradesBox.Controls.Add(this.BioShield);
+			this.LanderUpgradesBox.Controls.Add(this.DblCargo);
+			this.LanderUpgradesBox.Controls.Add(this.DblSpeed);
+			this.LanderUpgradesBox.Controls.Add(this.LightningShield);
+			this.LanderUpgradesBox.Controls.Add(this.HeatShield);
+			this.LanderUpgradesBox.Enabled = false;
 			this.LanderUpgradesBox.Location = new System.Drawing.Point(6, 175);
 			this.LanderUpgradesBox.Name = "LanderUpgradesBox";
-			this.LanderUpgradesBox.Size = new System.Drawing.Size(152, 75);
+			this.LanderUpgradesBox.Size = new System.Drawing.Size(152, 172);
 			this.LanderUpgradesBox.TabIndex = 60;
 			this.LanderUpgradesBox.TabStop = false;
 			this.LanderUpgradesBox.Text = "Lander Upgrades";
@@ -1362,116 +1402,109 @@
 			this.IsBomb.AutoCheck = false;
 			this.IsBomb.AutoSize = true;
 			this.IsBomb.Enabled = false;
-			this.IsBomb.Location = new System.Drawing.Point(76, 55);
+			this.IsBomb.Location = new System.Drawing.Point(82, 83);
 			this.IsBomb.Name = "IsBomb";
 			this.IsBomb.Size = new System.Drawing.Size(64, 17);
 			this.IsBomb.TabIndex = 8;
 			this.IsBomb.Text = "Is Bomb";
 			this.IsBomb.UseVisualStyleBackColor = true;
 			// 
-			// Quake
+			// QuakeShield
 			// 
-			this.Quake.AutoCheck = false;
-			this.Quake.AutoSize = true;
-			this.Quake.Enabled = false;
-			this.Quake.Location = new System.Drawing.Point(76, 41);
-			this.Quake.Name = "Quake";
-			this.Quake.Size = new System.Drawing.Size(58, 17);
-			this.Quake.TabIndex = 7;
-			this.Quake.Text = "Quake";
-			this.Quake.UseVisualStyleBackColor = true;
+			this.QuakeShield.AutoCheck = false;
+			this.QuakeShield.AutoSize = true;
+			this.QuakeShield.Location = new System.Drawing.Point(6, 106);
+			this.QuakeShield.Name = "QuakeShield";
+			this.QuakeShield.Size = new System.Drawing.Size(90, 17);
+			this.QuakeShield.TabIndex = 7;
+			this.QuakeShield.Text = "Quake Shield";
+			this.QuakeShield.UseVisualStyleBackColor = true;
 			// 
-			// Weapons
+			// RapidFire
 			// 
-			this.Weapons.AutoCheck = false;
-			this.Weapons.AutoSize = true;
-			this.Weapons.Enabled = false;
-			this.Weapons.Location = new System.Drawing.Point(76, 27);
-			this.Weapons.Name = "Weapons";
-			this.Weapons.Size = new System.Drawing.Size(72, 17);
-			this.Weapons.TabIndex = 6;
-			this.Weapons.Text = "Weapons";
-			this.Weapons.UseVisualStyleBackColor = true;
+			this.RapidFire.AutoCheck = false;
+			this.RapidFire.AutoSize = true;
+			this.RapidFire.Location = new System.Drawing.Point(6, 83);
+			this.RapidFire.Name = "RapidFire";
+			this.RapidFire.Size = new System.Drawing.Size(74, 17);
+			this.RapidFire.TabIndex = 6;
+			this.RapidFire.Text = "Rapid Fire";
+			this.RapidFire.UseVisualStyleBackColor = true;
 			// 
-			// Resistant
+			// BioShield
 			// 
-			this.Resistant.AutoCheck = false;
-			this.Resistant.AutoSize = true;
-			this.Resistant.Enabled = false;
-			this.Resistant.Location = new System.Drawing.Point(76, 13);
-			this.Resistant.Name = "Resistant";
-			this.Resistant.Size = new System.Drawing.Size(70, 17);
-			this.Resistant.TabIndex = 5;
-			this.Resistant.Text = "Resistant";
-			this.Resistant.UseVisualStyleBackColor = true;
+			this.BioShield.AutoCheck = false;
+			this.BioShield.AutoSize = true;
+			this.BioShield.Location = new System.Drawing.Point(6, 37);
+			this.BioShield.Name = "BioShield";
+			this.BioShield.Size = new System.Drawing.Size(73, 17);
+			this.BioShield.TabIndex = 5;
+			this.BioShield.Text = "Bio-Shield";
+			this.BioShield.UseVisualStyleBackColor = true;
 			// 
-			// Capacity
+			// DblCargo
 			// 
-			this.Capacity.AutoCheck = false;
-			this.Capacity.AutoSize = true;
-			this.Capacity.Enabled = false;
-			this.Capacity.Location = new System.Drawing.Point(9, 55);
-			this.Capacity.Name = "Capacity";
-			this.Capacity.Size = new System.Drawing.Size(67, 17);
-			this.Capacity.TabIndex = 4;
-			this.Capacity.Text = "Capacity";
-			this.Capacity.UseVisualStyleBackColor = true;
+			this.DblCargo.AutoCheck = false;
+			this.DblCargo.AutoSize = true;
+			this.DblCargo.Location = new System.Drawing.Point(6, 60);
+			this.DblCargo.Name = "DblCargo";
+			this.DblCargo.Size = new System.Drawing.Size(91, 17);
+			this.DblCargo.TabIndex = 4;
+			this.DblCargo.Text = "Double Cargo";
+			this.DblCargo.UseVisualStyleBackColor = true;
 			// 
-			// Speed
+			// DblSpeed
 			// 
-			this.Speed.AutoCheck = false;
-			this.Speed.AutoSize = true;
-			this.Speed.Enabled = false;
-			this.Speed.Location = new System.Drawing.Point(9, 41);
-			this.Speed.Name = "Speed";
-			this.Speed.Size = new System.Drawing.Size(57, 17);
-			this.Speed.TabIndex = 3;
-			this.Speed.Text = "Speed";
-			this.Speed.UseVisualStyleBackColor = true;
+			this.DblSpeed.AutoCheck = false;
+			this.DblSpeed.AutoSize = true;
+			this.DblSpeed.Location = new System.Drawing.Point(6, 14);
+			this.DblSpeed.Name = "DblSpeed";
+			this.DblSpeed.Size = new System.Drawing.Size(94, 17);
+			this.DblSpeed.TabIndex = 3;
+			this.DblSpeed.Text = "Double Speed";
+			this.DblSpeed.UseVisualStyleBackColor = true;
 			// 
-			// Lightning
+			// LightningShield
 			// 
-			this.Lightning.AutoCheck = false;
-			this.Lightning.AutoSize = true;
-			this.Lightning.Enabled = false;
-			this.Lightning.Location = new System.Drawing.Point(9, 27);
-			this.Lightning.Name = "Lightning";
-			this.Lightning.Size = new System.Drawing.Size(69, 17);
-			this.Lightning.TabIndex = 2;
-			this.Lightning.Text = "Lightning";
-			this.Lightning.UseVisualStyleBackColor = true;
+			this.LightningShield.AutoCheck = false;
+			this.LightningShield.AutoSize = true;
+			this.LightningShield.Location = new System.Drawing.Point(6, 129);
+			this.LightningShield.Name = "LightningShield";
+			this.LightningShield.Size = new System.Drawing.Size(101, 17);
+			this.LightningShield.TabIndex = 2;
+			this.LightningShield.Text = "Lightning Shield";
+			this.LightningShield.UseVisualStyleBackColor = true;
 			// 
-			// HotSpot
+			// HeatShield
 			// 
-			this.HotSpot.AutoCheck = false;
-			this.HotSpot.AutoSize = true;
-			this.HotSpot.Enabled = false;
-			this.HotSpot.Location = new System.Drawing.Point(9, 13);
-			this.HotSpot.Name = "HotSpot";
-			this.HotSpot.Size = new System.Drawing.Size(68, 17);
-			this.HotSpot.TabIndex = 1;
-			this.HotSpot.Text = "Hot Spot";
-			this.HotSpot.UseVisualStyleBackColor = true;
+			this.HeatShield.AutoCheck = false;
+			this.HeatShield.AutoSize = true;
+			this.HeatShield.Location = new System.Drawing.Point(6, 152);
+			this.HeatShield.Name = "HeatShield";
+			this.HeatShield.Size = new System.Drawing.Size(81, 17);
+			this.HeatShield.TabIndex = 1;
+			this.HeatShield.Text = "Heat Shield";
+			this.HeatShield.UseVisualStyleBackColor = true;
 			// 
-			// label14
+			// CrewLabel
 			// 
-			this.label14.AutoSize = true;
-			this.label14.Location = new System.Drawing.Point(6, 21);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(31, 13);
-			this.label14.TabIndex = 10;
-			this.label14.Text = "Crew";
+			this.CrewLabel.AutoSize = true;
+			this.CrewLabel.Location = new System.Drawing.Point(6, 21);
+			this.CrewLabel.Name = "CrewLabel";
+			this.CrewLabel.Size = new System.Drawing.Size(31, 13);
+			this.CrewLabel.TabIndex = 10;
+			this.CrewLabel.Text = "Crew";
 			// 
 			// Landers
 			// 
-			this.Landers.Location = new System.Drawing.Point(60, 123);
+			this.Landers.Location = new System.Drawing.Point(68, 123);
 			this.Landers.Maximum = new decimal(new int[] {
             999999999,
             0,
             0,
             0});
 			this.Landers.Name = "Landers";
-			this.Landers.Size = new System.Drawing.Size(98, 20);
+			this.Landers.Size = new System.Drawing.Size(90, 20);
 			this.Landers.TabIndex = 6;
 			this.Landers.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
@@ -1482,25 +1515,16 @@
             0,
             0,
             0});
-			this.BioData.Location = new System.Drawing.Point(60, 97);
+			this.BioData.Location = new System.Drawing.Point(68, 97);
 			this.BioData.Maximum = new decimal(new int[] {
             65535,
             0,
             0,
             0});
 			this.BioData.Name = "BioData";
-			this.BioData.Size = new System.Drawing.Size(98, 20);
+			this.BioData.Size = new System.Drawing.Size(90, 20);
 			this.BioData.TabIndex = 5;
 			this.BioData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// Devices
-			// 
-			this.Devices.FormattingEnabled = true;
-			this.Devices.Location = new System.Drawing.Point(6, 253);
-			this.Devices.Name = "Devices";
-			this.Devices.SelectionMode = System.Windows.Forms.SelectionMode.None;
-			this.Devices.Size = new System.Drawing.Size(152, 95);
-			this.Devices.TabIndex = 1;
 			// 
 			// ResUnits
 			// 
@@ -1509,14 +1533,14 @@
             0,
             0,
             0});
-			this.ResUnits.Location = new System.Drawing.Point(60, 71);
+			this.ResUnits.Location = new System.Drawing.Point(68, 71);
 			this.ResUnits.Maximum = new decimal(new int[] {
             42949672,
             0,
             0,
             0});
 			this.ResUnits.Name = "ResUnits";
-			this.ResUnits.Size = new System.Drawing.Size(98, 20);
+			this.ResUnits.Size = new System.Drawing.Size(90, 20);
 			this.ResUnits.TabIndex = 4;
 			this.ResUnits.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
@@ -1528,27 +1552,27 @@
             0,
             0,
             0});
-			this.ShipFuel.Location = new System.Drawing.Point(60, 45);
+			this.ShipFuel.Location = new System.Drawing.Point(68, 45);
 			this.ShipFuel.Maximum = new decimal(new int[] {
             1610,
             0,
             0,
             0});
 			this.ShipFuel.Name = "ShipFuel";
-			this.ShipFuel.Size = new System.Drawing.Size(98, 20);
+			this.ShipFuel.Size = new System.Drawing.Size(90, 20);
 			this.ShipFuel.TabIndex = 3;
 			this.ShipFuel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// ShipCrew
 			// 
-			this.ShipCrew.Location = new System.Drawing.Point(60, 19);
+			this.ShipCrew.Location = new System.Drawing.Point(68, 19);
 			this.ShipCrew.Maximum = new decimal(new int[] {
             65535,
             0,
             0,
             0});
 			this.ShipCrew.Name = "ShipCrew";
-			this.ShipCrew.Size = new System.Drawing.Size(98, 20);
+			this.ShipCrew.Size = new System.Drawing.Size(90, 20);
 			this.ShipCrew.TabIndex = 2;
 			this.ShipCrew.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
@@ -1590,7 +1614,6 @@
 			// 
 			// TotalMinerals
 			// 
-			this.TotalMinerals.Enabled = false;
 			this.TotalMinerals.Location = new System.Drawing.Point(90, 227);
 			this.TotalMinerals.Maximum = new decimal(new int[] {
             65535,
@@ -1876,7 +1899,6 @@
 			// 
 			this.CurrentStatus.BackColor = System.Drawing.SystemColors.Menu;
 			this.CurrentStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
-			this.CurrentStatus.Enabled = false;
 			this.CurrentStatus.FormattingEnabled = true;
 			this.CurrentStatus.Location = new System.Drawing.Point(6, 19);
 			this.CurrentStatus.Name = "CurrentStatus";
@@ -1921,8 +1943,8 @@
 			// 
 			// HSCoordsBox
 			// 
-			this.HSCoordsBox.Controls.Add(this.label54);
-			this.HSCoordsBox.Controls.Add(this.label55);
+			this.HSCoordsBox.Controls.Add(this.UniYLabel);
+			this.HSCoordsBox.Controls.Add(this.UniXLabel);
 			this.HSCoordsBox.Controls.Add(this.UniverseY);
 			this.HSCoordsBox.Controls.Add(this.UniverseX);
 			this.HSCoordsBox.Location = new System.Drawing.Point(6, 6);
@@ -1932,23 +1954,23 @@
 			this.HSCoordsBox.TabStop = false;
 			this.HSCoordsBox.Text = "Hyperspace Coordinates";
 			// 
-			// label54
+			// UniYLabel
 			// 
-			this.label54.AutoSize = true;
-			this.label54.Location = new System.Drawing.Point(3, 46);
-			this.label54.Name = "label54";
-			this.label54.Size = new System.Drawing.Size(14, 13);
-			this.label54.TabIndex = 9;
-			this.label54.Text = "Y";
+			this.UniYLabel.AutoSize = true;
+			this.UniYLabel.Location = new System.Drawing.Point(3, 46);
+			this.UniYLabel.Name = "UniYLabel";
+			this.UniYLabel.Size = new System.Drawing.Size(14, 13);
+			this.UniYLabel.TabIndex = 9;
+			this.UniYLabel.Text = "Y";
 			// 
-			// label55
+			// UniXLabel
 			// 
-			this.label55.AutoSize = true;
-			this.label55.Location = new System.Drawing.Point(3, 22);
-			this.label55.Name = "label55";
-			this.label55.Size = new System.Drawing.Size(14, 13);
-			this.label55.TabIndex = 8;
-			this.label55.Text = "X";
+			this.UniXLabel.AutoSize = true;
+			this.UniXLabel.Location = new System.Drawing.Point(3, 22);
+			this.UniXLabel.Name = "UniXLabel";
+			this.UniXLabel.Size = new System.Drawing.Size(14, 13);
+			this.UniXLabel.TabIndex = 8;
+			this.UniXLabel.Text = "X";
 			// 
 			// UniverseY
 			// 
@@ -1960,13 +1982,14 @@
             131072});
 			this.UniverseY.Location = new System.Drawing.Point(53, 43);
 			this.UniverseY.Maximum = new decimal(new int[] {
-            99999,
+            9999,
             0,
             0,
-            131072});
+            65536});
 			this.UniverseY.Name = "UniverseY";
 			this.UniverseY.Size = new System.Drawing.Size(100, 20);
 			this.UniverseY.TabIndex = 1;
+			this.UniverseY.TextChanged += new System.EventHandler(this.Universe_TextChanged);
 			// 
 			// UniverseX
 			// 
@@ -1985,6 +2008,7 @@
 			this.UniverseX.Name = "UniverseX";
 			this.UniverseX.Size = new System.Drawing.Size(100, 20);
 			this.UniverseX.TabIndex = 0;
+			this.UniverseX.TextChanged += new System.EventHandler(this.Universe_TextChanged);
 			// 
 			// StarList
 			// 
@@ -1994,6 +2018,7 @@
 			this.StarList.Name = "StarList";
 			this.StarList.Size = new System.Drawing.Size(684, 457);
 			this.StarList.TabIndex = 0;
+			this.StarList.SelectedIndexChanged += new System.EventHandler(this.StarList_SelectedIndexChanged);
 			// 
 			// Main
 			// 
@@ -2004,14 +2029,18 @@
 			this.Controls.Add(this.toolStrip1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
+			this.MaximumSize = new System.Drawing.Size(889, 568);
+			this.MinimumSize = new System.Drawing.Size(889, 568);
 			this.Name = "Main";
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "The UQM Save Editor";
+			this.Shown += new System.EventHandler(this.Main_Shown);
 			this.toolStrip1.ResumeLayout(false);
 			this.toolStrip1.PerformLayout();
 			this.Tabs.ResumeLayout(false);
 			this.Summary.ResumeLayout(false);
+			this.DevicesBox.ResumeLayout(false);
 			this.ThrusterBox.ResumeLayout(false);
 			this.ThrusterBox.PerformLayout();
 			this.JetsBox.ResumeLayout(false);
@@ -2074,57 +2103,57 @@
 		private System.Windows.Forms.ListBox StarList;
 		public System.Windows.Forms.GroupBox ModulesBox;
 		public System.Windows.Forms.Button UpgradeToMax;
-		public System.Windows.Forms.ComboBox comboBox11;
-		public System.Windows.Forms.ComboBox comboBox12;
-		public System.Windows.Forms.ComboBox comboBox13;
-		public System.Windows.Forms.ComboBox comboBox14;
-		public System.Windows.Forms.ComboBox comboBox15;
-		public System.Windows.Forms.ComboBox comboBox16;
-		public System.Windows.Forms.ComboBox comboBox17;
-		public System.Windows.Forms.ComboBox comboBox9;
-		public System.Windows.Forms.ComboBox comboBox8;
-		public System.Windows.Forms.ComboBox comboBox7;
-		public System.Windows.Forms.ComboBox comboBox6;
-		private System.Windows.Forms.Label label56;
-		private System.Windows.Forms.Label label53;
-		public System.Windows.Forms.ComboBox comboBox5;
-		private System.Windows.Forms.Label label40;
-		public System.Windows.Forms.ComboBox comboBox4;
-		private System.Windows.Forms.Label label39;
-		public System.Windows.Forms.ComboBox comboBox3;
-		private System.Windows.Forms.Label label38;
-		public System.Windows.Forms.ComboBox comboBox2;
-		private System.Windows.Forms.Label label37;
-		public System.Windows.Forms.ComboBox comboBox1;
-		private System.Windows.Forms.Label label36;
-		private System.Windows.Forms.Label label31;
-		private System.Windows.Forms.Label label35;
-		private System.Windows.Forms.Label label30;
-		private System.Windows.Forms.Label label34;
-		private System.Windows.Forms.Label label29;
-		private System.Windows.Forms.Label label33;
-		private System.Windows.Forms.Label label28;
-		private System.Windows.Forms.Label label32;
-		private System.Windows.Forms.Label label27;
+		public System.Windows.Forms.ComboBox Module16;
+		public System.Windows.Forms.ComboBox Module15;
+		public System.Windows.Forms.ComboBox Module14;
+		public System.Windows.Forms.ComboBox Module13;
+		public System.Windows.Forms.ComboBox Module12;
+		public System.Windows.Forms.ComboBox Module11;
+		public System.Windows.Forms.ComboBox Module10;
+		public System.Windows.Forms.ComboBox Module09;
+		public System.Windows.Forms.ComboBox Module08;
+		public System.Windows.Forms.ComboBox Module07;
+		public System.Windows.Forms.ComboBox Module06;
+		private System.Windows.Forms.Label ModuleLabel01;
+		private System.Windows.Forms.Label ModuleLabel02;
+		public System.Windows.Forms.ComboBox Module05;
+		private System.Windows.Forms.Label ModuleLabel03;
+		public System.Windows.Forms.ComboBox Module04;
+		private System.Windows.Forms.Label ModuleLabel04;
+		public System.Windows.Forms.ComboBox Module03;
+		private System.Windows.Forms.Label ModuleLabel05;
+		public System.Windows.Forms.ComboBox Module02;
+		private System.Windows.Forms.Label ModuleLabel06;
+		public System.Windows.Forms.ComboBox Module01;
+		private System.Windows.Forms.Label ModuleLabel07;
+		private System.Windows.Forms.Label ModuleLabel16;
+		private System.Windows.Forms.Label ModuleLabel08;
+		private System.Windows.Forms.Label ModuleLabel15;
+		private System.Windows.Forms.Label ModuleLabel09;
+		private System.Windows.Forms.Label ModuleLabel14;
+		private System.Windows.Forms.Label ModuleLabel10;
+		private System.Windows.Forms.Label ModuleLabel13;
+		private System.Windows.Forms.Label ModuleLabel11;
+		private System.Windows.Forms.Label ModuleLabel12;
 		public System.Windows.Forms.TextBox CustomSeed;
 		public System.Windows.Forms.GroupBox LanderUpgradesBox;
 		public System.Windows.Forms.CheckBox IsBomb;
-		public System.Windows.Forms.CheckBox Quake;
-		public System.Windows.Forms.CheckBox Weapons;
-		public System.Windows.Forms.CheckBox Resistant;
-		public System.Windows.Forms.CheckBox Capacity;
-		public System.Windows.Forms.CheckBox Speed;
-		public System.Windows.Forms.CheckBox Lightning;
-		public System.Windows.Forms.CheckBox HotSpot;
+		public System.Windows.Forms.CheckBox QuakeShield;
+		public System.Windows.Forms.CheckBox RapidFire;
+		public System.Windows.Forms.CheckBox BioShield;
+		public System.Windows.Forms.CheckBox DblCargo;
+		public System.Windows.Forms.CheckBox DblSpeed;
+		public System.Windows.Forms.CheckBox LightningShield;
+		public System.Windows.Forms.CheckBox HeatShield;
 		public System.Windows.Forms.GroupBox ShipStatusBox;
 		public System.Windows.Forms.TextBox Credits;
 		private System.Windows.Forms.Label label58;
 		public System.Windows.Forms.TextBox CommanderName;
-		private System.Windows.Forms.Label label10;
-		public System.Windows.Forms.Label label11;
-		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.Label label14;
+		private System.Windows.Forms.Label LandersLabel;
+		public System.Windows.Forms.Label BioDataLabel;
+		private System.Windows.Forms.Label RULabel;
+		private System.Windows.Forms.Label FuelLabel;
+		private System.Windows.Forms.Label CrewLabel;
 		public System.Windows.Forms.NumericUpDown Landers;
 		public System.Windows.Forms.NumericUpDown BioData;
 		public System.Windows.Forms.NumericUpDown ResUnits;
@@ -2153,35 +2182,35 @@
 		public System.Windows.Forms.TextBox NearestPlanet;
 		private System.Windows.Forms.GroupBox HSCoordsBox;
 		public System.Windows.Forms.TextBox NearestStar;
-		private System.Windows.Forms.Label label54;
-		private System.Windows.Forms.Label label55;
+		private System.Windows.Forms.Label UniYLabel;
+		private System.Windows.Forms.Label UniXLabel;
 		public System.Windows.Forms.NumericUpDown UniverseY;
 		public System.Windows.Forms.NumericUpDown UniverseX;
 		public System.Windows.Forms.GroupBox ShipsBox;
-		public System.Windows.Forms.ComboBox comboBox52;
-		public System.Windows.Forms.ComboBox comboBox51;
-		public System.Windows.Forms.ComboBox comboBox50;
-		public System.Windows.Forms.ComboBox comboBox49;
-		public System.Windows.Forms.ComboBox comboBox48;
-		public System.Windows.Forms.ComboBox comboBox47;
-		public System.Windows.Forms.ComboBox comboBox46;
-		public System.Windows.Forms.ComboBox comboBox45;
-		public System.Windows.Forms.ComboBox comboBox44;
-		public System.Windows.Forms.ComboBox comboBox43;
-		public System.Windows.Forms.ComboBox comboBox42;
-		public System.Windows.Forms.ComboBox comboBox41;
-		private System.Windows.Forms.Label label74;
-		private System.Windows.Forms.Label label63;
-		private System.Windows.Forms.Label label73;
-		private System.Windows.Forms.Label label64;
-		private System.Windows.Forms.Label label65;
-		private System.Windows.Forms.Label label72;
-		private System.Windows.Forms.Label label66;
-		private System.Windows.Forms.Label label67;
-		private System.Windows.Forms.Label label71;
-		private System.Windows.Forms.Label label68;
-		private System.Windows.Forms.Label label69;
-		private System.Windows.Forms.Label label70;
+		public System.Windows.Forms.ComboBox Ship01;
+		public System.Windows.Forms.ComboBox Ship02;
+		public System.Windows.Forms.ComboBox Ship03;
+		public System.Windows.Forms.ComboBox Ship04;
+		public System.Windows.Forms.ComboBox Ship05;
+		public System.Windows.Forms.ComboBox Ship06;
+		public System.Windows.Forms.ComboBox Ship07;
+		public System.Windows.Forms.ComboBox Ship08;
+		public System.Windows.Forms.ComboBox Ship09;
+		public System.Windows.Forms.ComboBox Ship10;
+		public System.Windows.Forms.ComboBox Ship11;
+		public System.Windows.Forms.ComboBox Ship12;
+		private System.Windows.Forms.Label ShipLabel01;
+		private System.Windows.Forms.Label ShipLabel12;
+		private System.Windows.Forms.Label ShipLabel02;
+		private System.Windows.Forms.Label ShipLabel11;
+		private System.Windows.Forms.Label ShipLabel10;
+		private System.Windows.Forms.Label ShipLabel03;
+		private System.Windows.Forms.Label ShipLabel09;
+		private System.Windows.Forms.Label ShipLabel08;
+		private System.Windows.Forms.Label ShipLabel04;
+		private System.Windows.Forms.Label ShipLabel07;
+		private System.Windows.Forms.Label ShipLabel06;
+		private System.Windows.Forms.Label ShipLabel05;
 		private System.Windows.Forms.Label TotalLabel;
 		private System.Windows.Forms.NumericUpDown TotalMinerals;
 		private System.Windows.Forms.GroupBox NearestStarBox;
@@ -2191,8 +2220,8 @@
 		private System.Windows.Forms.GroupBox CaptainBox;
 		private System.Windows.Forms.GroupBox SeedBox;
 		private System.Windows.Forms.CheckBox Spoilers;
-		private System.Windows.Forms.Button MaxThrusters;
 		private System.Windows.Forms.Button MaxJets;
+		private System.Windows.Forms.Button MaxThrusters;
 		public System.Windows.Forms.CheckBox Thruster10;
 		public System.Windows.Forms.CheckBox Thruster9;
 		public System.Windows.Forms.CheckBox Thruster8;
@@ -2217,6 +2246,7 @@
 		private System.Windows.Forms.Label MaxModulesLabel;
 		public System.Windows.Forms.GroupBox ThrusterBox;
 		public System.Windows.Forms.GroupBox JetsBox;
+		private System.Windows.Forms.GroupBox DevicesBox;
 	}
 }
 
