@@ -9,8 +9,8 @@
 		{
 			public const byte SaveName = 16;
 
-			public const byte UniverseX = 48;
-			public const byte UniverseY = 52;
+			public const byte LogX = 48;
+			public const byte LogY = 52;
 
 			public const byte ResUnits = 56;
 			public const byte Fuel = 60;
@@ -57,8 +57,8 @@
 		public class MM
 		{
 
-			public const byte UniverseX = 12;
-			public const byte UniverseY = 16;
+			public const byte LogX = 12;
+			public const byte LogY = 16;
 
 			public const byte ResUnits = 20;
 			public const byte Fuel = 24;

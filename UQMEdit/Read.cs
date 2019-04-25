@@ -28,7 +28,7 @@ namespace UQMEdit
 			byte[] ResFactorArray = new byte[1];
 
 			// Save Checker			
-			int LoadChecker = BitConverter.ToInt32(Functions.ReadOffset(Offs.SaveChecker, 4), 0);
+			int LoadChecker = Functions.ReadOffsetToInt(Offs.SaveChecker, 4);
 			if (LoadChecker == Vars.SaveFileTag && Functions.ReadOffset(Offs.MM.ResFactor, 1)[0] > 2) {
 				SaveVersion = 3;
 			} else if (LoadChecker == Vars.SaveFileTag) {
@@ -40,8 +40,8 @@ namespace UQMEdit
 
 
 			Summary();
-			ShipStatus();
 			Coordinates();
+			ShipStatus();
 
 			Stream.Close();
 			Stream.Dispose();

@@ -115,14 +115,11 @@ namespace UQMEdit
 		public static object[] CreateModules() {
 			return new object[]
 			{
-				new Modules(22, "Empty Module"),
-				//new Modules(0, "Lander"),
-				//new Modules(1, "Antimat Thruster"),
-				//new Modules(2, "Turning Jets"),
+				new Modules(22, "Empty"),
 				new Modules(3, "Crew Pod"),
 				new Modules(4, "Storage Bay"),
 				new Modules(5, "Fuel Tank"),
-				new Modules(6, "High-Ef Fuelsys"),
+				new Modules(6, "High-Eff FuelSys"),
 				new Modules(7, "Dynamo Unit"),
 				new Modules(8, "Shiva Furnace"),
 				new Modules(9, "Ion-Bolt Gun"),
