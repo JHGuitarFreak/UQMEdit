@@ -8,7 +8,6 @@ namespace UQMEdit
 	partial class Read
 	{
 		public static void Coordinates() {
-
 			// X Coordinates
 			decimal LogX = Functions.LogXToUniverse(Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.LogX, Offs.MM.LogX), 4));
 			Window.UniverseX.Value = LogX / 10;
@@ -23,7 +22,9 @@ namespace UQMEdit
 			} else {
 				Window.CurrentStatus.SelectedIndex = Status;
 			}
-			if (Status == 7 || Status == 8) {   // Last Planet
+
+			// Planet Orbit
+			if (Status == 7 || Status == 8) {
 				string Planet = Encoding.Default.GetString(Functions.ReadOffset(Functions.OffsPick(Offs.HD.NearestPlanet, Offs.MM.NearestPlanet), 16));
 				Window.NearestPlanet.Text = Planet;
 			} else {
