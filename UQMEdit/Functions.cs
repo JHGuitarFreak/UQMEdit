@@ -15,28 +15,22 @@ namespace UQMEdit
 			}
 			return array;
 		}
-
-		public static int ReadOffsetToInt(int Offset, int ByteLength, int Is16or32 = 32, bool Reverse = false) {
-			Read.Stream.Seek(Offset, !Reverse ? SeekOrigin.Begin : SeekOrigin.End);
-			Read.Stream.Read(Read.FileBuffer, 0, ByteLength);
-			int Query = (Is16or32 == 16) ? BitConverter.ToUInt16(Read.FileBuffer, 0) : BitConverter.ToInt32(Read.FileBuffer, 0);
-			return Query;
-		}
-		public static bool ReadOffsetBool(int Offset, bool IsTJets = false) {
-			bool ReadBool;
-			Read.Stream.Seek(Offset, SeekOrigin.Begin);
-			Read.Stream.Read(Read.FileBuffer, 0, 1);
-			if (IsTJets == true) {
-				ReadBool = (Read.FileBuffer[0] == 02) ? true : false;
-			} else {
-				ReadBool = (Read.FileBuffer[0] == 01) ? true : false;
-			}
-			return ReadBool;
-		}
+		
 		public static byte[] ReadOffset(int Offset, int ByteLength, bool Reverse = false) {
 			Read.Stream.Seek(Offset, !Reverse ? SeekOrigin.Begin : SeekOrigin.End);
 			Read.Stream.Read(Read.FileBuffer, 0, ByteLength);
 			return Read.FileBuffer;
+		}
+		public static int ReadOffsetToInt(int Offset, int ByteLength, int Is16or32 = 32, bool Reverse = false) {
+			byte[] Buffer = ReadOffset(Offset, ByteLength, Reverse);
+			int Query = (Is16or32 == 16) ? BitConverter.ToUInt16(Buffer, 0) : BitConverter.ToInt32(Buffer, 0);
+			return Query;
+		}
+		public static bool ReadGameState(int Offset) {
+			bool ReadBool;
+			byte[] Buffer = ReadOffset(Offset, 1);
+			ReadBool = (Buffer[0] > 0) ? true : false;
+			return ReadBool;
 		}
 
 		public static void WriteOffset(int Offset, decimal SpinnerValue, int ByteLength, int Limit) {
