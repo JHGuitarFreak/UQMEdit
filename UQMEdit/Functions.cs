@@ -1,21 +1,24 @@
 ﻿using System;
 using System.IO;
+using System.Text;
+using System.Globalization;
 
 namespace UQMEdit
 {
 	class Functions
 	{
-		public static byte[] StringToByte(string String, int arrayLength) {
-			byte[] array = new byte[Math.Max(arrayLength, String.Length)];
-			for (int i = 0; i < arrayLength; i++) {
-				array[i] = 0;
+		public static byte[] StringToByteArray(string String, int MaxLength) {
+			char[] charArr = String.ToCharArray();
+			byte[] bytes = new byte[MaxLength];
+			for (int i = 0; i < MaxLength; i++) {
+				if (i < charArr.Length)
+					bytes[i] = Convert.ToByte(charArr[i]);
+				else
+					bytes[i] = 0;
 			}
-			for (int j = 0; j < String.Length; j++) {
-				array[j] = (byte)String[j];
-			}
-			return array;
+			return bytes;
 		}
-		
+
 		public static byte[] ReadOffset(int Offset, int ByteLength, bool Reverse = false) {
 			Read.Stream.Seek(Offset, !Reverse ? SeekOrigin.Begin : SeekOrigin.End);
 			Read.Stream.Read(Read.FileBuffer, 0, ByteLength);
@@ -33,24 +36,28 @@ namespace UQMEdit
 			return ReadBool;
 		}
 
-		public static void WriteOffset(int Offset, decimal SpinnerValue, int ByteLength, int Limit) {
+		public static void WriteOffset(int Offset, decimal SpinnerValue, int ByteLength, uint Limit, bool IsUINT = false) {
 			Write.Stream.Seek(Offset, SeekOrigin.Begin);
-			Write.Num = Decimal.ToInt32(SpinnerValue);
-			if (Write.Num >= Limit) {
-				Write.Num = Limit;
+			if (IsUINT) {
+				Write.uNum = Decimal.ToUInt32(SpinnerValue);
+				if (Write.uNum >= Limit) {
+					Write.uNum = Limit;
+				}
+				Write.FileBuffer = BitConverter.GetBytes(Write.uNum);
+			} else {
+				Write.Num = Decimal.ToInt32(SpinnerValue);
+				if (Write.Num >= Limit) {
+					Write.Num = (int)Limit;
+				}
+				Write.FileBuffer = BitConverter.GetBytes(Write.Num);
 			}
-			Write.FileBuffer = BitConverter.GetBytes(Write.Num);
 			Write.Stream.Write(Write.FileBuffer, 0, ByteLength);
 		}
-		public static void WriteOffsetBool(int Offset, bool Checked, bool IsResearch = false) {
+
+		public static void WriteOffsetString(int Offset, string String, int ByteLength) {
 			Write.Stream.Seek(Offset, SeekOrigin.Begin);
-			if (IsResearch == true) {
-				Write.Num = (Checked == true) ? 36 : 4;
-			} else {
-				Write.Num = (Checked == true) ? 255 : 254;
-			}
-			Write.FileBuffer = BitConverter.GetBytes(Write.Num);
-			Write.Stream.Write(Write.FileBuffer, 0, 1);
+			Write.FileBuffer = StringToByteArray(String, ByteLength);
+			Write.Stream.Write(Write.FileBuffer, 0, ByteLength);
 		}
 
 		public static int OffsPick(int HD, int MegaMod) {
@@ -80,21 +87,21 @@ namespace UQMEdit
 		public static int LogXToUniverse(int LogX) {
 			int UniverseUnits = HSCoordChecker(Vars.UniverseUnitsOld, Vars.UniverseUnits);
 			int LogUnits = HSCoordChecker(Vars.LogUnitsXOld, Vars.LogUnits);
-			return ((LogX * UniverseUnits + RoundingError(LogUnits)) / LogUnits);
+			return (LogX * UniverseUnits + RoundingError(LogUnits)) / LogUnits;
 		}
 		public static int LogYToUniverse(int LogY) {
 			int LogUnits = HSCoordChecker(Vars.LogUnitsYOld, Vars.LogUnits);
-			return (Vars.MaxUniverse - ((LogY * Vars.UniverseUnits + RoundingError(LogUnits)) / LogUnits));
+			return Vars.MaxUniverse - ((LogY * Vars.UniverseUnits + RoundingError(LogUnits)) / LogUnits);
 		}
 
 		public static int UniverseToLogX(int UniverseX) {
 			int UniverseUnits = HSCoordChecker(Vars.UniverseUnitsOld, Vars.UniverseUnits);
 			int LogUnits = HSCoordChecker(Vars.LogUnitsXOld, Vars.LogUnits);
-			return ((UniverseX * Vars.LogUnits + RoundingError(Vars.UniverseUnits)) / Vars.UniverseUnits);
+			return (UniverseX * Vars.LogUnits + RoundingError(Vars.UniverseUnits)) / Vars.UniverseUnits;
 		}
 		public static int UniverseToLogY(int UniverseY) {
 			int LogUnits = HSCoordChecker(Vars.LogUnitsYOld, Vars.LogUnits);
-			return (((Vars.MaxUniverse - UniverseY) * LogUnits + RoundingError(Vars.UniverseUnits)) / Vars.UniverseUnits);
+			return ((Vars.MaxUniverse - UniverseY) * LogUnits + RoundingError(Vars.UniverseUnits)) / Vars.UniverseUnits;
 		}
 	}
 }
