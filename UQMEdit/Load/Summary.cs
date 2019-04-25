@@ -1,11 +1,5 @@
-﻿using System;
-using System.IO;
-using System.Text;
-using System.Threading;
+﻿using System.Text;
 using System.Globalization;
-using System.Windows.Forms;
-using System.Collections.Generic;
-using System.Linq;
 namespace UQMEdit
 {
 	partial class Read
@@ -14,11 +8,6 @@ namespace UQMEdit
 		public static string Date = "";
 
 		public static void Summary() {
-			byte[] NameArray = new byte[64];
-			byte[] SaveMagicArray = new byte[4];
-			byte[] LanderModsArray = new byte[1];
-			byte[] NamesArray = new byte[16];
-			byte[] array = new byte[256];
 
 			if (SaveVersion >= 2) {
 				int Magic;
@@ -39,6 +28,16 @@ namespace UQMEdit
 			Year = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.Date[2], Offs.MM.Date[2]), 2, 16);
 			Date = CultureInfo.CurrentCulture.DateTimeFormat.GetAbbreviatedMonthName(Month).ToUpper() + " " + Day + "·" + Year;
 
+			// Cargo
+			Window.Common.Value = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.Common, Offs.MM.Common), 2, 16);
+			Window.Corrosive.Value = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.Corrosive, Offs.MM.Corrosive), 2, 16);
+			Window.BaseMetal.Value = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.BaseMetal, Offs.MM.BaseMetal), 2, 16);
+			Window.NobleGas.Value = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.NobleGas, Offs.MM.NobleGas), 2, 16);
+			Window.RareEarth.Value = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.RareEarth, Offs.MM.RareEarth), 2, 16);
+			Window.Precious.Value = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.Precious, Offs.MM.Precious), 2, 16);
+			Window.Radioactive.Value = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.Radioactive, Offs.MM.Radioactive), 2, 16);
+			Window.Exotic.Value = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.Exotic, Offs.MM.Exotic), 2, 16);
+
 			// Ship Name
 			Window.ShipName.Text = Encoding.Default.GetString(Functions.ReadOffset(Functions.OffsPick(Offs.HD.ShipName, Offs.MM.ShipName), 16));
 			// Captain Name
@@ -58,26 +57,26 @@ namespace UQMEdit
 			Window.Landers.Value = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Landers, Offs.MM.Landers), 1)[0];
 
 			//  Lander Mods
-			int LanderMods = Functions.ReadOffset(Functions.OffsPick(Offs.HD.LanderMods, Offs.MM.LanderMods), 1)[0];
+			byte LanderMods = Functions.ReadOffset(Functions.OffsPick(Offs.HD.LanderMods, Offs.MM.LanderMods), 1)[0];
 			bool LanderModsBool(int OtherValue, bool Bomb = false) {
 				if (!Bomb)
 					return ((LanderMods | 128) & OtherValue) != 0 ? true : false;
 				return (LanderMods & OtherValue) != 0 ? true : false;
 			}
 			Window.IsBomb.Checked = LanderModsBool(128, true);
-			Window.Resistant.Checked = LanderModsBool(1);
-			Window.Quake.Checked = LanderModsBool(2);
-			Window.Lightning.Checked = LanderModsBool(4);
-			Window.HotSpot.Checked = LanderModsBool(8);
-			Window.Speed.Checked = LanderModsBool(16);
-			Window.Capacity.Checked = LanderModsBool(32);
-			Window.Weapons.Checked = LanderModsBool(64);
+			Window.BioShield.Checked = LanderModsBool(1);
+			Window.QuakeShield.Checked = LanderModsBool(2);
+			Window.LightningShield.Checked = LanderModsBool(4);
+			Window.HeatShield.Checked = LanderModsBool(8);
+			Window.DblSpeed.Checked = LanderModsBool(16);
+			Window.DblCargo.Checked = LanderModsBool(32);
+			Window.RapidFire.Checked = LanderModsBool(64);
 
 			//  Devices
-			int NumberOfDevices = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Devices[0], Offs.MM.Devices[0]), 1)[0];
+			byte NumberOfDevices = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Devices[0], Offs.MM.Devices[0]), 1)[0];
 			object[] DevicesIntArray = new object[NumberOfDevices];
 			byte[] DevicesArray = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Devices[1], Offs.MM.Devices[1]), NumberOfDevices);
-			for (int i = 0; i < NumberOfDevices; i++) {
+			for (byte i = 0; i < NumberOfDevices; i++) {
 				if (DevicesArray[i] < 0 || DevicesArray[i] >= Vars.DeviceName.Length)
 					DevicesIntArray[i] = "Please report this [0x" + DevicesArray[i].ToString("X2") + "]";
 				else
