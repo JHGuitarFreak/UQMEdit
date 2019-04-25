@@ -25,6 +25,7 @@
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
 			this.Open = new System.Windows.Forms.ToolStripButton();
@@ -180,6 +181,8 @@
 			this.UniverseY = new System.Windows.Forms.NumericUpDown();
 			this.UniverseX = new System.Windows.Forms.NumericUpDown();
 			this.StarList = new System.Windows.Forms.ListBox();
+			this.ReadOnly = new System.Windows.Forms.ToolTip(this.components);
+			this.MaxLimits = new System.Windows.Forms.ToolTip(this.components);
 			this.toolStrip1.SuspendLayout();
 			this.Tabs.SuspendLayout();
 			this.Summary.SuspendLayout();
@@ -275,6 +278,7 @@
 			// Summary
 			// 
 			this.Summary.Controls.Add(this.DevicesBox);
+			this.Summary.Controls.Add(this.TotalMinerals);
 			this.Summary.Controls.Add(this.ThrusterBox);
 			this.Summary.Controls.Add(this.JetsBox);
 			this.Summary.Controls.Add(this.SeedBox);
@@ -578,6 +582,7 @@
 			this.CustomSeed.Size = new System.Drawing.Size(160, 20);
 			this.CustomSeed.TabIndex = 70;
 			this.CustomSeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.ReadOnly.SetToolTip(this.CustomSeed, "Read Only");
 			// 
 			// ShipNameBox
 			// 
@@ -1334,6 +1339,7 @@
 			this.Credits.Size = new System.Drawing.Size(90, 20);
 			this.Credits.TabIndex = 16;
 			this.Credits.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.ReadOnly.SetToolTip(this.Credits, "Read Only");
 			// 
 			// label58
 			// 
@@ -1390,7 +1396,6 @@
 			this.LanderUpgradesBox.Controls.Add(this.DblSpeed);
 			this.LanderUpgradesBox.Controls.Add(this.LightningShield);
 			this.LanderUpgradesBox.Controls.Add(this.HeatShield);
-			this.LanderUpgradesBox.Enabled = false;
 			this.LanderUpgradesBox.Location = new System.Drawing.Point(6, 175);
 			this.LanderUpgradesBox.Name = "LanderUpgradesBox";
 			this.LanderUpgradesBox.Size = new System.Drawing.Size(152, 172);
@@ -1580,7 +1585,6 @@
 			// CargoBox
 			// 
 			this.CargoBox.Controls.Add(this.TotalLabel);
-			this.CargoBox.Controls.Add(this.TotalMinerals);
 			this.CargoBox.Controls.Add(this.ExoticsLabel);
 			this.CargoBox.Controls.Add(this.RadioactivsLabel);
 			this.CargoBox.Controls.Add(this.PreciousMetalsLabel);
@@ -1615,7 +1619,7 @@
 			// 
 			// TotalMinerals
 			// 
-			this.TotalMinerals.Location = new System.Drawing.Point(90, 227);
+			this.TotalMinerals.Location = new System.Drawing.Point(96, 233);
 			this.TotalMinerals.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -1905,6 +1909,7 @@
 			this.CurrentStatus.Name = "CurrentStatus";
 			this.CurrentStatus.Size = new System.Drawing.Size(147, 21);
 			this.CurrentStatus.TabIndex = 65;
+			this.ReadOnly.SetToolTip(this.CurrentStatus, "Read Only");
 			// 
 			// OrbitBox
 			// 
@@ -1923,6 +1928,7 @@
 			this.NearestPlanet.ReadOnly = true;
 			this.NearestPlanet.Size = new System.Drawing.Size(147, 20);
 			this.NearestPlanet.TabIndex = 66;
+			this.ReadOnly.SetToolTip(this.NearestPlanet, "Read Only");
 			// 
 			// NearestStarBox
 			// 
@@ -1941,6 +1947,7 @@
 			this.NearestStar.ReadOnly = true;
 			this.NearestStar.Size = new System.Drawing.Size(147, 20);
 			this.NearestStar.TabIndex = 2;
+			this.ReadOnly.SetToolTip(this.NearestStar, "Read Only");
 			// 
 			// HSCoordsBox
 			// 
@@ -2213,7 +2220,6 @@
 		private System.Windows.Forms.Label ShipLabel06;
 		private System.Windows.Forms.Label ShipLabel05;
 		private System.Windows.Forms.Label TotalLabel;
-		private System.Windows.Forms.NumericUpDown TotalMinerals;
 		private System.Windows.Forms.GroupBox NearestStarBox;
 		private System.Windows.Forms.GroupBox StatusBox;
 		private System.Windows.Forms.GroupBox OrbitBox;
@@ -2248,6 +2254,9 @@
 		public System.Windows.Forms.GroupBox ThrusterBox;
 		public System.Windows.Forms.GroupBox JetsBox;
 		private System.Windows.Forms.GroupBox DevicesBox;
+		private System.Windows.Forms.ToolTip ReadOnly;
+		private System.Windows.Forms.ToolTip MaxLimits;
+		public System.Windows.Forms.NumericUpDown TotalMinerals;
 	}
 }
 

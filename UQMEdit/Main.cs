@@ -206,6 +206,9 @@ namespace UQMEdit
 			CrewLabel.Text = "Crew " + ("[" + MaxCrew + "]");
 			FuelLabel.Text = "Fuel  " + ("[" + MaxFuel + "]");
 			TotalLabel.Text = "Total  " + ("[" + MaxStorage + "]");
+			MaxLimits.SetToolTip(CrewLabel, "Please fill only to max value as shown.");
+			MaxLimits.SetToolTip(FuelLabel, "Please fill only to max value as shown.");
+			MaxLimits.SetToolTip(TotalLabel, "Please fill only to max value as shown.");
 		}
 	}
 }

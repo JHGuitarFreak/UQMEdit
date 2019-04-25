@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Windows.Forms;
 
 namespace UQMEdit
 {
@@ -7,6 +8,7 @@ namespace UQMEdit
 		public static FileStream Stream;
 		public static Main Window;
 		public static int Num;
+		public static uint uNum;
 		public static byte[] FileBuffer;
 
 		public static void Save(string FileName, Main WindowRef) {

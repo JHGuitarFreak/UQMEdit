@@ -34,6 +34,7 @@
 			public const byte Precious = 116;
 			public const byte Radioactive = 118;
 			public const byte Exotic = 120;
+			public static byte[] Minerals = { 106, 108, 110, 112, 114, 116, 118, 120 };
 
 			public const byte ShipName = 122;
 			public const byte CaptainName = 138;
@@ -81,6 +82,7 @@
 			public const byte Precious = 80;
 			public const byte Radioactive = 82;
 			public const byte Exotic = 84;
+			public static byte[] Minerals = { 70, 72, 74, 76, 78, 80, 82, 84 };
 
 			public const byte ShipName = 86;
 			public const byte CaptainName = 102;

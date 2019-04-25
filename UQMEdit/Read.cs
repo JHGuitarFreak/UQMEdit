@@ -38,9 +38,7 @@ namespace UQMEdit
 			else
 				SaveVersion = 0;
 
-
 			Summary();
-			ShipStatus();
 			Coordinates();
 
 			Stream.Close();

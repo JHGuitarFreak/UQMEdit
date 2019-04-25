@@ -109,8 +109,8 @@ namespace UQMEdit
 			private set;
 		}
 		public Modules(byte hexcode, string text) {
-			this.HexCode = hexcode;
-			this.Text = text;
+			HexCode = hexcode;
+			Text = text;
 		}
 		public static object[] CreateModules() {
 			return new object[]
