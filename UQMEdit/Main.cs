@@ -113,6 +113,12 @@ namespace UQMEdit
 			Write.Save(CurrentFile, this);
 		}
 
+		private void Main_Shown(object sender, EventArgs e) {
+			UniverseY.Text = "";
+			UniverseX.Text = "";
+			NearestStar.Text = "";
+		}
+
 		private void Spoilers_CheckedChanged(object sender, EventArgs e) {
 			int selectedIndex = StarList.SelectedIndex;
 			StarList.Items.Clear();
@@ -123,6 +129,83 @@ namespace UQMEdit
 				}
 				StarList.SelectedIndex = selectedIndex;
 			}
+		}
+
+		private void Universe_TextChanged(object sender, EventArgs e) {
+			double num, num2;
+			if (double.TryParse(UniverseX.Text.Replace(',', '.'), out num) && double.TryParse(UniverseY.Text.Replace(',', '.'), out num2)) {
+				if (num <= 1500.0 && num2 <= 1500.0 && num >= -1500.0 && num2 >= -1500.0) {
+					NearestStar.Text = Stars.NearestStar(num, num2);
+					return;
+				}
+				NearestStar.Text = "";
+			}
+		}
+
+		private void StarList_SelectedIndexChanged(object sender, EventArgs e) {
+			if (StarList.SelectedItem == null || StarList.SelectedIndex == 0) {
+				return;
+			}
+			string[] array = StarList.SelectedItem.ToString().Split(new char[]
+			{
+				'\t'
+			})[4].Replace(" ", "").Replace("[", "").Replace("]", "").Split(new char[]
+			{
+				':'
+			});
+			UniverseX.Text = array[0];
+			UniverseY.Text = array[1];
+		}
+
+		private void UpgradeToMax_Click(object sender, EventArgs e) {
+			byte[] ModulesArray = { 4, 1, 2, 2, 11, 10, 10, 10, 5, 5, 5, 6, 6, 6, 9, 9 };
+			byte i = 0;
+			foreach (object Modules in ModulesBox.Controls) {
+				if (Modules is ComboBox) {
+					(Modules as ComboBox).SelectedIndex = ModulesArray[i];
+					i++;
+				}
+			}
+		}
+
+		private void MaxThrusters_Click(object sender, EventArgs e) {
+			foreach (object Thruster in ThrusterBox.Controls) {
+				if (Thruster is CheckBox) {
+					(Thruster as CheckBox).Checked = true;
+				}
+			}
+		}
+
+		private void MaxJets_Click(object sender, EventArgs e) {
+			foreach (object Jets in JetsBox.Controls) {
+				if (Jets is CheckBox) {
+					(Jets as CheckBox).Checked = true;
+				}
+			}
+		}
+
+		private void Module_SelectedIndexChanged(object sender, EventArgs e) {
+			int MaxStorage = 0;
+			int MaxFuel = 0;
+			int MaxCrew = 0;
+			foreach (object Module in ModulesBox.Controls) {
+				if (Module is ComboBox) {
+					int selectedIndex = (Module as ComboBox).SelectedIndex;
+					if (selectedIndex == 1) {
+						MaxCrew += 50;
+					} else if (selectedIndex == 2) {
+						MaxStorage += 500;
+					} else if (selectedIndex == 3) {
+						MaxFuel += 50;
+					} else if (selectedIndex == 4) {
+						MaxFuel += 100;
+					}
+				} 
+			}
+			MaxFuel += 10;
+			CrewLabel.Text = "Crew " + ("[" + MaxCrew + "]");
+			FuelLabel.Text = "Fuel  " + ("[" + MaxFuel + "]");
+			TotalLabel.Text = "Total  " + ("[" + MaxStorage + "]");
 		}
 	}
 }

@@ -494,6 +494,7 @@
 			this.MaxJets.Size = new System.Drawing.Size(15, 14);
 			this.MaxJets.TabIndex = 1;
 			this.MaxJets.UseVisualStyleBackColor = true;
+			this.MaxJets.Click += new System.EventHandler(this.MaxJets_Click);
 			// 
 			// Jets6
 			// 
