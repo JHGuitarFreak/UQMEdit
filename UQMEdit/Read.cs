@@ -40,8 +40,8 @@ namespace UQMEdit
 
 
 			Summary();
-			Coordinates();
 			ShipStatus();
+			Coordinates();
 
 			Stream.Close();
 			Stream.Dispose();
