@@ -38,8 +38,8 @@ namespace UQMEdit
 			else
 				SaveVersion = 0;
 
-			Summary();
 			Coordinates();
+			Summary();
 
 			Stream.Close();
 			Stream.Dispose();
