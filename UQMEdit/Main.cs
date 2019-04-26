@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -185,30 +185,24 @@ namespace UQMEdit
 		}
 
 		private void Module_SelectedIndexChanged(object sender, EventArgs e) {
-			int MaxStorage = 0;
-			int MaxFuel = 0;
-			int MaxCrew = 0;
+			int MaxStorage = 0, MaxFuel = 10, MaxCrew = 0;
 			foreach (object Module in ModulesBox.Controls) {
 				if (Module is ComboBox) {
-					int selectedIndex = (Module as ComboBox).SelectedIndex;
-					if (selectedIndex == 1) {
-						MaxCrew += 50;
-					} else if (selectedIndex == 2) {
-						MaxStorage += 500;
-					} else if (selectedIndex == 3) {
-						MaxFuel += 50;
-					} else if (selectedIndex == 4) {
-						MaxFuel += 100;
-					}
-				} 
+					int Index = (Module as ComboBox).SelectedIndex;
+					MaxCrew += Index == 1 ? 50 : 0;
+					MaxStorage += Index == 2 ? 500 : 0;
+					MaxFuel += Index == 3 ? 50 : (Index == 4 ? 100 : 0);
+				}
 			}
-			MaxFuel += 10;
 			CrewLabel.Text = "Crew " + ("[" + MaxCrew + "]");
 			FuelLabel.Text = "Fuel  " + ("[" + MaxFuel + "]");
 			TotalLabel.Text = "Total  " + ("[" + MaxStorage + "]");
 			MaxLimits.SetToolTip(CrewLabel, "Please fill only to max value as shown.");
 			MaxLimits.SetToolTip(FuelLabel, "Please fill only to max value as shown.");
 			MaxLimits.SetToolTip(TotalLabel, "Please fill only to max value as shown.");
+			// These are commented out because they sometimes cause errors when loading.
+			//ShipFuel.Maximum = MaxFuel;
+			//ShipCrew.Maximum = MaxCrew;
 		}
 	}
 }
