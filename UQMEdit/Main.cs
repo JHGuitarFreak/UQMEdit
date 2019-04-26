@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -158,11 +158,12 @@ namespace UQMEdit
 		}
 
 		private void UpgradeToMax_Click(object sender, EventArgs e) {
-			byte[] ModulesArray = { 4, 1, 2, 2, 11, 10, 10, 10, 5, 5, 5, 6, 6, 6, 9, 9 };
+			byte[] ModulesArray = { 4, 1, 1, 2, 11, 10, 10, 10, 5, 5, 5, 6, 6, 6, 9, 9 };
+			byte[] ModulesArrayBomb = { 16, 17, 15, 13, 12, 13, 15, 16, 17, 14, 4, 1, 11, 10, 9, 10 };
 			byte i = 0;
 			foreach (object Modules in ModulesBox.Controls) {
 				if (Modules is ComboBox) {
-					(Modules as ComboBox).SelectedIndex = ModulesArray[i];
+					(Modules as ComboBox).SelectedIndex = IsBomb.Checked ? ModulesArrayBomb[i] : ModulesArray[i];
 					i++;
 				}
 			}
