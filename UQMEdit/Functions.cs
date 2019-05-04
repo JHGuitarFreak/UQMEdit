@@ -95,6 +95,7 @@ namespace UQMEdit
 		}
 
 		public static int UniverseToLogX(int UniverseX) {
+			UniverseX -= HSCoordChecker(3, 0);
 			int UniverseUnits = HSCoordChecker(Vars.UniverseUnitsOld, Vars.UniverseUnits);
 			int LogUnits = HSCoordChecker(Vars.LogUnitsXOld, Vars.LogUnits);
 			return (UniverseX * Vars.LogUnits + RoundingError(Vars.UniverseUnits)) / Vars.UniverseUnits;
