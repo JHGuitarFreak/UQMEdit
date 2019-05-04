@@ -35,6 +35,7 @@
 			this.Summary = new System.Windows.Forms.TabPage();
 			this.DevicesBox = new System.Windows.Forms.GroupBox();
 			this.Devices = new System.Windows.Forms.ListBox();
+			this.TotalMinerals = new System.Windows.Forms.NumericUpDown();
 			this.ThrusterBox = new System.Windows.Forms.GroupBox();
 			this.MaxThrustLabel = new System.Windows.Forms.Label();
 			this.MaxThrusters = new System.Windows.Forms.Button();
@@ -150,7 +151,6 @@
 			this.ShipCrew = new System.Windows.Forms.NumericUpDown();
 			this.CargoBox = new System.Windows.Forms.GroupBox();
 			this.TotalLabel = new System.Windows.Forms.Label();
-			this.TotalMinerals = new System.Windows.Forms.NumericUpDown();
 			this.ExoticsLabel = new System.Windows.Forms.Label();
 			this.RadioactivsLabel = new System.Windows.Forms.Label();
 			this.PreciousMetalsLabel = new System.Windows.Forms.Label();
@@ -187,6 +187,7 @@
 			this.Tabs.SuspendLayout();
 			this.Summary.SuspendLayout();
 			this.DevicesBox.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.TotalMinerals)).BeginInit();
 			this.ThrusterBox.SuspendLayout();
 			this.JetsBox.SuspendLayout();
 			this.SeedBox.SuspendLayout();
@@ -202,7 +203,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.ShipFuel)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ShipCrew)).BeginInit();
 			this.CargoBox.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.TotalMinerals)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Exotic)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Radioactive)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Precious)).BeginInit();
@@ -299,7 +299,7 @@
 			// DevicesBox
 			// 
 			this.DevicesBox.Controls.Add(this.Devices);
-			this.DevicesBox.Location = new System.Drawing.Point(6, 320);
+			this.DevicesBox.Location = new System.Drawing.Point(6, 267);
 			this.DevicesBox.Name = "DevicesBox";
 			this.DevicesBox.Size = new System.Drawing.Size(172, 148);
 			this.DevicesBox.TabIndex = 78;
@@ -314,6 +314,20 @@
 			this.Devices.SelectionMode = System.Windows.Forms.SelectionMode.None;
 			this.Devices.Size = new System.Drawing.Size(160, 121);
 			this.Devices.TabIndex = 1;
+			// 
+			// TotalMinerals
+			// 
+			this.TotalMinerals.Location = new System.Drawing.Point(96, 233);
+			this.TotalMinerals.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+			this.TotalMinerals.Name = "TotalMinerals";
+			this.TotalMinerals.ReadOnly = true;
+			this.TotalMinerals.Size = new System.Drawing.Size(76, 20);
+			this.TotalMinerals.TabIndex = 16;
+			this.TotalMinerals.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// ThrusterBox
 			// 
@@ -566,7 +580,7 @@
 			// SeedBox
 			// 
 			this.SeedBox.Controls.Add(this.CustomSeed);
-			this.SeedBox.Location = new System.Drawing.Point(6, 267);
+			this.SeedBox.Location = new System.Drawing.Point(6, 421);
 			this.SeedBox.Name = "SeedBox";
 			this.SeedBox.Size = new System.Drawing.Size(172, 47);
 			this.SeedBox.TabIndex = 76;
@@ -657,8 +671,9 @@
 			// 
 			// Ship01
 			// 
+			this.Ship01.BackColor = System.Drawing.SystemColors.Menu;
 			this.Ship01.DisplayMember = "Text";
-			this.Ship01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 			this.Ship01.FormattingEnabled = true;
 			this.Ship01.Location = new System.Drawing.Point(28, 19);
 			this.Ship01.Name = "Ship01";
@@ -668,8 +683,9 @@
 			// 
 			// Ship02
 			// 
+			this.Ship02.BackColor = System.Drawing.SystemColors.Menu;
 			this.Ship02.DisplayMember = "Text";
-			this.Ship02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 			this.Ship02.FormattingEnabled = true;
 			this.Ship02.Location = new System.Drawing.Point(28, 46);
 			this.Ship02.Name = "Ship02";
@@ -679,8 +695,9 @@
 			// 
 			// Ship03
 			// 
+			this.Ship03.BackColor = System.Drawing.SystemColors.Menu;
 			this.Ship03.DisplayMember = "Text";
-			this.Ship03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 			this.Ship03.FormattingEnabled = true;
 			this.Ship03.Location = new System.Drawing.Point(28, 73);
 			this.Ship03.Name = "Ship03";
@@ -690,8 +707,9 @@
 			// 
 			// Ship04
 			// 
+			this.Ship04.BackColor = System.Drawing.SystemColors.Menu;
 			this.Ship04.DisplayMember = "Text";
-			this.Ship04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 			this.Ship04.FormattingEnabled = true;
 			this.Ship04.Location = new System.Drawing.Point(28, 100);
 			this.Ship04.Name = "Ship04";
@@ -701,8 +719,9 @@
 			// 
 			// Ship05
 			// 
+			this.Ship05.BackColor = System.Drawing.SystemColors.Menu;
 			this.Ship05.DisplayMember = "Text";
-			this.Ship05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 			this.Ship05.FormattingEnabled = true;
 			this.Ship05.Location = new System.Drawing.Point(28, 127);
 			this.Ship05.Name = "Ship05";
@@ -712,8 +731,9 @@
 			// 
 			// Ship06
 			// 
+			this.Ship06.BackColor = System.Drawing.SystemColors.Menu;
 			this.Ship06.DisplayMember = "Text";
-			this.Ship06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 			this.Ship06.FormattingEnabled = true;
 			this.Ship06.Location = new System.Drawing.Point(28, 154);
 			this.Ship06.Name = "Ship06";
@@ -723,8 +743,9 @@
 			// 
 			// Ship07
 			// 
+			this.Ship07.BackColor = System.Drawing.SystemColors.Menu;
 			this.Ship07.DisplayMember = "Text";
-			this.Ship07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 			this.Ship07.FormattingEnabled = true;
 			this.Ship07.Location = new System.Drawing.Point(28, 180);
 			this.Ship07.Name = "Ship07";
@@ -734,8 +755,9 @@
 			// 
 			// Ship08
 			// 
+			this.Ship08.BackColor = System.Drawing.SystemColors.Menu;
 			this.Ship08.DisplayMember = "Text";
-			this.Ship08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 			this.Ship08.FormattingEnabled = true;
 			this.Ship08.Location = new System.Drawing.Point(28, 207);
 			this.Ship08.Name = "Ship08";
@@ -745,8 +767,9 @@
 			// 
 			// Ship09
 			// 
+			this.Ship09.BackColor = System.Drawing.SystemColors.Menu;
 			this.Ship09.DisplayMember = "Text";
-			this.Ship09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 			this.Ship09.FormattingEnabled = true;
 			this.Ship09.Location = new System.Drawing.Point(28, 234);
 			this.Ship09.Name = "Ship09";
@@ -756,8 +779,9 @@
 			// 
 			// Ship10
 			// 
+			this.Ship10.BackColor = System.Drawing.SystemColors.Menu;
 			this.Ship10.DisplayMember = "Text";
-			this.Ship10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 			this.Ship10.FormattingEnabled = true;
 			this.Ship10.Location = new System.Drawing.Point(28, 261);
 			this.Ship10.Name = "Ship10";
@@ -767,8 +791,9 @@
 			// 
 			// Ship11
 			// 
+			this.Ship11.BackColor = System.Drawing.SystemColors.Menu;
 			this.Ship11.DisplayMember = "Text";
-			this.Ship11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 			this.Ship11.FormattingEnabled = true;
 			this.Ship11.Location = new System.Drawing.Point(28, 288);
 			this.Ship11.Name = "Ship11";
@@ -778,8 +803,9 @@
 			// 
 			// Ship12
 			// 
+			this.Ship12.BackColor = System.Drawing.SystemColors.Menu;
 			this.Ship12.DisplayMember = "Text";
-			this.Ship12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.Ship12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 			this.Ship12.FormattingEnabled = true;
 			this.Ship12.Location = new System.Drawing.Point(28, 315);
 			this.Ship12.Name = "Ship12";
@@ -1419,6 +1445,7 @@
 			// 
 			this.QuakeShield.AutoCheck = false;
 			this.QuakeShield.AutoSize = true;
+			this.QuakeShield.Enabled = false;
 			this.QuakeShield.Location = new System.Drawing.Point(6, 106);
 			this.QuakeShield.Name = "QuakeShield";
 			this.QuakeShield.Size = new System.Drawing.Size(90, 17);
@@ -1430,6 +1457,7 @@
 			// 
 			this.RapidFire.AutoCheck = false;
 			this.RapidFire.AutoSize = true;
+			this.RapidFire.Enabled = false;
 			this.RapidFire.Location = new System.Drawing.Point(6, 83);
 			this.RapidFire.Name = "RapidFire";
 			this.RapidFire.Size = new System.Drawing.Size(74, 17);
@@ -1441,6 +1469,7 @@
 			// 
 			this.BioShield.AutoCheck = false;
 			this.BioShield.AutoSize = true;
+			this.BioShield.Enabled = false;
 			this.BioShield.Location = new System.Drawing.Point(6, 37);
 			this.BioShield.Name = "BioShield";
 			this.BioShield.Size = new System.Drawing.Size(73, 17);
@@ -1452,6 +1481,7 @@
 			// 
 			this.DblCargo.AutoCheck = false;
 			this.DblCargo.AutoSize = true;
+			this.DblCargo.Enabled = false;
 			this.DblCargo.Location = new System.Drawing.Point(6, 60);
 			this.DblCargo.Name = "DblCargo";
 			this.DblCargo.Size = new System.Drawing.Size(91, 17);
@@ -1463,6 +1493,7 @@
 			// 
 			this.DblSpeed.AutoCheck = false;
 			this.DblSpeed.AutoSize = true;
+			this.DblSpeed.Enabled = false;
 			this.DblSpeed.Location = new System.Drawing.Point(6, 14);
 			this.DblSpeed.Name = "DblSpeed";
 			this.DblSpeed.Size = new System.Drawing.Size(94, 17);
@@ -1474,6 +1505,7 @@
 			// 
 			this.LightningShield.AutoCheck = false;
 			this.LightningShield.AutoSize = true;
+			this.LightningShield.Enabled = false;
 			this.LightningShield.Location = new System.Drawing.Point(6, 129);
 			this.LightningShield.Name = "LightningShield";
 			this.LightningShield.Size = new System.Drawing.Size(101, 17);
@@ -1485,6 +1517,7 @@
 			// 
 			this.HeatShield.AutoCheck = false;
 			this.HeatShield.AutoSize = true;
+			this.HeatShield.Enabled = false;
 			this.HeatShield.Location = new System.Drawing.Point(6, 152);
 			this.HeatShield.Name = "HeatShield";
 			this.HeatShield.Size = new System.Drawing.Size(81, 17);
@@ -1616,20 +1649,6 @@
 			this.TotalLabel.Size = new System.Drawing.Size(31, 13);
 			this.TotalLabel.TabIndex = 17;
 			this.TotalLabel.Text = "Total";
-			// 
-			// TotalMinerals
-			// 
-			this.TotalMinerals.Location = new System.Drawing.Point(96, 233);
-			this.TotalMinerals.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-			this.TotalMinerals.Name = "TotalMinerals";
-			this.TotalMinerals.ReadOnly = true;
-			this.TotalMinerals.Size = new System.Drawing.Size(76, 20);
-			this.TotalMinerals.TabIndex = 16;
-			this.TotalMinerals.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// ExoticsLabel
 			// 
@@ -2049,6 +2068,7 @@
 			this.Tabs.ResumeLayout(false);
 			this.Summary.ResumeLayout(false);
 			this.DevicesBox.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.TotalMinerals)).EndInit();
 			this.ThrusterBox.ResumeLayout(false);
 			this.ThrusterBox.PerformLayout();
 			this.JetsBox.ResumeLayout(false);
@@ -2074,7 +2094,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.ShipCrew)).EndInit();
 			this.CargoBox.ResumeLayout(false);
 			this.CargoBox.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.TotalMinerals)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Exotic)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Radioactive)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Precious)).EndInit();
@@ -2259,4 +2278,3 @@
 		public System.Windows.Forms.NumericUpDown TotalMinerals;
 	}
 }
-

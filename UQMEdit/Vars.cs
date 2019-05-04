@@ -98,7 +98,7 @@ namespace UQMEdit
 		};
 	}
 
-	internal class Modules
+	public class Modules
 	{
 		public byte HexCode {
 			get;

@@ -14,7 +14,7 @@ namespace UQMEdit
 		private string CurrentDir;
 		private string CurrentFile = "";
 		public static string FileName = "";
-		private object[] ShipModules;
+		public static object[] ShipModules;
 
 		public Main() {
 			InitializeComponent();
