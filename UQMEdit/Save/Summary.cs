@@ -23,16 +23,16 @@ namespace UQMEdit
 			Functions.WriteOffset(Functions.OffsPick(Offs.HD.BioData, Offs.MM.BioData), Window.BioData.Value, 2, 0xFFFF, true);
 
 			// Modules
-			byte Modules, i = 0;
-			foreach (object Module in Window.ModulesBox.Controls) {
-				if (Module is ComboBox) {
-					int Index = (Module as ComboBox).SelectedIndex;
+			byte Mods, i = 0;
+			foreach (object Mod in Window.ModulesBox.Controls) {
+				if (Mod is ComboBox) {
+					int Index = (Mod as ComboBox).SelectedIndex;
 					if (Index > 0) {
-						Modules = (byte)(Index + 2);
+						Mods = (byte)(Index + 2);
 					} else {
-						Modules = 22;
+						Mods = 22;
 					}
-					Functions.WriteOffset(Functions.OffsPick(Offs.HD.ModuleSlots + i, Offs.MM.ModuleSlots + i), Modules, 1, 22, true);
+					Functions.WriteOffset(Functions.OffsPick(Offs.HD.ModuleSlots + i, Offs.MM.ModuleSlots + i), Mods, 1, 22, true);
 					i++;
 				}
 			}
