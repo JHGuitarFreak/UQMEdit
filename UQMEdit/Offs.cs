@@ -87,22 +87,27 @@
 			public const byte ShipName = 86;
 			public const byte CaptainName = 102;
 			public const byte NearestPlanet = 118;
-			public const byte Status = 134;
 
-			public const byte LanderMods = 135;
+			public const byte Difficulty = 134;
 
-			public static byte[] Date = { 136, 137, 138 };
+			public const byte Extended = 135;
+			public const byte Nomad = 136;
+			public const byte CustomSeed = 137;
 
-			public const byte Credits = 140;
+			public const byte Status = 141;
 
-			public static byte[] Escorts = { 142, 144 };
+			public const byte LanderMods = 142;
 
-			public static byte[] Devices = { 143, 156 };
+			public static byte[] Date = { 143, 144, 145 };
 
-			public const byte ResFactor = 172;
-			public static byte SaveName = 173;
+			public const byte Credits = 147;
 
-			public const sbyte CustomSeed = -4;
+			public static byte[] Escorts = { 149, 151 };
+
+			public static byte[] Devices = { 150, 163 };
+
+			public const byte ResFactor = 179;
+			public static byte SaveName = 180;
 		}
 	}
 }
