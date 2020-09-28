@@ -11,16 +11,16 @@ namespace UQMEdit
 
 		public static void Summary() {
 
-			if (SaveVersion >= 2) {
-				int Magic;
-				int NameSize = 0;
-				Magic = Functions.ReadOffsetToInt(Offs.SaveNameMagic, 4);
-				NameSize = (Magic - 160);
-				SaveName = Encoding.Default.GetString(Functions.ReadOffset(SaveVersion == 3 ? (Offs.MM.SaveName - 1) : Offs.MM.SaveName, NameSize));
+			if (SaveVersion >= 2)
+			{
+				int Magic = Functions.ReadOffsetToInt(Offs.SaveNameMagic, 4);
+                int NameSize = (Magic - 160);
+
+                SaveName = Encoding.Default.GetString(Functions.ReadOffset(SaveVersion == 3 ? (Offs.Core.SaveName) : Offs.MM.SaveName, NameSize));
 			} else if (SaveVersion == 1) {
 				Read.SaveName = Encoding.Default.GetString(Functions.ReadOffset(Offs.HD.SaveName, 31));
 			} else {
-				SaveName = "";
+				SaveName = "Saved Game - Date: ";
 			}
 
 			// Resource Units
@@ -88,7 +88,7 @@ namespace UQMEdit
 			Window.CommanderName.Text = Encoding.Default.GetString(Functions.ReadOffset(Functions.OffsPick(Offs.HD.CaptainName, Offs.MM.CaptainName), 16));
 
 			//  Lander Mods
-			byte LanderMods = Functions.ReadOffset(Functions.OffsPick(Offs.HD.LanderMods, Offs.MM.LanderMods), 1)[0];
+			byte LanderMods = Functions.ReadOffset(Functions.OffsPick(Offs.HD.LanderMods, Offs.MM.LanderMods, Offs.Core.LanderMods), 1)[0];
 			bool LanderModsBool(int OtherValue, bool Bomb = false) {
 				if (!Bomb)
 					return ((LanderMods | 128) & OtherValue) != 0 ? true : false;
@@ -105,17 +105,17 @@ namespace UQMEdit
 
 			// Time & Date
 			int Month = 0, Year = 0, Day = 0;
-			Day = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Date[0], Offs.MM.Date[0]), 1)[0];
-			Month = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Date[1], Offs.MM.Date[1]), 1)[0];
-			Year = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.Date[2], Offs.MM.Date[2]), 2, 16);
+			Day = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Date[0], Offs.MM.Date[0], Offs.Core.Date[0]), 1)[0];
+			Month = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Date[1], Offs.MM.Date[1], Offs.Core.Date[1]), 1)[0];
+			Year = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.Date[2], Offs.MM.Date[2], Offs.Core.Date[2]), 2, 16);
 			Date = CultureInfo.CurrentCulture.DateTimeFormat.GetAbbreviatedMonthName(Month).ToUpper() + " " + Day + "·" + Year;
 
 			// Credits
-			Window.Credits.Text = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.Credits, Offs.MM.Credits), 2, 16).ToString();
+			Window.Credits.Text = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.Credits, Offs.MM.Credits, Offs.Core.Credits), 2, 16).ToString();
 
 			//  Escorts
-			byte NumberOfShips = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Escorts[0], Offs.MM.Escorts[0]), 1)[0];
-			byte[] ShipsArray = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Escorts[1], Offs.MM.Escorts[1]), NumberOfShips);
+			byte NumberOfShips = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Escorts[0], Offs.MM.Escorts[0], Offs.Core.Escorts[0]), 1)[0];
+			byte[] ShipsArray = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Escorts[1], Offs.MM.Escorts[1], Offs.Core.Escorts[1]), NumberOfShips);
 			byte ShipCount = 0;
 			foreach (object current in Window.ShipsBox.Controls) {
 				if (current is ComboBox) {
@@ -133,9 +133,9 @@ namespace UQMEdit
 			}
 
 			//  Devices
-			byte NumberOfDevices = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Devices[0], Offs.MM.Devices[0]), 1)[0];
+			byte NumberOfDevices = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Devices[0], Offs.MM.Devices[0], Offs.Core.Devices[0]), 1)[0];
 			object[] DevicesIntArray = new object[NumberOfDevices];
-			byte[] DevicesArray = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Devices[1], Offs.MM.Devices[1]), NumberOfDevices);
+			byte[] DevicesArray = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Devices[1], Offs.MM.Devices[1], Offs.Core.Devices[1]), NumberOfDevices);
 			for (byte i = 0; i < NumberOfDevices; i++) {
 				if (DevicesArray[i] < 0 || DevicesArray[i] >= Vars.DeviceName.Length)
 					DevicesIntArray[i] = "Please report this [0x" + DevicesArray[i].ToString("X2") + "]";

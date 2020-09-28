@@ -60,9 +60,10 @@ namespace UQMEdit
 			Write.Stream.Write(Write.FileBuffer, 0, ByteLength);
 		}
 
-		public static int OffsPick(int HD, int MegaMod) {
+		public static int OffsPick(int HD, int MegaMod, int Core = 0) {
 			switch (Read.SaveVersion) {
 				case 3:
+					return (Core > 0 ? Core : MegaMod);
 				case 2:
 					return MegaMod;
 				case 1:

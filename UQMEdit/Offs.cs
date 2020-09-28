@@ -57,7 +57,6 @@
 
 		public class MM
 		{
-
 			public const byte LogX = 12;
 			public const byte LogY = 16;
 
@@ -108,6 +107,23 @@
 
 			public const byte ResFactor = 179;
 			public static byte SaveName = 180;
+		}
+
+		public class Core
+		{
+			public const byte Status = 134;
+
+			public const byte LanderMods = 135;
+
+			public static byte[] Date = { 136, 137, 138 };
+
+			public const byte Credits = 140;
+
+			public static byte[] Escorts = { 142, 144 };
+
+			public static byte[] Devices = { 143, 156 };
+
+			public static byte SaveName = 172;
 		}
 	}
 }

@@ -76,22 +76,22 @@ namespace UQMEdit
 				SeedBox.Visible = false;
 				switch (Read.SaveVersion) {
 					case 3:
-						TitleText += ": macOS - ";
+						TitleText += ": Core v0.8.0 - ";
 						break;
 					case 2:
-						TitleText += ": MegaMod - ";
+						TitleText += ": MegaMod v0.8.0.85 - ";
 						SeedBox.Visible = true;
 						break;
 					case 1:
-						TitleText += ": HD-mod - ";
+						TitleText += ": HD-mod v0.7.0 - ";
 						break;
 					case 0:
-						TitleText += ": Vanilla - ";
+						TitleText += ": Core v0.7.0 - ";
 						break;
 					default:
 						break;
 				}
-				Text = TitleText + (Read.SaveVersion > 0 ? (Read.Date + ": " + Read.SaveName) : Read.Date);
+				Text = TitleText + (Read.SaveVersion > 0 ? (Read.Date + ": " + Read.SaveName) : (Read.SaveName + Read.Date));
 
 				CurrentDir = CurrentFile;
 			}

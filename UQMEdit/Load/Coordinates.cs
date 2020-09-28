@@ -16,7 +16,7 @@ namespace UQMEdit
 			Window.UniverseY.Value = LogY / 10;
 
 			// Status
-			byte Status = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Status, Offs.MM.Status), 1)[0];
+			byte Status = Functions.ReadOffset(Functions.OffsPick(Offs.HD.Status, Offs.MM.Status, Offs.Core.Status), 1)[0];
 			if (Status < 0 || Status >= Vars.StatusName.Length) {
 				Window.CurrentStatus.SelectedIndex = 9;
 			} else {
