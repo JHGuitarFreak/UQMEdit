@@ -88,7 +88,6 @@
 			public const byte NearestPlanet = 118;
 
 			public const byte Difficulty = 134;
-
 			public const byte Extended = 135;
 			public const byte Nomad = 136;
 			public const byte CustomSeed = 137;

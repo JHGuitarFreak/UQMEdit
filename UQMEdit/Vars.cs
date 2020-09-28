@@ -96,6 +96,13 @@ namespace UQMEdit
 			"Starbase",
 			"Unknown"
 		};
+
+		public static string[] Difficulties = new string[]
+		{
+			"Normal",
+			"Easy",
+			"Hard"
+		};
 	}
 
 	public class Modules

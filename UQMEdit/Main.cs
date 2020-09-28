@@ -32,6 +32,7 @@ namespace UQMEdit
 				}
 			}
 			CurrentStatus.Items.AddRange(Vars.StatusName);
+			difficultyBox.Items.AddRange(Vars.Difficulties);
 			Spoilers.Checked = false;
 
 			string PathVanilla, PathHD, PathMegaMod, PathRemix, PathDesired;
@@ -41,17 +42,16 @@ namespace UQMEdit
 			PathRemix = PathAppData + "\\uqmhdremix\\save";
 			PathMegaMod = PathAppData + "\\UQM-MegaMod\\save";
 
-			if (Directory.Exists(PathVanilla)) {
-				PathDesired = PathVanilla;
-			} else if (Directory.Exists(PathHD)) {
-				PathDesired = PathHD;
-			} else if (Directory.Exists(PathRemix)) {
-				PathDesired = PathRemix;
-			} else if (Directory.Exists(PathMegaMod)) {
+			if (Directory.Exists(PathMegaMod))
 				PathDesired = PathMegaMod;
-			} else {
+			else if (Directory.Exists(PathRemix))
+				PathDesired = PathRemix;
+			else if (Directory.Exists(PathHD))
+				PathDesired = PathHD;
+			else if (Directory.Exists(PathVanilla))
+				PathDesired = PathVanilla;
+			else
 				PathDesired = Directory.GetCurrentDirectory();
-			}
 
 			CurrentDir = PathDesired;
 			StarList.Items.AddRange(ParseStars.LoadStars(false));
@@ -74,6 +74,7 @@ namespace UQMEdit
 
 				string TitleText = "The UQM Save Editor";
 				SeedBox.Visible = false;
+				megaModModes.Visible = false;
 				switch (Read.SaveVersion) {
 					case 3:
 						TitleText += ": Core v0.8.0 - ";
@@ -81,6 +82,7 @@ namespace UQMEdit
 					case 2:
 						TitleText += ": MegaMod v0.8.0.85 - ";
 						SeedBox.Visible = true;
+						megaModModes.Visible = true;
 						break;
 					case 1:
 						TitleText += ": HD-mod v0.7.0 - ";

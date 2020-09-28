@@ -2,6 +2,7 @@
 using System.Text;
 using System.Globalization;
 using System.Windows.Forms;
+
 namespace UQMEdit
 {
 	partial class Read
@@ -16,9 +17,9 @@ namespace UQMEdit
 				int Magic = Functions.ReadOffsetToInt(Offs.SaveNameMagic, 4);
                 int NameSize = (Magic - 160);
 
-                SaveName = Encoding.Default.GetString(Functions.ReadOffset(SaveVersion == 3 ? (Offs.Core.SaveName) : Offs.MM.SaveName, NameSize));
+                SaveName = Encoding.Default.GetString(Functions.ReadOffset(SaveVersion == 3 ? Offs.Core.SaveName : Offs.MM.SaveName, NameSize));
 			} else if (SaveVersion == 1) {
-				Read.SaveName = Encoding.Default.GetString(Functions.ReadOffset(Offs.HD.SaveName, 31));
+				SaveName = Encoding.Default.GetString(Functions.ReadOffset(Offs.HD.SaveName, 31));
 			} else {
 				SaveName = "Saved Game - Date: ";
 			}
@@ -147,7 +148,10 @@ namespace UQMEdit
 
 			// Custom Seed
 			if (SaveVersion == 2) {
-				Window.CustomSeed.Text = Functions.ReadOffsetToInt(Offs.MM.CustomSeed, 4, 32, true).ToString();
+				Window.difficultyBox.SelectedIndex = Functions.ReadOffset(Offs.MM.Difficulty, 1)[0];
+				Window.extendedCheckBox.Checked = Convert.ToBoolean(Functions.ReadOffset(Offs.MM.Extended, 1)[0]);
+				Window.nomadCheckBox.Checked = Convert.ToBoolean(Functions.ReadOffset(Offs.MM.Nomad, 1)[0]);
+				Window.CustomSeed.Text = Functions.ReadOffsetToInt(Offs.MM.CustomSeed, 4, 32).ToString();
 			}
 		}
 	}
