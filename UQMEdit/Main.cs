@@ -75,12 +75,18 @@ namespace UQMEdit
 				string TitleText = "The UQM Save Editor";
 				SeedBox.Visible = false;
 				megaModModes.Visible = false;
-				switch (Read.SaveVersion) {
+				switch (Read.SaveVersion)
+				{
+					case 4:
+						TitleText += ": MegaMod v0.8.2 - ";
+						SeedBox.Visible = true;
+						megaModModes.Visible = true;
+						break;
 					case 3:
 						TitleText += ": Core v0.8.0 - ";
 						break;
 					case 2:
-						TitleText += ": MegaMod v0.8.0.85 - ";
+						TitleText += ": Legacy MegaMod - ";
 						SeedBox.Visible = true;
 						megaModModes.Visible = true;
 						break;
@@ -88,9 +94,8 @@ namespace UQMEdit
 						TitleText += ": HD-mod v0.7.0 - ";
 						break;
 					case 0:
-						TitleText += ": Core v0.7.0 - ";
-						break;
 					default:
+						TitleText += ": Core v0.7.0 - ";
 						break;
 				}
 				Text = TitleText + (Read.SaveVersion > 0 ? (Read.Date + ": " + Read.SaveName) : (Read.SaveName + Read.Date));

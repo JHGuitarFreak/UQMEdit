@@ -25,7 +25,7 @@ namespace UQMEdit
 			}
 
 			// Resource Units
-			Window.ResUnits.Value = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.ResUnits, Offs.MM.ResUnits), 4);
+			Window.ResUnits.Value = Functions.ReadUInt(Functions.OffsPick(Offs.HD.ResUnits, Offs.MM.ResUnits));
 			// Fuel
 			decimal fuel = Functions.ReadOffsetToInt(Functions.OffsPick(Offs.HD.Fuel, Offs.MM.Fuel), 4);
 			fuel = fuel > 160100 ? 160100 : fuel;

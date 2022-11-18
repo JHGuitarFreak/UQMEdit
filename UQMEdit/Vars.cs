@@ -7,9 +7,14 @@ namespace UQMEdit
 {
 	class Vars
 	{
-		public const int SaveTagHD = 0x65707573;	// "supe"
-		public const int SaveFileTag = 0x01534d55;	// "UMS\x01": UQM Save version 1
-		public const int MegaModTag = 0x4147454D;	// "MEGA"
+		public static int LastOffset = 0;
+		public const uint SAVEFILE_TAG_HD =  0x65707573; // "supe" : HD-mod Beta Save
+		public const uint SAVEFILE_TAG =     0x01534d55; // "UMS\x01": UQM Save version 1
+		public const uint MEGA_TAG =         0x4147454D; // "MEGA": MegaMod Save version 2
+		public const uint MMV3_TAG =         0x33564D4D; // "MMV3": MegaMod Save version 3
+		public const uint SUMMARY_TAG =      0x6d6d7553; // "Summ": Summary. Must be first!
+		public const uint GLOBAL_STATE_TAG = 0x74536c47; // "GlSt": Global State. Must be 2nd!
+		public const uint GAME_STATE_TAG =   0x74536d47; // "GmSt": Game State Bits. Must be 3rd!
 
 		// HS Coord Vars
 		public const int MaxUniverse = 9999;
@@ -142,5 +147,130 @@ namespace UQMEdit
 				new Modules(19, "Crystal Part 4")
 			};
 		}
+	}
+
+	class ClockPtr
+	{
+		// Clock State
+		public static byte   day_index;
+		public static byte   month_index;
+		public static ushort year_index;
+		public static short  tick_count;
+		public static short  day_in_ticks;
+
+		// v0.7.0 and HD-mod only
+		// cread_ptr (= cread_32)
+		// cread_ptr
+		// cread_32 NULL
+		// DummyLoadQueue ->
+		// cread_ptr
+		// cread_ptr
+		// cread_ptr
+		// cread_ptr
+		// cread_16 NULL
+		// cread_8 NULL
+		// cread_8 NULL
+		// cread_16 NULL
+		// = +34 bytes of padding
+	}
+
+	class GSPtr
+	{
+		// if legacy saves
+		// cread_8 dummy8
+		// else modern saves
+		// read_32 magic GLOBAL_STATE_TAG
+		// read_32 magic "75"
+		public static byte     glob_flags;
+		public static byte     CrewCost;
+		public static byte     FuelCost;
+		// if not FUEL_COST_RU return false (MegaMod and HD only)
+
+		public static byte[]   ModuleCost   = new byte[20];
+		public static ushort[] ElementWorth = new ushort[8];
+		// if legacy saves cread_ptr
+		public static ushort   CurrentActivity;
+
+		// if legacy saves cread_16 NULL
+		// Load Clock State
+
+		public static short  autopilot_x;
+		public static short  autopilot_y;
+		public static short  ip_location_x;
+		public static short  ip_location_y;
+		public static short  ShipStamp_x;
+		public static short  ShipStamp_y;
+		public static ushort ShipFacing;
+		public static byte   ip_planet;
+		public static byte   in_orbit;
+
+		// VELOCITY_DESC velocity
+		public static ushort TravelAngle;
+		public static short  vector_width;
+		public static short  vector_height;
+		public static short  fract_width;
+		public static short  fract_height;
+		public static short  error_width;
+		public static short  error_height;
+		public static short  incr_width;
+		public static short  incr_height;
+
+		// if legacy saves cread_16 NULL
+		// else read_32 magic GAME_STATE_TAG
+	}
+
+	class SSPtr
+	{
+		// SisState
+		public static int      log_x;
+		public static int      log_y;
+		public static uint     ResUnits;
+		public static uint     FuelOnBoard;
+		public static ushort   CrewEnlisted;
+		public static ushort   TotalElementMass;
+		public static ushort   TotalBioMass;
+		public static byte[]   ModuleSlots    = new byte[16];
+		public static byte[]   DriveSlots     = new byte[11];
+		public static byte[]   JetSlots       = new byte[8];
+		public static byte     NumLanders;
+		public static ushort[] ElementAmounts = new ushort[8];
+		public static string   ShipName;
+		public static string   CommanderName;
+		public static string   PlanetName;
+
+		// if legacy saves cread_16 NULL
+		// else MegaMod Stuff
+		public static byte Difficulty;
+		public static byte Extended;
+		public static byte Nomad;
+		public static int  Seed;
+	}
+
+	class SummPtr
+	{
+		// if legacy HD-mod save read 2 byte identifier then read 4 byte save name
+		// else
+		// read_32 magic "save file type" tag
+		// read_32 magic SUMMARY_TAG
+		// read_32 magic (- 160)
+
+
+		// Load SisState
+
+		public static byte   Activity;
+		public static byte   Flags;
+		public static byte   day_index;
+		public static byte   month_index;
+		public static ushort year_index;
+		public static byte   MCreditLo;
+		public static byte   MCreditHi;
+		public static byte   NumShips;
+		public static byte   NumDevices;
+		public static byte[] ShipList   = new byte[12];
+		public static byte[] DeviceList = new byte[16];
+
+		public static byte   res_factor; // HD-only
+		// if legacy saves read_8 NULL
+		public static string SaveName;   // v0.8.0, HD, and MegaMod
 	}
 }
