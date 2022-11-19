@@ -264,6 +264,7 @@ namespace UQMEdit
 		public static ushort year_index;
 		public static byte   MCreditLo;
 		public static byte   MCreditHi;
+		public static ushort MCredit;
 		public static byte   NumShips;
 		public static byte   NumDevices;
 		public static byte[] ShipList   = new byte[12];

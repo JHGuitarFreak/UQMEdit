@@ -62,7 +62,6 @@
     <Compile Include="Load\Legacy.cs" />
     <Compile Include="Load\Modern.cs" />
     <Compile Include="Load\Coordinates.cs" />
-    <Compile Include="Load\Summary.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>

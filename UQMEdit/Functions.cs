@@ -46,39 +46,42 @@ namespace UQMEdit
 			return ReadByteArray (offset, 4);
 		}
 
-		public static byte ReadByte (int offset)
+		public static byte ReadByte ()
 		{
-			return read_8 (offset)[0];
+			return read_8 (Vars.LastOffset)[0];
 		}
 
-		public static sbyte ReadSByte (int offset)
+		public static sbyte ReadSByte ()
 		{
-			return (sbyte)read_8 (offset)[0];
+			return (sbyte)read_8 (Vars.LastOffset)[0];
 		}
 
-		public static ushort ReadUShort (int offset)
+		public static ushort ReadUShort ()
 		{
-			return BitConverter.ToUInt16 (read_16 (offset), 0);
+			return BitConverter.ToUInt16 (read_16 (Vars.LastOffset), 0);
 		}
 
-		public static short ReadShort (int offset)
+		public static short ReadShort ()
 		{
-			return BitConverter.ToInt16 (read_16 (offset), 0);
+			return BitConverter.ToInt16 (read_16 (Vars.LastOffset), 0);
 		}
 
-		public static uint ReadUInt (int offset)
+		public static uint ReadUInt ()
 		{
-			return BitConverter.ToUInt32 (read_32 (offset), 0);
+			return BitConverter.ToUInt32 (read_32 (Vars.LastOffset), 0);
 		}
 
-		public static int ReadInt (int offset)
+		public static int ReadInt ()
 		{
-			return BitConverter.ToInt32 (read_32 (offset), 0);
+			return BitConverter.ToInt32 (read_32 (Vars.LastOffset), 0);
 		}
 
-		public static string ReadStr (int offset, int count)
+		public static string ReadStr (int count)
 		{
-			return Encoding.Default.GetString (ReadByteArray (offset, count));
+			byte[] temp = ReadByteArray (Vars.LastOffset, count);
+			temp[count] = 0; // Properly terminate the string
+
+			return Encoding.Default.GetString (temp);
 		}
 
 		public static byte[] ReadOffset (int Offset, int ByteLength, bool Reverse = false)
