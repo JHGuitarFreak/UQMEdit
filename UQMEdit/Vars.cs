@@ -26,6 +26,15 @@ namespace UQMEdit
 		public const int LogUnitsXOld = 99840;
 		public const int LogUnitsYOld = 12000;
 
+		public const byte READ_SPEED_MASK = ((1 << 3) - 1);
+		public const byte NUM_READ_SPEEDS = 5;
+		public const byte COMBAT_SPEED_SHIFT = 6;
+		public const byte COMBAT_SPEED_MASK = (((1 << 2) - 1) << COMBAT_SPEED_SHIFT);
+		public const byte NUM_COMBAT_SPEEDS = 4;
+		public const byte MUSIC_DISABLED = (1 << 3);
+		public const byte SOUND_DISABLED = (1 << 4);
+		public const byte CYBORG_ENABLED = (1 << 5);
+
 		//public const byte SaveNameSize = 64;
 
 		public static string[] DeviceName = new string[]
