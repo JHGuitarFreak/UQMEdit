@@ -55,11 +55,9 @@ namespace UQMEdit
 					break;
 				default:
 					SaveVersion = 0;
-					Vars.LastOffset = 1;
+					Vars.LastOffset = 0;
 					break;
 			};
-
-			Console.WriteLine ("SaveVersion = {0} LastOffset = {1}", SaveVersion, Vars.LastOffset);
 
 			if (SaveVersion > 1)
 				FullyLoadSave = Modern.LoadGame ();
@@ -230,6 +228,7 @@ namespace UQMEdit
 			}
 			else
 			{
+				MessageBox.Show ("This is either not a UQM save or a corrupted UQM save!", "Important Message!");
 				return;
 			}
 
