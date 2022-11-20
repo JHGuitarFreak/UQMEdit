@@ -39,7 +39,7 @@ namespace UQMEdit.Load
 				GSPtr.ModuleCost[i] = Functions.ReadByte ();
 
 			for (int i = 0; i < 8; i++)
-				GSPtr.ElementWorth[i] = Functions.ReadUShort ();
+				GSPtr.ElementWorth[i] = Functions.ReadByte ();
 
 			GSPtr.CurrentActivity = Functions.ReadUShort ();
 

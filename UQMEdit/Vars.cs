@@ -196,7 +196,7 @@ namespace UQMEdit
 		// if not FUEL_COST_RU return false (MegaMod and HD only)
 
 		public static byte[]   ModuleCost   = new byte[20];
-		public static ushort[] ElementWorth = new ushort[8];
+		public static byte[]   ElementWorth = new byte[8];
 		// if legacy saves cread_ptr
 		public static ushort   CurrentActivity;
 

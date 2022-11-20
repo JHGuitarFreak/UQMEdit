@@ -117,14 +117,14 @@ namespace UQMEdit
 
 				Window.Landers.Value = SSPtr.NumLanders;
 
-				Window.Common.Value = SSPtr.ElementAmounts[0];
-				Window.Corrosive.Value = SSPtr.ElementAmounts[1];
-				Window.BaseMetal.Value = SSPtr.ElementAmounts[2];
-				Window.NobleGas.Value = SSPtr.ElementAmounts[3];
-				Window.RareEarth.Value = SSPtr.ElementAmounts[4];
-				Window.Precious.Value = SSPtr.ElementAmounts[5];
+				Window.Common.Value      = SSPtr.ElementAmounts[0];
+				Window.Corrosive.Value   = SSPtr.ElementAmounts[1];
+				Window.BaseMetal.Value   = SSPtr.ElementAmounts[2];
+				Window.NobleGas.Value    = SSPtr.ElementAmounts[3];
+				Window.RareEarth.Value   = SSPtr.ElementAmounts[4];
+				Window.Precious.Value    = SSPtr.ElementAmounts[5];
 				Window.Radioactive.Value = SSPtr.ElementAmounts[6];
-				Window.Exotic.Value = SSPtr.ElementAmounts[7];
+				Window.Exotic.Value      = SSPtr.ElementAmounts[7];
 
 				Window.ShipName.Text = SSPtr.ShipName;
 				Window.CommanderName.Text = SSPtr.CommanderName;
@@ -133,9 +133,9 @@ namespace UQMEdit
 				if (SaveVersion == 2 || SaveVersion == 4)
 				{
 					Window.difficultyBox.SelectedIndex = SSPtr.Difficulty;
-					Window.extendedCheckBox.Checked = Convert.ToBoolean (SSPtr.Extended);
-					Window.nomadCheckBox.Checked = Convert.ToBoolean (SSPtr.Nomad);
-					Window.CustomSeed.Text = SSPtr.Seed.ToString ();
+					Window.extendedCheckBox.Checked    = Convert.ToBoolean (SSPtr.Extended);
+					Window.nomadCheckBox.Checked       = Convert.ToBoolean (SSPtr.Nomad);
+					Window.CustomSeed.Text             = SSPtr.Seed.ToString ();
 
 					if (Window.CustomSeed.Text == "0")
 						Window.CustomSeed.Text = "16807";
@@ -165,14 +165,14 @@ namespace UQMEdit
 							return ((SummPtr.Flags | 128) & OtherValue) != 0 ? true : false;
 						return (SummPtr.Flags & OtherValue) != 0 ? true : false;
 					}
-					Window.IsBomb.Checked = FlagsBool (128, true);
-					Window.BioShield.Checked = FlagsBool (1);
-					Window.QuakeShield.Checked = FlagsBool (2);
+					Window.IsBomb.Checked          = FlagsBool (128, true);
+					Window.BioShield.Checked       = FlagsBool (1);
+					Window.QuakeShield.Checked     = FlagsBool (2);
 					Window.LightningShield.Checked = FlagsBool (4);
-					Window.HeatShield.Checked = FlagsBool (8);
-					Window.DblSpeed.Checked = FlagsBool (16);
-					Window.DblCargo.Checked = FlagsBool (32);
-					Window.RapidFire.Checked = FlagsBool (64);
+					Window.HeatShield.Checked      = FlagsBool (8);
+					Window.DblSpeed.Checked        = FlagsBool (16);
+					Window.DblCargo.Checked        = FlagsBool (32);
+					Window.RapidFire.Checked       = FlagsBool (64);
 				}
 
 				// Superficial Date
@@ -180,7 +180,6 @@ namespace UQMEdit
 
 				// Superficial Credits
 				Window.Credits.Text = SummPtr.MCredit.ToString ();
-
 
 				{
 					// Superficial Escorts
@@ -222,9 +221,91 @@ namespace UQMEdit
 				else
 					SaveName = "Saved Game - Date: ";
 
+				// Game State
 
-				Console.WriteLine ("CrewCost = {0} FuelCost = {1}", GSPtr.CrewCost, GSPtr.FuelCost);
+				if (SaveVersion > 1)
+				{
+					// Global Flags
 
+					Window.ReadSpeed.Value = GSPtr.glob_flags & Vars.READ_SPEED_MASK;
+					Window.CyborgCheckBox.Checked = Convert.ToBoolean (GSPtr.glob_flags & Vars.CYBORG_ENABLED);
+
+					{
+						int CombatSpeed = (GSPtr.glob_flags & Vars.COMBAT_SPEED_MASK) / 32;
+						byte temp;
+
+						switch (CombatSpeed)
+						{
+							case 6: temp = 2; break;
+							case 4: temp = 1; break;
+							case 2:
+							default:
+								temp = 0; break;
+						}
+						Window.CombatSpeed.Value = temp;
+					}
+
+					Window.MusicCheckBox.Checked = Convert.ToBoolean (GSPtr.glob_flags & Vars.MUSIC_DISABLED);
+					Window.SoundCheckBox.Checked = Convert.ToBoolean (GSPtr.glob_flags & Vars.SOUND_DISABLED);
+
+					// Costs
+
+					Window.CrewCost.Value = GSPtr.CrewCost;
+					Window.FuelCost.Value = GSPtr.FuelCost;
+					Window.LanderCost.Value         = GSPtr.ModuleCost[0]  * 50;
+					Window.ThrusterCost.Value       = GSPtr.ModuleCost[1]  * 50;
+					Window.JetCost.Value            = GSPtr.ModuleCost[2]  * 50;
+					Window.CrewPodCost.Value        = GSPtr.ModuleCost[3]  * 50;
+					Window.StorageBayCost.Value     = GSPtr.ModuleCost[4]  * 50;
+					Window.FuelTankCost.Value       = GSPtr.ModuleCost[5]  * 50;
+					Window.HiEffFuelSysCost.Value   = GSPtr.ModuleCost[6]  * 50;
+					Window.DynamoUnitCost.Value     = GSPtr.ModuleCost[7]  * 50;
+					Window.ShivaFurnaceCost.Value   = GSPtr.ModuleCost[8]  * 50;
+					Window.IonBoltGunCost.Value     = GSPtr.ModuleCost[9]  * 50;
+					Window.FusionBlasterCost.Value  = GSPtr.ModuleCost[10] * 50;
+					Window.HellboreCannonCost.Value = GSPtr.ModuleCost[11] * 50;
+					Window.TrackingSystemCost.Value = GSPtr.ModuleCost[12] * 50;
+					Window.PointDefenseCost.Value   = GSPtr.ModuleCost[13] * 50;
+
+					Window.CommonWorth.Value        = GSPtr.ElementWorth[0];
+					Window.CorrosiveWorth.Value     = GSPtr.ElementWorth[1];
+					Window.BaseMetalWorth.Value     = GSPtr.ElementWorth[2];
+					Window.NobleGasWorth.Value      = GSPtr.ElementWorth[3];
+					Window.RareEarthWorth.Value     = GSPtr.ElementWorth[4];
+					Window.PreciousMetalWorth.Value = GSPtr.ElementWorth[5];
+					Window.RadioactiveWorth.Value   = GSPtr.ElementWorth[6];
+					Window.ExoticWorth.Value        = GSPtr.ElementWorth[7];
+
+					// Clock State
+					
+					Window.DayIndex.Value   = ClockPtr.day_index;
+					Window.MonthIndex.Value = ClockPtr.month_index;
+					Window.YearIndex.Value  = ClockPtr.year_index;
+					Window.TickCount.Value  = ClockPtr.tick_count;
+					Window.DayInTicks.Value = ClockPtr.day_in_ticks;
+
+					// Ship Current Location
+
+					Window.AutoPilotX.Value  = GSPtr.autopilot_x;
+					Window.AutoPilotY.Value  = GSPtr.autopilot_y;
+					Window.IPLocationX.Value = GSPtr.ip_location_x;
+					Window.IPLocationY.Value = GSPtr.ip_location_y;
+					Window.ShipOriginX.Value = GSPtr.ShipStamp_x;
+					Window.ShipOriginY.Value = GSPtr.ShipStamp_y;
+					Window.ShipFacing.Value  = GSPtr.ShipFacing;
+
+					// Ship Velocity
+
+					Window.TravelAngle.Value  = GSPtr.TravelAngle;
+					Window.VectorWidth.Value  = GSPtr.vector_width;
+					Window.VectorHeight.Value = GSPtr.vector_height;
+					Window.FractWidth.Value   = GSPtr.fract_width;
+					Window.FractHeight.Value  = GSPtr.fract_height;
+					Window.ErrorWidth.Value   = GSPtr.error_width;
+					Window.ErrorHeight.Value  = GSPtr.error_height;
+					Window.IncrWidth.Value    = GSPtr.incr_width;
+					Window.IncrHeight.Value   = GSPtr.incr_height;
+				}
 			}
 			else
 			{

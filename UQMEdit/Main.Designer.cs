@@ -187,95 +187,7 @@
 			this.UniverseY = new System.Windows.Forms.NumericUpDown();
 			this.UniverseX = new System.Windows.Forms.NumericUpDown();
 			this.StarList = new System.Windows.Forms.ListBox();
-			this.ReadOnly = new System.Windows.Forms.ToolTip(this.components);
-			this.MaxLimits = new System.Windows.Forms.ToolTip(this.components);
 			this.Extras = new System.Windows.Forms.TabPage();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.ReadSpeed = new System.Windows.Forms.TrackBar();
-			this.CyborgGroupBox = new System.Windows.Forms.GroupBox();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
-			this.CombatSpeed = new System.Windows.Forms.TrackBar();
-			this.MusicSound = new System.Windows.Forms.GroupBox();
-			this.MusicEnabled = new System.Windows.Forms.CheckBox();
-			this.SoundEnabled = new System.Windows.Forms.CheckBox();
-			this.GlobalFlagsGroupBox = new System.Windows.Forms.GroupBox();
-			this.CostsGroupBox = new System.Windows.Forms.GroupBox();
-			this.CrewCost = new System.Windows.Forms.NumericUpDown();
-			this.CrewCostLabel = new System.Windows.Forms.Label();
-			this.FuelCostLabel = new System.Windows.Forms.Label();
-			this.FuelCost = new System.Windows.Forms.NumericUpDown();
-			this.LanderCost = new System.Windows.Forms.NumericUpDown();
-			this.LanderCostLabel = new System.Windows.Forms.Label();
-			this.ThrusterCost = new System.Windows.Forms.NumericUpDown();
-			this.ThrusterCostLabel = new System.Windows.Forms.Label();
-			this.JetCost = new System.Windows.Forms.NumericUpDown();
-			this.JetCostLabel = new System.Windows.Forms.Label();
-			this.CrewPodCost = new System.Windows.Forms.NumericUpDown();
-			this.CrewPodCostLabel = new System.Windows.Forms.Label();
-			this.StorageBayCost = new System.Windows.Forms.NumericUpDown();
-			this.StorageBayCostLabel = new System.Windows.Forms.Label();
-			this.FuelTankCost = new System.Windows.Forms.NumericUpDown();
-			this.FuelTankCostLabel = new System.Windows.Forms.Label();
-			this.HiEffFuelSysCost = new System.Windows.Forms.NumericUpDown();
-			this.HiEffFuelSysCostLabel = new System.Windows.Forms.Label();
-			this.DynamoUnitCost = new System.Windows.Forms.NumericUpDown();
-			this.DynamoUnitCostLabel = new System.Windows.Forms.Label();
-			this.ShivaFurnaceCost = new System.Windows.Forms.NumericUpDown();
-			this.ShivaFurnaceCostLabel = new System.Windows.Forms.Label();
-			this.IonBoltGunCost = new System.Windows.Forms.NumericUpDown();
-			this.IonBoltGunCostLabel = new System.Windows.Forms.Label();
-			this.FusionBlasterCost = new System.Windows.Forms.NumericUpDown();
-			this.FusionBlasterCostLabel = new System.Windows.Forms.Label();
-			this.HellboreCannonCost = new System.Windows.Forms.NumericUpDown();
-			this.HellboreCannonCostLabel = new System.Windows.Forms.Label();
-			this.TrackingSystemCost = new System.Windows.Forms.NumericUpDown();
-			this.TrackingSystemCostLabel = new System.Windows.Forms.Label();
-			this.PointDefenseCost = new System.Windows.Forms.NumericUpDown();
-			this.PointDefenseCostLabel = new System.Windows.Forms.Label();
-			this.ElementWorthGroupBox = new System.Windows.Forms.GroupBox();
-			this.ExoticWorthLabel = new System.Windows.Forms.Label();
-			this.RadioactiveWorthLabel = new System.Windows.Forms.Label();
-			this.PreciousMetalWorthLabel = new System.Windows.Forms.Label();
-			this.RareEarthWorthLabel = new System.Windows.Forms.Label();
-			this.NobleGasWorthLabel = new System.Windows.Forms.Label();
-			this.baseMetalWorthLabel = new System.Windows.Forms.Label();
-			this.CorrosiveWorthLabel = new System.Windows.Forms.Label();
-			this.CommonWorthLabel = new System.Windows.Forms.Label();
-			this.ExoticWorth = new System.Windows.Forms.NumericUpDown();
-			this.RadioactiveWorth = new System.Windows.Forms.NumericUpDown();
-			this.PreciousMetalWorth = new System.Windows.Forms.NumericUpDown();
-			this.RareEarthWorth = new System.Windows.Forms.NumericUpDown();
-			this.NobleGasWorth = new System.Windows.Forms.NumericUpDown();
-			this.BaseMetalWorth = new System.Windows.Forms.NumericUpDown();
-			this.CorrosiveWorth = new System.Windows.Forms.NumericUpDown();
-			this.CommonWorth = new System.Windows.Forms.NumericUpDown();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.DayInTicksLabel = new System.Windows.Forms.Label();
-			this.DayInTicks = new System.Windows.Forms.NumericUpDown();
-			this.TickCountLabel = new System.Windows.Forms.Label();
-			this.TickCount = new System.Windows.Forms.NumericUpDown();
-			this.YearIndexLabel = new System.Windows.Forms.Label();
-			this.YearIndex = new System.Windows.Forms.NumericUpDown();
-			this.MonthIndex = new System.Windows.Forms.NumericUpDown();
-			this.MonthIndexLabel = new System.Windows.Forms.Label();
-			this.DayIndexLabe = new System.Windows.Forms.Label();
-			this.DayIndex = new System.Windows.Forms.NumericUpDown();
-			this.LocationGroupBox = new System.Windows.Forms.GroupBox();
-			this.ShipFacingLabel = new System.Windows.Forms.Label();
-			this.ShipFacing = new System.Windows.Forms.NumericUpDown();
-			this.ShipOriginYLabel = new System.Windows.Forms.Label();
-			this.ShipOriginY = new System.Windows.Forms.NumericUpDown();
-			this.ShipOriginXLabel = new System.Windows.Forms.Label();
-			this.ShipOriginX = new System.Windows.Forms.NumericUpDown();
-			this.IPLocationYLabel = new System.Windows.Forms.Label();
-			this.IPLocationY = new System.Windows.Forms.NumericUpDown();
-			this.IPLocationXLabel = new System.Windows.Forms.Label();
-			this.IPLocationX = new System.Windows.Forms.NumericUpDown();
-			this.AutoPilotY = new System.Windows.Forms.NumericUpDown();
-			this.AutoPilotYLabel = new System.Windows.Forms.Label();
-			this.AutoPilotXLabel = new System.Windows.Forms.Label();
-			this.AutoPilotX = new System.Windows.Forms.NumericUpDown();
-			this.GameStateTab = new System.Windows.Forms.TabPage();
 			this.VelocityGroupBox = new System.Windows.Forms.GroupBox();
 			this.IncrHeightLabel = new System.Windows.Forms.Label();
 			this.IncrHeight = new System.Windows.Forms.NumericUpDown();
@@ -295,6 +207,93 @@
 			this.VectorWidthLabel = new System.Windows.Forms.Label();
 			this.TravelAngleLabel = new System.Windows.Forms.Label();
 			this.TravelAngle = new System.Windows.Forms.NumericUpDown();
+			this.LocationGroupBox = new System.Windows.Forms.GroupBox();
+			this.ShipFacingLabel = new System.Windows.Forms.Label();
+			this.ShipFacing = new System.Windows.Forms.NumericUpDown();
+			this.ShipOriginYLabel = new System.Windows.Forms.Label();
+			this.ShipOriginY = new System.Windows.Forms.NumericUpDown();
+			this.ShipOriginXLabel = new System.Windows.Forms.Label();
+			this.ShipOriginX = new System.Windows.Forms.NumericUpDown();
+			this.IPLocationYLabel = new System.Windows.Forms.Label();
+			this.IPLocationY = new System.Windows.Forms.NumericUpDown();
+			this.IPLocationXLabel = new System.Windows.Forms.Label();
+			this.IPLocationX = new System.Windows.Forms.NumericUpDown();
+			this.AutoPilotY = new System.Windows.Forms.NumericUpDown();
+			this.AutoPilotYLabel = new System.Windows.Forms.Label();
+			this.AutoPilotXLabel = new System.Windows.Forms.Label();
+			this.AutoPilotX = new System.Windows.Forms.NumericUpDown();
+			this.ClockStateGroupBox = new System.Windows.Forms.GroupBox();
+			this.DayInTicksLabel = new System.Windows.Forms.Label();
+			this.DayInTicks = new System.Windows.Forms.NumericUpDown();
+			this.TickCountLabel = new System.Windows.Forms.Label();
+			this.TickCount = new System.Windows.Forms.NumericUpDown();
+			this.YearIndexLabel = new System.Windows.Forms.Label();
+			this.YearIndex = new System.Windows.Forms.NumericUpDown();
+			this.MonthIndex = new System.Windows.Forms.NumericUpDown();
+			this.MonthIndexLabel = new System.Windows.Forms.Label();
+			this.DayIndexLabe = new System.Windows.Forms.Label();
+			this.DayIndex = new System.Windows.Forms.NumericUpDown();
+			this.ElementWorthGroupBox = new System.Windows.Forms.GroupBox();
+			this.ExoticWorthLabel = new System.Windows.Forms.Label();
+			this.RadioactiveWorthLabel = new System.Windows.Forms.Label();
+			this.PreciousMetalWorthLabel = new System.Windows.Forms.Label();
+			this.RareEarthWorthLabel = new System.Windows.Forms.Label();
+			this.NobleGasWorthLabel = new System.Windows.Forms.Label();
+			this.baseMetalWorthLabel = new System.Windows.Forms.Label();
+			this.CorrosiveWorthLabel = new System.Windows.Forms.Label();
+			this.CommonWorthLabel = new System.Windows.Forms.Label();
+			this.ExoticWorth = new System.Windows.Forms.NumericUpDown();
+			this.RadioactiveWorth = new System.Windows.Forms.NumericUpDown();
+			this.PreciousMetalWorth = new System.Windows.Forms.NumericUpDown();
+			this.RareEarthWorth = new System.Windows.Forms.NumericUpDown();
+			this.NobleGasWorth = new System.Windows.Forms.NumericUpDown();
+			this.BaseMetalWorth = new System.Windows.Forms.NumericUpDown();
+			this.CorrosiveWorth = new System.Windows.Forms.NumericUpDown();
+			this.CommonWorth = new System.Windows.Forms.NumericUpDown();
+			this.CostsGroupBox = new System.Windows.Forms.GroupBox();
+			this.PointDefenseCostLabel = new System.Windows.Forms.Label();
+			this.PointDefenseCost = new System.Windows.Forms.NumericUpDown();
+			this.TrackingSystemCostLabel = new System.Windows.Forms.Label();
+			this.TrackingSystemCost = new System.Windows.Forms.NumericUpDown();
+			this.HellboreCannonCostLabel = new System.Windows.Forms.Label();
+			this.HellboreCannonCost = new System.Windows.Forms.NumericUpDown();
+			this.FusionBlasterCostLabel = new System.Windows.Forms.Label();
+			this.FusionBlasterCost = new System.Windows.Forms.NumericUpDown();
+			this.IonBoltGunCostLabel = new System.Windows.Forms.Label();
+			this.IonBoltGunCost = new System.Windows.Forms.NumericUpDown();
+			this.ShivaFurnaceCostLabel = new System.Windows.Forms.Label();
+			this.ShivaFurnaceCost = new System.Windows.Forms.NumericUpDown();
+			this.DynamoUnitCostLabel = new System.Windows.Forms.Label();
+			this.DynamoUnitCost = new System.Windows.Forms.NumericUpDown();
+			this.HiEffFuelSysCostLabel = new System.Windows.Forms.Label();
+			this.HiEffFuelSysCost = new System.Windows.Forms.NumericUpDown();
+			this.FuelTankCostLabel = new System.Windows.Forms.Label();
+			this.FuelTankCost = new System.Windows.Forms.NumericUpDown();
+			this.StorageBayCostLabel = new System.Windows.Forms.Label();
+			this.StorageBayCost = new System.Windows.Forms.NumericUpDown();
+			this.CrewPodCostLabel = new System.Windows.Forms.Label();
+			this.CrewPodCost = new System.Windows.Forms.NumericUpDown();
+			this.JetCostLabel = new System.Windows.Forms.Label();
+			this.JetCost = new System.Windows.Forms.NumericUpDown();
+			this.ThrusterCostLabel = new System.Windows.Forms.Label();
+			this.ThrusterCost = new System.Windows.Forms.NumericUpDown();
+			this.LanderCostLabel = new System.Windows.Forms.Label();
+			this.LanderCost = new System.Windows.Forms.NumericUpDown();
+			this.FuelCost = new System.Windows.Forms.NumericUpDown();
+			this.FuelCostLabel = new System.Windows.Forms.Label();
+			this.CrewCostLabel = new System.Windows.Forms.Label();
+			this.CrewCost = new System.Windows.Forms.NumericUpDown();
+			this.GlobalFlagsGroupBox = new System.Windows.Forms.GroupBox();
+			this.SubtitleSpeedGroupBox = new System.Windows.Forms.GroupBox();
+			this.ReadSpeed = new System.Windows.Forms.TrackBar();
+			this.MusicSoundGroupBox = new System.Windows.Forms.GroupBox();
+			this.SoundCheckBox = new System.Windows.Forms.CheckBox();
+			this.MusicCheckBox = new System.Windows.Forms.CheckBox();
+			this.CyborgGroupBox = new System.Windows.Forms.GroupBox();
+			this.CombatSpeed = new System.Windows.Forms.TrackBar();
+			this.CyborgCheckBox = new System.Windows.Forms.CheckBox();
+			this.ReadOnly = new System.Windows.Forms.ToolTip(this.components);
+			this.MaxLimits = new System.Windows.Forms.ToolTip(this.components);
 			this.toolStrip1.SuspendLayout();
 			this.Tabs.SuspendLayout();
 			this.Summary.SuspendLayout();
@@ -332,52 +331,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.UniverseY)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.UniverseX)).BeginInit();
 			this.Extras.SuspendLayout();
-			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.ReadSpeed)).BeginInit();
-			this.CyborgGroupBox.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.CombatSpeed)).BeginInit();
-			this.MusicSound.SuspendLayout();
-			this.GlobalFlagsGroupBox.SuspendLayout();
-			this.CostsGroupBox.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.CrewCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.FuelCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.LanderCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.ThrusterCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.JetCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.CrewPodCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.StorageBayCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.FuelTankCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.HiEffFuelSysCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.DynamoUnitCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.ShivaFurnaceCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.IonBoltGunCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.FusionBlasterCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.HellboreCannonCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.TrackingSystemCost)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.PointDefenseCost)).BeginInit();
-			this.ElementWorthGroupBox.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.ExoticWorth)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.RadioactiveWorth)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.PreciousMetalWorth)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.RareEarthWorth)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.NobleGasWorth)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.BaseMetalWorth)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.CorrosiveWorth)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.CommonWorth)).BeginInit();
-			this.groupBox2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.DayInTicks)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.TickCount)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.YearIndex)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.MonthIndex)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.DayIndex)).BeginInit();
-			this.LocationGroupBox.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.ShipFacing)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.ShipOriginY)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.ShipOriginX)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.IPLocationY)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.IPLocationX)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.AutoPilotY)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.AutoPilotX)).BeginInit();
 			this.VelocityGroupBox.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.IncrHeight)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.IncrWidth)).BeginInit();
@@ -388,6 +341,52 @@
 			((System.ComponentModel.ISupportInitialize)(this.VectorHeight)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.VectorWidth)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.TravelAngle)).BeginInit();
+			this.LocationGroupBox.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.ShipFacing)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ShipOriginY)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ShipOriginX)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.IPLocationY)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.IPLocationX)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.AutoPilotY)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.AutoPilotX)).BeginInit();
+			this.ClockStateGroupBox.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.DayInTicks)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.TickCount)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.YearIndex)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.MonthIndex)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.DayIndex)).BeginInit();
+			this.ElementWorthGroupBox.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.ExoticWorth)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.RadioactiveWorth)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.PreciousMetalWorth)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.RareEarthWorth)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.NobleGasWorth)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.BaseMetalWorth)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CorrosiveWorth)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CommonWorth)).BeginInit();
+			this.CostsGroupBox.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.PointDefenseCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.TrackingSystemCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.HellboreCannonCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.FusionBlasterCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.IonBoltGunCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ShivaFurnaceCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.DynamoUnitCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.HiEffFuelSysCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.FuelTankCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.StorageBayCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CrewPodCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.JetCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ThrusterCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.LanderCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.FuelCost)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CrewCost)).BeginInit();
+			this.GlobalFlagsGroupBox.SuspendLayout();
+			this.SubtitleSpeedGroupBox.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.ReadSpeed)).BeginInit();
+			this.MusicSoundGroupBox.SuspendLayout();
+			this.CyborgGroupBox.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.CombatSpeed)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// toolStrip1
@@ -447,7 +446,6 @@
 			this.Tabs.Controls.Add(this.Summary);
 			this.Tabs.Controls.Add(this.Coordinates);
 			this.Tabs.Controls.Add(this.Extras);
-			this.Tabs.Controls.Add(this.GameStateTab);
 			this.Tabs.Enabled = false;
 			this.Tabs.Location = new System.Drawing.Point(2, 28);
 			this.Tabs.Name = "Tabs";
@@ -2291,7 +2289,7 @@
 			// 
 			this.Extras.Controls.Add(this.VelocityGroupBox);
 			this.Extras.Controls.Add(this.LocationGroupBox);
-			this.Extras.Controls.Add(this.groupBox2);
+			this.Extras.Controls.Add(this.ClockStateGroupBox);
 			this.Extras.Controls.Add(this.ElementWorthGroupBox);
 			this.Extras.Controls.Add(this.CostsGroupBox);
 			this.Extras.Controls.Add(this.GlobalFlagsGroupBox);
@@ -2303,420 +2301,616 @@
 			this.Extras.Text = "Extras";
 			this.Extras.UseVisualStyleBackColor = true;
 			// 
-			// groupBox1
+			// VelocityGroupBox
 			// 
-			this.groupBox1.Controls.Add(this.ReadSpeed);
-			this.groupBox1.Location = new System.Drawing.Point(6, 19);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(118, 73);
-			this.groupBox1.TabIndex = 0;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Subtitle Speed";
+			this.VelocityGroupBox.Controls.Add(this.IncrHeightLabel);
+			this.VelocityGroupBox.Controls.Add(this.IncrHeight);
+			this.VelocityGroupBox.Controls.Add(this.IncrWidthLabel);
+			this.VelocityGroupBox.Controls.Add(this.IncrWidth);
+			this.VelocityGroupBox.Controls.Add(this.ErrorHeightLabel);
+			this.VelocityGroupBox.Controls.Add(this.ErrorHeight);
+			this.VelocityGroupBox.Controls.Add(this.ErrorWidthLabel);
+			this.VelocityGroupBox.Controls.Add(this.ErrorWidth);
+			this.VelocityGroupBox.Controls.Add(this.FractHeightLabel);
+			this.VelocityGroupBox.Controls.Add(this.FractHeight);
+			this.VelocityGroupBox.Controls.Add(this.FractWidthLabel);
+			this.VelocityGroupBox.Controls.Add(this.FractWidth);
+			this.VelocityGroupBox.Controls.Add(this.VectorHeightLabel);
+			this.VelocityGroupBox.Controls.Add(this.VectorHeight);
+			this.VelocityGroupBox.Controls.Add(this.VectorWidth);
+			this.VelocityGroupBox.Controls.Add(this.VectorWidthLabel);
+			this.VelocityGroupBox.Controls.Add(this.TravelAngleLabel);
+			this.VelocityGroupBox.Controls.Add(this.TravelAngle);
+			this.VelocityGroupBox.Location = new System.Drawing.Point(676, 6);
+			this.VelocityGroupBox.Name = "VelocityGroupBox";
+			this.VelocityGroupBox.Size = new System.Drawing.Size(181, 264);
+			this.VelocityGroupBox.TabIndex = 8;
+			this.VelocityGroupBox.TabStop = false;
+			this.VelocityGroupBox.Text = "Ship Velocity";
 			// 
-			// ReadSpeed
+			// IncrHeightLabel
 			// 
-			this.ReadSpeed.LargeChange = 1;
-			this.ReadSpeed.Location = new System.Drawing.Point(7, 20);
-			this.ReadSpeed.Maximum = 4;
-			this.ReadSpeed.Name = "ReadSpeed";
-			this.ReadSpeed.Size = new System.Drawing.Size(104, 45);
-			this.ReadSpeed.TabIndex = 0;
+			this.IncrHeightLabel.AutoSize = true;
+			this.IncrHeightLabel.Location = new System.Drawing.Point(6, 236);
+			this.IncrHeightLabel.Name = "IncrHeightLabel";
+			this.IncrHeightLabel.Size = new System.Drawing.Size(59, 13);
+			this.IncrHeightLabel.TabIndex = 35;
+			this.IncrHeightLabel.Text = "Incr Height";
 			// 
-			// CyborgGroupBox
+			// IncrHeight
 			// 
-			this.CyborgGroupBox.Controls.Add(this.CombatSpeed);
-			this.CyborgGroupBox.Controls.Add(this.checkBox1);
-			this.CyborgGroupBox.Location = new System.Drawing.Point(6, 98);
-			this.CyborgGroupBox.Name = "CyborgGroupBox";
-			this.CyborgGroupBox.Size = new System.Drawing.Size(118, 100);
-			this.CyborgGroupBox.TabIndex = 1;
-			this.CyborgGroupBox.TabStop = false;
-			this.CyborgGroupBox.Text = "Cyborg";
-			// 
-			// checkBox1
-			// 
-			this.checkBox1.AutoSize = true;
-			this.checkBox1.Location = new System.Drawing.Point(7, 20);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(101, 17);
-			this.checkBox1.TabIndex = 0;
-			this.checkBox1.Text = "Cyborg Enabled";
-			this.checkBox1.UseVisualStyleBackColor = true;
-			// 
-			// CombatSpeed
-			// 
-			this.CombatSpeed.LargeChange = 1;
-			this.CombatSpeed.Location = new System.Drawing.Point(7, 44);
-			this.CombatSpeed.Maximum = 3;
-			this.CombatSpeed.Name = "CombatSpeed";
-			this.CombatSpeed.Size = new System.Drawing.Size(104, 45);
-			this.CombatSpeed.TabIndex = 1;
-			// 
-			// MusicSound
-			// 
-			this.MusicSound.Controls.Add(this.SoundEnabled);
-			this.MusicSound.Controls.Add(this.MusicEnabled);
-			this.MusicSound.Location = new System.Drawing.Point(130, 19);
-			this.MusicSound.Name = "MusicSound";
-			this.MusicSound.Size = new System.Drawing.Size(108, 73);
-			this.MusicSound.TabIndex = 2;
-			this.MusicSound.TabStop = false;
-			this.MusicSound.Text = "Music and Sound";
-			// 
-			// MusicEnabled
-			// 
-			this.MusicEnabled.AutoSize = true;
-			this.MusicEnabled.Location = new System.Drawing.Point(6, 19);
-			this.MusicEnabled.Name = "MusicEnabled";
-			this.MusicEnabled.Size = new System.Drawing.Size(96, 17);
-			this.MusicEnabled.TabIndex = 0;
-			this.MusicEnabled.Text = "Music Enabled";
-			this.MusicEnabled.UseVisualStyleBackColor = true;
-			// 
-			// SoundEnabled
-			// 
-			this.SoundEnabled.AutoSize = true;
-			this.SoundEnabled.Location = new System.Drawing.Point(6, 43);
-			this.SoundEnabled.Name = "SoundEnabled";
-			this.SoundEnabled.Size = new System.Drawing.Size(99, 17);
-			this.SoundEnabled.TabIndex = 1;
-			this.SoundEnabled.Text = "Sound Enabled";
-			this.SoundEnabled.UseVisualStyleBackColor = true;
-			// 
-			// GlobalFlagsGroupBox
-			// 
-			this.GlobalFlagsGroupBox.Controls.Add(this.groupBox1);
-			this.GlobalFlagsGroupBox.Controls.Add(this.MusicSound);
-			this.GlobalFlagsGroupBox.Controls.Add(this.CyborgGroupBox);
-			this.GlobalFlagsGroupBox.Location = new System.Drawing.Point(6, 6);
-			this.GlobalFlagsGroupBox.Name = "GlobalFlagsGroupBox";
-			this.GlobalFlagsGroupBox.Size = new System.Drawing.Size(244, 204);
-			this.GlobalFlagsGroupBox.TabIndex = 3;
-			this.GlobalFlagsGroupBox.TabStop = false;
-			this.GlobalFlagsGroupBox.Text = "Global Flags";
-			// 
-			// CostsGroupBox
-			// 
-			this.CostsGroupBox.Controls.Add(this.PointDefenseCostLabel);
-			this.CostsGroupBox.Controls.Add(this.PointDefenseCost);
-			this.CostsGroupBox.Controls.Add(this.TrackingSystemCostLabel);
-			this.CostsGroupBox.Controls.Add(this.TrackingSystemCost);
-			this.CostsGroupBox.Controls.Add(this.HellboreCannonCostLabel);
-			this.CostsGroupBox.Controls.Add(this.HellboreCannonCost);
-			this.CostsGroupBox.Controls.Add(this.FusionBlasterCostLabel);
-			this.CostsGroupBox.Controls.Add(this.FusionBlasterCost);
-			this.CostsGroupBox.Controls.Add(this.IonBoltGunCostLabel);
-			this.CostsGroupBox.Controls.Add(this.IonBoltGunCost);
-			this.CostsGroupBox.Controls.Add(this.ShivaFurnaceCostLabel);
-			this.CostsGroupBox.Controls.Add(this.ShivaFurnaceCost);
-			this.CostsGroupBox.Controls.Add(this.DynamoUnitCostLabel);
-			this.CostsGroupBox.Controls.Add(this.DynamoUnitCost);
-			this.CostsGroupBox.Controls.Add(this.HiEffFuelSysCostLabel);
-			this.CostsGroupBox.Controls.Add(this.HiEffFuelSysCost);
-			this.CostsGroupBox.Controls.Add(this.FuelTankCostLabel);
-			this.CostsGroupBox.Controls.Add(this.FuelTankCost);
-			this.CostsGroupBox.Controls.Add(this.StorageBayCostLabel);
-			this.CostsGroupBox.Controls.Add(this.StorageBayCost);
-			this.CostsGroupBox.Controls.Add(this.CrewPodCostLabel);
-			this.CostsGroupBox.Controls.Add(this.CrewPodCost);
-			this.CostsGroupBox.Controls.Add(this.JetCostLabel);
-			this.CostsGroupBox.Controls.Add(this.JetCost);
-			this.CostsGroupBox.Controls.Add(this.ThrusterCostLabel);
-			this.CostsGroupBox.Controls.Add(this.ThrusterCost);
-			this.CostsGroupBox.Controls.Add(this.LanderCostLabel);
-			this.CostsGroupBox.Controls.Add(this.LanderCost);
-			this.CostsGroupBox.Controls.Add(this.FuelCost);
-			this.CostsGroupBox.Controls.Add(this.FuelCostLabel);
-			this.CostsGroupBox.Controls.Add(this.CrewCostLabel);
-			this.CostsGroupBox.Controls.Add(this.CrewCost);
-			this.CostsGroupBox.Location = new System.Drawing.Point(256, 6);
-			this.CostsGroupBox.Name = "CostsGroupBox";
-			this.CostsGroupBox.Size = new System.Drawing.Size(233, 452);
-			this.CostsGroupBox.TabIndex = 4;
-			this.CostsGroupBox.TabStop = false;
-			this.CostsGroupBox.Text = "Costs";
-			// 
-			// CrewCost
-			// 
-			this.CrewCost.Location = new System.Drawing.Point(105, 18);
-			this.CrewCost.Maximum = new decimal(new int[] {
-            255,
+			this.IncrHeight.Location = new System.Drawing.Point(84, 234);
+			this.IncrHeight.Maximum = new decimal(new int[] {
+            32767,
             0,
             0,
             0});
-			this.CrewCost.Name = "CrewCost";
-			this.CrewCost.Size = new System.Drawing.Size(120, 20);
-			this.CrewCost.TabIndex = 0;
-			this.CrewCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.IncrHeight.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.IncrHeight.Name = "IncrHeight";
+			this.IncrHeight.Size = new System.Drawing.Size(90, 20);
+			this.IncrHeight.TabIndex = 34;
+			this.IncrHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// CrewCostLabel
+			// IncrWidthLabel
 			// 
-			this.CrewCostLabel.AutoSize = true;
-			this.CrewCostLabel.Location = new System.Drawing.Point(6, 20);
-			this.CrewCostLabel.Name = "CrewCostLabel";
-			this.CrewCostLabel.Size = new System.Drawing.Size(31, 13);
-			this.CrewCostLabel.TabIndex = 1;
-			this.CrewCostLabel.Text = "Crew";
+			this.IncrWidthLabel.AutoSize = true;
+			this.IncrWidthLabel.Location = new System.Drawing.Point(6, 209);
+			this.IncrWidthLabel.Name = "IncrWidthLabel";
+			this.IncrWidthLabel.Size = new System.Drawing.Size(56, 13);
+			this.IncrWidthLabel.TabIndex = 33;
+			this.IncrWidthLabel.Text = "Incr Width";
 			// 
-			// FuelCostLabel
+			// IncrWidth
 			// 
-			this.FuelCostLabel.AutoSize = true;
-			this.FuelCostLabel.Location = new System.Drawing.Point(6, 47);
-			this.FuelCostLabel.Name = "FuelCostLabel";
-			this.FuelCostLabel.Size = new System.Drawing.Size(27, 13);
-			this.FuelCostLabel.TabIndex = 2;
-			this.FuelCostLabel.Text = "Fuel";
-			// 
-			// FuelCost
-			// 
-			this.FuelCost.Location = new System.Drawing.Point(105, 45);
-			this.FuelCost.Maximum = new decimal(new int[] {
-            20,
+			this.IncrWidth.Location = new System.Drawing.Point(84, 207);
+			this.IncrWidth.Maximum = new decimal(new int[] {
+            32767,
             0,
             0,
             0});
-			this.FuelCost.Name = "FuelCost";
-			this.FuelCost.Size = new System.Drawing.Size(120, 20);
-			this.FuelCost.TabIndex = 3;
-			this.FuelCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.IncrWidth.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.IncrWidth.Name = "IncrWidth";
+			this.IncrWidth.Size = new System.Drawing.Size(90, 20);
+			this.IncrWidth.TabIndex = 32;
+			this.IncrWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// LanderCost
+			// ErrorHeightLabel
 			// 
-			this.LanderCost.Location = new System.Drawing.Point(105, 72);
-			this.LanderCost.Name = "LanderCost";
-			this.LanderCost.Size = new System.Drawing.Size(120, 20);
-			this.LanderCost.TabIndex = 4;
-			this.LanderCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.ErrorHeightLabel.AutoSize = true;
+			this.ErrorHeightLabel.Location = new System.Drawing.Point(6, 182);
+			this.ErrorHeightLabel.Name = "ErrorHeightLabel";
+			this.ErrorHeightLabel.Size = new System.Drawing.Size(63, 13);
+			this.ErrorHeightLabel.TabIndex = 31;
+			this.ErrorHeightLabel.Text = "Error Height";
 			// 
-			// LanderCostLabel
+			// ErrorHeight
 			// 
-			this.LanderCostLabel.AutoSize = true;
-			this.LanderCostLabel.Location = new System.Drawing.Point(6, 74);
-			this.LanderCostLabel.Name = "LanderCostLabel";
-			this.LanderCostLabel.Size = new System.Drawing.Size(40, 13);
-			this.LanderCostLabel.TabIndex = 5;
-			this.LanderCostLabel.Text = "Lander";
+			this.ErrorHeight.Location = new System.Drawing.Point(84, 180);
+			this.ErrorHeight.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.ErrorHeight.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.ErrorHeight.Name = "ErrorHeight";
+			this.ErrorHeight.Size = new System.Drawing.Size(90, 20);
+			this.ErrorHeight.TabIndex = 30;
+			this.ErrorHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// ThrusterCost
+			// ErrorWidthLabel
 			// 
-			this.ThrusterCost.Location = new System.Drawing.Point(105, 99);
-			this.ThrusterCost.Name = "ThrusterCost";
-			this.ThrusterCost.Size = new System.Drawing.Size(120, 20);
-			this.ThrusterCost.TabIndex = 6;
-			this.ThrusterCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.ErrorWidthLabel.AutoSize = true;
+			this.ErrorWidthLabel.Location = new System.Drawing.Point(6, 155);
+			this.ErrorWidthLabel.Name = "ErrorWidthLabel";
+			this.ErrorWidthLabel.Size = new System.Drawing.Size(60, 13);
+			this.ErrorWidthLabel.TabIndex = 29;
+			this.ErrorWidthLabel.Text = "Error Width";
 			// 
-			// ThrusterCostLabel
+			// ErrorWidth
 			// 
-			this.ThrusterCostLabel.AutoSize = true;
-			this.ThrusterCostLabel.Location = new System.Drawing.Point(6, 101);
-			this.ThrusterCostLabel.Name = "ThrusterCostLabel";
-			this.ThrusterCostLabel.Size = new System.Drawing.Size(93, 13);
-			this.ThrusterCostLabel.TabIndex = 7;
-			this.ThrusterCostLabel.Text = "Anti-Mat Thrusters";
+			this.ErrorWidth.Location = new System.Drawing.Point(84, 153);
+			this.ErrorWidth.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.ErrorWidth.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.ErrorWidth.Name = "ErrorWidth";
+			this.ErrorWidth.Size = new System.Drawing.Size(90, 20);
+			this.ErrorWidth.TabIndex = 28;
+			this.ErrorWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// JetCost
+			// FractHeightLabel
 			// 
-			this.JetCost.Location = new System.Drawing.Point(105, 126);
-			this.JetCost.Name = "JetCost";
-			this.JetCost.Size = new System.Drawing.Size(120, 20);
-			this.JetCost.TabIndex = 8;
-			this.JetCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.FractHeightLabel.AutoSize = true;
+			this.FractHeightLabel.Location = new System.Drawing.Point(6, 128);
+			this.FractHeightLabel.Name = "FractHeightLabel";
+			this.FractHeightLabel.Size = new System.Drawing.Size(65, 13);
+			this.FractHeightLabel.TabIndex = 27;
+			this.FractHeightLabel.Text = "Fract Height";
 			// 
-			// JetCostLabel
+			// FractHeight
 			// 
-			this.JetCostLabel.AutoSize = true;
-			this.JetCostLabel.Location = new System.Drawing.Point(6, 128);
-			this.JetCostLabel.Name = "JetCostLabel";
-			this.JetCostLabel.Size = new System.Drawing.Size(65, 13);
-			this.JetCostLabel.TabIndex = 9;
-			this.JetCostLabel.Text = "Turning Jets";
+			this.FractHeight.Location = new System.Drawing.Point(84, 126);
+			this.FractHeight.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.FractHeight.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.FractHeight.Name = "FractHeight";
+			this.FractHeight.Size = new System.Drawing.Size(90, 20);
+			this.FractHeight.TabIndex = 26;
+			this.FractHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// CrewPodCost
+			// FractWidthLabel
 			// 
-			this.CrewPodCost.Location = new System.Drawing.Point(105, 153);
-			this.CrewPodCost.Name = "CrewPodCost";
-			this.CrewPodCost.Size = new System.Drawing.Size(120, 20);
-			this.CrewPodCost.TabIndex = 10;
-			this.CrewPodCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.FractWidthLabel.AutoSize = true;
+			this.FractWidthLabel.Location = new System.Drawing.Point(6, 101);
+			this.FractWidthLabel.Name = "FractWidthLabel";
+			this.FractWidthLabel.Size = new System.Drawing.Size(62, 13);
+			this.FractWidthLabel.TabIndex = 25;
+			this.FractWidthLabel.Text = "Fract Width";
 			// 
-			// CrewPodCostLabel
+			// FractWidth
 			// 
-			this.CrewPodCostLabel.AutoSize = true;
-			this.CrewPodCostLabel.Location = new System.Drawing.Point(6, 155);
-			this.CrewPodCostLabel.Name = "CrewPodCostLabel";
-			this.CrewPodCostLabel.Size = new System.Drawing.Size(53, 13);
-			this.CrewPodCostLabel.TabIndex = 11;
-			this.CrewPodCostLabel.Text = "Crew Pod";
+			this.FractWidth.Location = new System.Drawing.Point(84, 99);
+			this.FractWidth.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.FractWidth.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.FractWidth.Name = "FractWidth";
+			this.FractWidth.Size = new System.Drawing.Size(90, 20);
+			this.FractWidth.TabIndex = 24;
+			this.FractWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// StorageBayCost
+			// VectorHeightLabel
 			// 
-			this.StorageBayCost.Location = new System.Drawing.Point(105, 180);
-			this.StorageBayCost.Name = "StorageBayCost";
-			this.StorageBayCost.Size = new System.Drawing.Size(120, 20);
-			this.StorageBayCost.TabIndex = 12;
-			this.StorageBayCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.VectorHeightLabel.AutoSize = true;
+			this.VectorHeightLabel.Location = new System.Drawing.Point(6, 74);
+			this.VectorHeightLabel.Name = "VectorHeightLabel";
+			this.VectorHeightLabel.Size = new System.Drawing.Size(72, 13);
+			this.VectorHeightLabel.TabIndex = 23;
+			this.VectorHeightLabel.Text = "Vector Height";
 			// 
-			// StorageBayCostLabel
+			// VectorHeight
 			// 
-			this.StorageBayCostLabel.AutoSize = true;
-			this.StorageBayCostLabel.Location = new System.Drawing.Point(6, 182);
-			this.StorageBayCostLabel.Name = "StorageBayCostLabel";
-			this.StorageBayCostLabel.Size = new System.Drawing.Size(65, 13);
-			this.StorageBayCostLabel.TabIndex = 13;
-			this.StorageBayCostLabel.Text = "Storage Bay";
+			this.VectorHeight.Location = new System.Drawing.Point(84, 72);
+			this.VectorHeight.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.VectorHeight.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.VectorHeight.Name = "VectorHeight";
+			this.VectorHeight.Size = new System.Drawing.Size(90, 20);
+			this.VectorHeight.TabIndex = 22;
+			this.VectorHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// FuelTankCost
+			// VectorWidth
 			// 
-			this.FuelTankCost.Location = new System.Drawing.Point(105, 207);
-			this.FuelTankCost.Name = "FuelTankCost";
-			this.FuelTankCost.Size = new System.Drawing.Size(120, 20);
-			this.FuelTankCost.TabIndex = 14;
-			this.FuelTankCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.VectorWidth.Location = new System.Drawing.Point(84, 45);
+			this.VectorWidth.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.VectorWidth.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.VectorWidth.Name = "VectorWidth";
+			this.VectorWidth.Size = new System.Drawing.Size(90, 20);
+			this.VectorWidth.TabIndex = 21;
+			this.VectorWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// FuelTankCostLabel
+			// VectorWidthLabel
 			// 
-			this.FuelTankCostLabel.AutoSize = true;
-			this.FuelTankCostLabel.Location = new System.Drawing.Point(6, 209);
-			this.FuelTankCostLabel.Name = "FuelTankCostLabel";
-			this.FuelTankCostLabel.Size = new System.Drawing.Size(55, 13);
-			this.FuelTankCostLabel.TabIndex = 15;
-			this.FuelTankCostLabel.Text = "Fuel Tank";
+			this.VectorWidthLabel.AutoSize = true;
+			this.VectorWidthLabel.Location = new System.Drawing.Point(6, 47);
+			this.VectorWidthLabel.Name = "VectorWidthLabel";
+			this.VectorWidthLabel.Size = new System.Drawing.Size(69, 13);
+			this.VectorWidthLabel.TabIndex = 20;
+			this.VectorWidthLabel.Text = "Vector Width";
 			// 
-			// HiEffFuelSysCost
+			// TravelAngleLabel
 			// 
-			this.HiEffFuelSysCost.Location = new System.Drawing.Point(105, 234);
-			this.HiEffFuelSysCost.Name = "HiEffFuelSysCost";
-			this.HiEffFuelSysCost.Size = new System.Drawing.Size(120, 20);
-			this.HiEffFuelSysCost.TabIndex = 16;
-			this.HiEffFuelSysCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.TravelAngleLabel.AutoSize = true;
+			this.TravelAngleLabel.Location = new System.Drawing.Point(6, 20);
+			this.TravelAngleLabel.Name = "TravelAngleLabel";
+			this.TravelAngleLabel.Size = new System.Drawing.Size(67, 13);
+			this.TravelAngleLabel.TabIndex = 19;
+			this.TravelAngleLabel.Text = "Travel Angle";
 			// 
-			// HiEffFuelSysCostLabel
+			// TravelAngle
 			// 
-			this.HiEffFuelSysCostLabel.AutoSize = true;
-			this.HiEffFuelSysCostLabel.Location = new System.Drawing.Point(6, 236);
-			this.HiEffFuelSysCostLabel.Name = "HiEffFuelSysCostLabel";
-			this.HiEffFuelSysCostLabel.Size = new System.Drawing.Size(73, 13);
-			this.HiEffFuelSysCostLabel.TabIndex = 17;
-			this.HiEffFuelSysCostLabel.Text = "Hi-Eff FuelSys";
+			this.TravelAngle.Location = new System.Drawing.Point(84, 18);
+			this.TravelAngle.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+			this.TravelAngle.Name = "TravelAngle";
+			this.TravelAngle.Size = new System.Drawing.Size(90, 20);
+			this.TravelAngle.TabIndex = 18;
+			this.TravelAngle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// DynamoUnitCost
+			// LocationGroupBox
 			// 
-			this.DynamoUnitCost.Location = new System.Drawing.Point(105, 261);
-			this.DynamoUnitCost.Name = "DynamoUnitCost";
-			this.DynamoUnitCost.Size = new System.Drawing.Size(120, 20);
-			this.DynamoUnitCost.TabIndex = 18;
-			this.DynamoUnitCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.LocationGroupBox.Controls.Add(this.ShipFacingLabel);
+			this.LocationGroupBox.Controls.Add(this.ShipFacing);
+			this.LocationGroupBox.Controls.Add(this.ShipOriginYLabel);
+			this.LocationGroupBox.Controls.Add(this.ShipOriginY);
+			this.LocationGroupBox.Controls.Add(this.ShipOriginXLabel);
+			this.LocationGroupBox.Controls.Add(this.ShipOriginX);
+			this.LocationGroupBox.Controls.Add(this.IPLocationYLabel);
+			this.LocationGroupBox.Controls.Add(this.IPLocationY);
+			this.LocationGroupBox.Controls.Add(this.IPLocationXLabel);
+			this.LocationGroupBox.Controls.Add(this.IPLocationX);
+			this.LocationGroupBox.Controls.Add(this.AutoPilotY);
+			this.LocationGroupBox.Controls.Add(this.AutoPilotYLabel);
+			this.LocationGroupBox.Controls.Add(this.AutoPilotXLabel);
+			this.LocationGroupBox.Controls.Add(this.AutoPilotX);
+			this.LocationGroupBox.Location = new System.Drawing.Point(496, 245);
+			this.LocationGroupBox.Name = "LocationGroupBox";
+			this.LocationGroupBox.Size = new System.Drawing.Size(174, 213);
+			this.LocationGroupBox.TabIndex = 7;
+			this.LocationGroupBox.TabStop = false;
+			this.LocationGroupBox.Text = "Location";
 			// 
-			// DynamoUnitCostLabel
+			// ShipFacingLabel
 			// 
-			this.DynamoUnitCostLabel.AutoSize = true;
-			this.DynamoUnitCostLabel.Location = new System.Drawing.Point(6, 263);
-			this.DynamoUnitCostLabel.Name = "DynamoUnitCostLabel";
-			this.DynamoUnitCostLabel.Size = new System.Drawing.Size(68, 13);
-			this.DynamoUnitCostLabel.TabIndex = 19;
-			this.DynamoUnitCostLabel.Text = "Dynamo Unit";
+			this.ShipFacingLabel.AutoSize = true;
+			this.ShipFacingLabel.Location = new System.Drawing.Point(6, 184);
+			this.ShipFacingLabel.Name = "ShipFacingLabel";
+			this.ShipFacingLabel.Size = new System.Drawing.Size(63, 13);
+			this.ShipFacingLabel.TabIndex = 27;
+			this.ShipFacingLabel.Text = "Ship Facing";
 			// 
-			// ShivaFurnaceCost
+			// ShipFacing
 			// 
-			this.ShivaFurnaceCost.Location = new System.Drawing.Point(105, 288);
-			this.ShivaFurnaceCost.Name = "ShivaFurnaceCost";
-			this.ShivaFurnaceCost.Size = new System.Drawing.Size(120, 20);
-			this.ShivaFurnaceCost.TabIndex = 20;
-			this.ShivaFurnaceCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.ShipFacing.Location = new System.Drawing.Point(89, 182);
+			this.ShipFacing.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+			this.ShipFacing.Name = "ShipFacing";
+			this.ShipFacing.Size = new System.Drawing.Size(76, 20);
+			this.ShipFacing.TabIndex = 26;
+			this.ShipFacing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// ShivaFurnaceCostLabel
+			// ShipOriginYLabel
 			// 
-			this.ShivaFurnaceCostLabel.AutoSize = true;
-			this.ShivaFurnaceCostLabel.Location = new System.Drawing.Point(6, 290);
-			this.ShivaFurnaceCostLabel.Name = "ShivaFurnaceCostLabel";
-			this.ShivaFurnaceCostLabel.Size = new System.Drawing.Size(76, 13);
-			this.ShivaFurnaceCostLabel.TabIndex = 21;
-			this.ShivaFurnaceCostLabel.Text = "Shiva Furnace";
+			this.ShipOriginYLabel.AutoSize = true;
+			this.ShipOriginYLabel.Location = new System.Drawing.Point(6, 157);
+			this.ShipOriginYLabel.Name = "ShipOriginYLabel";
+			this.ShipOriginYLabel.Size = new System.Drawing.Size(68, 13);
+			this.ShipOriginYLabel.TabIndex = 25;
+			this.ShipOriginYLabel.Text = "Ship Origin Y";
 			// 
-			// IonBoltGunCost
+			// ShipOriginY
 			// 
-			this.IonBoltGunCost.Location = new System.Drawing.Point(105, 315);
-			this.IonBoltGunCost.Name = "IonBoltGunCost";
-			this.IonBoltGunCost.Size = new System.Drawing.Size(120, 20);
-			this.IonBoltGunCost.TabIndex = 22;
-			this.IonBoltGunCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.ShipOriginY.Location = new System.Drawing.Point(89, 155);
+			this.ShipOriginY.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.ShipOriginY.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.ShipOriginY.Name = "ShipOriginY";
+			this.ShipOriginY.Size = new System.Drawing.Size(76, 20);
+			this.ShipOriginY.TabIndex = 24;
+			this.ShipOriginY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// IonBoltGunCostLabel
+			// ShipOriginXLabel
 			// 
-			this.IonBoltGunCostLabel.AutoSize = true;
-			this.IonBoltGunCostLabel.Location = new System.Drawing.Point(6, 317);
-			this.IonBoltGunCostLabel.Name = "IonBoltGunCostLabel";
-			this.IonBoltGunCostLabel.Size = new System.Drawing.Size(66, 13);
-			this.IonBoltGunCostLabel.TabIndex = 23;
-			this.IonBoltGunCostLabel.Text = "Ion-Bolt Gun";
+			this.ShipOriginXLabel.AutoSize = true;
+			this.ShipOriginXLabel.Location = new System.Drawing.Point(6, 130);
+			this.ShipOriginXLabel.Name = "ShipOriginXLabel";
+			this.ShipOriginXLabel.Size = new System.Drawing.Size(68, 13);
+			this.ShipOriginXLabel.TabIndex = 23;
+			this.ShipOriginXLabel.Text = "Ship Origin X";
 			// 
-			// FusionBlasterCost
+			// ShipOriginX
 			// 
-			this.FusionBlasterCost.Location = new System.Drawing.Point(105, 342);
-			this.FusionBlasterCost.Name = "FusionBlasterCost";
-			this.FusionBlasterCost.Size = new System.Drawing.Size(120, 20);
-			this.FusionBlasterCost.TabIndex = 24;
-			this.FusionBlasterCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.ShipOriginX.Location = new System.Drawing.Point(89, 128);
+			this.ShipOriginX.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.ShipOriginX.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.ShipOriginX.Name = "ShipOriginX";
+			this.ShipOriginX.Size = new System.Drawing.Size(76, 20);
+			this.ShipOriginX.TabIndex = 22;
+			this.ShipOriginX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// FusionBlasterCostLabel
+			// IPLocationYLabel
 			// 
-			this.FusionBlasterCostLabel.AutoSize = true;
-			this.FusionBlasterCostLabel.Location = new System.Drawing.Point(6, 344);
-			this.FusionBlasterCostLabel.Name = "FusionBlasterCostLabel";
-			this.FusionBlasterCostLabel.Size = new System.Drawing.Size(73, 13);
-			this.FusionBlasterCostLabel.TabIndex = 25;
-			this.FusionBlasterCostLabel.Text = "Fusion Blaster";
+			this.IPLocationYLabel.AutoSize = true;
+			this.IPLocationYLabel.Location = new System.Drawing.Point(6, 103);
+			this.IPLocationYLabel.Name = "IPLocationYLabel";
+			this.IPLocationYLabel.Size = new System.Drawing.Size(71, 13);
+			this.IPLocationYLabel.TabIndex = 21;
+			this.IPLocationYLabel.Text = "IP Location Y";
 			// 
-			// HellboreCannonCost
+			// IPLocationY
 			// 
-			this.HellboreCannonCost.Location = new System.Drawing.Point(105, 369);
-			this.HellboreCannonCost.Name = "HellboreCannonCost";
-			this.HellboreCannonCost.Size = new System.Drawing.Size(120, 20);
-			this.HellboreCannonCost.TabIndex = 26;
-			this.HellboreCannonCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.IPLocationY.Location = new System.Drawing.Point(89, 101);
+			this.IPLocationY.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.IPLocationY.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.IPLocationY.Name = "IPLocationY";
+			this.IPLocationY.Size = new System.Drawing.Size(76, 20);
+			this.IPLocationY.TabIndex = 20;
+			this.IPLocationY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// HellboreCannonCostLabel
+			// IPLocationXLabel
 			// 
-			this.HellboreCannonCostLabel.AutoSize = true;
-			this.HellboreCannonCostLabel.Location = new System.Drawing.Point(6, 371);
-			this.HellboreCannonCostLabel.Name = "HellboreCannonCostLabel";
-			this.HellboreCannonCostLabel.Size = new System.Drawing.Size(86, 13);
-			this.HellboreCannonCostLabel.TabIndex = 27;
-			this.HellboreCannonCostLabel.Text = "Hellbore Cannon";
+			this.IPLocationXLabel.AutoSize = true;
+			this.IPLocationXLabel.Location = new System.Drawing.Point(6, 76);
+			this.IPLocationXLabel.Name = "IPLocationXLabel";
+			this.IPLocationXLabel.Size = new System.Drawing.Size(71, 13);
+			this.IPLocationXLabel.TabIndex = 19;
+			this.IPLocationXLabel.Text = "IP Location X";
 			// 
-			// TrackingSystemCost
+			// IPLocationX
 			// 
-			this.TrackingSystemCost.Location = new System.Drawing.Point(105, 396);
-			this.TrackingSystemCost.Name = "TrackingSystemCost";
-			this.TrackingSystemCost.Size = new System.Drawing.Size(120, 20);
-			this.TrackingSystemCost.TabIndex = 28;
-			this.TrackingSystemCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.IPLocationX.Location = new System.Drawing.Point(89, 74);
+			this.IPLocationX.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.IPLocationX.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.IPLocationX.Name = "IPLocationX";
+			this.IPLocationX.Size = new System.Drawing.Size(76, 20);
+			this.IPLocationX.TabIndex = 18;
+			this.IPLocationX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// TrackingSystemCostLabel
+			// AutoPilotY
 			// 
-			this.TrackingSystemCostLabel.AutoSize = true;
-			this.TrackingSystemCostLabel.Location = new System.Drawing.Point(6, 398);
-			this.TrackingSystemCostLabel.Name = "TrackingSystemCostLabel";
-			this.TrackingSystemCostLabel.Size = new System.Drawing.Size(86, 13);
-			this.TrackingSystemCostLabel.TabIndex = 29;
-			this.TrackingSystemCostLabel.Text = "Tracking System";
+			this.AutoPilotY.Location = new System.Drawing.Point(89, 47);
+			this.AutoPilotY.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.AutoPilotY.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+			this.AutoPilotY.Name = "AutoPilotY";
+			this.AutoPilotY.Size = new System.Drawing.Size(76, 20);
+			this.AutoPilotY.TabIndex = 17;
+			this.AutoPilotY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// PointDefenseCost
+			// AutoPilotYLabel
 			// 
-			this.PointDefenseCost.Location = new System.Drawing.Point(105, 423);
-			this.PointDefenseCost.Name = "PointDefenseCost";
-			this.PointDefenseCost.Size = new System.Drawing.Size(120, 20);
-			this.PointDefenseCost.TabIndex = 30;
-			this.PointDefenseCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.AutoPilotYLabel.AutoSize = true;
+			this.AutoPilotYLabel.Location = new System.Drawing.Point(6, 49);
+			this.AutoPilotYLabel.Name = "AutoPilotYLabel";
+			this.AutoPilotYLabel.Size = new System.Drawing.Size(62, 13);
+			this.AutoPilotYLabel.TabIndex = 16;
+			this.AutoPilotYLabel.Text = "Auto-Pilot Y";
 			// 
-			// PointDefenseCostLabel
+			// AutoPilotXLabel
 			// 
-			this.PointDefenseCostLabel.AutoSize = true;
-			this.PointDefenseCostLabel.Location = new System.Drawing.Point(6, 425);
-			this.PointDefenseCostLabel.Name = "PointDefenseCostLabel";
-			this.PointDefenseCostLabel.Size = new System.Drawing.Size(74, 13);
-			this.PointDefenseCostLabel.TabIndex = 31;
-			this.PointDefenseCostLabel.Text = "Point Defense";
+			this.AutoPilotXLabel.AutoSize = true;
+			this.AutoPilotXLabel.Location = new System.Drawing.Point(6, 22);
+			this.AutoPilotXLabel.Name = "AutoPilotXLabel";
+			this.AutoPilotXLabel.Size = new System.Drawing.Size(62, 13);
+			this.AutoPilotXLabel.TabIndex = 15;
+			this.AutoPilotXLabel.Text = "Auto-Pilot X";
+			// 
+			// AutoPilotX
+			// 
+			this.AutoPilotX.Location = new System.Drawing.Point(89, 20);
+			this.AutoPilotX.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.AutoPilotX.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+			this.AutoPilotX.Name = "AutoPilotX";
+			this.AutoPilotX.Size = new System.Drawing.Size(76, 20);
+			this.AutoPilotX.TabIndex = 14;
+			this.AutoPilotX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// ClockStateGroupBox
+			// 
+			this.ClockStateGroupBox.Controls.Add(this.DayInTicksLabel);
+			this.ClockStateGroupBox.Controls.Add(this.DayInTicks);
+			this.ClockStateGroupBox.Controls.Add(this.TickCountLabel);
+			this.ClockStateGroupBox.Controls.Add(this.TickCount);
+			this.ClockStateGroupBox.Controls.Add(this.YearIndexLabel);
+			this.ClockStateGroupBox.Controls.Add(this.YearIndex);
+			this.ClockStateGroupBox.Controls.Add(this.MonthIndex);
+			this.ClockStateGroupBox.Controls.Add(this.MonthIndexLabel);
+			this.ClockStateGroupBox.Controls.Add(this.DayIndexLabe);
+			this.ClockStateGroupBox.Controls.Add(this.DayIndex);
+			this.ClockStateGroupBox.Location = new System.Drawing.Point(6, 216);
+			this.ClockStateGroupBox.Name = "ClockStateGroupBox";
+			this.ClockStateGroupBox.Size = new System.Drawing.Size(234, 159);
+			this.ClockStateGroupBox.TabIndex = 6;
+			this.ClockStateGroupBox.TabStop = false;
+			this.ClockStateGroupBox.Text = "Clock State";
+			// 
+			// DayInTicksLabel
+			// 
+			this.DayInTicksLabel.AutoSize = true;
+			this.DayInTicksLabel.Location = new System.Drawing.Point(6, 131);
+			this.DayInTicksLabel.Name = "DayInTicksLabel";
+			this.DayInTicksLabel.Size = new System.Drawing.Size(67, 13);
+			this.DayInTicksLabel.TabIndex = 19;
+			this.DayInTicksLabel.Text = "Day In Ticks";
+			// 
+			// DayInTicks
+			// 
+			this.DayInTicks.Location = new System.Drawing.Point(105, 129);
+			this.DayInTicks.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.DayInTicks.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.DayInTicks.Name = "DayInTicks";
+			this.DayInTicks.Size = new System.Drawing.Size(120, 20);
+			this.DayInTicks.TabIndex = 18;
+			this.DayInTicks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// TickCountLabel
+			// 
+			this.TickCountLabel.AutoSize = true;
+			this.TickCountLabel.Location = new System.Drawing.Point(6, 104);
+			this.TickCountLabel.Name = "TickCountLabel";
+			this.TickCountLabel.Size = new System.Drawing.Size(59, 13);
+			this.TickCountLabel.TabIndex = 17;
+			this.TickCountLabel.Text = "Tick Count";
+			// 
+			// TickCount
+			// 
+			this.TickCount.Location = new System.Drawing.Point(105, 102);
+			this.TickCount.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+			this.TickCount.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+			this.TickCount.Name = "TickCount";
+			this.TickCount.Size = new System.Drawing.Size(120, 20);
+			this.TickCount.TabIndex = 16;
+			this.TickCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// YearIndexLabel
+			// 
+			this.YearIndexLabel.AutoSize = true;
+			this.YearIndexLabel.Location = new System.Drawing.Point(6, 77);
+			this.YearIndexLabel.Name = "YearIndexLabel";
+			this.YearIndexLabel.Size = new System.Drawing.Size(58, 13);
+			this.YearIndexLabel.TabIndex = 15;
+			this.YearIndexLabel.Text = "Year Index";
+			// 
+			// YearIndex
+			// 
+			this.YearIndex.Location = new System.Drawing.Point(105, 75);
+			this.YearIndex.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+			this.YearIndex.Name = "YearIndex";
+			this.YearIndex.Size = new System.Drawing.Size(120, 20);
+			this.YearIndex.TabIndex = 14;
+			this.YearIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// MonthIndex
+			// 
+			this.MonthIndex.Location = new System.Drawing.Point(105, 48);
+			this.MonthIndex.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+			this.MonthIndex.Name = "MonthIndex";
+			this.MonthIndex.Size = new System.Drawing.Size(120, 20);
+			this.MonthIndex.TabIndex = 13;
+			this.MonthIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// MonthIndexLabel
+			// 
+			this.MonthIndexLabel.AutoSize = true;
+			this.MonthIndexLabel.Location = new System.Drawing.Point(6, 50);
+			this.MonthIndexLabel.Name = "MonthIndexLabel";
+			this.MonthIndexLabel.Size = new System.Drawing.Size(66, 13);
+			this.MonthIndexLabel.TabIndex = 12;
+			this.MonthIndexLabel.Text = "Month Index";
+			// 
+			// DayIndexLabe
+			// 
+			this.DayIndexLabe.AutoSize = true;
+			this.DayIndexLabe.Location = new System.Drawing.Point(6, 23);
+			this.DayIndexLabe.Name = "DayIndexLabe";
+			this.DayIndexLabe.Size = new System.Drawing.Size(55, 13);
+			this.DayIndexLabe.TabIndex = 11;
+			this.DayIndexLabe.Text = "Day Index";
+			// 
+			// DayIndex
+			// 
+			this.DayIndex.Location = new System.Drawing.Point(105, 21);
+			this.DayIndex.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+			this.DayIndex.Name = "DayIndex";
+			this.DayIndex.Size = new System.Drawing.Size(120, 20);
+			this.DayIndex.TabIndex = 10;
+			this.DayIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// ElementWorthGroupBox
 			// 
@@ -2927,485 +3121,560 @@
 			this.CommonWorth.TabIndex = 16;
 			this.CommonWorth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// groupBox2
+			// CostsGroupBox
 			// 
-			this.groupBox2.Controls.Add(this.DayInTicksLabel);
-			this.groupBox2.Controls.Add(this.DayInTicks);
-			this.groupBox2.Controls.Add(this.TickCountLabel);
-			this.groupBox2.Controls.Add(this.TickCount);
-			this.groupBox2.Controls.Add(this.YearIndexLabel);
-			this.groupBox2.Controls.Add(this.YearIndex);
-			this.groupBox2.Controls.Add(this.MonthIndex);
-			this.groupBox2.Controls.Add(this.MonthIndexLabel);
-			this.groupBox2.Controls.Add(this.DayIndexLabe);
-			this.groupBox2.Controls.Add(this.DayIndex);
-			this.groupBox2.Location = new System.Drawing.Point(6, 216);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(234, 159);
-			this.groupBox2.TabIndex = 6;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Clock State";
+			this.CostsGroupBox.Controls.Add(this.PointDefenseCostLabel);
+			this.CostsGroupBox.Controls.Add(this.PointDefenseCost);
+			this.CostsGroupBox.Controls.Add(this.TrackingSystemCostLabel);
+			this.CostsGroupBox.Controls.Add(this.TrackingSystemCost);
+			this.CostsGroupBox.Controls.Add(this.HellboreCannonCostLabel);
+			this.CostsGroupBox.Controls.Add(this.HellboreCannonCost);
+			this.CostsGroupBox.Controls.Add(this.FusionBlasterCostLabel);
+			this.CostsGroupBox.Controls.Add(this.FusionBlasterCost);
+			this.CostsGroupBox.Controls.Add(this.IonBoltGunCostLabel);
+			this.CostsGroupBox.Controls.Add(this.IonBoltGunCost);
+			this.CostsGroupBox.Controls.Add(this.ShivaFurnaceCostLabel);
+			this.CostsGroupBox.Controls.Add(this.ShivaFurnaceCost);
+			this.CostsGroupBox.Controls.Add(this.DynamoUnitCostLabel);
+			this.CostsGroupBox.Controls.Add(this.DynamoUnitCost);
+			this.CostsGroupBox.Controls.Add(this.HiEffFuelSysCostLabel);
+			this.CostsGroupBox.Controls.Add(this.HiEffFuelSysCost);
+			this.CostsGroupBox.Controls.Add(this.FuelTankCostLabel);
+			this.CostsGroupBox.Controls.Add(this.FuelTankCost);
+			this.CostsGroupBox.Controls.Add(this.StorageBayCostLabel);
+			this.CostsGroupBox.Controls.Add(this.StorageBayCost);
+			this.CostsGroupBox.Controls.Add(this.CrewPodCostLabel);
+			this.CostsGroupBox.Controls.Add(this.CrewPodCost);
+			this.CostsGroupBox.Controls.Add(this.JetCostLabel);
+			this.CostsGroupBox.Controls.Add(this.JetCost);
+			this.CostsGroupBox.Controls.Add(this.ThrusterCostLabel);
+			this.CostsGroupBox.Controls.Add(this.ThrusterCost);
+			this.CostsGroupBox.Controls.Add(this.LanderCostLabel);
+			this.CostsGroupBox.Controls.Add(this.LanderCost);
+			this.CostsGroupBox.Controls.Add(this.FuelCost);
+			this.CostsGroupBox.Controls.Add(this.FuelCostLabel);
+			this.CostsGroupBox.Controls.Add(this.CrewCostLabel);
+			this.CostsGroupBox.Controls.Add(this.CrewCost);
+			this.CostsGroupBox.Location = new System.Drawing.Point(256, 6);
+			this.CostsGroupBox.Name = "CostsGroupBox";
+			this.CostsGroupBox.Size = new System.Drawing.Size(233, 452);
+			this.CostsGroupBox.TabIndex = 4;
+			this.CostsGroupBox.TabStop = false;
+			this.CostsGroupBox.Text = "Costs";
 			// 
-			// DayInTicksLabel
+			// PointDefenseCostLabel
 			// 
-			this.DayInTicksLabel.AutoSize = true;
-			this.DayInTicksLabel.Location = new System.Drawing.Point(6, 131);
-			this.DayInTicksLabel.Name = "DayInTicksLabel";
-			this.DayInTicksLabel.Size = new System.Drawing.Size(67, 13);
-			this.DayInTicksLabel.TabIndex = 19;
-			this.DayInTicksLabel.Text = "Day In Ticks";
+			this.PointDefenseCostLabel.AutoSize = true;
+			this.PointDefenseCostLabel.Location = new System.Drawing.Point(6, 425);
+			this.PointDefenseCostLabel.Name = "PointDefenseCostLabel";
+			this.PointDefenseCostLabel.Size = new System.Drawing.Size(74, 13);
+			this.PointDefenseCostLabel.TabIndex = 31;
+			this.PointDefenseCostLabel.Text = "Point Defense";
 			// 
-			// DayInTicks
+			// PointDefenseCost
 			// 
-			this.DayInTicks.Location = new System.Drawing.Point(105, 129);
-			this.DayInTicks.Maximum = new decimal(new int[] {
-            65535,
+			this.PointDefenseCost.Increment = new decimal(new int[] {
+            50,
             0,
             0,
             0});
-			this.DayInTicks.Name = "DayInTicks";
-			this.DayInTicks.Size = new System.Drawing.Size(120, 20);
-			this.DayInTicks.TabIndex = 18;
-			this.DayInTicks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// TickCountLabel
-			// 
-			this.TickCountLabel.AutoSize = true;
-			this.TickCountLabel.Location = new System.Drawing.Point(6, 104);
-			this.TickCountLabel.Name = "TickCountLabel";
-			this.TickCountLabel.Size = new System.Drawing.Size(59, 13);
-			this.TickCountLabel.TabIndex = 17;
-			this.TickCountLabel.Text = "Tick Count";
-			// 
-			// TickCount
-			// 
-			this.TickCount.Location = new System.Drawing.Point(105, 102);
-			this.TickCount.Maximum = new decimal(new int[] {
-            65535,
+			this.PointDefenseCost.Location = new System.Drawing.Point(105, 423);
+			this.PointDefenseCost.Maximum = new decimal(new int[] {
+            12500,
             0,
             0,
             0});
-			this.TickCount.Name = "TickCount";
-			this.TickCount.Size = new System.Drawing.Size(120, 20);
-			this.TickCount.TabIndex = 16;
-			this.TickCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.PointDefenseCost.Name = "PointDefenseCost";
+			this.PointDefenseCost.Size = new System.Drawing.Size(120, 20);
+			this.PointDefenseCost.TabIndex = 30;
+			this.PointDefenseCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// YearIndexLabel
+			// TrackingSystemCostLabel
 			// 
-			this.YearIndexLabel.AutoSize = true;
-			this.YearIndexLabel.Location = new System.Drawing.Point(6, 77);
-			this.YearIndexLabel.Name = "YearIndexLabel";
-			this.YearIndexLabel.Size = new System.Drawing.Size(58, 13);
-			this.YearIndexLabel.TabIndex = 15;
-			this.YearIndexLabel.Text = "Year Index";
+			this.TrackingSystemCostLabel.AutoSize = true;
+			this.TrackingSystemCostLabel.Location = new System.Drawing.Point(6, 398);
+			this.TrackingSystemCostLabel.Name = "TrackingSystemCostLabel";
+			this.TrackingSystemCostLabel.Size = new System.Drawing.Size(86, 13);
+			this.TrackingSystemCostLabel.TabIndex = 29;
+			this.TrackingSystemCostLabel.Text = "Tracking System";
 			// 
-			// YearIndex
+			// TrackingSystemCost
 			// 
-			this.YearIndex.Location = new System.Drawing.Point(105, 75);
-			this.YearIndex.Maximum = new decimal(new int[] {
-            65535,
+			this.TrackingSystemCost.Increment = new decimal(new int[] {
+            50,
             0,
             0,
             0});
-			this.YearIndex.Name = "YearIndex";
-			this.YearIndex.Size = new System.Drawing.Size(120, 20);
-			this.YearIndex.TabIndex = 14;
-			this.YearIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// MonthIndex
-			// 
-			this.MonthIndex.Location = new System.Drawing.Point(105, 48);
-			this.MonthIndex.Maximum = new decimal(new int[] {
-            12,
+			this.TrackingSystemCost.Location = new System.Drawing.Point(105, 396);
+			this.TrackingSystemCost.Maximum = new decimal(new int[] {
+            12500,
             0,
             0,
             0});
-			this.MonthIndex.Name = "MonthIndex";
-			this.MonthIndex.Size = new System.Drawing.Size(120, 20);
-			this.MonthIndex.TabIndex = 13;
-			this.MonthIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.TrackingSystemCost.Name = "TrackingSystemCost";
+			this.TrackingSystemCost.Size = new System.Drawing.Size(120, 20);
+			this.TrackingSystemCost.TabIndex = 28;
+			this.TrackingSystemCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// MonthIndexLabel
+			// HellboreCannonCostLabel
 			// 
-			this.MonthIndexLabel.AutoSize = true;
-			this.MonthIndexLabel.Location = new System.Drawing.Point(6, 50);
-			this.MonthIndexLabel.Name = "MonthIndexLabel";
-			this.MonthIndexLabel.Size = new System.Drawing.Size(66, 13);
-			this.MonthIndexLabel.TabIndex = 12;
-			this.MonthIndexLabel.Text = "Month Index";
+			this.HellboreCannonCostLabel.AutoSize = true;
+			this.HellboreCannonCostLabel.Location = new System.Drawing.Point(6, 371);
+			this.HellboreCannonCostLabel.Name = "HellboreCannonCostLabel";
+			this.HellboreCannonCostLabel.Size = new System.Drawing.Size(86, 13);
+			this.HellboreCannonCostLabel.TabIndex = 27;
+			this.HellboreCannonCostLabel.Text = "Hellbore Cannon";
 			// 
-			// DayIndexLabe
+			// HellboreCannonCost
 			// 
-			this.DayIndexLabe.AutoSize = true;
-			this.DayIndexLabe.Location = new System.Drawing.Point(6, 23);
-			this.DayIndexLabe.Name = "DayIndexLabe";
-			this.DayIndexLabe.Size = new System.Drawing.Size(55, 13);
-			this.DayIndexLabe.TabIndex = 11;
-			this.DayIndexLabe.Text = "Day Index";
-			// 
-			// DayIndex
-			// 
-			this.DayIndex.Location = new System.Drawing.Point(105, 21);
-			this.DayIndex.Maximum = new decimal(new int[] {
-            31,
+			this.HellboreCannonCost.Increment = new decimal(new int[] {
+            50,
             0,
             0,
             0});
-			this.DayIndex.Name = "DayIndex";
-			this.DayIndex.Size = new System.Drawing.Size(120, 20);
-			this.DayIndex.TabIndex = 10;
-			this.DayIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.HellboreCannonCost.Location = new System.Drawing.Point(105, 369);
+			this.HellboreCannonCost.Maximum = new decimal(new int[] {
+            12500,
+            0,
+            0,
+            0});
+			this.HellboreCannonCost.Name = "HellboreCannonCost";
+			this.HellboreCannonCost.Size = new System.Drawing.Size(120, 20);
+			this.HellboreCannonCost.TabIndex = 26;
+			this.HellboreCannonCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// LocationGroupBox
+			// FusionBlasterCostLabel
 			// 
-			this.LocationGroupBox.Controls.Add(this.ShipFacingLabel);
-			this.LocationGroupBox.Controls.Add(this.ShipFacing);
-			this.LocationGroupBox.Controls.Add(this.ShipOriginYLabel);
-			this.LocationGroupBox.Controls.Add(this.ShipOriginY);
-			this.LocationGroupBox.Controls.Add(this.ShipOriginXLabel);
-			this.LocationGroupBox.Controls.Add(this.ShipOriginX);
-			this.LocationGroupBox.Controls.Add(this.IPLocationYLabel);
-			this.LocationGroupBox.Controls.Add(this.IPLocationY);
-			this.LocationGroupBox.Controls.Add(this.IPLocationXLabel);
-			this.LocationGroupBox.Controls.Add(this.IPLocationX);
-			this.LocationGroupBox.Controls.Add(this.AutoPilotY);
-			this.LocationGroupBox.Controls.Add(this.AutoPilotYLabel);
-			this.LocationGroupBox.Controls.Add(this.AutoPilotXLabel);
-			this.LocationGroupBox.Controls.Add(this.AutoPilotX);
-			this.LocationGroupBox.Location = new System.Drawing.Point(496, 245);
-			this.LocationGroupBox.Name = "LocationGroupBox";
-			this.LocationGroupBox.Size = new System.Drawing.Size(174, 213);
-			this.LocationGroupBox.TabIndex = 7;
-			this.LocationGroupBox.TabStop = false;
-			this.LocationGroupBox.Text = "Location";
+			this.FusionBlasterCostLabel.AutoSize = true;
+			this.FusionBlasterCostLabel.Location = new System.Drawing.Point(6, 344);
+			this.FusionBlasterCostLabel.Name = "FusionBlasterCostLabel";
+			this.FusionBlasterCostLabel.Size = new System.Drawing.Size(73, 13);
+			this.FusionBlasterCostLabel.TabIndex = 25;
+			this.FusionBlasterCostLabel.Text = "Fusion Blaster";
 			// 
-			// ShipFacingLabel
+			// FusionBlasterCost
 			// 
-			this.ShipFacingLabel.AutoSize = true;
-			this.ShipFacingLabel.Location = new System.Drawing.Point(6, 184);
-			this.ShipFacingLabel.Name = "ShipFacingLabel";
-			this.ShipFacingLabel.Size = new System.Drawing.Size(63, 13);
-			this.ShipFacingLabel.TabIndex = 27;
-			this.ShipFacingLabel.Text = "Ship Facing";
+			this.FusionBlasterCost.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+			this.FusionBlasterCost.Location = new System.Drawing.Point(105, 342);
+			this.FusionBlasterCost.Maximum = new decimal(new int[] {
+            12500,
+            0,
+            0,
+            0});
+			this.FusionBlasterCost.Name = "FusionBlasterCost";
+			this.FusionBlasterCost.Size = new System.Drawing.Size(120, 20);
+			this.FusionBlasterCost.TabIndex = 24;
+			this.FusionBlasterCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// ShipFacing
+			// IonBoltGunCostLabel
 			// 
-			this.ShipFacing.Location = new System.Drawing.Point(89, 182);
-			this.ShipFacing.Name = "ShipFacing";
-			this.ShipFacing.Size = new System.Drawing.Size(76, 20);
-			this.ShipFacing.TabIndex = 26;
-			this.ShipFacing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.IonBoltGunCostLabel.AutoSize = true;
+			this.IonBoltGunCostLabel.Location = new System.Drawing.Point(6, 317);
+			this.IonBoltGunCostLabel.Name = "IonBoltGunCostLabel";
+			this.IonBoltGunCostLabel.Size = new System.Drawing.Size(66, 13);
+			this.IonBoltGunCostLabel.TabIndex = 23;
+			this.IonBoltGunCostLabel.Text = "Ion-Bolt Gun";
 			// 
-			// ShipOriginYLabel
+			// IonBoltGunCost
 			// 
-			this.ShipOriginYLabel.AutoSize = true;
-			this.ShipOriginYLabel.Location = new System.Drawing.Point(6, 157);
-			this.ShipOriginYLabel.Name = "ShipOriginYLabel";
-			this.ShipOriginYLabel.Size = new System.Drawing.Size(68, 13);
-			this.ShipOriginYLabel.TabIndex = 25;
-			this.ShipOriginYLabel.Text = "Ship Origin Y";
+			this.IonBoltGunCost.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+			this.IonBoltGunCost.Location = new System.Drawing.Point(105, 315);
+			this.IonBoltGunCost.Maximum = new decimal(new int[] {
+            12500,
+            0,
+            0,
+            0});
+			this.IonBoltGunCost.Name = "IonBoltGunCost";
+			this.IonBoltGunCost.Size = new System.Drawing.Size(120, 20);
+			this.IonBoltGunCost.TabIndex = 22;
+			this.IonBoltGunCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// ShipOriginY
+			// ShivaFurnaceCostLabel
 			// 
-			this.ShipOriginY.Location = new System.Drawing.Point(89, 155);
-			this.ShipOriginY.Name = "ShipOriginY";
-			this.ShipOriginY.Size = new System.Drawing.Size(76, 20);
-			this.ShipOriginY.TabIndex = 24;
-			this.ShipOriginY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.ShivaFurnaceCostLabel.AutoSize = true;
+			this.ShivaFurnaceCostLabel.Location = new System.Drawing.Point(6, 290);
+			this.ShivaFurnaceCostLabel.Name = "ShivaFurnaceCostLabel";
+			this.ShivaFurnaceCostLabel.Size = new System.Drawing.Size(76, 13);
+			this.ShivaFurnaceCostLabel.TabIndex = 21;
+			this.ShivaFurnaceCostLabel.Text = "Shiva Furnace";
 			// 
-			// ShipOriginXLabel
+			// ShivaFurnaceCost
 			// 
-			this.ShipOriginXLabel.AutoSize = true;
-			this.ShipOriginXLabel.Location = new System.Drawing.Point(6, 130);
-			this.ShipOriginXLabel.Name = "ShipOriginXLabel";
-			this.ShipOriginXLabel.Size = new System.Drawing.Size(68, 13);
-			this.ShipOriginXLabel.TabIndex = 23;
-			this.ShipOriginXLabel.Text = "Ship Origin X";
+			this.ShivaFurnaceCost.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+			this.ShivaFurnaceCost.Location = new System.Drawing.Point(105, 288);
+			this.ShivaFurnaceCost.Maximum = new decimal(new int[] {
+            12500,
+            0,
+            0,
+            0});
+			this.ShivaFurnaceCost.Name = "ShivaFurnaceCost";
+			this.ShivaFurnaceCost.Size = new System.Drawing.Size(120, 20);
+			this.ShivaFurnaceCost.TabIndex = 20;
+			this.ShivaFurnaceCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// ShipOriginX
+			// DynamoUnitCostLabel
 			// 
-			this.ShipOriginX.Location = new System.Drawing.Point(89, 128);
-			this.ShipOriginX.Name = "ShipOriginX";
-			this.ShipOriginX.Size = new System.Drawing.Size(76, 20);
-			this.ShipOriginX.TabIndex = 22;
-			this.ShipOriginX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.DynamoUnitCostLabel.AutoSize = true;
+			this.DynamoUnitCostLabel.Location = new System.Drawing.Point(6, 263);
+			this.DynamoUnitCostLabel.Name = "DynamoUnitCostLabel";
+			this.DynamoUnitCostLabel.Size = new System.Drawing.Size(68, 13);
+			this.DynamoUnitCostLabel.TabIndex = 19;
+			this.DynamoUnitCostLabel.Text = "Dynamo Unit";
 			// 
-			// IPLocationYLabel
+			// DynamoUnitCost
 			// 
-			this.IPLocationYLabel.AutoSize = true;
-			this.IPLocationYLabel.Location = new System.Drawing.Point(6, 103);
-			this.IPLocationYLabel.Name = "IPLocationYLabel";
-			this.IPLocationYLabel.Size = new System.Drawing.Size(71, 13);
-			this.IPLocationYLabel.TabIndex = 21;
-			this.IPLocationYLabel.Text = "IP Location Y";
+			this.DynamoUnitCost.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+			this.DynamoUnitCost.Location = new System.Drawing.Point(105, 261);
+			this.DynamoUnitCost.Maximum = new decimal(new int[] {
+            12500,
+            0,
+            0,
+            0});
+			this.DynamoUnitCost.Name = "DynamoUnitCost";
+			this.DynamoUnitCost.Size = new System.Drawing.Size(120, 20);
+			this.DynamoUnitCost.TabIndex = 18;
+			this.DynamoUnitCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// IPLocationY
+			// HiEffFuelSysCostLabel
 			// 
-			this.IPLocationY.Location = new System.Drawing.Point(89, 101);
-			this.IPLocationY.Name = "IPLocationY";
-			this.IPLocationY.Size = new System.Drawing.Size(76, 20);
-			this.IPLocationY.TabIndex = 20;
-			this.IPLocationY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.HiEffFuelSysCostLabel.AutoSize = true;
+			this.HiEffFuelSysCostLabel.Location = new System.Drawing.Point(6, 236);
+			this.HiEffFuelSysCostLabel.Name = "HiEffFuelSysCostLabel";
+			this.HiEffFuelSysCostLabel.Size = new System.Drawing.Size(73, 13);
+			this.HiEffFuelSysCostLabel.TabIndex = 17;
+			this.HiEffFuelSysCostLabel.Text = "Hi-Eff FuelSys";
 			// 
-			// IPLocationXLabel
+			// HiEffFuelSysCost
 			// 
-			this.IPLocationXLabel.AutoSize = true;
-			this.IPLocationXLabel.Location = new System.Drawing.Point(6, 76);
-			this.IPLocationXLabel.Name = "IPLocationXLabel";
-			this.IPLocationXLabel.Size = new System.Drawing.Size(71, 13);
-			this.IPLocationXLabel.TabIndex = 19;
-			this.IPLocationXLabel.Text = "IP Location X";
+			this.HiEffFuelSysCost.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+			this.HiEffFuelSysCost.Location = new System.Drawing.Point(105, 234);
+			this.HiEffFuelSysCost.Maximum = new decimal(new int[] {
+            12500,
+            0,
+            0,
+            0});
+			this.HiEffFuelSysCost.Name = "HiEffFuelSysCost";
+			this.HiEffFuelSysCost.Size = new System.Drawing.Size(120, 20);
+			this.HiEffFuelSysCost.TabIndex = 16;
+			this.HiEffFuelSysCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// IPLocationX
+			// FuelTankCostLabel
 			// 
-			this.IPLocationX.Location = new System.Drawing.Point(89, 74);
-			this.IPLocationX.Name = "IPLocationX";
-			this.IPLocationX.Size = new System.Drawing.Size(76, 20);
-			this.IPLocationX.TabIndex = 18;
-			this.IPLocationX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.FuelTankCostLabel.AutoSize = true;
+			this.FuelTankCostLabel.Location = new System.Drawing.Point(6, 209);
+			this.FuelTankCostLabel.Name = "FuelTankCostLabel";
+			this.FuelTankCostLabel.Size = new System.Drawing.Size(55, 13);
+			this.FuelTankCostLabel.TabIndex = 15;
+			this.FuelTankCostLabel.Text = "Fuel Tank";
 			// 
-			// AutoPilotY
+			// FuelTankCost
 			// 
-			this.AutoPilotY.Location = new System.Drawing.Point(89, 47);
-			this.AutoPilotY.Maximum = new decimal(new int[] {
+			this.FuelTankCost.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+			this.FuelTankCost.Location = new System.Drawing.Point(105, 207);
+			this.FuelTankCost.Maximum = new decimal(new int[] {
+            12500,
+            0,
+            0,
+            0});
+			this.FuelTankCost.Name = "FuelTankCost";
+			this.FuelTankCost.Size = new System.Drawing.Size(120, 20);
+			this.FuelTankCost.TabIndex = 14;
+			this.FuelTankCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// StorageBayCostLabel
+			// 
+			this.StorageBayCostLabel.AutoSize = true;
+			this.StorageBayCostLabel.Location = new System.Drawing.Point(6, 182);
+			this.StorageBayCostLabel.Name = "StorageBayCostLabel";
+			this.StorageBayCostLabel.Size = new System.Drawing.Size(65, 13);
+			this.StorageBayCostLabel.TabIndex = 13;
+			this.StorageBayCostLabel.Text = "Storage Bay";
+			// 
+			// StorageBayCost
+			// 
+			this.StorageBayCost.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+			this.StorageBayCost.Location = new System.Drawing.Point(105, 180);
+			this.StorageBayCost.Maximum = new decimal(new int[] {
+            12500,
+            0,
+            0,
+            0});
+			this.StorageBayCost.Name = "StorageBayCost";
+			this.StorageBayCost.Size = new System.Drawing.Size(120, 20);
+			this.StorageBayCost.TabIndex = 12;
+			this.StorageBayCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// CrewPodCostLabel
+			// 
+			this.CrewPodCostLabel.AutoSize = true;
+			this.CrewPodCostLabel.Location = new System.Drawing.Point(6, 155);
+			this.CrewPodCostLabel.Name = "CrewPodCostLabel";
+			this.CrewPodCostLabel.Size = new System.Drawing.Size(53, 13);
+			this.CrewPodCostLabel.TabIndex = 11;
+			this.CrewPodCostLabel.Text = "Crew Pod";
+			// 
+			// CrewPodCost
+			// 
+			this.CrewPodCost.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+			this.CrewPodCost.Location = new System.Drawing.Point(105, 153);
+			this.CrewPodCost.Maximum = new decimal(new int[] {
+            12500,
+            0,
+            0,
+            0});
+			this.CrewPodCost.Name = "CrewPodCost";
+			this.CrewPodCost.Size = new System.Drawing.Size(120, 20);
+			this.CrewPodCost.TabIndex = 10;
+			this.CrewPodCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// JetCostLabel
+			// 
+			this.JetCostLabel.AutoSize = true;
+			this.JetCostLabel.Location = new System.Drawing.Point(6, 128);
+			this.JetCostLabel.Name = "JetCostLabel";
+			this.JetCostLabel.Size = new System.Drawing.Size(65, 13);
+			this.JetCostLabel.TabIndex = 9;
+			this.JetCostLabel.Text = "Turning Jets";
+			// 
+			// JetCost
+			// 
+			this.JetCost.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+			this.JetCost.Location = new System.Drawing.Point(105, 126);
+			this.JetCost.Maximum = new decimal(new int[] {
+            12500,
+            0,
+            0,
+            0});
+			this.JetCost.Name = "JetCost";
+			this.JetCost.Size = new System.Drawing.Size(120, 20);
+			this.JetCost.TabIndex = 8;
+			this.JetCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// ThrusterCostLabel
+			// 
+			this.ThrusterCostLabel.AutoSize = true;
+			this.ThrusterCostLabel.Location = new System.Drawing.Point(6, 101);
+			this.ThrusterCostLabel.Name = "ThrusterCostLabel";
+			this.ThrusterCostLabel.Size = new System.Drawing.Size(93, 13);
+			this.ThrusterCostLabel.TabIndex = 7;
+			this.ThrusterCostLabel.Text = "Anti-Mat Thrusters";
+			// 
+			// ThrusterCost
+			// 
+			this.ThrusterCost.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+			this.ThrusterCost.Location = new System.Drawing.Point(105, 99);
+			this.ThrusterCost.Maximum = new decimal(new int[] {
+            12500,
+            0,
+            0,
+            0});
+			this.ThrusterCost.Name = "ThrusterCost";
+			this.ThrusterCost.Size = new System.Drawing.Size(120, 20);
+			this.ThrusterCost.TabIndex = 6;
+			this.ThrusterCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// LanderCostLabel
+			// 
+			this.LanderCostLabel.AutoSize = true;
+			this.LanderCostLabel.Location = new System.Drawing.Point(6, 74);
+			this.LanderCostLabel.Name = "LanderCostLabel";
+			this.LanderCostLabel.Size = new System.Drawing.Size(40, 13);
+			this.LanderCostLabel.TabIndex = 5;
+			this.LanderCostLabel.Text = "Lander";
+			// 
+			// LanderCost
+			// 
+			this.LanderCost.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+			this.LanderCost.Location = new System.Drawing.Point(105, 72);
+			this.LanderCost.Maximum = new decimal(new int[] {
+            12500,
+            0,
+            0,
+            0});
+			this.LanderCost.Name = "LanderCost";
+			this.LanderCost.Size = new System.Drawing.Size(120, 20);
+			this.LanderCost.TabIndex = 4;
+			this.LanderCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// FuelCost
+			// 
+			this.FuelCost.Location = new System.Drawing.Point(105, 45);
+			this.FuelCost.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+			this.FuelCost.Name = "FuelCost";
+			this.FuelCost.Size = new System.Drawing.Size(120, 20);
+			this.FuelCost.TabIndex = 3;
+			this.FuelCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// FuelCostLabel
+			// 
+			this.FuelCostLabel.AutoSize = true;
+			this.FuelCostLabel.Location = new System.Drawing.Point(6, 47);
+			this.FuelCostLabel.Name = "FuelCostLabel";
+			this.FuelCostLabel.Size = new System.Drawing.Size(27, 13);
+			this.FuelCostLabel.TabIndex = 2;
+			this.FuelCostLabel.Text = "Fuel";
+			// 
+			// CrewCostLabel
+			// 
+			this.CrewCostLabel.AutoSize = true;
+			this.CrewCostLabel.Location = new System.Drawing.Point(6, 20);
+			this.CrewCostLabel.Name = "CrewCostLabel";
+			this.CrewCostLabel.Size = new System.Drawing.Size(31, 13);
+			this.CrewCostLabel.TabIndex = 1;
+			this.CrewCostLabel.Text = "Crew";
+			// 
+			// CrewCost
+			// 
+			this.CrewCost.Location = new System.Drawing.Point(105, 18);
+			this.CrewCost.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-			this.AutoPilotY.Name = "AutoPilotY";
-			this.AutoPilotY.Size = new System.Drawing.Size(76, 20);
-			this.AutoPilotY.TabIndex = 17;
-			this.AutoPilotY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.CrewCost.Name = "CrewCost";
+			this.CrewCost.Size = new System.Drawing.Size(120, 20);
+			this.CrewCost.TabIndex = 0;
+			this.CrewCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// AutoPilotYLabel
+			// GlobalFlagsGroupBox
 			// 
-			this.AutoPilotYLabel.AutoSize = true;
-			this.AutoPilotYLabel.Location = new System.Drawing.Point(6, 49);
-			this.AutoPilotYLabel.Name = "AutoPilotYLabel";
-			this.AutoPilotYLabel.Size = new System.Drawing.Size(62, 13);
-			this.AutoPilotYLabel.TabIndex = 16;
-			this.AutoPilotYLabel.Text = "Auto-Pilot Y";
+			this.GlobalFlagsGroupBox.Controls.Add(this.SubtitleSpeedGroupBox);
+			this.GlobalFlagsGroupBox.Controls.Add(this.MusicSoundGroupBox);
+			this.GlobalFlagsGroupBox.Controls.Add(this.CyborgGroupBox);
+			this.GlobalFlagsGroupBox.Location = new System.Drawing.Point(6, 6);
+			this.GlobalFlagsGroupBox.Name = "GlobalFlagsGroupBox";
+			this.GlobalFlagsGroupBox.Size = new System.Drawing.Size(244, 204);
+			this.GlobalFlagsGroupBox.TabIndex = 3;
+			this.GlobalFlagsGroupBox.TabStop = false;
+			this.GlobalFlagsGroupBox.Text = "Global Flags";
 			// 
-			// AutoPilotXLabel
+			// SubtitleSpeedGroupBox
 			// 
-			this.AutoPilotXLabel.AutoSize = true;
-			this.AutoPilotXLabel.Location = new System.Drawing.Point(6, 22);
-			this.AutoPilotXLabel.Name = "AutoPilotXLabel";
-			this.AutoPilotXLabel.Size = new System.Drawing.Size(62, 13);
-			this.AutoPilotXLabel.TabIndex = 15;
-			this.AutoPilotXLabel.Text = "Auto-Pilot X";
+			this.SubtitleSpeedGroupBox.Controls.Add(this.ReadSpeed);
+			this.SubtitleSpeedGroupBox.Location = new System.Drawing.Point(6, 19);
+			this.SubtitleSpeedGroupBox.Name = "SubtitleSpeedGroupBox";
+			this.SubtitleSpeedGroupBox.Size = new System.Drawing.Size(118, 73);
+			this.SubtitleSpeedGroupBox.TabIndex = 0;
+			this.SubtitleSpeedGroupBox.TabStop = false;
+			this.SubtitleSpeedGroupBox.Text = "Subtitle Speed";
 			// 
-			// AutoPilotX
+			// ReadSpeed
 			// 
-			this.AutoPilotX.Location = new System.Drawing.Point(89, 20);
-			this.AutoPilotX.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-			this.AutoPilotX.Name = "AutoPilotX";
-			this.AutoPilotX.Size = new System.Drawing.Size(76, 20);
-			this.AutoPilotX.TabIndex = 14;
-			this.AutoPilotX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.ReadSpeed.LargeChange = 1;
+			this.ReadSpeed.Location = new System.Drawing.Point(7, 20);
+			this.ReadSpeed.Maximum = 4;
+			this.ReadSpeed.Name = "ReadSpeed";
+			this.ReadSpeed.Size = new System.Drawing.Size(104, 45);
+			this.ReadSpeed.TabIndex = 0;
 			// 
-			// GameStateTab
+			// MusicSoundGroupBox
 			// 
-			this.GameStateTab.Location = new System.Drawing.Point(4, 22);
-			this.GameStateTab.Name = "GameStateTab";
-			this.GameStateTab.Size = new System.Drawing.Size(863, 474);
-			this.GameStateTab.TabIndex = 3;
-			this.GameStateTab.Text = "Game State";
-			this.GameStateTab.UseVisualStyleBackColor = true;
+			this.MusicSoundGroupBox.Controls.Add(this.SoundCheckBox);
+			this.MusicSoundGroupBox.Controls.Add(this.MusicCheckBox);
+			this.MusicSoundGroupBox.Location = new System.Drawing.Point(130, 19);
+			this.MusicSoundGroupBox.Name = "MusicSoundGroupBox";
+			this.MusicSoundGroupBox.Size = new System.Drawing.Size(108, 73);
+			this.MusicSoundGroupBox.TabIndex = 2;
+			this.MusicSoundGroupBox.TabStop = false;
+			this.MusicSoundGroupBox.Text = "Music and Sound";
 			// 
-			// VelocityGroupBox
+			// SoundCheckBox
 			// 
-			this.VelocityGroupBox.Controls.Add(this.IncrHeightLabel);
-			this.VelocityGroupBox.Controls.Add(this.IncrHeight);
-			this.VelocityGroupBox.Controls.Add(this.IncrWidthLabel);
-			this.VelocityGroupBox.Controls.Add(this.IncrWidth);
-			this.VelocityGroupBox.Controls.Add(this.ErrorHeightLabel);
-			this.VelocityGroupBox.Controls.Add(this.ErrorHeight);
-			this.VelocityGroupBox.Controls.Add(this.ErrorWidthLabel);
-			this.VelocityGroupBox.Controls.Add(this.ErrorWidth);
-			this.VelocityGroupBox.Controls.Add(this.FractHeightLabel);
-			this.VelocityGroupBox.Controls.Add(this.FractHeight);
-			this.VelocityGroupBox.Controls.Add(this.FractWidthLabel);
-			this.VelocityGroupBox.Controls.Add(this.FractWidth);
-			this.VelocityGroupBox.Controls.Add(this.VectorHeightLabel);
-			this.VelocityGroupBox.Controls.Add(this.VectorHeight);
-			this.VelocityGroupBox.Controls.Add(this.VectorWidth);
-			this.VelocityGroupBox.Controls.Add(this.VectorWidthLabel);
-			this.VelocityGroupBox.Controls.Add(this.TravelAngleLabel);
-			this.VelocityGroupBox.Controls.Add(this.TravelAngle);
-			this.VelocityGroupBox.Location = new System.Drawing.Point(676, 6);
-			this.VelocityGroupBox.Name = "VelocityGroupBox";
-			this.VelocityGroupBox.Size = new System.Drawing.Size(181, 264);
-			this.VelocityGroupBox.TabIndex = 8;
-			this.VelocityGroupBox.TabStop = false;
-			this.VelocityGroupBox.Text = "Ship Velocity";
+			this.SoundCheckBox.AutoSize = true;
+			this.SoundCheckBox.Location = new System.Drawing.Point(6, 43);
+			this.SoundCheckBox.Name = "SoundCheckBox";
+			this.SoundCheckBox.Size = new System.Drawing.Size(101, 17);
+			this.SoundCheckBox.TabIndex = 1;
+			this.SoundCheckBox.Text = "Sound Disabled";
+			this.SoundCheckBox.UseVisualStyleBackColor = true;
 			// 
-			// IncrHeightLabel
+			// MusicCheckBox
 			// 
-			this.IncrHeightLabel.AutoSize = true;
-			this.IncrHeightLabel.Location = new System.Drawing.Point(6, 236);
-			this.IncrHeightLabel.Name = "IncrHeightLabel";
-			this.IncrHeightLabel.Size = new System.Drawing.Size(59, 13);
-			this.IncrHeightLabel.TabIndex = 35;
-			this.IncrHeightLabel.Text = "Incr Height";
+			this.MusicCheckBox.AutoSize = true;
+			this.MusicCheckBox.Location = new System.Drawing.Point(6, 19);
+			this.MusicCheckBox.Name = "MusicCheckBox";
+			this.MusicCheckBox.Size = new System.Drawing.Size(98, 17);
+			this.MusicCheckBox.TabIndex = 0;
+			this.MusicCheckBox.Text = "Music Disabled";
+			this.MusicCheckBox.UseVisualStyleBackColor = true;
 			// 
-			// IncrHeight
+			// CyborgGroupBox
 			// 
-			this.IncrHeight.Location = new System.Drawing.Point(84, 234);
-			this.IncrHeight.Name = "IncrHeight";
-			this.IncrHeight.Size = new System.Drawing.Size(90, 20);
-			this.IncrHeight.TabIndex = 34;
-			this.IncrHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.CyborgGroupBox.Controls.Add(this.CombatSpeed);
+			this.CyborgGroupBox.Controls.Add(this.CyborgCheckBox);
+			this.CyborgGroupBox.Location = new System.Drawing.Point(6, 98);
+			this.CyborgGroupBox.Name = "CyborgGroupBox";
+			this.CyborgGroupBox.Size = new System.Drawing.Size(118, 100);
+			this.CyborgGroupBox.TabIndex = 1;
+			this.CyborgGroupBox.TabStop = false;
+			this.CyborgGroupBox.Text = "Cyborg";
 			// 
-			// IncrWidthLabel
+			// CombatSpeed
 			// 
-			this.IncrWidthLabel.AutoSize = true;
-			this.IncrWidthLabel.Location = new System.Drawing.Point(6, 209);
-			this.IncrWidthLabel.Name = "IncrWidthLabel";
-			this.IncrWidthLabel.Size = new System.Drawing.Size(56, 13);
-			this.IncrWidthLabel.TabIndex = 33;
-			this.IncrWidthLabel.Text = "Incr Width";
+			this.CombatSpeed.LargeChange = 1;
+			this.CombatSpeed.Location = new System.Drawing.Point(7, 44);
+			this.CombatSpeed.Maximum = 2;
+			this.CombatSpeed.Name = "CombatSpeed";
+			this.CombatSpeed.Size = new System.Drawing.Size(104, 45);
+			this.CombatSpeed.TabIndex = 1;
 			// 
-			// IncrWidth
+			// CyborgCheckBox
 			// 
-			this.IncrWidth.Location = new System.Drawing.Point(84, 207);
-			this.IncrWidth.Name = "IncrWidth";
-			this.IncrWidth.Size = new System.Drawing.Size(90, 20);
-			this.IncrWidth.TabIndex = 32;
-			this.IncrWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// ErrorHeightLabel
-			// 
-			this.ErrorHeightLabel.AutoSize = true;
-			this.ErrorHeightLabel.Location = new System.Drawing.Point(6, 182);
-			this.ErrorHeightLabel.Name = "ErrorHeightLabel";
-			this.ErrorHeightLabel.Size = new System.Drawing.Size(63, 13);
-			this.ErrorHeightLabel.TabIndex = 31;
-			this.ErrorHeightLabel.Text = "Error Height";
-			// 
-			// ErrorHeight
-			// 
-			this.ErrorHeight.Location = new System.Drawing.Point(84, 180);
-			this.ErrorHeight.Name = "ErrorHeight";
-			this.ErrorHeight.Size = new System.Drawing.Size(90, 20);
-			this.ErrorHeight.TabIndex = 30;
-			this.ErrorHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// ErrorWidthLabel
-			// 
-			this.ErrorWidthLabel.AutoSize = true;
-			this.ErrorWidthLabel.Location = new System.Drawing.Point(6, 155);
-			this.ErrorWidthLabel.Name = "ErrorWidthLabel";
-			this.ErrorWidthLabel.Size = new System.Drawing.Size(60, 13);
-			this.ErrorWidthLabel.TabIndex = 29;
-			this.ErrorWidthLabel.Text = "Error Width";
-			// 
-			// ErrorWidth
-			// 
-			this.ErrorWidth.Location = new System.Drawing.Point(84, 153);
-			this.ErrorWidth.Name = "ErrorWidth";
-			this.ErrorWidth.Size = new System.Drawing.Size(90, 20);
-			this.ErrorWidth.TabIndex = 28;
-			this.ErrorWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// FractHeightLabel
-			// 
-			this.FractHeightLabel.AutoSize = true;
-			this.FractHeightLabel.Location = new System.Drawing.Point(6, 128);
-			this.FractHeightLabel.Name = "FractHeightLabel";
-			this.FractHeightLabel.Size = new System.Drawing.Size(65, 13);
-			this.FractHeightLabel.TabIndex = 27;
-			this.FractHeightLabel.Text = "Fract Height";
-			// 
-			// FractHeight
-			// 
-			this.FractHeight.Location = new System.Drawing.Point(84, 126);
-			this.FractHeight.Name = "FractHeight";
-			this.FractHeight.Size = new System.Drawing.Size(90, 20);
-			this.FractHeight.TabIndex = 26;
-			this.FractHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// FractWidthLabel
-			// 
-			this.FractWidthLabel.AutoSize = true;
-			this.FractWidthLabel.Location = new System.Drawing.Point(6, 101);
-			this.FractWidthLabel.Name = "FractWidthLabel";
-			this.FractWidthLabel.Size = new System.Drawing.Size(62, 13);
-			this.FractWidthLabel.TabIndex = 25;
-			this.FractWidthLabel.Text = "Fract Width";
-			// 
-			// FractWidth
-			// 
-			this.FractWidth.Location = new System.Drawing.Point(84, 99);
-			this.FractWidth.Name = "FractWidth";
-			this.FractWidth.Size = new System.Drawing.Size(90, 20);
-			this.FractWidth.TabIndex = 24;
-			this.FractWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// VectorHeightLabel
-			// 
-			this.VectorHeightLabel.AutoSize = true;
-			this.VectorHeightLabel.Location = new System.Drawing.Point(6, 74);
-			this.VectorHeightLabel.Name = "VectorHeightLabel";
-			this.VectorHeightLabel.Size = new System.Drawing.Size(72, 13);
-			this.VectorHeightLabel.TabIndex = 23;
-			this.VectorHeightLabel.Text = "Vector Height";
-			// 
-			// VectorHeight
-			// 
-			this.VectorHeight.Location = new System.Drawing.Point(84, 72);
-			this.VectorHeight.Name = "VectorHeight";
-			this.VectorHeight.Size = new System.Drawing.Size(90, 20);
-			this.VectorHeight.TabIndex = 22;
-			this.VectorHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// VectorWidth
-			// 
-			this.VectorWidth.Location = new System.Drawing.Point(84, 45);
-			this.VectorWidth.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-			this.VectorWidth.Name = "VectorWidth";
-			this.VectorWidth.Size = new System.Drawing.Size(90, 20);
-			this.VectorWidth.TabIndex = 21;
-			this.VectorWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// VectorWidthLabel
-			// 
-			this.VectorWidthLabel.AutoSize = true;
-			this.VectorWidthLabel.Location = new System.Drawing.Point(6, 47);
-			this.VectorWidthLabel.Name = "VectorWidthLabel";
-			this.VectorWidthLabel.Size = new System.Drawing.Size(69, 13);
-			this.VectorWidthLabel.TabIndex = 20;
-			this.VectorWidthLabel.Text = "Vector Width";
-			// 
-			// TravelAngleLabel
-			// 
-			this.TravelAngleLabel.AutoSize = true;
-			this.TravelAngleLabel.Location = new System.Drawing.Point(6, 20);
-			this.TravelAngleLabel.Name = "TravelAngleLabel";
-			this.TravelAngleLabel.Size = new System.Drawing.Size(67, 13);
-			this.TravelAngleLabel.TabIndex = 19;
-			this.TravelAngleLabel.Text = "Travel Angle";
-			// 
-			// TravelAngle
-			// 
-			this.TravelAngle.Location = new System.Drawing.Point(84, 18);
-			this.TravelAngle.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-			this.TravelAngle.Name = "TravelAngle";
-			this.TravelAngle.Size = new System.Drawing.Size(90, 20);
-			this.TravelAngle.TabIndex = 18;
-			this.TravelAngle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.CyborgCheckBox.AutoSize = true;
+			this.CyborgCheckBox.Location = new System.Drawing.Point(7, 20);
+			this.CyborgCheckBox.Name = "CyborgCheckBox";
+			this.CyborgCheckBox.Size = new System.Drawing.Size(101, 17);
+			this.CyborgCheckBox.TabIndex = 0;
+			this.CyborgCheckBox.Text = "Cyborg Enabled";
+			this.CyborgCheckBox.UseVisualStyleBackColor = true;
 			// 
 			// Main
 			// 
@@ -3476,59 +3745,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.UniverseY)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.UniverseX)).EndInit();
 			this.Extras.ResumeLayout(false);
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.ReadSpeed)).EndInit();
-			this.CyborgGroupBox.ResumeLayout(false);
-			this.CyborgGroupBox.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.CombatSpeed)).EndInit();
-			this.MusicSound.ResumeLayout(false);
-			this.MusicSound.PerformLayout();
-			this.GlobalFlagsGroupBox.ResumeLayout(false);
-			this.CostsGroupBox.ResumeLayout(false);
-			this.CostsGroupBox.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.CrewCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.FuelCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.LanderCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.ThrusterCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.JetCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.CrewPodCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.StorageBayCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.FuelTankCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.HiEffFuelSysCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.DynamoUnitCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.ShivaFurnaceCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.IonBoltGunCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.FusionBlasterCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.HellboreCannonCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.TrackingSystemCost)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.PointDefenseCost)).EndInit();
-			this.ElementWorthGroupBox.ResumeLayout(false);
-			this.ElementWorthGroupBox.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.ExoticWorth)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.RadioactiveWorth)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.PreciousMetalWorth)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.RareEarthWorth)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.NobleGasWorth)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.BaseMetalWorth)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.CorrosiveWorth)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.CommonWorth)).EndInit();
-			this.groupBox2.ResumeLayout(false);
-			this.groupBox2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.DayInTicks)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.TickCount)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.YearIndex)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.MonthIndex)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.DayIndex)).EndInit();
-			this.LocationGroupBox.ResumeLayout(false);
-			this.LocationGroupBox.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.ShipFacing)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.ShipOriginY)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.ShipOriginX)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.IPLocationY)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.IPLocationX)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.AutoPilotY)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.AutoPilotX)).EndInit();
 			this.VelocityGroupBox.ResumeLayout(false);
 			this.VelocityGroupBox.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.IncrHeight)).EndInit();
@@ -3540,6 +3756,59 @@
 			((System.ComponentModel.ISupportInitialize)(this.VectorHeight)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.VectorWidth)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.TravelAngle)).EndInit();
+			this.LocationGroupBox.ResumeLayout(false);
+			this.LocationGroupBox.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.ShipFacing)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ShipOriginY)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ShipOriginX)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.IPLocationY)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.IPLocationX)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.AutoPilotY)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.AutoPilotX)).EndInit();
+			this.ClockStateGroupBox.ResumeLayout(false);
+			this.ClockStateGroupBox.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.DayInTicks)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.TickCount)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.YearIndex)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.MonthIndex)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.DayIndex)).EndInit();
+			this.ElementWorthGroupBox.ResumeLayout(false);
+			this.ElementWorthGroupBox.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.ExoticWorth)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.RadioactiveWorth)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.PreciousMetalWorth)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.RareEarthWorth)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.NobleGasWorth)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.BaseMetalWorth)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CorrosiveWorth)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CommonWorth)).EndInit();
+			this.CostsGroupBox.ResumeLayout(false);
+			this.CostsGroupBox.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.PointDefenseCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.TrackingSystemCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.HellboreCannonCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.FusionBlasterCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.IonBoltGunCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ShivaFurnaceCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.DynamoUnitCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.HiEffFuelSysCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.FuelTankCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.StorageBayCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CrewPodCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.JetCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ThrusterCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.LanderCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.FuelCost)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CrewCost)).EndInit();
+			this.GlobalFlagsGroupBox.ResumeLayout(false);
+			this.SubtitleSpeedGroupBox.ResumeLayout(false);
+			this.SubtitleSpeedGroupBox.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.ReadSpeed)).EndInit();
+			this.MusicSoundGroupBox.ResumeLayout(false);
+			this.MusicSoundGroupBox.PerformLayout();
+			this.CyborgGroupBox.ResumeLayout(false);
+			this.CyborgGroupBox.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.CombatSpeed)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -3710,48 +3979,27 @@
         private System.Windows.Forms.Label difficultyLabel;
         public System.Windows.Forms.ComboBox difficultyBox;
 		private System.Windows.Forms.TabPage Extras;
-		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.TrackBar ReadSpeed;
+		private System.Windows.Forms.GroupBox SubtitleSpeedGroupBox;
 		private System.Windows.Forms.GroupBox CyborgGroupBox;
-		private System.Windows.Forms.TrackBar CombatSpeed;
-		private System.Windows.Forms.CheckBox checkBox1;
-		private System.Windows.Forms.GroupBox MusicSound;
-		private System.Windows.Forms.CheckBox MusicEnabled;
-		private System.Windows.Forms.CheckBox SoundEnabled;
+		private System.Windows.Forms.GroupBox MusicSoundGroupBox;
 		private System.Windows.Forms.GroupBox GlobalFlagsGroupBox;
 		private System.Windows.Forms.GroupBox CostsGroupBox;
 		private System.Windows.Forms.Label LanderCostLabel;
-		private System.Windows.Forms.NumericUpDown LanderCost;
-		private System.Windows.Forms.NumericUpDown FuelCost;
 		private System.Windows.Forms.Label FuelCostLabel;
 		private System.Windows.Forms.Label CrewCostLabel;
-		private System.Windows.Forms.NumericUpDown CrewCost;
 		private System.Windows.Forms.Label ThrusterCostLabel;
-		private System.Windows.Forms.NumericUpDown ThrusterCost;
-		private System.Windows.Forms.NumericUpDown CrewPodCost;
 		private System.Windows.Forms.Label JetCostLabel;
-		private System.Windows.Forms.NumericUpDown JetCost;
 		private System.Windows.Forms.Label CrewPodCostLabel;
-		private System.Windows.Forms.NumericUpDown StorageBayCost;
 		private System.Windows.Forms.Label StorageBayCostLabel;
 		private System.Windows.Forms.Label FuelTankCostLabel;
-		private System.Windows.Forms.NumericUpDown FuelTankCost;
 		private System.Windows.Forms.Label HiEffFuelSysCostLabel;
-		private System.Windows.Forms.NumericUpDown HiEffFuelSysCost;
 		private System.Windows.Forms.Label DynamoUnitCostLabel;
-		private System.Windows.Forms.NumericUpDown DynamoUnitCost;
-		private System.Windows.Forms.NumericUpDown ShivaFurnaceCost;
 		private System.Windows.Forms.Label ShivaFurnaceCostLabel;
 		private System.Windows.Forms.Label IonBoltGunCostLabel;
-		private System.Windows.Forms.NumericUpDown IonBoltGunCost;
-		private System.Windows.Forms.NumericUpDown FusionBlasterCost;
 		private System.Windows.Forms.Label FusionBlasterCostLabel;
-		private System.Windows.Forms.NumericUpDown HellboreCannonCost;
 		private System.Windows.Forms.Label HellboreCannonCostLabel;
 		private System.Windows.Forms.Label TrackingSystemCostLabel;
-		private System.Windows.Forms.NumericUpDown TrackingSystemCost;
 		private System.Windows.Forms.Label PointDefenseCostLabel;
-		private System.Windows.Forms.NumericUpDown PointDefenseCost;
 		private System.Windows.Forms.GroupBox ElementWorthGroupBox;
 		private System.Windows.Forms.Label ExoticWorthLabel;
 		public System.Windows.Forms.Label RadioactiveWorthLabel;
@@ -3769,51 +4017,71 @@
 		public System.Windows.Forms.NumericUpDown BaseMetalWorth;
 		public System.Windows.Forms.NumericUpDown CorrosiveWorth;
 		public System.Windows.Forms.NumericUpDown CommonWorth;
-		private System.Windows.Forms.GroupBox groupBox2;
+		private System.Windows.Forms.GroupBox ClockStateGroupBox;
 		private System.Windows.Forms.Label DayInTicksLabel;
-		private System.Windows.Forms.NumericUpDown DayInTicks;
 		private System.Windows.Forms.Label TickCountLabel;
-		private System.Windows.Forms.NumericUpDown TickCount;
 		private System.Windows.Forms.Label YearIndexLabel;
-		private System.Windows.Forms.NumericUpDown YearIndex;
-		private System.Windows.Forms.NumericUpDown MonthIndex;
 		private System.Windows.Forms.Label MonthIndexLabel;
 		private System.Windows.Forms.Label DayIndexLabe;
-		private System.Windows.Forms.NumericUpDown DayIndex;
 		private System.Windows.Forms.GroupBox LocationGroupBox;
 		private System.Windows.Forms.Label ShipFacingLabel;
-		private System.Windows.Forms.NumericUpDown ShipFacing;
 		private System.Windows.Forms.Label ShipOriginYLabel;
-		private System.Windows.Forms.NumericUpDown ShipOriginY;
 		private System.Windows.Forms.Label ShipOriginXLabel;
-		private System.Windows.Forms.NumericUpDown ShipOriginX;
 		private System.Windows.Forms.Label IPLocationYLabel;
-		private System.Windows.Forms.NumericUpDown IPLocationY;
 		private System.Windows.Forms.Label IPLocationXLabel;
-		private System.Windows.Forms.NumericUpDown IPLocationX;
-		private System.Windows.Forms.NumericUpDown AutoPilotY;
 		private System.Windows.Forms.Label AutoPilotYLabel;
 		private System.Windows.Forms.Label AutoPilotXLabel;
-		private System.Windows.Forms.NumericUpDown AutoPilotX;
-		private System.Windows.Forms.TabPage GameStateTab;
 		private System.Windows.Forms.GroupBox VelocityGroupBox;
 		private System.Windows.Forms.Label IncrHeightLabel;
-		private System.Windows.Forms.NumericUpDown IncrHeight;
 		private System.Windows.Forms.Label IncrWidthLabel;
-		private System.Windows.Forms.NumericUpDown IncrWidth;
 		private System.Windows.Forms.Label ErrorHeightLabel;
-		private System.Windows.Forms.NumericUpDown ErrorHeight;
 		private System.Windows.Forms.Label ErrorWidthLabel;
-		private System.Windows.Forms.NumericUpDown ErrorWidth;
 		private System.Windows.Forms.Label FractHeightLabel;
-		private System.Windows.Forms.NumericUpDown FractHeight;
 		private System.Windows.Forms.Label FractWidthLabel;
-		private System.Windows.Forms.NumericUpDown FractWidth;
 		private System.Windows.Forms.Label VectorHeightLabel;
-		private System.Windows.Forms.NumericUpDown VectorHeight;
-		private System.Windows.Forms.NumericUpDown VectorWidth;
 		private System.Windows.Forms.Label VectorWidthLabel;
 		private System.Windows.Forms.Label TravelAngleLabel;
-		private System.Windows.Forms.NumericUpDown TravelAngle;
+		public System.Windows.Forms.TrackBar ReadSpeed;
+		public System.Windows.Forms.CheckBox CyborgCheckBox;
+		public System.Windows.Forms.TrackBar CombatSpeed;
+		public System.Windows.Forms.CheckBox MusicCheckBox;
+		public System.Windows.Forms.CheckBox SoundCheckBox;
+		public System.Windows.Forms.NumericUpDown LanderCost;
+		public System.Windows.Forms.NumericUpDown FuelCost;
+		public System.Windows.Forms.NumericUpDown CrewCost;
+		public System.Windows.Forms.NumericUpDown ThrusterCost;
+		public System.Windows.Forms.NumericUpDown CrewPodCost;
+		public System.Windows.Forms.NumericUpDown JetCost;
+		public System.Windows.Forms.NumericUpDown StorageBayCost;
+		public System.Windows.Forms.NumericUpDown FuelTankCost;
+		public System.Windows.Forms.NumericUpDown HiEffFuelSysCost;
+		public System.Windows.Forms.NumericUpDown DynamoUnitCost;
+		public System.Windows.Forms.NumericUpDown ShivaFurnaceCost;
+		public System.Windows.Forms.NumericUpDown IonBoltGunCost;
+		public System.Windows.Forms.NumericUpDown FusionBlasterCost;
+		public System.Windows.Forms.NumericUpDown HellboreCannonCost;
+		public System.Windows.Forms.NumericUpDown TrackingSystemCost;
+		public System.Windows.Forms.NumericUpDown PointDefenseCost;
+		public System.Windows.Forms.NumericUpDown ShipFacing;
+		public System.Windows.Forms.NumericUpDown ShipOriginY;
+		public System.Windows.Forms.NumericUpDown ShipOriginX;
+		public System.Windows.Forms.NumericUpDown IPLocationY;
+		public System.Windows.Forms.NumericUpDown IPLocationX;
+		public System.Windows.Forms.NumericUpDown AutoPilotY;
+		public System.Windows.Forms.NumericUpDown AutoPilotX;
+		public System.Windows.Forms.NumericUpDown IncrHeight;
+		public System.Windows.Forms.NumericUpDown IncrWidth;
+		public System.Windows.Forms.NumericUpDown ErrorHeight;
+		public System.Windows.Forms.NumericUpDown ErrorWidth;
+		public System.Windows.Forms.NumericUpDown FractHeight;
+		public System.Windows.Forms.NumericUpDown FractWidth;
+		public System.Windows.Forms.NumericUpDown VectorHeight;
+		public System.Windows.Forms.NumericUpDown VectorWidth;
+		public System.Windows.Forms.NumericUpDown TravelAngle;
+		public System.Windows.Forms.NumericUpDown DayInTicks;
+		public System.Windows.Forms.NumericUpDown TickCount;
+		public System.Windows.Forms.NumericUpDown YearIndex;
+		public System.Windows.Forms.NumericUpDown MonthIndex;
+		public System.Windows.Forms.NumericUpDown DayIndex;
 	}
 }
