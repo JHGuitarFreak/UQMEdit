@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UQMEdit.Load
 {
-	internal class Legacy
+	partial class Legacy
 	{
 		public static void LoadClockState ()
 		{
@@ -27,13 +27,8 @@ namespace UQMEdit.Load
 			GSPtr.CrewCost = Functions.ReadByte ();
 			GSPtr.FuelCost = Functions.ReadByte ();
 
-			Console.WriteLine ("CrewCost {0} FuelCost {1}", GSPtr.CrewCost, GSPtr.FuelCost);
-
 			if (GSPtr.FuelCost != 20)
-			{
-				Console.WriteLine ("FuelCost Failed");
 				return false;
-			}
 
 			for (int i = 0; i < 20; i++)
 				GSPtr.ModuleCost[i] = Functions.ReadByte ();
@@ -71,6 +66,8 @@ namespace UQMEdit.Load
 
 		public static bool LoadSisState ()
 		{
+			Vars.SisNameSize = 16;
+
 			SSPtr.log_x = Functions.ReadInt ();
 			SSPtr.log_y = Functions.ReadInt ();
 			SSPtr.ResUnits = Functions.ReadUInt ();
@@ -91,9 +88,9 @@ namespace UQMEdit.Load
 			for (int i = 0; i < 8; i++)
 				SSPtr.ElementAmounts[i] = Functions.ReadUShort ();
 
-			SSPtr.ShipName = Functions.ReadStr (16);
-			SSPtr.CommanderName = Functions.ReadStr (16);
-			SSPtr.PlanetName = Functions.ReadStr (16);
+			SSPtr.ShipName = Functions.ReadStr (Vars.SisNameSize);
+			SSPtr.CommanderName = Functions.ReadStr (Vars.SisNameSize);
+			SSPtr.PlanetName = Functions.ReadStr (Vars.SisNameSize);
 
 			Vars.LastOffset += 2;
 
@@ -102,14 +99,11 @@ namespace UQMEdit.Load
 
 		public static bool LoadSummary ()
 		{
-			if (Read.SaveVersion == 1)
+			if (Vars.SaveVersion == 1)
 				SummPtr.SaveName = Functions.ReadStr (32);
 
 			if (!LoadSisState ())
-			{
-				Console.WriteLine ("SisState Failed");
 				return false;
-			}
 
 			SummPtr.Activity = Functions.ReadByte ();
 			SummPtr.Flags = Functions.ReadByte ();
@@ -127,7 +121,7 @@ namespace UQMEdit.Load
 			for (int i = 0; i < 16; i++)
 				SummPtr.DeviceList[i] = Functions.ReadByte ();
 
-			if (Read.SaveVersion == 1)
+			if (Vars.SaveVersion == 1)
 			{
 				SummPtr.res_factor = Functions.ReadByte ();
 				Vars.LastOffset += 1;

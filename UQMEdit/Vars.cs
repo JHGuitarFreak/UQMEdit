@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace UQMEdit
 {
@@ -35,7 +32,22 @@ namespace UQMEdit
 		public const byte SOUND_DISABLED = (1 << 4);
 		public const byte CYBORG_ENABLED = (1 << 5);
 
-		//public const byte SaveNameSize = 64;
+		public static byte SaveVersion = 0;
+		public static uint SaveNameLength = 0;
+		public static int  SisNameSize = 0;
+
+		public static void clearVars ()
+		{
+			LastOffset     = 0;
+			SaveVersion    = 0;
+			SaveNameLength = 0;
+			SisNameSize    = 0;
+
+			SummPtr.clearSummary ();
+			SSPtr.clearSisState ();
+			GSPtr.clearGameState ();
+			ClockPtr.clearClockState ();
+		}
 
 		public static string[] DeviceName = new string[]
 		{
@@ -181,6 +193,15 @@ namespace UQMEdit
 		// cread_8 NULL
 		// cread_16 NULL
 		// = +34 bytes of padding
+
+		public static void clearClockState ()
+		{
+			day_index    = 0;
+			month_index  = 0;
+			year_index   = 0;
+			tick_count   = 0;
+			day_in_ticks = 0;
+		}
 	}
 
 	class GSPtr
@@ -226,6 +247,31 @@ namespace UQMEdit
 
 		// if legacy saves cread_16 NULL
 		// else read_32 magic GAME_STATE_TAG
+
+		public static void clearGameState ()
+		{
+			glob_flags      = 0;
+			CrewCost        = 0;
+			FuelCost        = 0;
+			Array.Clear (ModuleCost, 0, ModuleCost.Length);
+			Array.Clear (ElementWorth, 0, ElementWorth.Length);
+			CurrentActivity = 0;
+			autopilot_x     = 0;
+			autopilot_y     = 0;
+			ip_location_x   = 0;
+			ip_location_y   = 0;
+			ip_planet       = 0;
+			in_orbit        = 0;
+			TravelAngle     = 0;
+			vector_width    = 0;
+			vector_height   = 0;
+			fract_width     = 0;
+			fract_height    = 0;
+			error_width     = 0;
+			error_height    = 0;
+			incr_width      = 0;
+			incr_height     = 0;
+		}
 	}
 
 	class SSPtr
@@ -253,6 +299,29 @@ namespace UQMEdit
 		public static byte Extended;
 		public static byte Nomad;
 		public static int  Seed;
+
+		public static void clearSisState ()
+		{
+			log_x            = 0;
+			log_y            = 0;
+			ResUnits         = 0;
+			FuelOnBoard      = 0;
+			CrewEnlisted     = 0;
+			TotalElementMass = 0;
+			TotalBioMass     = 0;
+			Array.Clear (ModuleSlots, 0, ModuleSlots.Length);
+			Array.Clear (DriveSlots, 0, DriveSlots.Length);
+			Array.Clear (JetSlots, 0, JetSlots.Length);
+			NumLanders       = 0;
+			Array.Clear (ElementAmounts, 0, ElementAmounts.Length);
+			ShipName      = string.Empty;
+			CommanderName = string.Empty;
+			PlanetName    = string.Empty;
+			Difficulty = 0;
+			Extended   = 0;
+			Nomad      = 0;
+			Seed       = 0;
+		}
 	}
 
 	class SummPtr
@@ -263,17 +332,15 @@ namespace UQMEdit
 		// read_32 magic SUMMARY_TAG
 		// read_32 magic (- 160)
 
-
 		// Load SisState
-
 		public static byte   Activity;
 		public static byte   Flags;
 		public static byte   day_index;
 		public static byte   month_index;
 		public static ushort year_index;
-		public static byte   MCreditLo;
-		public static byte   MCreditHi;
-		public static ushort MCredit;
+		//public static byte   MCreditLo;
+		//public static byte   MCreditHi;
+		public static ushort MCredit; // For simplicity sake, combine the two previous into one variable
 		public static byte   NumShips;
 		public static byte   NumDevices;
 		public static byte[] ShipList   = new byte[12];
@@ -282,5 +349,21 @@ namespace UQMEdit
 		public static byte   res_factor; // HD-only
 		// if legacy saves read_8 NULL
 		public static string SaveName;   // v0.8.0, HD, and MegaMod
+
+		public static void clearSummary ()
+		{
+			Activity    = 0;
+			Flags       = 0;
+			day_index   = 0;
+			month_index = 0;
+			year_index  = 0;
+			MCredit     = 0;
+			NumShips    = 0;
+			NumDevices  = 0;
+			Array.Clear (ShipList, 0, ShipList.Length);
+			Array.Clear (DeviceList, 0, DeviceList.Length);
+			res_factor  = 0;
+			SaveName = string.Empty;
+		}
 	}
 }

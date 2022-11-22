@@ -8,12 +8,11 @@ using UQMEdit.Load;
 
 namespace UQMEdit
 {
-	partial class Read
+	public class Read
 	{
 		public static FileStream Stream;
 		public static Main Window;
 		public static byte[] FileBuffer;
-		public static byte SaveVersion = 0;
 		public static bool FullyLoadSave = false;
 		public static string SaveName;
 		public static string Date;
@@ -32,7 +31,9 @@ namespace UQMEdit
 			FileBuffer = new byte[FileSize];    // create buffer
 			Window = window;
 
-			Vars.LastOffset = 0;
+			Utilities.ResetAllControls (Window);
+			Vars.clearVars ();
+
 			FullyLoadSave = false;
 
 			//// Save Checker
@@ -41,25 +42,25 @@ namespace UQMEdit
 			switch (LoadChecker)
 			{
 				case Vars.MMV3_TAG:
-					SaveVersion = 4;
+					Vars.SaveVersion = 4;
 					break;
 				case Vars.SAVEFILE_TAG:
-					SaveVersion = 3;
+					Vars.SaveVersion = 3;
 					break;
 				case Vars.MEGA_TAG:
-					SaveVersion = 2;
+					Vars.SaveVersion = 2;
 					break;
 				case Vars.SAVEFILE_TAG_HD:
-					SaveVersion = 1;
+					Vars.SaveVersion = 1;
 					Vars.LastOffset += 12;
 					break;
 				default:
-					SaveVersion = 0;
+					Vars.SaveVersion = 0;
 					Vars.LastOffset = 0;
 					break;
 			};
 
-			if (SaveVersion > 1)
+			if (Vars.SaveVersion > 1)
 				FullyLoadSave = Modern.LoadGame ();
 			else
 				FullyLoadSave = Legacy.LoadGame ();
@@ -68,8 +69,8 @@ namespace UQMEdit
 			{
 				// SIS_STATE
 
-				Window.UniverseX.Value = Functions.LogXToUniverse (SSPtr.log_x) / 10;
-				Window.UniverseY.Value = Functions.LogYToUniverse (SSPtr.log_y) / 10;
+				Window.UniverseX.Value = (decimal)Functions.LogXToUniverse (SSPtr.log_x) / 10;
+				Window.UniverseY.Value = (decimal)Functions.LogYToUniverse (SSPtr.log_y) / 10;
 
 				decimal fuel = SSPtr.FuelOnBoard;
 				fuel = fuel > 160100 ? 160100 : fuel;
@@ -130,7 +131,7 @@ namespace UQMEdit
 				Window.CommanderName.Text = SSPtr.CommanderName;
 				Window.NearestPlanet.Text = SSPtr.PlanetName;
 
-				if (SaveVersion == 2 || SaveVersion == 4)
+				if (Vars.SaveVersion == 2 || Vars.SaveVersion == 4)
 				{
 					Window.difficultyBox.SelectedIndex = SSPtr.Difficulty;
 					Window.extendedCheckBox.Checked    = Convert.ToBoolean (SSPtr.Extended);
@@ -216,14 +217,14 @@ namespace UQMEdit
 					Window.Devices.Items.AddRange (DevicesIntArray);
 				}
 
-				if (SaveVersion > 0)
+				if (Vars.SaveVersion > 0)
 					SaveName = SummPtr.SaveName;
 				else
 					SaveName = "Saved Game - Date: ";
 
 				// Game State
 
-				if (SaveVersion > 1)
+				if (Vars.SaveVersion > 1)
 				{
 					// Global Flags
 

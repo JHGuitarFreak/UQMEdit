@@ -75,7 +75,7 @@ namespace UQMEdit
 				string TitleText = "The UQM Save Editor";
 				SeedBox.Visible = false;
 				megaModModes.Visible = false;
-				switch (Read.SaveVersion)
+				switch (Vars.SaveVersion)
 				{
 					case 4:
 						TitleText += ": MegaMod v0.8.2 - ";
@@ -98,7 +98,7 @@ namespace UQMEdit
 						TitleText += ": Core v0.7.0 - ";
 						break;
 				}
-				Text = TitleText + (Read.SaveVersion > 0 ? (Read.Date + ": " + Read.SaveName) : (Read.SaveName + Read.Date));
+				Text = TitleText + (Vars.SaveVersion > 0 ? (Read.Date + ": " + Read.SaveName) : (Read.SaveName + Read.Date));
 
 				CurrentDir = CurrentFile;
 			}

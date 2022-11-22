@@ -68,7 +68,7 @@ namespace UQMEdit.Load
 
 		public static bool LoadSisState ()
 		{
-			int SisNameSize = Read.SaveVersion == 4 ? 32 : 16;
+			Vars.SisNameSize = Vars.SaveVersion == 4 ? 32 : 16;
 
 			SSPtr.log_x = Functions.ReadInt ();
 			SSPtr.log_y = Functions.ReadInt ();
@@ -90,11 +90,11 @@ namespace UQMEdit.Load
 			for (int i = 0; i < 8; i++)
 				SSPtr.ElementAmounts[i] = Functions.ReadUShort ();
 
-			SSPtr.ShipName = Functions.ReadStr (SisNameSize);
-			SSPtr.CommanderName = Functions.ReadStr (SisNameSize);
-			SSPtr.PlanetName = Functions.ReadStr (SisNameSize);
+			SSPtr.ShipName = Functions.ReadStr (Vars.SisNameSize);
+			SSPtr.CommanderName = Functions.ReadStr (Vars.SisNameSize);
+			SSPtr.PlanetName = Functions.ReadStr (Vars.SisNameSize);
 
-			if (Read.SaveVersion == 2 || Read.SaveVersion == 4)
+			if (Vars.SaveVersion == 2 || Vars.SaveVersion == 4)
 			{
 				SSPtr.Difficulty = Functions.ReadByte ();
 				SSPtr.Extended = Functions.ReadByte ();
@@ -108,7 +108,6 @@ namespace UQMEdit.Load
 		public static bool LoadSummary ()
 		{
 			uint magic;
-			uint nameSize = 0;
 
 			magic = Functions.ReadUInt ();
 			if (magic != Vars.SUMMARY_TAG)
@@ -118,7 +117,7 @@ namespace UQMEdit.Load
 			if (magic < 160)
 				return false;
 
-			nameSize = magic - 160;
+			Vars.SaveNameLength = magic - 160;
 
 			if (!LoadSisState ())
 				return false;
@@ -139,10 +138,10 @@ namespace UQMEdit.Load
 			for (int i = 0; i < 16; i++)
 				SummPtr.DeviceList[i] = Functions.ReadByte ();
 
-			if (Read.SaveVersion == 2 || Read.SaveVersion == 4)
+			if (Vars.SaveVersion == 2 || Vars.SaveVersion == 4)
 				SummPtr.res_factor = Functions.ReadByte ();
 
-			SummPtr.SaveName = Functions.ReadStr ((int)nameSize);
+			SummPtr.SaveName = Functions.ReadStr ((int)Vars.SaveNameLength);
 
 			return true;
 		}

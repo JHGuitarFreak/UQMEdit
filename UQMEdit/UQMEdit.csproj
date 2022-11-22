@@ -67,12 +67,9 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Offs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Read.cs" />
-    <Compile Include="Save\Coordinates.cs" />
-    <Compile Include="Save\Summary.cs" />
     <Compile Include="Stars.cs" />
     <Compile Include="Vars.cs" />
     <Compile Include="Write.cs" />
