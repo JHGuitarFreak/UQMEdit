@@ -290,5 +290,48 @@ namespace UQMEdit
 			//ShipFuel.Maximum = MaxFuel;
 			//ShipCrew.Maximum = MaxCrew;
 		}
+
+		private void ReadSpeedChanged (object sender, EventArgs e)
+		{
+			switch (ReadSpeed.Value)
+			{
+				case 4:
+					ReadSpeedLabel.Text = "Very Fast";
+					break;
+				case 3:
+					ReadSpeedLabel.Text = "Fast";
+					break;
+				case 2:
+					ReadSpeedLabel.Text = "Moderate";
+					break;
+				case 1:
+					ReadSpeedLabel.Text = "Slow";
+					break;
+				case 0:
+				default:
+					ReadSpeedLabel.Text = "Very Slow";
+					break;
+			}
+		}
+
+		private void CombatSpeedChanged (object sender, EventArgs e)
+		{
+			switch (CombatSpeed.Value)
+			{
+				case 3:
+					CombatSpeedLabel.Text = "Cyborg++";
+					break;
+				case 2:
+					CombatSpeedLabel.Text = "Cyborg+";
+					break;
+				case 1:
+					CombatSpeedLabel.Text = "Cyborg";
+					break;
+				case 0:
+				default:
+					CombatSpeedLabel.Text = "Disabled";
+					break;
+			}
+		}
 	}
 }

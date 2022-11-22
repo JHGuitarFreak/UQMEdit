@@ -192,6 +192,11 @@ namespace UQMEdit
 					NumericUpDown numericUpDown = (NumericUpDown)control;
 					numericUpDown.Value = 0;
 					break;
+
+				case "TrackBar":
+					TrackBar trackBar = (TrackBar)control;
+					trackBar.Value = 0;
+					break;
 			}
 		}
 

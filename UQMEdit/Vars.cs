@@ -28,9 +28,9 @@ namespace UQMEdit
 		public const byte COMBAT_SPEED_SHIFT = 6;
 		public const byte COMBAT_SPEED_MASK = (((1 << 2) - 1) << COMBAT_SPEED_SHIFT);
 		public const byte NUM_COMBAT_SPEEDS = 4;
-		public const byte MUSIC_DISABLED = (1 << 3);
-		public const byte SOUND_DISABLED = (1 << 4);
-		public const byte CYBORG_ENABLED = (1 << 5);
+		public static readonly byte MUSIC_DISABLED = (1 << 3);
+		public static readonly byte SOUND_DISABLED = (1 << 4);
+		public static readonly byte CYBORG_ENABLED = (1 << 5);
 
 		public static byte SaveVersion = 0;
 		public static uint SaveNameLength = 0;

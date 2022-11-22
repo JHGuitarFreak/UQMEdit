@@ -1,4 +1,4 @@
-﻿namespace UQMEdit
+namespace UQMEdit
 {
 	partial class Main
 	{
@@ -285,13 +285,14 @@
 			this.CrewCost = new System.Windows.Forms.NumericUpDown();
 			this.GlobalFlagsGroupBox = new System.Windows.Forms.GroupBox();
 			this.SubtitleSpeedGroupBox = new System.Windows.Forms.GroupBox();
+			this.ReadSpeedLabel = new System.Windows.Forms.Label();
 			this.ReadSpeed = new System.Windows.Forms.TrackBar();
 			this.MusicSoundGroupBox = new System.Windows.Forms.GroupBox();
 			this.SoundCheckBox = new System.Windows.Forms.CheckBox();
 			this.MusicCheckBox = new System.Windows.Forms.CheckBox();
 			this.CyborgGroupBox = new System.Windows.Forms.GroupBox();
+			this.CombatSpeedLabel = new System.Windows.Forms.Label();
 			this.CombatSpeed = new System.Windows.Forms.TrackBar();
-			this.CyborgCheckBox = new System.Windows.Forms.CheckBox();
 			this.ReadOnly = new System.Windows.Forms.ToolTip(this.components);
 			this.MaxLimits = new System.Windows.Forms.ToolTip(this.components);
 			this.toolStrip1.SuspendLayout();
@@ -393,10 +394,10 @@
 			// 
 			this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
 			this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-			this.Open,
-			this.Reload,
-			this.Save,
-			this.version});
+            this.Open,
+            this.Reload,
+            this.Save,
+            this.version});
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip1.Name = "toolStrip1";
 			this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
@@ -555,12 +556,17 @@
 			// 
 			// TotalMinerals
 			// 
+			this.TotalMinerals.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
 			this.TotalMinerals.Location = new System.Drawing.Point(96, 233);
 			this.TotalMinerals.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.TotalMinerals.Name = "TotalMinerals";
 			this.TotalMinerals.ReadOnly = true;
 			this.TotalMinerals.Size = new System.Drawing.Size(76, 20);
@@ -1776,10 +1782,10 @@
 			// 
 			this.Landers.Location = new System.Drawing.Point(70, 123);
 			this.Landers.Maximum = new decimal(new int[] {
-			999999999,
-			0,
-			0,
-			0});
+            999999999,
+            0,
+            0,
+            0});
 			this.Landers.Name = "Landers";
 			this.Landers.Size = new System.Drawing.Size(88, 20);
 			this.Landers.TabIndex = 6;
@@ -1788,16 +1794,16 @@
 			// BioData
 			// 
 			this.BioData.Increment = new decimal(new int[] {
-			10,
-			0,
-			0,
-			0});
+            10,
+            0,
+            0,
+            0});
 			this.BioData.Location = new System.Drawing.Point(70, 97);
 			this.BioData.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.BioData.Name = "BioData";
 			this.BioData.Size = new System.Drawing.Size(88, 20);
 			this.BioData.TabIndex = 5;
@@ -1806,16 +1812,16 @@
 			// ResUnits
 			// 
 			this.ResUnits.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.ResUnits.Location = new System.Drawing.Point(70, 71);
 			this.ResUnits.Maximum = new decimal(new int[] {
-			42949672,
-			0,
-			0,
-			0});
+            42949672,
+            0,
+            0,
+            0});
 			this.ResUnits.Name = "ResUnits";
 			this.ResUnits.Size = new System.Drawing.Size(88, 20);
 			this.ResUnits.TabIndex = 4;
@@ -1825,16 +1831,16 @@
 			// 
 			this.ShipFuel.DecimalPlaces = 2;
 			this.ShipFuel.Increment = new decimal(new int[] {
-			20,
-			0,
-			0,
-			0});
+            20,
+            0,
+            0,
+            0});
 			this.ShipFuel.Location = new System.Drawing.Point(70, 45);
 			this.ShipFuel.Maximum = new decimal(new int[] {
-			1610,
-			0,
-			0,
-			0});
+            1610,
+            0,
+            0,
+            0});
 			this.ShipFuel.Name = "ShipFuel";
 			this.ShipFuel.Size = new System.Drawing.Size(88, 20);
 			this.ShipFuel.TabIndex = 3;
@@ -1844,10 +1850,10 @@
 			// 
 			this.ShipCrew.Location = new System.Drawing.Point(70, 19);
 			this.ShipCrew.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.ShipCrew.Name = "ShipCrew";
 			this.ShipCrew.Size = new System.Drawing.Size(88, 20);
 			this.ShipCrew.TabIndex = 2;
@@ -1971,16 +1977,16 @@
 			// Exotic
 			// 
 			this.Exotic.Increment = new decimal(new int[] {
-			10,
-			0,
-			0,
-			0});
+            10,
+            0,
+            0,
+            0});
 			this.Exotic.Location = new System.Drawing.Point(90, 201);
 			this.Exotic.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.Exotic.Name = "Exotic";
 			this.Exotic.Size = new System.Drawing.Size(76, 20);
 			this.Exotic.TabIndex = 7;
@@ -1990,16 +1996,16 @@
 			// Radioactive
 			// 
 			this.Radioactive.Increment = new decimal(new int[] {
-			10,
-			0,
-			0,
-			0});
+            10,
+            0,
+            0,
+            0});
 			this.Radioactive.Location = new System.Drawing.Point(90, 175);
 			this.Radioactive.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.Radioactive.Name = "Radioactive";
 			this.Radioactive.Size = new System.Drawing.Size(76, 20);
 			this.Radioactive.TabIndex = 6;
@@ -2009,16 +2015,16 @@
 			// Precious
 			// 
 			this.Precious.Increment = new decimal(new int[] {
-			10,
-			0,
-			0,
-			0});
+            10,
+            0,
+            0,
+            0});
 			this.Precious.Location = new System.Drawing.Point(90, 149);
 			this.Precious.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.Precious.Name = "Precious";
 			this.Precious.Size = new System.Drawing.Size(76, 20);
 			this.Precious.TabIndex = 5;
@@ -2028,16 +2034,16 @@
 			// RareEarth
 			// 
 			this.RareEarth.Increment = new decimal(new int[] {
-			10,
-			0,
-			0,
-			0});
+            10,
+            0,
+            0,
+            0});
 			this.RareEarth.Location = new System.Drawing.Point(90, 123);
 			this.RareEarth.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.RareEarth.Name = "RareEarth";
 			this.RareEarth.Size = new System.Drawing.Size(76, 20);
 			this.RareEarth.TabIndex = 4;
@@ -2047,16 +2053,16 @@
 			// NobleGas
 			// 
 			this.NobleGas.Increment = new decimal(new int[] {
-			10,
-			0,
-			0,
-			0});
+            10,
+            0,
+            0,
+            0});
 			this.NobleGas.Location = new System.Drawing.Point(90, 97);
 			this.NobleGas.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.NobleGas.Name = "NobleGas";
 			this.NobleGas.Size = new System.Drawing.Size(76, 20);
 			this.NobleGas.TabIndex = 3;
@@ -2066,16 +2072,16 @@
 			// BaseMetal
 			// 
 			this.BaseMetal.Increment = new decimal(new int[] {
-			10,
-			0,
-			0,
-			0});
+            10,
+            0,
+            0,
+            0});
 			this.BaseMetal.Location = new System.Drawing.Point(90, 71);
 			this.BaseMetal.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.BaseMetal.Name = "BaseMetal";
 			this.BaseMetal.Size = new System.Drawing.Size(76, 20);
 			this.BaseMetal.TabIndex = 2;
@@ -2085,16 +2091,16 @@
 			// Corrosive
 			// 
 			this.Corrosive.Increment = new decimal(new int[] {
-			10,
-			0,
-			0,
-			0});
+            10,
+            0,
+            0,
+            0});
 			this.Corrosive.Location = new System.Drawing.Point(90, 45);
 			this.Corrosive.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.Corrosive.Name = "Corrosive";
 			this.Corrosive.Size = new System.Drawing.Size(76, 20);
 			this.Corrosive.TabIndex = 1;
@@ -2104,16 +2110,16 @@
 			// Common
 			// 
 			this.Common.Increment = new decimal(new int[] {
-			10,
-			0,
-			0,
-			0});
+            10,
+            0,
+            0,
+            0});
 			this.Common.Location = new System.Drawing.Point(90, 19);
 			this.Common.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.Common.Name = "Common";
 			this.Common.Size = new System.Drawing.Size(76, 20);
 			this.Common.TabIndex = 0;
@@ -2241,16 +2247,16 @@
 			// 
 			this.UniverseY.DecimalPlaces = 1;
 			this.UniverseY.Increment = new decimal(new int[] {
-			10000,
-			0,
-			0,
-			131072});
+            10000,
+            0,
+            0,
+            131072});
 			this.UniverseY.Location = new System.Drawing.Point(53, 43);
 			this.UniverseY.Maximum = new decimal(new int[] {
-			9999,
-			0,
-			0,
-			65536});
+            9999,
+            0,
+            0,
+            65536});
 			this.UniverseY.Name = "UniverseY";
 			this.UniverseY.Size = new System.Drawing.Size(100, 20);
 			this.UniverseY.TabIndex = 1;
@@ -2260,16 +2266,16 @@
 			// 
 			this.UniverseX.DecimalPlaces = 1;
 			this.UniverseX.Increment = new decimal(new int[] {
-			10000,
-			0,
-			0,
-			131072});
+            10000,
+            0,
+            0,
+            131072});
 			this.UniverseX.Location = new System.Drawing.Point(53, 19);
 			this.UniverseX.Maximum = new decimal(new int[] {
-			9999,
-			0,
-			0,
-			65536});
+            9999,
+            0,
+            0,
+            65536});
 			this.UniverseX.Name = "UniverseX";
 			this.UniverseX.Size = new System.Drawing.Size(100, 20);
 			this.UniverseX.TabIndex = 0;
@@ -2341,15 +2347,15 @@
 			// 
 			this.IncrHeight.Location = new System.Drawing.Point(84, 234);
 			this.IncrHeight.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.IncrHeight.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.IncrHeight.Name = "IncrHeight";
 			this.IncrHeight.Size = new System.Drawing.Size(90, 20);
 			this.IncrHeight.TabIndex = 34;
@@ -2368,15 +2374,15 @@
 			// 
 			this.IncrWidth.Location = new System.Drawing.Point(84, 207);
 			this.IncrWidth.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.IncrWidth.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.IncrWidth.Name = "IncrWidth";
 			this.IncrWidth.Size = new System.Drawing.Size(90, 20);
 			this.IncrWidth.TabIndex = 32;
@@ -2395,15 +2401,15 @@
 			// 
 			this.ErrorHeight.Location = new System.Drawing.Point(84, 180);
 			this.ErrorHeight.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.ErrorHeight.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.ErrorHeight.Name = "ErrorHeight";
 			this.ErrorHeight.Size = new System.Drawing.Size(90, 20);
 			this.ErrorHeight.TabIndex = 30;
@@ -2422,15 +2428,15 @@
 			// 
 			this.ErrorWidth.Location = new System.Drawing.Point(84, 153);
 			this.ErrorWidth.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.ErrorWidth.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.ErrorWidth.Name = "ErrorWidth";
 			this.ErrorWidth.Size = new System.Drawing.Size(90, 20);
 			this.ErrorWidth.TabIndex = 28;
@@ -2449,15 +2455,15 @@
 			// 
 			this.FractHeight.Location = new System.Drawing.Point(84, 126);
 			this.FractHeight.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.FractHeight.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.FractHeight.Name = "FractHeight";
 			this.FractHeight.Size = new System.Drawing.Size(90, 20);
 			this.FractHeight.TabIndex = 26;
@@ -2476,15 +2482,15 @@
 			// 
 			this.FractWidth.Location = new System.Drawing.Point(84, 99);
 			this.FractWidth.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.FractWidth.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.FractWidth.Name = "FractWidth";
 			this.FractWidth.Size = new System.Drawing.Size(90, 20);
 			this.FractWidth.TabIndex = 24;
@@ -2503,15 +2509,15 @@
 			// 
 			this.VectorHeight.Location = new System.Drawing.Point(84, 72);
 			this.VectorHeight.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.VectorHeight.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.VectorHeight.Name = "VectorHeight";
 			this.VectorHeight.Size = new System.Drawing.Size(90, 20);
 			this.VectorHeight.TabIndex = 22;
@@ -2521,15 +2527,15 @@
 			// 
 			this.VectorWidth.Location = new System.Drawing.Point(84, 45);
 			this.VectorWidth.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.VectorWidth.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.VectorWidth.Name = "VectorWidth";
 			this.VectorWidth.Size = new System.Drawing.Size(90, 20);
 			this.VectorWidth.TabIndex = 21;
@@ -2557,10 +2563,10 @@
 			// 
 			this.TravelAngle.Location = new System.Drawing.Point(84, 18);
 			this.TravelAngle.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.TravelAngle.Name = "TravelAngle";
 			this.TravelAngle.Size = new System.Drawing.Size(90, 20);
 			this.TravelAngle.TabIndex = 18;
@@ -2602,10 +2608,10 @@
 			// 
 			this.ShipFacing.Location = new System.Drawing.Point(89, 182);
 			this.ShipFacing.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.ShipFacing.Name = "ShipFacing";
 			this.ShipFacing.Size = new System.Drawing.Size(76, 20);
 			this.ShipFacing.TabIndex = 26;
@@ -2624,15 +2630,15 @@
 			// 
 			this.ShipOriginY.Location = new System.Drawing.Point(89, 155);
 			this.ShipOriginY.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.ShipOriginY.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.ShipOriginY.Name = "ShipOriginY";
 			this.ShipOriginY.Size = new System.Drawing.Size(76, 20);
 			this.ShipOriginY.TabIndex = 24;
@@ -2651,15 +2657,15 @@
 			// 
 			this.ShipOriginX.Location = new System.Drawing.Point(89, 128);
 			this.ShipOriginX.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.ShipOriginX.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.ShipOriginX.Name = "ShipOriginX";
 			this.ShipOriginX.Size = new System.Drawing.Size(76, 20);
 			this.ShipOriginX.TabIndex = 22;
@@ -2678,15 +2684,15 @@
 			// 
 			this.IPLocationY.Location = new System.Drawing.Point(89, 101);
 			this.IPLocationY.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.IPLocationY.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.IPLocationY.Name = "IPLocationY";
 			this.IPLocationY.Size = new System.Drawing.Size(76, 20);
 			this.IPLocationY.TabIndex = 20;
@@ -2705,15 +2711,15 @@
 			// 
 			this.IPLocationX.Location = new System.Drawing.Point(89, 74);
 			this.IPLocationX.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.IPLocationX.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.IPLocationX.Name = "IPLocationX";
 			this.IPLocationX.Size = new System.Drawing.Size(76, 20);
 			this.IPLocationX.TabIndex = 18;
@@ -2723,15 +2729,15 @@
 			// 
 			this.AutoPilotY.Location = new System.Drawing.Point(89, 47);
 			this.AutoPilotY.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.AutoPilotY.Minimum = new decimal(new int[] {
-			1,
-			0,
-			0,
-			-2147483648});
+            1,
+            0,
+            0,
+            -2147483648});
 			this.AutoPilotY.Name = "AutoPilotY";
 			this.AutoPilotY.Size = new System.Drawing.Size(76, 20);
 			this.AutoPilotY.TabIndex = 17;
@@ -2759,15 +2765,15 @@
 			// 
 			this.AutoPilotX.Location = new System.Drawing.Point(89, 20);
 			this.AutoPilotX.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.AutoPilotX.Minimum = new decimal(new int[] {
-			1,
-			0,
-			0,
-			-2147483648});
+            1,
+            0,
+            0,
+            -2147483648});
 			this.AutoPilotX.Name = "AutoPilotX";
 			this.AutoPilotX.Size = new System.Drawing.Size(76, 20);
 			this.AutoPilotX.TabIndex = 14;
@@ -2785,7 +2791,7 @@
 			this.ClockStateGroupBox.Controls.Add(this.MonthIndexLabel);
 			this.ClockStateGroupBox.Controls.Add(this.DayIndexLabe);
 			this.ClockStateGroupBox.Controls.Add(this.DayIndex);
-			this.ClockStateGroupBox.Location = new System.Drawing.Point(6, 216);
+			this.ClockStateGroupBox.Location = new System.Drawing.Point(6, 193);
 			this.ClockStateGroupBox.Name = "ClockStateGroupBox";
 			this.ClockStateGroupBox.Size = new System.Drawing.Size(234, 159);
 			this.ClockStateGroupBox.TabIndex = 6;
@@ -2805,15 +2811,15 @@
 			// 
 			this.DayInTicks.Location = new System.Drawing.Point(105, 129);
 			this.DayInTicks.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.DayInTicks.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.DayInTicks.Name = "DayInTicks";
 			this.DayInTicks.Size = new System.Drawing.Size(120, 20);
 			this.DayInTicks.TabIndex = 18;
@@ -2832,15 +2838,15 @@
 			// 
 			this.TickCount.Location = new System.Drawing.Point(105, 102);
 			this.TickCount.Maximum = new decimal(new int[] {
-			32767,
-			0,
-			0,
-			0});
+            32767,
+            0,
+            0,
+            0});
 			this.TickCount.Minimum = new decimal(new int[] {
-			32768,
-			0,
-			0,
-			-2147483648});
+            32768,
+            0,
+            0,
+            -2147483648});
 			this.TickCount.Name = "TickCount";
 			this.TickCount.Size = new System.Drawing.Size(120, 20);
 			this.TickCount.TabIndex = 16;
@@ -2859,10 +2865,10 @@
 			// 
 			this.YearIndex.Location = new System.Drawing.Point(105, 75);
 			this.YearIndex.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.YearIndex.Name = "YearIndex";
 			this.YearIndex.Size = new System.Drawing.Size(120, 20);
 			this.YearIndex.TabIndex = 14;
@@ -2872,10 +2878,10 @@
 			// 
 			this.MonthIndex.Location = new System.Drawing.Point(105, 48);
 			this.MonthIndex.Maximum = new decimal(new int[] {
-			12,
-			0,
-			0,
-			0});
+            12,
+            0,
+            0,
+            0});
 			this.MonthIndex.Name = "MonthIndex";
 			this.MonthIndex.Size = new System.Drawing.Size(120, 20);
 			this.MonthIndex.TabIndex = 13;
@@ -2903,10 +2909,10 @@
 			// 
 			this.DayIndex.Location = new System.Drawing.Point(105, 21);
 			this.DayIndex.Maximum = new decimal(new int[] {
-			31,
-			0,
-			0,
-			0});
+            31,
+            0,
+            0,
+            0});
 			this.DayIndex.Name = "DayIndex";
 			this.DayIndex.Size = new System.Drawing.Size(120, 20);
 			this.DayIndex.TabIndex = 10;
@@ -3021,10 +3027,10 @@
 			// 
 			this.ExoticWorth.Location = new System.Drawing.Point(90, 203);
 			this.ExoticWorth.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.ExoticWorth.Name = "ExoticWorth";
 			this.ExoticWorth.Size = new System.Drawing.Size(76, 20);
 			this.ExoticWorth.TabIndex = 23;
@@ -3034,10 +3040,10 @@
 			// 
 			this.RadioactiveWorth.Location = new System.Drawing.Point(90, 177);
 			this.RadioactiveWorth.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.RadioactiveWorth.Name = "RadioactiveWorth";
 			this.RadioactiveWorth.Size = new System.Drawing.Size(76, 20);
 			this.RadioactiveWorth.TabIndex = 22;
@@ -3047,10 +3053,10 @@
 			// 
 			this.PreciousMetalWorth.Location = new System.Drawing.Point(90, 151);
 			this.PreciousMetalWorth.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.PreciousMetalWorth.Name = "PreciousMetalWorth";
 			this.PreciousMetalWorth.Size = new System.Drawing.Size(76, 20);
 			this.PreciousMetalWorth.TabIndex = 21;
@@ -3060,10 +3066,10 @@
 			// 
 			this.RareEarthWorth.Location = new System.Drawing.Point(90, 125);
 			this.RareEarthWorth.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.RareEarthWorth.Name = "RareEarthWorth";
 			this.RareEarthWorth.Size = new System.Drawing.Size(76, 20);
 			this.RareEarthWorth.TabIndex = 20;
@@ -3073,10 +3079,10 @@
 			// 
 			this.NobleGasWorth.Location = new System.Drawing.Point(90, 99);
 			this.NobleGasWorth.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.NobleGasWorth.Name = "NobleGasWorth";
 			this.NobleGasWorth.Size = new System.Drawing.Size(76, 20);
 			this.NobleGasWorth.TabIndex = 19;
@@ -3086,10 +3092,10 @@
 			// 
 			this.BaseMetalWorth.Location = new System.Drawing.Point(90, 73);
 			this.BaseMetalWorth.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.BaseMetalWorth.Name = "BaseMetalWorth";
 			this.BaseMetalWorth.Size = new System.Drawing.Size(76, 20);
 			this.BaseMetalWorth.TabIndex = 18;
@@ -3099,10 +3105,10 @@
 			// 
 			this.CorrosiveWorth.Location = new System.Drawing.Point(90, 47);
 			this.CorrosiveWorth.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.CorrosiveWorth.Name = "CorrosiveWorth";
 			this.CorrosiveWorth.Size = new System.Drawing.Size(76, 20);
 			this.CorrosiveWorth.TabIndex = 17;
@@ -3112,10 +3118,10 @@
 			// 
 			this.CommonWorth.Location = new System.Drawing.Point(90, 21);
 			this.CommonWorth.Maximum = new decimal(new int[] {
-			65535,
-			0,
-			0,
-			0});
+            65535,
+            0,
+            0,
+            0});
 			this.CommonWorth.Name = "CommonWorth";
 			this.CommonWorth.Size = new System.Drawing.Size(76, 20);
 			this.CommonWorth.TabIndex = 16;
@@ -3174,16 +3180,16 @@
 			// PointDefenseCost
 			// 
 			this.PointDefenseCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.PointDefenseCost.Location = new System.Drawing.Point(105, 423);
 			this.PointDefenseCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.PointDefenseCost.Name = "PointDefenseCost";
 			this.PointDefenseCost.Size = new System.Drawing.Size(120, 20);
 			this.PointDefenseCost.TabIndex = 30;
@@ -3203,16 +3209,16 @@
 			// TrackingSystemCost
 			// 
 			this.TrackingSystemCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.TrackingSystemCost.Location = new System.Drawing.Point(105, 396);
 			this.TrackingSystemCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.TrackingSystemCost.Name = "TrackingSystemCost";
 			this.TrackingSystemCost.Size = new System.Drawing.Size(120, 20);
 			this.TrackingSystemCost.TabIndex = 28;
@@ -3232,16 +3238,16 @@
 			// HellboreCannonCost
 			// 
 			this.HellboreCannonCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.HellboreCannonCost.Location = new System.Drawing.Point(105, 369);
 			this.HellboreCannonCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.HellboreCannonCost.Name = "HellboreCannonCost";
 			this.HellboreCannonCost.Size = new System.Drawing.Size(120, 20);
 			this.HellboreCannonCost.TabIndex = 26;
@@ -3261,16 +3267,16 @@
 			// FusionBlasterCost
 			// 
 			this.FusionBlasterCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.FusionBlasterCost.Location = new System.Drawing.Point(105, 342);
 			this.FusionBlasterCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.FusionBlasterCost.Name = "FusionBlasterCost";
 			this.FusionBlasterCost.Size = new System.Drawing.Size(120, 20);
 			this.FusionBlasterCost.TabIndex = 24;
@@ -3290,16 +3296,16 @@
 			// IonBoltGunCost
 			// 
 			this.IonBoltGunCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.IonBoltGunCost.Location = new System.Drawing.Point(105, 315);
 			this.IonBoltGunCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.IonBoltGunCost.Name = "IonBoltGunCost";
 			this.IonBoltGunCost.Size = new System.Drawing.Size(120, 20);
 			this.IonBoltGunCost.TabIndex = 22;
@@ -3319,16 +3325,16 @@
 			// ShivaFurnaceCost
 			// 
 			this.ShivaFurnaceCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.ShivaFurnaceCost.Location = new System.Drawing.Point(105, 288);
 			this.ShivaFurnaceCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.ShivaFurnaceCost.Name = "ShivaFurnaceCost";
 			this.ShivaFurnaceCost.Size = new System.Drawing.Size(120, 20);
 			this.ShivaFurnaceCost.TabIndex = 20;
@@ -3348,16 +3354,16 @@
 			// DynamoUnitCost
 			// 
 			this.DynamoUnitCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.DynamoUnitCost.Location = new System.Drawing.Point(105, 261);
 			this.DynamoUnitCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.DynamoUnitCost.Name = "DynamoUnitCost";
 			this.DynamoUnitCost.Size = new System.Drawing.Size(120, 20);
 			this.DynamoUnitCost.TabIndex = 18;
@@ -3377,16 +3383,16 @@
 			// HiEffFuelSysCost
 			// 
 			this.HiEffFuelSysCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.HiEffFuelSysCost.Location = new System.Drawing.Point(105, 234);
 			this.HiEffFuelSysCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.HiEffFuelSysCost.Name = "HiEffFuelSysCost";
 			this.HiEffFuelSysCost.Size = new System.Drawing.Size(120, 20);
 			this.HiEffFuelSysCost.TabIndex = 16;
@@ -3406,16 +3412,16 @@
 			// FuelTankCost
 			// 
 			this.FuelTankCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.FuelTankCost.Location = new System.Drawing.Point(105, 207);
 			this.FuelTankCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.FuelTankCost.Name = "FuelTankCost";
 			this.FuelTankCost.Size = new System.Drawing.Size(120, 20);
 			this.FuelTankCost.TabIndex = 14;
@@ -3435,16 +3441,16 @@
 			// StorageBayCost
 			// 
 			this.StorageBayCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.StorageBayCost.Location = new System.Drawing.Point(105, 180);
 			this.StorageBayCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.StorageBayCost.Name = "StorageBayCost";
 			this.StorageBayCost.Size = new System.Drawing.Size(120, 20);
 			this.StorageBayCost.TabIndex = 12;
@@ -3464,16 +3470,16 @@
 			// CrewPodCost
 			// 
 			this.CrewPodCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.CrewPodCost.Location = new System.Drawing.Point(105, 153);
 			this.CrewPodCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.CrewPodCost.Name = "CrewPodCost";
 			this.CrewPodCost.Size = new System.Drawing.Size(120, 20);
 			this.CrewPodCost.TabIndex = 10;
@@ -3493,16 +3499,16 @@
 			// JetCost
 			// 
 			this.JetCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.JetCost.Location = new System.Drawing.Point(105, 126);
 			this.JetCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.JetCost.Name = "JetCost";
 			this.JetCost.Size = new System.Drawing.Size(120, 20);
 			this.JetCost.TabIndex = 8;
@@ -3522,16 +3528,16 @@
 			// ThrusterCost
 			// 
 			this.ThrusterCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.ThrusterCost.Location = new System.Drawing.Point(105, 99);
 			this.ThrusterCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.ThrusterCost.Name = "ThrusterCost";
 			this.ThrusterCost.Size = new System.Drawing.Size(120, 20);
 			this.ThrusterCost.TabIndex = 6;
@@ -3551,16 +3557,16 @@
 			// LanderCost
 			// 
 			this.LanderCost.Increment = new decimal(new int[] {
-			50,
-			0,
-			0,
-			0});
+            50,
+            0,
+            0,
+            0});
 			this.LanderCost.Location = new System.Drawing.Point(105, 72);
 			this.LanderCost.Maximum = new decimal(new int[] {
-			12500,
-			0,
-			0,
-			0});
+            12500,
+            0,
+            0,
+            0});
 			this.LanderCost.Name = "LanderCost";
 			this.LanderCost.Size = new System.Drawing.Size(120, 20);
 			this.LanderCost.TabIndex = 4;
@@ -3570,13 +3576,19 @@
 			// 
 			// FuelCost
 			// 
+			this.FuelCost.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
 			this.FuelCost.Location = new System.Drawing.Point(105, 45);
 			this.FuelCost.Maximum = new decimal(new int[] {
-			20,
-			0,
-			0,
-			0});
+            255,
+            0,
+            0,
+            0});
 			this.FuelCost.Name = "FuelCost";
+			this.FuelCost.ReadOnly = true;
 			this.FuelCost.Size = new System.Drawing.Size(120, 20);
 			this.FuelCost.TabIndex = 3;
 			this.FuelCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3603,10 +3615,10 @@
 			// 
 			this.CrewCost.Location = new System.Drawing.Point(105, 18);
 			this.CrewCost.Maximum = new decimal(new int[] {
-			255,
-			0,
-			0,
-			0});
+            255,
+            0,
+            0,
+            0});
 			this.CrewCost.Name = "CrewCost";
 			this.CrewCost.Size = new System.Drawing.Size(120, 20);
 			this.CrewCost.TabIndex = 0;
@@ -3619,13 +3631,14 @@
 			this.GlobalFlagsGroupBox.Controls.Add(this.CyborgGroupBox);
 			this.GlobalFlagsGroupBox.Location = new System.Drawing.Point(6, 6);
 			this.GlobalFlagsGroupBox.Name = "GlobalFlagsGroupBox";
-			this.GlobalFlagsGroupBox.Size = new System.Drawing.Size(244, 204);
+			this.GlobalFlagsGroupBox.Size = new System.Drawing.Size(244, 181);
 			this.GlobalFlagsGroupBox.TabIndex = 3;
 			this.GlobalFlagsGroupBox.TabStop = false;
 			this.GlobalFlagsGroupBox.Text = "Global Flags";
 			// 
 			// SubtitleSpeedGroupBox
 			// 
+			this.SubtitleSpeedGroupBox.Controls.Add(this.ReadSpeedLabel);
 			this.SubtitleSpeedGroupBox.Controls.Add(this.ReadSpeed);
 			this.SubtitleSpeedGroupBox.Location = new System.Drawing.Point(6, 19);
 			this.SubtitleSpeedGroupBox.Name = "SubtitleSpeedGroupBox";
@@ -3633,6 +3646,15 @@
 			this.SubtitleSpeedGroupBox.TabIndex = 0;
 			this.SubtitleSpeedGroupBox.TabStop = false;
 			this.SubtitleSpeedGroupBox.Text = "Subtitle Speed";
+			// 
+			// ReadSpeedLabel
+			// 
+			this.ReadSpeedLabel.AutoSize = true;
+			this.ReadSpeedLabel.Location = new System.Drawing.Point(6, 52);
+			this.ReadSpeedLabel.Name = "ReadSpeedLabel";
+			this.ReadSpeedLabel.Size = new System.Drawing.Size(38, 13);
+			this.ReadSpeedLabel.TabIndex = 1;
+			this.ReadSpeedLabel.Text = "Speed";
 			// 
 			// ReadSpeed
 			// 
@@ -3642,6 +3664,7 @@
 			this.ReadSpeed.Name = "ReadSpeed";
 			this.ReadSpeed.Size = new System.Drawing.Size(104, 45);
 			this.ReadSpeed.TabIndex = 0;
+			this.ReadSpeed.ValueChanged += new System.EventHandler(this.ReadSpeedChanged);
 			// 
 			// MusicSoundGroupBox
 			// 
@@ -3676,33 +3699,33 @@
 			// 
 			// CyborgGroupBox
 			// 
+			this.CyborgGroupBox.Controls.Add(this.CombatSpeedLabel);
 			this.CyborgGroupBox.Controls.Add(this.CombatSpeed);
-			this.CyborgGroupBox.Controls.Add(this.CyborgCheckBox);
 			this.CyborgGroupBox.Location = new System.Drawing.Point(6, 98);
 			this.CyborgGroupBox.Name = "CyborgGroupBox";
-			this.CyborgGroupBox.Size = new System.Drawing.Size(118, 100);
+			this.CyborgGroupBox.Size = new System.Drawing.Size(118, 73);
 			this.CyborgGroupBox.TabIndex = 1;
 			this.CyborgGroupBox.TabStop = false;
 			this.CyborgGroupBox.Text = "Cyborg";
 			// 
+			// CombatSpeedLabel
+			// 
+			this.CombatSpeedLabel.AutoSize = true;
+			this.CombatSpeedLabel.Location = new System.Drawing.Point(7, 50);
+			this.CombatSpeedLabel.Name = "CombatSpeedLabel";
+			this.CombatSpeedLabel.Size = new System.Drawing.Size(38, 13);
+			this.CombatSpeedLabel.TabIndex = 2;
+			this.CombatSpeedLabel.Text = "Speed";
+			// 
 			// CombatSpeed
 			// 
 			this.CombatSpeed.LargeChange = 1;
-			this.CombatSpeed.Location = new System.Drawing.Point(7, 44);
-			this.CombatSpeed.Maximum = 2;
+			this.CombatSpeed.Location = new System.Drawing.Point(6, 19);
+			this.CombatSpeed.Maximum = 3;
 			this.CombatSpeed.Name = "CombatSpeed";
 			this.CombatSpeed.Size = new System.Drawing.Size(104, 45);
 			this.CombatSpeed.TabIndex = 1;
-			// 
-			// CyborgCheckBox
-			// 
-			this.CyborgCheckBox.AutoSize = true;
-			this.CyborgCheckBox.Location = new System.Drawing.Point(7, 20);
-			this.CyborgCheckBox.Name = "CyborgCheckBox";
-			this.CyborgCheckBox.Size = new System.Drawing.Size(101, 17);
-			this.CyborgCheckBox.TabIndex = 0;
-			this.CyborgCheckBox.Text = "Cyborg Enabled";
-			this.CyborgCheckBox.UseVisualStyleBackColor = true;
+			this.CombatSpeed.ValueChanged += new System.EventHandler(this.CombatSpeedChanged);
 			// 
 			// Main
 			// 
@@ -3848,7 +3871,6 @@
 		private System.Windows.Forms.ToolStripButton Open;
 		private System.Windows.Forms.ToolStripButton Reload;
 		private System.Windows.Forms.ToolStripButton Save;
-		private System.Windows.Forms.TabControl Tabs;
 		private System.Windows.Forms.TabPage Summary;
 		private System.Windows.Forms.TabPage Coordinates;
 		private System.Windows.Forms.ListBox StarList;
@@ -4006,12 +4028,10 @@
 		public System.Windows.Forms.CheckBox extendedCheckBox;
 		private System.Windows.Forms.Label difficultyLabel;
 		public System.Windows.Forms.ComboBox difficultyBox;
-		private System.Windows.Forms.TabPage Extras;
 		private System.Windows.Forms.GroupBox SubtitleSpeedGroupBox;
 		private System.Windows.Forms.GroupBox CyborgGroupBox;
 		private System.Windows.Forms.GroupBox MusicSoundGroupBox;
 		private System.Windows.Forms.GroupBox GlobalFlagsGroupBox;
-		private System.Windows.Forms.GroupBox CostsGroupBox;
 		private System.Windows.Forms.Label LanderCostLabel;
 		private System.Windows.Forms.Label FuelCostLabel;
 		private System.Windows.Forms.Label CrewCostLabel;
@@ -4028,7 +4048,6 @@
 		private System.Windows.Forms.Label HellboreCannonCostLabel;
 		private System.Windows.Forms.Label TrackingSystemCostLabel;
 		private System.Windows.Forms.Label PointDefenseCostLabel;
-		private System.Windows.Forms.GroupBox ElementWorthGroupBox;
 		private System.Windows.Forms.Label ExoticWorthLabel;
 		public System.Windows.Forms.Label RadioactiveWorthLabel;
 		private System.Windows.Forms.Label PreciousMetalWorthLabel;
@@ -4070,7 +4089,6 @@
 		private System.Windows.Forms.Label VectorWidthLabel;
 		private System.Windows.Forms.Label TravelAngleLabel;
 		public System.Windows.Forms.TrackBar ReadSpeed;
-		public System.Windows.Forms.CheckBox CyborgCheckBox;
 		public System.Windows.Forms.TrackBar CombatSpeed;
 		public System.Windows.Forms.CheckBox MusicCheckBox;
 		public System.Windows.Forms.CheckBox SoundCheckBox;
@@ -4111,5 +4129,11 @@
 		public System.Windows.Forms.NumericUpDown YearIndex;
 		public System.Windows.Forms.NumericUpDown MonthIndex;
 		public System.Windows.Forms.NumericUpDown DayIndex;
+		public System.Windows.Forms.GroupBox ElementWorthGroupBox;
+		public System.Windows.Forms.GroupBox CostsGroupBox;
+		private System.Windows.Forms.Label ReadSpeedLabel;
+		private System.Windows.Forms.Label CombatSpeedLabel;
+		public System.Windows.Forms.TabControl Tabs;
+		public System.Windows.Forms.TabPage Extras;
 	}
 }

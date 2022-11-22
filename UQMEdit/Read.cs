@@ -61,9 +61,17 @@ namespace UQMEdit
 			};
 
 			if (Vars.SaveVersion > 1)
+			{
 				FullyLoadSave = Modern.LoadGame ();
+				Window.Extras.Enabled = true;
+				Window.Extras.Text = "Extras";
+			}
 			else
+			{
 				FullyLoadSave = Legacy.LoadGame ();
+				Window.Extras.Enabled = false;
+				Window.Extras.Text = "Extras (Disabled)";
+			}
 
 			if (FullyLoadSave)
 			{
@@ -227,32 +235,27 @@ namespace UQMEdit
 				if (Vars.SaveVersion > 1)
 				{
 					// Global Flags
-
-					Window.ReadSpeed.Value = GSPtr.glob_flags & Vars.READ_SPEED_MASK;
-					Window.CyborgCheckBox.Checked = Convert.ToBoolean (GSPtr.glob_flags & Vars.CYBORG_ENABLED);
-
-					{
-						int CombatSpeed = (GSPtr.glob_flags & Vars.COMBAT_SPEED_MASK) / 32;
-						byte temp;
-
-						switch (CombatSpeed)
-						{
-							case 6: temp = 2; break;
-							case 4: temp = 1; break;
-							case 2:
-							default:
-								temp = 0; break;
-						}
-						Window.CombatSpeed.Value = temp;
-					}
-
-					Window.MusicCheckBox.Checked = Convert.ToBoolean (GSPtr.glob_flags & Vars.MUSIC_DISABLED);
-					Window.SoundCheckBox.Checked = Convert.ToBoolean (GSPtr.glob_flags & Vars.SOUND_DISABLED);
+					Window.ReadSpeed.Enabled = Vars.SaveVersion != 3 ? true : false;
+					Window.ReadSpeed.Value        = GSPtr.glob_flags & Vars.READ_SPEED_MASK;
+					// Window.CyborgCheckBox.Checked = Convert.ToBoolean (GSPtr.glob_flags & Vars.CYBORG_ENABLED);
+					Window.CombatSpeed.Value      = (GSPtr.glob_flags & Vars.COMBAT_SPEED_MASK) >> Vars.COMBAT_SPEED_SHIFT;
+					Window.MusicCheckBox.Checked  = Convert.ToBoolean (GSPtr.glob_flags & Vars.MUSIC_DISABLED);
+					Window.SoundCheckBox.Checked  = Convert.ToBoolean (GSPtr.glob_flags & Vars.SOUND_DISABLED);
 
 					// Costs
 
-					Window.CrewCost.Value = GSPtr.CrewCost;
-					Window.FuelCost.Value = GSPtr.FuelCost;
+					Window.CrewCost.Value           = GSPtr.CrewCost;
+					if (Vars.SaveVersion == 3)
+					{
+						Window.FuelCost.ReadOnly = false;
+						Window.FuelCost.Increment = 1;
+					}
+					else
+					{
+						Window.FuelCost.ReadOnly = true;
+						Window.FuelCost.Increment = 0;
+					}
+					Window.FuelCost.Value           = GSPtr.FuelCost;
 					Window.LanderCost.Value         = GSPtr.ModuleCost[0]  * 50;
 					Window.ThrusterCost.Value       = GSPtr.ModuleCost[1]  * 50;
 					Window.JetCost.Value            = GSPtr.ModuleCost[2]  * 50;

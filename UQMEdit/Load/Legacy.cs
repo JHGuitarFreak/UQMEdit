@@ -21,7 +21,7 @@ namespace UQMEdit.Load
 
 		public static bool LoadGameState ()
 		{
-			Vars.LastOffset += 1;
+			Vars.LastOffset++;
 
 			GSPtr.glob_flags = Functions.ReadByte ();
 			GSPtr.CrewCost = Functions.ReadByte ();
@@ -124,10 +124,10 @@ namespace UQMEdit.Load
 			if (Vars.SaveVersion == 1)
 			{
 				SummPtr.res_factor = Functions.ReadByte ();
-				Vars.LastOffset += 1;
+				Vars.LastOffset++;
 			}
 
-			Vars.LastOffset += 1;
+			Vars.LastOffset++;
 
 			return true;
 		}
