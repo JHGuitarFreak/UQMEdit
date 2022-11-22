@@ -290,8 +290,8 @@ namespace UQMEdit
 
 					// Ship Current Location
 
-					Window.AutoPilotX.Value  = GSPtr.autopilot_x;
-					Window.AutoPilotY.Value  = GSPtr.autopilot_y;
+					Window.AutoPilotX.Value  = GSPtr.autopilot_x == -1 ? -1 : (decimal)GSPtr.autopilot_x / 10;
+					Window.AutoPilotY.Value  = GSPtr.autopilot_y == -1 ? -1 : (decimal)GSPtr.autopilot_y / 10;
 					Window.IPLocationX.Value = GSPtr.ip_location_x;
 					Window.IPLocationY.Value = GSPtr.ip_location_y;
 					Window.ShipOriginX.Value = GSPtr.ShipStamp_x;

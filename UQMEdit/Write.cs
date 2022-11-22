@@ -91,8 +91,8 @@ namespace UQMEdit
 
 			SaveClockState ();
 
-			Functions.WriteShort ((short)Window.AutoPilotX.Value);
-			Functions.WriteShort ((short)Window.AutoPilotY.Value);
+			Functions.WriteShort ((short)(Window.AutoPilotX.Value == -1 ? -1 : (Window.AutoPilotX.Value * 10)));
+			Functions.WriteShort ((short)(Window.AutoPilotY.Value == -1 ? -1 : (Window.AutoPilotY.Value * 10)));
 			Functions.WriteShort ((short)Window.IPLocationX.Value);
 			Functions.WriteShort ((short)Window.IPLocationY.Value);
 			Functions.WriteShort ((short)Window.ShipOriginX.Value);

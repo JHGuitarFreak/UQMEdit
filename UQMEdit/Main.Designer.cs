@@ -2727,12 +2727,13 @@ namespace UQMEdit
 			// 
 			// AutoPilotY
 			// 
+			this.AutoPilotY.DecimalPlaces = 1;
 			this.AutoPilotY.Location = new System.Drawing.Point(89, 47);
 			this.AutoPilotY.Maximum = new decimal(new int[] {
-            32767,
+            9999,
             0,
             0,
-            0});
+            65536});
 			this.AutoPilotY.Minimum = new decimal(new int[] {
             1,
             0,
@@ -2763,12 +2764,13 @@ namespace UQMEdit
 			// 
 			// AutoPilotX
 			// 
+			this.AutoPilotX.DecimalPlaces = 1;
 			this.AutoPilotX.Location = new System.Drawing.Point(89, 20);
 			this.AutoPilotX.Maximum = new decimal(new int[] {
-            32767,
+            9999,
             0,
             0,
-            0});
+            65536});
 			this.AutoPilotX.Minimum = new decimal(new int[] {
             1,
             0,
