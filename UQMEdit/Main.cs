@@ -116,6 +116,84 @@ namespace UQMEdit
 										Radioactive.Value + Exotic.Value;
 		}
 
+		private decimal nearestFifty (decimal value)
+		{
+			if (((int)value % 50) != 0)
+				return Math.Round(value / 50) * 50;
+			else
+				return value;
+		}
+
+		private void LanderCostChanged (object sender, EventArgs e)
+		{
+			LanderCost.Value = nearestFifty (LanderCost.Value);
+		}
+
+		private void ThrusterCostChanged (object sender, EventArgs e)
+		{
+			ThrusterCost.Value = nearestFifty (ThrusterCost.Value);
+		}
+
+		private void JetCostChanged (object sender, EventArgs e)
+		{
+			JetCost.Value = nearestFifty (JetCost.Value);
+		}
+
+		private void CrewPodCostChanged (object sender, EventArgs e)
+		{
+			CrewPodCost.Value = nearestFifty (CrewPodCost.Value);
+		}
+
+		private void StorageBayCostChanged (object sender, EventArgs e)
+		{
+			StorageBayCost.Value = nearestFifty (StorageBayCost.Value);
+		}
+
+		private void FuelTankCostChanged (object sender, EventArgs e)
+		{
+			FuelTankCost.Value = nearestFifty (FuelTankCost.Value);
+		}
+
+		private void HiEffFuelSysCostChanged (object sender, EventArgs e)
+		{
+			HiEffFuelSysCost.Value = nearestFifty (HiEffFuelSysCost.Value);
+		}
+
+		private void DynamoUnitCostChanged (object sender, EventArgs e)
+		{
+			DynamoUnitCost.Value = nearestFifty (DynamoUnitCost.Value);
+		}
+
+		private void ShivaFurnaceCostChanged (object sender, EventArgs e)
+		{
+			ShivaFurnaceCost.Value = nearestFifty (ShivaFurnaceCost.Value);
+		}
+
+		private void IonBoltGunCostChanged (object sender, EventArgs e)
+		{
+			IonBoltGunCost.Value = nearestFifty (IonBoltGunCost.Value);
+		}
+
+		private void FusionBlasterCostChanged (object sender, EventArgs e)
+		{
+			FusionBlasterCost.Value = nearestFifty (FusionBlasterCost.Value);
+		}
+
+		private void HellboreCannonCostChanged (object sender, EventArgs e)
+		{
+			HellboreCannonCost.Value = nearestFifty (HellboreCannonCost.Value);
+		}
+
+		private void TrackingSystemCostChanged (object sender, EventArgs e)
+		{
+			TrackingSystemCost.Value = nearestFifty (TrackingSystemCost.Value);
+		}
+
+		private void PointDefenseCostChanged (object sender, EventArgs e)
+		{
+			PointDefenseCost.Value = nearestFifty (PointDefenseCost.Value);
+		}
+
 		private void Save_Click(object sender, EventArgs e) {
 			Write.Save(CurrentFile, this);
 		}

@@ -406,7 +406,7 @@
 			// 
 			// Open
 			// 
-			this.Open.Image = global::UQMEdit.Properties.Resources.Open_Image;
+			this.Open.Image = ((System.Drawing.Image)(resources.GetObject("Open.Image")));
 			this.Open.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.Open.Name = "Open";
 			this.Open.Size = new System.Drawing.Size(56, 22);
@@ -416,7 +416,7 @@
 			// Reload
 			// 
 			this.Reload.Enabled = false;
-			this.Reload.Image = global::UQMEdit.Properties.Resources.Reload_Image;
+			this.Reload.Image = ((System.Drawing.Image)(resources.GetObject("Reload.Image")));
 			this.Reload.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.Reload.Name = "Reload";
 			this.Reload.Size = new System.Drawing.Size(63, 22);
@@ -427,7 +427,7 @@
 			// 
 			this.Save.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.Save.Enabled = false;
-			this.Save.Image = global::UQMEdit.Properties.Resources.Save_Image;
+			this.Save.Image = ((System.Drawing.Image)(resources.GetObject("Save.Image")));
 			this.Save.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.Save.Name = "Save";
 			this.Save.Size = new System.Drawing.Size(23, 22);
@@ -2935,7 +2935,7 @@
 			this.ElementWorthGroupBox.Size = new System.Drawing.Size(175, 232);
 			this.ElementWorthGroupBox.TabIndex = 5;
 			this.ElementWorthGroupBox.TabStop = false;
-			this.ElementWorthGroupBox.Text = "Element Worths";
+			this.ElementWorthGroupBox.Text = "Element Worths (in R.U.)";
 			// 
 			// ExoticWorthLabel
 			// 
@@ -3160,7 +3160,7 @@
 			this.CostsGroupBox.Size = new System.Drawing.Size(233, 452);
 			this.CostsGroupBox.TabIndex = 4;
 			this.CostsGroupBox.TabStop = false;
-			this.CostsGroupBox.Text = "Costs";
+			this.CostsGroupBox.Text = "Costs (in R.U.)";
 			// 
 			// PointDefenseCostLabel
 			// 
@@ -3188,6 +3188,8 @@
 			this.PointDefenseCost.Size = new System.Drawing.Size(120, 20);
 			this.PointDefenseCost.TabIndex = 30;
 			this.PointDefenseCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.PointDefenseCost.ValueChanged += new System.EventHandler(this.PointDefenseCostChanged);
+			this.PointDefenseCost.MouseCaptureChanged += new System.EventHandler(this.PointDefenseCostChanged);
 			// 
 			// TrackingSystemCostLabel
 			// 
@@ -3215,6 +3217,8 @@
 			this.TrackingSystemCost.Size = new System.Drawing.Size(120, 20);
 			this.TrackingSystemCost.TabIndex = 28;
 			this.TrackingSystemCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.TrackingSystemCost.ValueChanged += new System.EventHandler(this.TrackingSystemCostChanged);
+			this.TrackingSystemCost.MouseCaptureChanged += new System.EventHandler(this.TrackingSystemCostChanged);
 			// 
 			// HellboreCannonCostLabel
 			// 
@@ -3242,6 +3246,8 @@
 			this.HellboreCannonCost.Size = new System.Drawing.Size(120, 20);
 			this.HellboreCannonCost.TabIndex = 26;
 			this.HellboreCannonCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.HellboreCannonCost.ValueChanged += new System.EventHandler(this.HellboreCannonCostChanged);
+			this.HellboreCannonCost.MouseCaptureChanged += new System.EventHandler(this.HellboreCannonCostChanged);
 			// 
 			// FusionBlasterCostLabel
 			// 
@@ -3269,6 +3275,8 @@
 			this.FusionBlasterCost.Size = new System.Drawing.Size(120, 20);
 			this.FusionBlasterCost.TabIndex = 24;
 			this.FusionBlasterCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.FusionBlasterCost.ValueChanged += new System.EventHandler(this.FusionBlasterCostChanged);
+			this.FusionBlasterCost.MouseCaptureChanged += new System.EventHandler(this.FusionBlasterCostChanged);
 			// 
 			// IonBoltGunCostLabel
 			// 
@@ -3296,6 +3304,8 @@
 			this.IonBoltGunCost.Size = new System.Drawing.Size(120, 20);
 			this.IonBoltGunCost.TabIndex = 22;
 			this.IonBoltGunCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.IonBoltGunCost.ValueChanged += new System.EventHandler(this.IonBoltGunCostChanged);
+			this.IonBoltGunCost.MouseCaptureChanged += new System.EventHandler(this.IonBoltGunCostChanged);
 			// 
 			// ShivaFurnaceCostLabel
 			// 
@@ -3323,6 +3333,8 @@
 			this.ShivaFurnaceCost.Size = new System.Drawing.Size(120, 20);
 			this.ShivaFurnaceCost.TabIndex = 20;
 			this.ShivaFurnaceCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.ShivaFurnaceCost.ValueChanged += new System.EventHandler(this.ShivaFurnaceCostChanged);
+			this.ShivaFurnaceCost.MouseCaptureChanged += new System.EventHandler(this.ShivaFurnaceCostChanged);
 			// 
 			// DynamoUnitCostLabel
 			// 
@@ -3350,6 +3362,8 @@
 			this.DynamoUnitCost.Size = new System.Drawing.Size(120, 20);
 			this.DynamoUnitCost.TabIndex = 18;
 			this.DynamoUnitCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.DynamoUnitCost.ValueChanged += new System.EventHandler(this.DynamoUnitCostChanged);
+			this.DynamoUnitCost.MouseCaptureChanged += new System.EventHandler(this.DynamoUnitCostChanged);
 			// 
 			// HiEffFuelSysCostLabel
 			// 
@@ -3377,6 +3391,8 @@
 			this.HiEffFuelSysCost.Size = new System.Drawing.Size(120, 20);
 			this.HiEffFuelSysCost.TabIndex = 16;
 			this.HiEffFuelSysCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.HiEffFuelSysCost.ValueChanged += new System.EventHandler(this.HiEffFuelSysCostChanged);
+			this.HiEffFuelSysCost.MouseCaptureChanged += new System.EventHandler(this.HiEffFuelSysCostChanged);
 			// 
 			// FuelTankCostLabel
 			// 
@@ -3404,6 +3420,8 @@
 			this.FuelTankCost.Size = new System.Drawing.Size(120, 20);
 			this.FuelTankCost.TabIndex = 14;
 			this.FuelTankCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.FuelTankCost.ValueChanged += new System.EventHandler(this.FuelTankCostChanged);
+			this.FuelTankCost.MouseCaptureChanged += new System.EventHandler(this.FuelTankCostChanged);
 			// 
 			// StorageBayCostLabel
 			// 
@@ -3431,6 +3449,8 @@
 			this.StorageBayCost.Size = new System.Drawing.Size(120, 20);
 			this.StorageBayCost.TabIndex = 12;
 			this.StorageBayCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.StorageBayCost.ValueChanged += new System.EventHandler(this.StorageBayCostChanged);
+			this.StorageBayCost.MouseCaptureChanged += new System.EventHandler(this.StorageBayCostChanged);
 			// 
 			// CrewPodCostLabel
 			// 
@@ -3458,6 +3478,8 @@
 			this.CrewPodCost.Size = new System.Drawing.Size(120, 20);
 			this.CrewPodCost.TabIndex = 10;
 			this.CrewPodCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.CrewPodCost.ValueChanged += new System.EventHandler(this.CrewPodCostChanged);
+			this.CrewPodCost.MouseCaptureChanged += new System.EventHandler(this.CrewPodCostChanged);
 			// 
 			// JetCostLabel
 			// 
@@ -3485,6 +3507,8 @@
 			this.JetCost.Size = new System.Drawing.Size(120, 20);
 			this.JetCost.TabIndex = 8;
 			this.JetCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.JetCost.ValueChanged += new System.EventHandler(this.JetCostChanged);
+			this.JetCost.MouseCaptureChanged += new System.EventHandler(this.JetCostChanged);
 			// 
 			// ThrusterCostLabel
 			// 
@@ -3512,6 +3536,8 @@
 			this.ThrusterCost.Size = new System.Drawing.Size(120, 20);
 			this.ThrusterCost.TabIndex = 6;
 			this.ThrusterCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.ThrusterCost.ValueChanged += new System.EventHandler(this.ThrusterCostChanged);
+			this.ThrusterCost.MouseCaptureChanged += new System.EventHandler(this.ThrusterCostChanged);
 			// 
 			// LanderCostLabel
 			// 
@@ -3539,6 +3565,8 @@
 			this.LanderCost.Size = new System.Drawing.Size(120, 20);
 			this.LanderCost.TabIndex = 4;
 			this.LanderCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.LanderCost.ValueChanged += new System.EventHandler(this.LanderCostChanged);
+			this.LanderCost.MouseCaptureChanged += new System.EventHandler(this.LanderCostChanged);
 			// 
 			// FuelCost
 			// 
