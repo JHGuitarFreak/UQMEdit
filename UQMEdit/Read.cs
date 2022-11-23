@@ -141,13 +141,24 @@ namespace UQMEdit
 
 				if (Vars.SaveVersion == 2 || Vars.SaveVersion == 4)
 				{
+					{
+						byte a = SummPtr.Activity;
+						bool e = a == 3 || a == 6;
+
+						Window.difficultyBox.DropDownStyle =  e ? ComboBoxStyle.DropDownList : ComboBoxStyle.Simple;
+						Window.difficultyBox.Enabled       =  e;
+						Window.extendedCheckBox.Enabled    =  e;
+						Window.extendedCheckBox.AutoCheck  =  e;
+						Window.nomadCheckBox.Enabled       =  e;
+						Window.nomadCheckBox.AutoCheck     =  e;
+						Window.CustomSeed.ReadOnly         = !e;
+						Window.CustomSeed.Enabled          =  e;
+					}
+
 					Window.difficultyBox.SelectedIndex = SSPtr.Difficulty;
 					Window.extendedCheckBox.Checked    = Convert.ToBoolean (SSPtr.Extended);
 					Window.nomadCheckBox.Checked       = Convert.ToBoolean (SSPtr.Nomad);
-					Window.CustomSeed.Text             = SSPtr.Seed.ToString ();
-
-					if (Window.CustomSeed.Text == "0")
-						Window.CustomSeed.Text = "16807";
+					Window.CustomSeed.Value            = SSPtr.Seed;
 				}
 
 				// SummPtr
@@ -241,6 +252,9 @@ namespace UQMEdit
 					Window.CombatSpeed.Value      = (GSPtr.glob_flags & Vars.COMBAT_SPEED_MASK) >> Vars.COMBAT_SPEED_SHIFT;
 					Window.MusicCheckBox.Checked  = Convert.ToBoolean (GSPtr.glob_flags & Vars.MUSIC_DISABLED);
 					Window.SoundCheckBox.Checked  = Convert.ToBoolean (GSPtr.glob_flags & Vars.SOUND_DISABLED);
+
+					if (Window.CombatSpeed.Value == 0)
+						Window.CombatSpeedLabel.Text = "Disabled";
 
 					// Costs
 

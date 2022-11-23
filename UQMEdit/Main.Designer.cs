@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace UQMEdit
 {
 	partial class Main
@@ -68,7 +70,6 @@ namespace UQMEdit
 			this.Jets1 = new System.Windows.Forms.CheckBox();
 			this.Jets0 = new System.Windows.Forms.CheckBox();
 			this.SeedBox = new System.Windows.Forms.GroupBox();
-			this.CustomSeed = new System.Windows.Forms.TextBox();
 			this.ShipNameBox = new System.Windows.Forms.GroupBox();
 			this.ShipName = new System.Windows.Forms.TextBox();
 			this.CaptainBox = new System.Windows.Forms.GroupBox();
@@ -188,6 +189,12 @@ namespace UQMEdit
 			this.UniverseX = new System.Windows.Forms.NumericUpDown();
 			this.StarList = new System.Windows.Forms.ListBox();
 			this.Extras = new System.Windows.Forms.TabPage();
+			this.VelocityDefault = new System.Windows.Forms.Button();
+			this.LocationDefault = new System.Windows.Forms.Button();
+			this.ElementWorthsDefault = new System.Windows.Forms.Button();
+			this.CostsDefault = new System.Windows.Forms.Button();
+			this.ClockStateDefault = new System.Windows.Forms.Button();
+			this.GlobFlagsDefault = new System.Windows.Forms.Button();
 			this.VelocityGroupBox = new System.Windows.Forms.GroupBox();
 			this.IncrHeightLabel = new System.Windows.Forms.Label();
 			this.IncrHeight = new System.Windows.Forms.NumericUpDown();
@@ -223,6 +230,7 @@ namespace UQMEdit
 			this.AutoPilotXLabel = new System.Windows.Forms.Label();
 			this.AutoPilotX = new System.Windows.Forms.NumericUpDown();
 			this.ClockStateGroupBox = new System.Windows.Forms.GroupBox();
+			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
 			this.DayInTicksLabel = new System.Windows.Forms.Label();
 			this.DayInTicks = new System.Windows.Forms.NumericUpDown();
 			this.TickCountLabel = new System.Windows.Forms.Label();
@@ -295,6 +303,7 @@ namespace UQMEdit
 			this.CombatSpeed = new System.Windows.Forms.TrackBar();
 			this.ReadOnly = new System.Windows.Forms.ToolTip(this.components);
 			this.MaxLimits = new System.Windows.Forms.ToolTip(this.components);
+			this.CustomSeed = new System.Windows.Forms.NumericUpDown();
 			this.toolStrip1.SuspendLayout();
 			this.Tabs.SuspendLayout();
 			this.Summary.SuspendLayout();
@@ -388,6 +397,7 @@ namespace UQMEdit
 			this.MusicSoundGroupBox.SuspendLayout();
 			this.CyborgGroupBox.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.CombatSpeed)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CustomSeed)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// toolStrip1
@@ -484,7 +494,7 @@ namespace UQMEdit
 			this.megaModModes.Controls.Add(this.difficultyBox);
 			this.megaModModes.Location = new System.Drawing.Point(562, 353);
 			this.megaModModes.Name = "megaModModes";
-			this.megaModModes.Size = new System.Drawing.Size(110, 86);
+			this.megaModModes.Size = new System.Drawing.Size(159, 86);
 			this.megaModModes.TabIndex = 79;
 			this.megaModModes.TabStop = false;
 			this.megaModModes.Text = "Modes";
@@ -525,13 +535,14 @@ namespace UQMEdit
 			// 
 			// difficultyBox
 			// 
-			this.difficultyBox.BackColor = System.Drawing.SystemColors.Menu;
+			this.difficultyBox.BackColor = System.Drawing.SystemColors.Window;
 			this.difficultyBox.DisplayMember = "Text";
-			this.difficultyBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+			this.difficultyBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.difficultyBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.difficultyBox.FormattingEnabled = true;
 			this.difficultyBox.Location = new System.Drawing.Point(58, 14);
 			this.difficultyBox.Name = "difficultyBox";
-			this.difficultyBox.Size = new System.Drawing.Size(45, 21);
+			this.difficultyBox.Size = new System.Drawing.Size(95, 21);
 			this.difficultyBox.TabIndex = 1;
 			this.difficultyBox.ValueMember = "HexCode";
 			// 
@@ -831,16 +842,6 @@ namespace UQMEdit
 			this.SeedBox.TabStop = false;
 			this.SeedBox.Text = "Seed";
 			this.SeedBox.Visible = false;
-			// 
-			// CustomSeed
-			// 
-			this.CustomSeed.Location = new System.Drawing.Point(6, 19);
-			this.CustomSeed.Name = "CustomSeed";
-			this.CustomSeed.ReadOnly = true;
-			this.CustomSeed.Size = new System.Drawing.Size(160, 20);
-			this.CustomSeed.TabIndex = 70;
-			this.CustomSeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.ReadOnly.SetToolTip(this.CustomSeed, "Read Only");
 			// 
 			// ShipNameBox
 			// 
@@ -2293,6 +2294,12 @@ namespace UQMEdit
 			// 
 			// Extras
 			// 
+			this.Extras.Controls.Add(this.VelocityDefault);
+			this.Extras.Controls.Add(this.LocationDefault);
+			this.Extras.Controls.Add(this.ElementWorthsDefault);
+			this.Extras.Controls.Add(this.CostsDefault);
+			this.Extras.Controls.Add(this.ClockStateDefault);
+			this.Extras.Controls.Add(this.GlobFlagsDefault);
 			this.Extras.Controls.Add(this.VelocityGroupBox);
 			this.Extras.Controls.Add(this.LocationGroupBox);
 			this.Extras.Controls.Add(this.ClockStateGroupBox);
@@ -2306,6 +2313,72 @@ namespace UQMEdit
 			this.Extras.TabIndex = 2;
 			this.Extras.Text = "Extras";
 			this.Extras.UseVisualStyleBackColor = true;
+			// 
+			// VelocityDefault
+			// 
+			this.VelocityDefault.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.VelocityDefault.Location = new System.Drawing.Point(169, 415);
+			this.VelocityDefault.Name = "VelocityDefault";
+			this.VelocityDefault.Size = new System.Drawing.Size(75, 23);
+			this.VelocityDefault.TabIndex = 14;
+			this.VelocityDefault.Text = "Velocity Def";
+			this.VelocityDefault.UseVisualStyleBackColor = true;
+			this.VelocityDefault.Click += new System.EventHandler(this.VelocityDefault_Click);
+			// 
+			// LocationDefault
+			// 
+			this.LocationDefault.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.LocationDefault.Location = new System.Drawing.Point(87, 414);
+			this.LocationDefault.Name = "LocationDefault";
+			this.LocationDefault.Size = new System.Drawing.Size(75, 23);
+			this.LocationDefault.TabIndex = 13;
+			this.LocationDefault.Text = "Loc Def";
+			this.LocationDefault.UseVisualStyleBackColor = true;
+			this.LocationDefault.Click += new System.EventHandler(this.LocationDefault_Click);
+			// 
+			// ElementWorthsDefault
+			// 
+			this.ElementWorthsDefault.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.ElementWorthsDefault.Location = new System.Drawing.Point(6, 413);
+			this.ElementWorthsDefault.Name = "ElementWorthsDefault";
+			this.ElementWorthsDefault.Size = new System.Drawing.Size(75, 23);
+			this.ElementWorthsDefault.TabIndex = 12;
+			this.ElementWorthsDefault.Text = "Element Def";
+			this.ElementWorthsDefault.UseVisualStyleBackColor = true;
+			this.ElementWorthsDefault.Click += new System.EventHandler(this.ElementWorthsDefault_Click);
+			// 
+			// CostsDefault
+			// 
+			this.CostsDefault.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.CostsDefault.Location = new System.Drawing.Point(169, 385);
+			this.CostsDefault.Name = "CostsDefault";
+			this.CostsDefault.Size = new System.Drawing.Size(75, 23);
+			this.CostsDefault.TabIndex = 11;
+			this.CostsDefault.Text = "Costs Def";
+			this.CostsDefault.UseVisualStyleBackColor = true;
+			this.CostsDefault.Click += new System.EventHandler(this.CostsDefault_Click);
+			// 
+			// ClockStateDefault
+			// 
+			this.ClockStateDefault.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.ClockStateDefault.Location = new System.Drawing.Point(87, 384);
+			this.ClockStateDefault.Name = "ClockStateDefault";
+			this.ClockStateDefault.Size = new System.Drawing.Size(75, 23);
+			this.ClockStateDefault.TabIndex = 10;
+			this.ClockStateDefault.Text = "Clock Def";
+			this.ClockStateDefault.UseVisualStyleBackColor = true;
+			this.ClockStateDefault.Click += new System.EventHandler(this.ClockStateDefault_Click);
+			// 
+			// GlobFlagsDefault
+			// 
+			this.GlobFlagsDefault.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.GlobFlagsDefault.Location = new System.Drawing.Point(6, 384);
+			this.GlobFlagsDefault.Name = "GlobFlagsDefault";
+			this.GlobFlagsDefault.Size = new System.Drawing.Size(75, 23);
+			this.GlobFlagsDefault.TabIndex = 9;
+			this.GlobFlagsDefault.Text = "Flags Def";
+			this.GlobFlagsDefault.UseVisualStyleBackColor = true;
+			this.GlobFlagsDefault.Click += new System.EventHandler(this.GlobFlagsDefault_Click);
 			// 
 			// VelocityGroupBox
 			// 
@@ -2783,6 +2856,7 @@ namespace UQMEdit
 			// 
 			// ClockStateGroupBox
 			// 
+			this.ClockStateGroupBox.Controls.Add(this.dateTimePicker1);
 			this.ClockStateGroupBox.Controls.Add(this.DayInTicksLabel);
 			this.ClockStateGroupBox.Controls.Add(this.DayInTicks);
 			this.ClockStateGroupBox.Controls.Add(this.TickCountLabel);
@@ -2795,10 +2869,20 @@ namespace UQMEdit
 			this.ClockStateGroupBox.Controls.Add(this.DayIndex);
 			this.ClockStateGroupBox.Location = new System.Drawing.Point(6, 193);
 			this.ClockStateGroupBox.Name = "ClockStateGroupBox";
-			this.ClockStateGroupBox.Size = new System.Drawing.Size(234, 159);
+			this.ClockStateGroupBox.Size = new System.Drawing.Size(234, 185);
 			this.ClockStateGroupBox.TabIndex = 6;
 			this.ClockStateGroupBox.TabStop = false;
 			this.ClockStateGroupBox.Text = "Clock State";
+			// 
+			// dateTimePicker1
+			// 
+			this.dateTimePicker1.CustomFormat = "     MMM dd·yyyy";
+			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+			this.dateTimePicker1.Location = new System.Drawing.Point(105, 155);
+			this.dateTimePicker1.Name = "dateTimePicker1";
+			this.dateTimePicker1.Size = new System.Drawing.Size(120, 20);
+			this.dateTimePicker1.TabIndex = 9;
+			this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
 			// 
 			// DayInTicksLabel
 			// 
@@ -2811,6 +2895,11 @@ namespace UQMEdit
 			// 
 			// DayInTicks
 			// 
+			this.DayInTicks.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
 			this.DayInTicks.Location = new System.Drawing.Point(105, 129);
 			this.DayInTicks.Maximum = new decimal(new int[] {
             32767,
@@ -2823,6 +2912,7 @@ namespace UQMEdit
             0,
             -2147483648});
 			this.DayInTicks.Name = "DayInTicks";
+			this.DayInTicks.ReadOnly = true;
 			this.DayInTicks.Size = new System.Drawing.Size(120, 20);
 			this.DayInTicks.TabIndex = 18;
 			this.DayInTicks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2875,6 +2965,7 @@ namespace UQMEdit
 			this.YearIndex.Size = new System.Drawing.Size(120, 20);
 			this.YearIndex.TabIndex = 14;
 			this.YearIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.YearIndex.ValueChanged += new System.EventHandler(this.clockState_ValueChanged);
 			// 
 			// MonthIndex
 			// 
@@ -2888,6 +2979,7 @@ namespace UQMEdit
 			this.MonthIndex.Size = new System.Drawing.Size(120, 20);
 			this.MonthIndex.TabIndex = 13;
 			this.MonthIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.MonthIndex.ValueChanged += new System.EventHandler(this.clockState_ValueChanged);
 			// 
 			// MonthIndexLabel
 			// 
@@ -2919,6 +3011,7 @@ namespace UQMEdit
 			this.DayIndex.Size = new System.Drawing.Size(120, 20);
 			this.DayIndex.TabIndex = 10;
 			this.DayIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.DayIndex.ValueChanged += new System.EventHandler(this.clockState_ValueChanged);
 			// 
 			// ElementWorthGroupBox
 			// 
@@ -3651,12 +3744,13 @@ namespace UQMEdit
 			// 
 			// ReadSpeedLabel
 			// 
-			this.ReadSpeedLabel.AutoSize = true;
-			this.ReadSpeedLabel.Location = new System.Drawing.Point(6, 52);
+			this.ReadSpeedLabel.BackColor = System.Drawing.Color.Transparent;
+			this.ReadSpeedLabel.Location = new System.Drawing.Point(7, 52);
 			this.ReadSpeedLabel.Name = "ReadSpeedLabel";
-			this.ReadSpeedLabel.Size = new System.Drawing.Size(38, 13);
+			this.ReadSpeedLabel.Size = new System.Drawing.Size(104, 13);
 			this.ReadSpeedLabel.TabIndex = 1;
 			this.ReadSpeedLabel.Text = "Speed";
+			this.ReadSpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// ReadSpeed
 			// 
@@ -3712,12 +3806,12 @@ namespace UQMEdit
 			// 
 			// CombatSpeedLabel
 			// 
-			this.CombatSpeedLabel.AutoSize = true;
-			this.CombatSpeedLabel.Location = new System.Drawing.Point(7, 50);
+			this.CombatSpeedLabel.Location = new System.Drawing.Point(6, 50);
 			this.CombatSpeedLabel.Name = "CombatSpeedLabel";
-			this.CombatSpeedLabel.Size = new System.Drawing.Size(38, 13);
+			this.CombatSpeedLabel.Size = new System.Drawing.Size(104, 14);
 			this.CombatSpeedLabel.TabIndex = 2;
 			this.CombatSpeedLabel.Text = "Speed";
+			this.CombatSpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// CombatSpeed
 			// 
@@ -3728,6 +3822,25 @@ namespace UQMEdit
 			this.CombatSpeed.Size = new System.Drawing.Size(104, 45);
 			this.CombatSpeed.TabIndex = 1;
 			this.CombatSpeed.ValueChanged += new System.EventHandler(this.CombatSpeedChanged);
+			// 
+			// CustomSeed
+			// 
+			this.CustomSeed.Location = new System.Drawing.Point(6, 16);
+			this.CustomSeed.Maximum = new decimal(new int[] {
+            2147483645,
+            0,
+            0,
+            0});
+			this.CustomSeed.Name = "CustomSeed";
+			this.CustomSeed.Size = new System.Drawing.Size(160, 20);
+			this.CustomSeed.TabIndex = 0;
+			this.CustomSeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.CustomSeed.Value = new decimal(new int[] {
+            16807,
+            0,
+            0,
+            0});
+			this.CustomSeed.ValueChanged += new System.EventHandler(this.CustomSeed_ValueChanged);
 			// 
 			// Main
 			// 
@@ -3758,7 +3871,6 @@ namespace UQMEdit
 			this.JetsBox.ResumeLayout(false);
 			this.JetsBox.PerformLayout();
 			this.SeedBox.ResumeLayout(false);
-			this.SeedBox.PerformLayout();
 			this.ShipNameBox.ResumeLayout(false);
 			this.ShipNameBox.PerformLayout();
 			this.CaptainBox.ResumeLayout(false);
@@ -3862,6 +3974,7 @@ namespace UQMEdit
 			this.CyborgGroupBox.ResumeLayout(false);
 			this.CyborgGroupBox.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.CombatSpeed)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CustomSeed)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -3910,7 +4023,6 @@ namespace UQMEdit
 		private System.Windows.Forms.Label ModuleLabel13;
 		private System.Windows.Forms.Label ModuleLabel11;
 		private System.Windows.Forms.Label ModuleLabel12;
-		public System.Windows.Forms.TextBox CustomSeed;
 		public System.Windows.Forms.GroupBox LanderUpgradesBox;
 		public System.Windows.Forms.CheckBox IsBomb;
 		public System.Windows.Forms.CheckBox QuakeShield;
@@ -4134,8 +4246,16 @@ namespace UQMEdit
 		public System.Windows.Forms.GroupBox ElementWorthGroupBox;
 		public System.Windows.Forms.GroupBox CostsGroupBox;
 		private System.Windows.Forms.Label ReadSpeedLabel;
-		private System.Windows.Forms.Label CombatSpeedLabel;
 		public System.Windows.Forms.TabControl Tabs;
 		public System.Windows.Forms.TabPage Extras;
+		public System.Windows.Forms.DateTimePicker dateTimePicker1;
+		public Label CombatSpeedLabel;
+		private Button VelocityDefault;
+		private Button LocationDefault;
+		private Button ElementWorthsDefault;
+		private Button CostsDefault;
+		private Button ClockStateDefault;
+		private Button GlobFlagsDefault;
+		public NumericUpDown CustomSeed;
 	}
 }

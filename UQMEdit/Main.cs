@@ -333,5 +333,110 @@ namespace UQMEdit
 					break;
 			}
 		}
+
+		private void dateTimePicker1_ValueChanged (object sender, EventArgs e)
+		{
+			DayIndex.Value   = dateTimePicker1.Value.Day;
+			MonthIndex.Value = dateTimePicker1.Value.Month;
+			YearIndex.Value  = dateTimePicker1.Value.Year;
+		}
+
+		private void clockState_ValueChanged (object sender, EventArgs e)
+		{
+			int tempDay   = (int)(DayIndex.Value < 1 ? 1 : DayIndex.Value);
+			int tempMonth = (int)(MonthIndex.Value < 1 ? 1 : MonthIndex.Value);
+			int tempYear  = (int)(YearIndex.Value < 1753 ? 1753 : YearIndex.Value);
+
+
+			dateTimePicker1.Value = new DateTime (tempYear, tempMonth, tempDay);
+		}
+
+		private void GlobFlagsDefault_Click (object sender, EventArgs e)
+		{
+			ReadSpeed.Value       = 2;
+			CombatSpeed.Value     = 0;
+			MusicCheckBox.Checked = false;
+			SoundCheckBox.Checked = false;
+		}
+
+		private void ClockStateDefault_Click (object sender, EventArgs e)
+		{
+			DayIndex.Value   = SummPtr.day_index;
+			MonthIndex.Value = SummPtr.month_index;
+			YearIndex.Value  = SummPtr.year_index;
+			TickCount.Value  = ClockPtr.tick_count;
+		}
+
+		private void CostsDefault_Click (object sender, EventArgs e)
+		{
+			CrewCost.Value           =    3;
+			FuelCost.Value           =   20;
+			LanderCost.Value         =  500;
+			ThrusterCost.Value       =  500;
+			JetCost.Value            =  500;
+			CrewPodCost.Value        = 2000;
+			StorageBayCost.Value     =  750;
+			FuelTankCost.Value       =  500;
+			HiEffFuelSysCost.Value   = GSPtr.ModuleCost[6] > 0 ? 1000 : 0;
+			DynamoUnitCost.Value     = 2000;
+			ShivaFurnaceCost.Value   = GSPtr.ModuleCost[8] > 0 ? 4000 : 0;
+			IonBoltGunCost.Value     = 2000;
+			FusionBlasterCost.Value  = GSPtr.ModuleCost[10] > 0 ? 4000 : 0;
+			HellboreCannonCost.Value = GSPtr.ModuleCost[11] > 0 ? 6000 : 0;
+			TrackingSystemCost.Value = GSPtr.ModuleCost[12] > 0 ? 5000 : 0;
+			PointDefenseCost.Value   = GSPtr.ModuleCost[13] > 0 ? 4000 : 0;
+		}
+
+		private void ElementWorthsDefault_Click (object sender, EventArgs e)
+		{
+			byte d = SSPtr.Difficulty;
+
+			CommonWorth.Value        = d == 1 ?  2 : 1;
+			CorrosiveWorth.Value     = d == 1 ?  4 : 2;
+			BaseMetalWorth.Value     = d == 1 ?  6 : 3;
+			NobleGasWorth.Value      = d == 1 ?  8 : 4;
+			RareEarthWorth.Value     = d == 1 ? 10 : 5;
+			PreciousMetalWorth.Value = d == 1 ? 12 : 6;
+			RadioactiveWorth.Value   = d == 1 ? 16 : 8;
+			ExoticWorth.Value        = d == 1 ? 50 : (d == 0 ? 25 : 16);
+		}
+
+		private void CustomSeed_ValueChanged (object sender, EventArgs e)
+		{
+			if (CustomSeed.Value < 2)
+				CustomSeed.Value = 16807;
+		}
+
+		private void LocationDefault_Click (object sender, EventArgs e)
+		{
+			byte act = SummPtr.Activity;
+			bool hsqs = act == 3 || act == 6;
+
+			AutoPilotX.Value = -1;
+			AutoPilotY.Value = -1;
+
+			IPLocationX.Value = hsqs ? 39 : 0;
+			IPLocationY.Value = hsqs ? 16618 : 16239;
+			ShipOriginX.Value = hsqs ? 1250 : 121;
+			ShipOriginY.Value = hsqs ? 1250 : 224;
+
+			ShipFacing.Value = 1;
+		}
+
+		private void VelocityDefault_Click (object sender, EventArgs e)
+		{
+			byte act = SummPtr.Activity;
+			bool hsqs = act == 3 || act == 6;
+
+			foreach (object Velocity in VelocityGroupBox.Controls)
+			{
+				if (Velocity is NumericUpDown)
+					(Velocity as NumericUpDown).Value = 0;
+			}
+
+			if (hsqs)
+				TravelAngle.Value = 16;
+			
+		}
 	}
 }

@@ -197,10 +197,23 @@ namespace UQMEdit
 
 			if (Vars.SaveVersion == 2 || Vars.SaveVersion == 4)
 			{
-				Vars.LastOffset++; // Difficulty
-				Vars.LastOffset++; // Extended
-				Vars.LastOffset++; // Nomad
-				Vars.LastOffset += 4; // Seed
+				byte a = SummPtr.Activity;
+				bool e = a == 3 || a == 6;
+
+				if (e)
+				{
+					Functions.WriteByte ((byte)Window.difficultyBox.SelectedIndex);
+					Functions.WriteByte (Convert.ToByte (Window.extendedCheckBox.Checked));
+					Functions.WriteByte (Convert.ToByte (Window.nomadCheckBox.Checked));
+					Functions.WriteInt ((int)Window.CustomSeed.Value);
+				}
+				else
+				{
+					Vars.LastOffset++; // Difficulty
+					Vars.LastOffset++; // Extended
+					Vars.LastOffset++; // Nomad
+					Vars.LastOffset += 4; // Seed
+				}
 			}
 		}
 
