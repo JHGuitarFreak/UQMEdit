@@ -75,12 +75,18 @@ namespace UQMEdit
 				string TitleText = "The UQM Save Editor";
 				SeedBox.Visible = false;
 				megaModModes.Visible = false;
-				switch (Read.SaveVersion) {
+				switch (Vars.SaveVersion)
+				{
+					case 4:
+						TitleText += ": MegaMod v0.8.2 - ";
+						SeedBox.Visible = true;
+						megaModModes.Visible = true;
+						break;
 					case 3:
 						TitleText += ": Core v0.8.0 - ";
 						break;
 					case 2:
-						TitleText += ": MegaMod v0.8.0.85 - ";
+						TitleText += ": Legacy MegaMod - ";
 						SeedBox.Visible = true;
 						megaModModes.Visible = true;
 						break;
@@ -88,12 +94,11 @@ namespace UQMEdit
 						TitleText += ": HD-mod v0.7.0 - ";
 						break;
 					case 0:
+					default:
 						TitleText += ": Core v0.7.0 - ";
 						break;
-					default:
-						break;
 				}
-				Text = TitleText + (Read.SaveVersion > 0 ? (Read.Date + ": " + Read.SaveName) : (Read.SaveName + Read.Date));
+				Text = TitleText + (Vars.SaveVersion > 0 ? (Read.Date + ": " + Read.SaveName) : (Read.SaveName + Read.Date));
 
 				CurrentDir = CurrentFile;
 			}
@@ -109,6 +114,84 @@ namespace UQMEdit
 										BaseMetal.Value + NobleGas.Value +
 										RareEarth.Value + Precious.Value +
 										Radioactive.Value + Exotic.Value;
+		}
+
+		private decimal nearestFifty (decimal value)
+		{
+			if (((int)value % 50) != 0)
+				return Math.Round(value / 50) * 50;
+			else
+				return value;
+		}
+
+		private void LanderCostChanged (object sender, EventArgs e)
+		{
+			LanderCost.Value = nearestFifty (LanderCost.Value);
+		}
+
+		private void ThrusterCostChanged (object sender, EventArgs e)
+		{
+			ThrusterCost.Value = nearestFifty (ThrusterCost.Value);
+		}
+
+		private void JetCostChanged (object sender, EventArgs e)
+		{
+			JetCost.Value = nearestFifty (JetCost.Value);
+		}
+
+		private void CrewPodCostChanged (object sender, EventArgs e)
+		{
+			CrewPodCost.Value = nearestFifty (CrewPodCost.Value);
+		}
+
+		private void StorageBayCostChanged (object sender, EventArgs e)
+		{
+			StorageBayCost.Value = nearestFifty (StorageBayCost.Value);
+		}
+
+		private void FuelTankCostChanged (object sender, EventArgs e)
+		{
+			FuelTankCost.Value = nearestFifty (FuelTankCost.Value);
+		}
+
+		private void HiEffFuelSysCostChanged (object sender, EventArgs e)
+		{
+			HiEffFuelSysCost.Value = nearestFifty (HiEffFuelSysCost.Value);
+		}
+
+		private void DynamoUnitCostChanged (object sender, EventArgs e)
+		{
+			DynamoUnitCost.Value = nearestFifty (DynamoUnitCost.Value);
+		}
+
+		private void ShivaFurnaceCostChanged (object sender, EventArgs e)
+		{
+			ShivaFurnaceCost.Value = nearestFifty (ShivaFurnaceCost.Value);
+		}
+
+		private void IonBoltGunCostChanged (object sender, EventArgs e)
+		{
+			IonBoltGunCost.Value = nearestFifty (IonBoltGunCost.Value);
+		}
+
+		private void FusionBlasterCostChanged (object sender, EventArgs e)
+		{
+			FusionBlasterCost.Value = nearestFifty (FusionBlasterCost.Value);
+		}
+
+		private void HellboreCannonCostChanged (object sender, EventArgs e)
+		{
+			HellboreCannonCost.Value = nearestFifty (HellboreCannonCost.Value);
+		}
+
+		private void TrackingSystemCostChanged (object sender, EventArgs e)
+		{
+			TrackingSystemCost.Value = nearestFifty (TrackingSystemCost.Value);
+		}
+
+		private void PointDefenseCostChanged (object sender, EventArgs e)
+		{
+			PointDefenseCost.Value = nearestFifty (PointDefenseCost.Value);
 		}
 
 		private void Save_Click(object sender, EventArgs e) {
@@ -206,6 +289,154 @@ namespace UQMEdit
 			// These are commented out because they sometimes cause errors when loading.
 			//ShipFuel.Maximum = MaxFuel;
 			//ShipCrew.Maximum = MaxCrew;
+		}
+
+		private void ReadSpeedChanged (object sender, EventArgs e)
+		{
+			switch (ReadSpeed.Value)
+			{
+				case 4:
+					ReadSpeedLabel.Text = "Very Fast";
+					break;
+				case 3:
+					ReadSpeedLabel.Text = "Fast";
+					break;
+				case 2:
+					ReadSpeedLabel.Text = "Moderate";
+					break;
+				case 1:
+					ReadSpeedLabel.Text = "Slow";
+					break;
+				case 0:
+				default:
+					ReadSpeedLabel.Text = "Very Slow";
+					break;
+			}
+		}
+
+		private void CombatSpeedChanged (object sender, EventArgs e)
+		{
+			switch (CombatSpeed.Value)
+			{
+				case 3:
+					CombatSpeedLabel.Text = "Cyborg++";
+					break;
+				case 2:
+					CombatSpeedLabel.Text = "Cyborg+";
+					break;
+				case 1:
+					CombatSpeedLabel.Text = "Cyborg";
+					break;
+				case 0:
+				default:
+					CombatSpeedLabel.Text = "Disabled";
+					break;
+			}
+		}
+
+		private void dateTimePicker1_ValueChanged (object sender, EventArgs e)
+		{
+			DayIndex.Value   = dateTimePicker1.Value.Day;
+			MonthIndex.Value = dateTimePicker1.Value.Month;
+			YearIndex.Value  = dateTimePicker1.Value.Year;
+		}
+
+		private void clockState_ValueChanged (object sender, EventArgs e)
+		{
+			int tempDay   = (int)(DayIndex.Value < 1 ? 1 : DayIndex.Value);
+			int tempMonth = (int)(MonthIndex.Value < 1 ? 1 : MonthIndex.Value);
+			int tempYear  = (int)(YearIndex.Value < 1753 ? 1753 : YearIndex.Value);
+
+
+			dateTimePicker1.Value = new DateTime (tempYear, tempMonth, tempDay);
+		}
+
+		private void GlobFlagsDefault_Click (object sender, EventArgs e)
+		{
+			ReadSpeed.Value       = 2;
+			CombatSpeed.Value     = 0;
+			MusicCheckBox.Checked = false;
+			SoundCheckBox.Checked = false;
+		}
+
+		private void ClockStateDefault_Click (object sender, EventArgs e)
+		{
+			DayIndex.Value   = SummPtr.day_index;
+			MonthIndex.Value = SummPtr.month_index;
+			YearIndex.Value  = SummPtr.year_index;
+			TickCount.Value  = ClockPtr.tick_count;
+		}
+
+		private void CostsDefault_Click (object sender, EventArgs e)
+		{
+			CrewCost.Value           =    3;
+			FuelCost.Value           =   20;
+			LanderCost.Value         =  500;
+			ThrusterCost.Value       =  500;
+			JetCost.Value            =  500;
+			CrewPodCost.Value        = 2000;
+			StorageBayCost.Value     =  750;
+			FuelTankCost.Value       =  500;
+			HiEffFuelSysCost.Value   = GSPtr.ModuleCost[6] > 0 ? 1000 : 0;
+			DynamoUnitCost.Value     = 2000;
+			ShivaFurnaceCost.Value   = GSPtr.ModuleCost[8] > 0 ? 4000 : 0;
+			IonBoltGunCost.Value     = 2000;
+			FusionBlasterCost.Value  = GSPtr.ModuleCost[10] > 0 ? 4000 : 0;
+			HellboreCannonCost.Value = GSPtr.ModuleCost[11] > 0 ? 6000 : 0;
+			TrackingSystemCost.Value = GSPtr.ModuleCost[12] > 0 ? 5000 : 0;
+			PointDefenseCost.Value   = GSPtr.ModuleCost[13] > 0 ? 4000 : 0;
+		}
+
+		private void ElementWorthsDefault_Click (object sender, EventArgs e)
+		{
+			byte d = SSPtr.Difficulty;
+
+			CommonWorth.Value        = d == 1 ?  2 : 1;
+			CorrosiveWorth.Value     = d == 1 ?  4 : 2;
+			BaseMetalWorth.Value     = d == 1 ?  6 : 3;
+			NobleGasWorth.Value      = d == 1 ?  8 : 4;
+			RareEarthWorth.Value     = d == 1 ? 10 : 5;
+			PreciousMetalWorth.Value = d == 1 ? 12 : 6;
+			RadioactiveWorth.Value   = d == 1 ? 16 : 8;
+			ExoticWorth.Value        = d == 1 ? 50 : (d == 0 ? 25 : 16);
+		}
+
+		private void CustomSeed_ValueChanged (object sender, EventArgs e)
+		{
+			if (CustomSeed.Value < 2)
+				CustomSeed.Value = 16807;
+		}
+
+		private void LocationDefault_Click (object sender, EventArgs e)
+		{
+			byte act = SummPtr.Activity;
+			bool hsqs = act == 3 || act == 6;
+
+			AutoPilotX.Value = -1;
+			AutoPilotY.Value = -1;
+
+			IPLocationX.Value = hsqs ? 39 : 0;
+			IPLocationY.Value = hsqs ? 16618 : 16239;
+			ShipOriginX.Value = hsqs ? 1250 : 121;
+			ShipOriginY.Value = hsqs ? 1250 : 224;
+
+			ShipFacing.Value = 1;
+		}
+
+		private void VelocityDefault_Click (object sender, EventArgs e)
+		{
+			byte act = SummPtr.Activity;
+			bool hsqs = act == 3 || act == 6;
+
+			foreach (object Velocity in VelocityGroupBox.Controls)
+			{
+				if (Velocity is NumericUpDown)
+					(Velocity as NumericUpDown).Value = 0;
+			}
+
+			if (hsqs)
+				TravelAngle.Value = 16;
+			
 		}
 	}
 }
