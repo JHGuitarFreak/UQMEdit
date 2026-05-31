@@ -195,7 +195,7 @@ namespace UQMEdit
 
 			Vars.LastOffset += Vars.SisNameSize; // Planet Name
 
-			if (Vars.SaveVersion == 2 || Vars.SaveVersion == 4)
+			if (Vars.SaveVersion == 2 || Vars.SaveVersion >= 4)
 			{
 				byte a = SummPtr.Activity;
 				bool e = a == 3 || a == 6;
@@ -206,6 +206,8 @@ namespace UQMEdit
 					Functions.WriteByte (Convert.ToByte (Window.extendedCheckBox.Checked));
 					Functions.WriteByte (Convert.ToByte (Window.nomadCheckBox.Checked));
 					Functions.WriteInt ((int)Window.CustomSeed.Value);
+					if (Vars.SaveVersion == 5)
+						Vars.LastOffset++; // ShipSeed
 				}
 				else
 				{
@@ -213,6 +215,8 @@ namespace UQMEdit
 					Vars.LastOffset++; // Extended
 					Vars.LastOffset++; // Nomad
 					Vars.LastOffset += 4; // Seed
+					if (Vars.SaveVersion == 5)
+						Vars.LastOffset++; // ShipSeed
 				}
 			}
 		}

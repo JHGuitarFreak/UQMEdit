@@ -9,6 +9,7 @@ namespace UQMEdit
 		public const uint SAVEFILE_TAG =     0x01534d55; // "UMS\x01": UQM Save version 1
 		public const uint MEGA_TAG =         0x4147454D; // "MEGA": MegaMod Save version 2
 		public const uint MMV3_TAG =         0x33564D4D; // "MMV3": MegaMod Save version 3
+		public const uint MMV4_TAG =         0x34564D4D; // "MMV4": MegaMod Save version 4
 		public const uint SUMMARY_TAG =      0x6d6d7553; // "Summ": Summary. Must be first!
 		public const uint GLOBAL_STATE_TAG = 0x74536c47; // "GlSt": Global State. Must be 2nd!
 		public const uint GAME_STATE_TAG =   0x74536d47; // "GmSt": Game State Bits. Must be 3rd!
@@ -299,6 +300,7 @@ namespace UQMEdit
 		public static byte Extended;
 		public static byte Nomad;
 		public static int  Seed;
+		public static int  ShipSeed;
 
 		public static void clearSisState ()
 		{
@@ -321,6 +323,7 @@ namespace UQMEdit
 			Extended   = 0;
 			Nomad      = 0;
 			Seed       = 0;
+			ShipSeed   = 0;
 		}
 	}
 

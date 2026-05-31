@@ -77,6 +77,11 @@ namespace UQMEdit
 				megaModModes.Visible = false;
 				switch (Vars.SaveVersion)
 				{
+					case 5:
+						TitleText += ": MegaMod v0.8.4 - ";
+						SeedBox.Visible = true;
+						megaModModes.Visible = true;
+						break;
 					case 4:
 						TitleText += ": MegaMod v0.8.2 - ";
 						SeedBox.Visible = true;

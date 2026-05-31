@@ -41,6 +41,9 @@ namespace UQMEdit
 
 			switch (LoadChecker)
 			{
+				case Vars.MMV4_TAG:
+					Vars.SaveVersion = 5;
+					break;
 				case Vars.MMV3_TAG:
 					Vars.SaveVersion = 4;
 					break;

@@ -68,7 +68,7 @@ namespace UQMEdit.Load
 
 		public static bool LoadSisState ()
 		{
-			Vars.SisNameSize = Vars.SaveVersion == 4 ? 32 : 16;
+			Vars.SisNameSize = Vars.SaveVersion >= 4 ? 32 : 16;
 
 			SSPtr.log_x = Functions.ReadInt ();
 			SSPtr.log_y = Functions.ReadInt ();
@@ -94,13 +94,15 @@ namespace UQMEdit.Load
 			SSPtr.CommanderName = Functions.ReadStr (Vars.SisNameSize);
 			SSPtr.PlanetName = Functions.ReadStr (Vars.SisNameSize);
 
-			if (Vars.SaveVersion == 2 || Vars.SaveVersion == 4)
+			if (Vars.SaveVersion == 2 || Vars.SaveVersion >= 4)
 			{
 				SSPtr.Difficulty = Functions.ReadByte ();
 				SSPtr.Extended = Functions.ReadByte ();
 				SSPtr.Nomad = Functions.ReadByte ();
 				SSPtr.Seed = Functions.ReadInt ();
 			}
+			if (Vars.SaveVersion == 5)
+				SSPtr.ShipSeed = Functions.ReadByte();
 
 			return true;
 		}
@@ -138,7 +140,7 @@ namespace UQMEdit.Load
 			for (int i = 0; i < 16; i++)
 				SummPtr.DeviceList[i] = Functions.ReadByte ();
 
-			if (Vars.SaveVersion == 2 || Vars.SaveVersion == 4)
+			if (Vars.SaveVersion == 2 || Vars.SaveVersion >= 4)
 				SummPtr.res_factor = Functions.ReadByte ();
 
 			SummPtr.SaveName = Functions.ReadStr ((int)Vars.SaveNameLength);
